@@ -34,13 +34,13 @@ SPClientSettings.setup(spotKey: "YOUR UNIQUE SPOT ID")
 ### Usage
 End user is supposed to interact with the Pre-Conversation View Controller (PCVC) first. To get and instance of it, you need an instance of `SpotImSDKFlowCoordinator`:
 ```swift
-spotIMCoordinator = SpotImSDKFlowCoordinator(spotId: spotId, delegate: self)
+spotIMCoordinator = SpotImSDKFlowCoordinator(delegate: self)
 ```
 Make sure to have a strong reference, it will be deallocated otherwise.
 Then you can instantiate PCVC for specific post (article) ID:
 ```swift
 let preConversationVC = spotIMCoordinator?.preConversationController(
-                          with: "POST ID",
+                          withPostId: "POST ID",
                           container: navigationController
                         )
 ```
