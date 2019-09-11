@@ -16,19 +16,20 @@
 
 ### Setup
 
-To use the SDK you need to set your unique Spot ID key first. Once Spot ID is set, the SDK loads config. You want to proceed working with the SDK once the the config is loaded. To respond to this event, subscribe to `Notification.Name.spotIMConfigLoaded` notification, for example, like this:
-```swift
-NotificationCenter.default.addObserver(
-    self,
-    selector: #selector(utilizeConfig),
-    name: Notification.Name.spotIMConfigLoaded,
-    object: nil
-)
-```
+To use the SDK you need to set your unique Spot ID key first. The recommended way to do it is in `application(application:didFinishLaunchingWithOptions)` function of App Delegate. 
 
-Once subscribed, set the Spot ID:
+##### Example
+
 ```swift
-SPClientSettings.setup(spotKey: "YOUR UNIQUE SPOT ID")
+    func application(
+      _ application: UIApplication, 
+      didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?
+    ) -> Bool {
+        
+        SPClientSettings.setup(spotKey: "YOUR UNIQUE SPOT ID")
+        
+        return true
+    }
 ```
 
 ### Usage
