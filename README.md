@@ -27,7 +27,18 @@ In the `application(application:didFinishLaunchingWithOptions)` call the `setup`
     }
 ```
 
+### Flows
+
+Our SDK exposes one major flow to set up. The pre-conversation view is a view that displays a preview of 2 comments from the conversation, a text box to create new comments and a button to see all comments.
+
+The Pre-conversation view should be displayed in your article view controller beloew the article.
+
+When the user wants to see more comments we push a new ViewController which displays all comments from the conversation.
+
+When clicking on the text box to create a new comments we bring the user to the creation screen. The users needs to be logged in inorder to post new comments, this is where the hosting app needs to integrate it's authentication system.
+
 ### Usage
+
 End user is supposed to interact with the Pre-Conversation View Controller (PCVC) first. To get and instance of it, you need an instance of `SpotImSDKFlowCoordinator`:
 ```swift
 spotIMCoordinator = SpotImSDKFlowCoordinator(delegate: self)
@@ -42,6 +53,9 @@ let preConversationVC = spotIMCoordinator?.preConversationController(
 ```
 
 PCVC's view should be added as a subview of a view of another view controller.
+
+##### ⚠️ IMPORTANT
+Please make sure to use the same post id you use on your web application so that the SDK would be able to display the same comments from the web application.
 
 #### Adding Pre-Conversation VC
 
