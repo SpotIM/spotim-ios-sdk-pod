@@ -1,18 +1,9 @@
 # Get Started
 
-### To add Spot.IM iOS SDK to a project via CocoaPods:
-1. Add Spot.IM spec repo to your system by running the following command in Terminal:  
-  `pod repo add Spot.IM.Spec git@github.com:SpotIM/spotim-ios-sdk-pod.git`
-2. Add spec sources at the top of the podfile:  
-  `source 'git@github.com:SpotIM/spotim-ios-sdk-pod.git'`  
-  `source 'https://github.com/CocoaPods/Specs.git'`  
-3. Set dependency as follows: `pod 'Spot.IM-Core'`
-4. Run the following command in Terminal:  
-  `pod repo update Spot.IM.Spec`
-4. Run the following command to make sure the framework is available via CocoaPods:  
-  `pod search Spot.IM`  
-5. Run pod install
-6. Open workspace file and run
+### Installation via CocoaPods:
+1. Set dependency as follows: `pod 'SpotIMCore'`
+2. Execute pod install in Terminal
+3. Open workspace file and run
 
 ### Setup
 
