@@ -7,7 +7,11 @@
 
 ### Setup
 
-To use the SDK you need to set your unique Spot ID key first. The recommended way to do it is in `application(application:didFinishLaunchingWithOptions)` function of App Delegate. 
+First import our SDK from the AppDelegate
+`import Spot_IM_Core`
+
+To use the SDK you need to set your unique Spot ID when initializing the SDK. 
+In the `application(application:didFinishLaunchingWithOptions)` call the `setup` method as follows: 
 
 ##### Example
 
@@ -82,61 +86,9 @@ extension ArticleViewController: SpotImSDKNavigationDelegate {
 }
 ```
 
-There are to types of SSO available: **Generic SSO** and **Reverse SSO**. Please contact your Spot.IM advisor to pick the best option for you.
+Authentication with SSO:
 
-#### Generic SSO
-
-1. Get an instance of `SPAuthenticationProvider`
-2. Call `startSSO` function and get `codeA` and `jwtToken` from the callback
-3. Send the `codeA` and the `jwtToken` to your backend to get `codeB`
-4. Call `completeSSO` with the `codeB` and the `jwtToken` from step 2
-5. Check `success` and `error` properties in the callback to ensure everything is ok
-
-##### Example
-```swift
-// 1
-var ssoAuthProvider: SPAuthenticationProvider = SPDefaultAuthProvider()
-
-func authenticate() {
-    // 2
-    ssoAuthProvider.startSSO { [weak self] response, error in
-        if let error = error {
-            print(error)
-        } else {
-            self?.getCodeB(codeA: response?.codeA, jwtToken: response?.jwtToken)
-        }
-    }
-}
-
-private func getCodeB(codeA: String?, jwtToken: String?) {
-    // 3
-    MyAuthenticationProvider.getCodeB(
-        with: codeA,
-        accessToken: jwtToken,
-        username: username,
-        accessTokenNetwork: myUserToken) { [weak self] codeB, error in
-            if let error = error {
-                print(error)
-            } else {
-                self.completeSSO(genericToken: genericToken)
-            }
-    }
-}
-
-private func completeSSO(codeB: String?, jwtToken: String?) {
-    // 4
-    ssoAuthProvider.completeSSO(with: codeB, genericToken: genericToken) { [weak self] success, error in
-        // 5
-        if let error = error {
-            print(error)
-        } else if success {
-            print(“Authenticated successfully!”)
-        } 
-    }
-}
-```
-
-#### Reverse SSO
+#### SSO
 
 1. Authenticate a user with your backend
 2. Get an instance of `SPAuthenticationProvider`
