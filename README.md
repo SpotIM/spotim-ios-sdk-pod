@@ -137,4 +137,5 @@ run `pod repo update` in the terminal to refresh your local spec repos before in
 ```
 [!] Unable to find a pod with name, author, summary, or description matching `SpotIMCore`
 ```
+##### Solution
 CocoaPods search index has some known bugs. Just proceed with usual installation.
