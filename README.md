@@ -44,12 +44,15 @@ End user is supposed to interact with the Pre-Conversation View Controller (PCVC
 spotIMCoordinator = SpotImSDKFlowCoordinator(delegate: self)
 ```
 Make sure to have a strong reference, it will be deallocated otherwise.
-Then you can instantiate PCVC for specific post (article) ID:
+Then you can instantiate PCVC for specific post (article) ID. PCVC will be passed to the completion block:
 ```swift
-let preConversationVC = spotIMCoordinator?.preConversationController(
-                          withPostId: "POST ID",
-                          container: navigationController
-                        )
+spotIMCoordinator?.preConversationController(
+  withPostId: "POST ID",
+  container: navigationController, 
+  completion: { [weak self] preConversationVC in 
+    // add preConversationVC to your view controller
+  }
+)
 ```
 
 PCVC's view should be added as a subview of a view of another view controller.
@@ -69,13 +72,13 @@ Please make sure to use the same post id you use on your web application so that
 ```swift
 preConversationVC.view.translatesAutoresizingMaskIntoConstraints = false
 
-addChild(preConversationVC)
-containerView.addSubview(preConversationVC.view)
+self.addChild(preConversationVC)
+self.containerView.addSubview(preConversationVC.view)
 
-preConversationVC.view.topAnchor.constraint(equalTo: containerView.topAnchor).isActive = true
-preConversationVC.view.leadingAnchor.constraint(equalTo: containerView.leadingAnchor).isActive = true
-preConversationVC.view.bottomAnchor.constraint(equalTo: containerView.bottomAnchor).isActive = true
-preConversationVC.view.trailingAnchor.constraint(equalTo: containerView.trailingAnchor).isActive = true
+preConversationVC.view.topAnchor.constraint(equalTo: self.containerView.topAnchor).isActive = true
+preConversationVC.view.leadingAnchor.constraint(equalTo: self.containerView.leadingAnchor).isActive = true
+preConversationVC.view.bottomAnchor.constraint(equalTo: self.containerView.bottomAnchor).isActive = true
+preConversationVC.view.trailingAnchor.constraint(equalTo: self.containerView.trailingAnchor).isActive = true
 
 preConversationVC.didMove(toParent: self)
 ```
