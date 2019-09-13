@@ -123,3 +123,18 @@ func authenticate() {
     })
 }
 ```
+
+# Troubleshooting
+
+##### Cocoapods installaion fails with error
+```
+[!] Unable to find a specification for `SpotIMCore...
+```
+##### Solution
+run `pod repo update` in the terminal to refresh your local spec repos before installation.
+
+##### Pod search fails with error
+```
+[!] Unable to find a pod with name, author, summary, or description matching `SpotIMCore`
+```
+CocoaPods search index has some known bugs. Just proceed with usual installation.
