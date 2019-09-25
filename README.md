@@ -83,7 +83,7 @@ preConversationVC.view.trailingAnchor.constraint(equalTo: self.containerView.tra
 preConversationVC.didMove(toParent: self)
 ```
 ##### ⚠️ IMPORTANT
-Make sure container view is layed out the way in can grow in height and adapt to PCVC view height changes.
+Make sure container view is layed out the way it can grow in height and adapt to PCVC view height changes.
 
 ### Authentication
 
