@@ -8,7 +8,7 @@
 ### Setup
 
 First import our SDK from the AppDelegate
-`import Spot_IM_Core`
+`import SpotImCore`
 
 To use the SDK you need to set your unique Spot ID when initializing the SDK. 
 In the `application(application:didFinishLaunchingWithOptions)` call the `setup` method as follows: 
