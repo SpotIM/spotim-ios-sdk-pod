@@ -1,0 +1,79 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.1.2 (swiftlang-1100.0.278 clang-1100.0.33.9)
+// swift-module-flags: -target armv7-apple-ios10.3 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -module-name SpotImCore
+import Alamofire
+import Foundation
+import GoogleMobileAds
+import SafariServices
+import Swift
+import UIKit
+public struct InputConfiguration {
+  public init(appLanguage: Swift.String)
+}
+final public class SPPublicSessionInterface {
+  public static func resetUser()
+  public static func isMe(userId: Swift.String) -> Swift.Bool
+  @objc deinit
+}
+extension NSNotification.Name {
+  public static var spotIMConfigLoaded: Foundation.Notification.Name
+}
+public protocol SSOAuthenticatable : AnyObject {
+  var ssoAuthProvider: SpotImCore.SPAuthenticationProvider { get }
+}
+public protocol SSOAthenticationDelegate : AnyObject {
+  func ssoFlowDidSucceed()
+  func ssoFlowDidFail(with error: Swift.Error?)
+}
+public protocol SpotImSDKNavigationDelegate : AnyObject {
+  func controllerForSSOFlow() -> UIKit.UIViewController & SpotImCore.SSOAuthenticatable
+}
+public protocol SpotImLayoutDelegate : AnyObject {
+  func viewDidResize()
+}
+final public class SpotImSDKFlowCoordinator {
+  public init(delegate: SpotImCore.SpotImSDKNavigationDelegate, inputConfiguration: SpotImCore.InputConfiguration? = nil)
+  final public func setLayoutDelegate(delegate: SpotImCore.SpotImLayoutDelegate)
+  final public func preConversationController(withPostId postId: Swift.String, container: UIKit.UIViewController?, completion: @escaping (UIKit.UIViewController) -> Swift.Void)
+  @objc deinit
+}
+extension SpotImSDKFlowCoordinator : SpotImCore.SSOAthenticationDelegate {
+  final public func ssoFlowDidSucceed()
+  final public func ssoFlowDidFail(with error: Swift.Error?)
+}
+public struct SPClientSettings {
+  public static func setup(spotKey: Swift.String?)
+  public static var overrideUserInterfaceStyle: SpotImCore.SPUserInterfaceStyle?
+  public static var darkModeBackgroundColor: UIKit.UIColor
+}
+public enum SPUserInterfaceStyle : Swift.Int {
+  case light
+  case dark
+  public typealias RawValue = Swift.Int
+  public init?(rawValue: Swift.Int)
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public typealias AuthCompletionHandler = (Swift.Bool, Swift.Error?) -> Swift.Void
+public protocol SPAuthenticationProvider : AnyObject {
+  func startSSO(with secret: Swift.String?, completion: @escaping (SpotImCore.SSOStartResponse?, Swift.Error?) -> Swift.Void)
+  func completeSSO(with codeB: Swift.String?, genericToken: Swift.String?, completion: @escaping SpotImCore.AuthCompletionHandler)
+  var ssoAuthDelegate: SpotImCore.SSOAthenticationDelegate? { get set }
+}
+extension SPAuthenticationProvider {
+  public func startSSO(with secret: Swift.String? = nil, completion: @escaping (SpotImCore.SSOStartResponse?, Swift.Error?) -> Swift.Void)
+}
+final public class SPDefaultAuthProvider : SpotImCore.SPAuthenticationProvider {
+  weak final public var ssoAuthDelegate: SpotImCore.SSOAthenticationDelegate?
+  public init()
+  final public func startSSO(with secret: Swift.String? = nil, completion: @escaping (SpotImCore.SSOStartResponse?, Swift.Error?) -> Swift.Void)
+  final public func completeSSO(with codeB: Swift.String?, genericToken: Swift.String? = nil, completion: @escaping SpotImCore.AuthCompletionHandler)
+  @objc deinit
+}
+public struct SSOStartResponse {
+  public var codeA: Swift.String?
+  public var jwtToken: Swift.String?
+  public var autoComplete: Swift.Bool
+  public var success: Swift.Bool
+}
