@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SpotIMCore'
-  s.version          = '0.0.10'
+  s.version          = '0.0.11'
   s.summary          = 'This SDK allows you to integrate SpotIM into your iOS app.'
   s.description      = 'Spot.IM SDK provides an easy integration'
   s.homepage        = "http://www.spot.im"
