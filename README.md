@@ -3,7 +3,7 @@
 ### Installation via CocoaPods:
 1. Set dependency as follows:
     - For Core framework without ads `pod 'SpotIMCore', '0.0.9'`
-    - For SpotIm framework with ads use `pod 'SpotIMCore', '0.0.10'`
+    - For SpotIm framework with ads use `pod 'SpotIMCore', '0.0.11'`
 2. Execute pod install in Terminal
 3. Open workspace file and run
 
