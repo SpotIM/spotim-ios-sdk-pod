@@ -19,7 +19,7 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '9.0'
 
 # the Pre-Compiled Framework:
-  s.source          = { :http => 'https://github.com/SpotIM/spotim-ios-sdk-pod/Framework/SpotImCore.framework.zip?raw=true' }
+  s.source          = { :http => 'https://github.com/SpotIM/spotim-ios-sdk-pod/blob/master/Framework/SpotImCore.framework.zip?raw=true' }
   s.ios.vendored_frameworks = 'SpotImCore.framework'
   s.dependency 'Alamofire', '~> 4.8.2'
 
