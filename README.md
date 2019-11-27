@@ -1,7 +1,9 @@
 # Get Started
 
 ### Installation via CocoaPods:
-1. Set dependency as follows: `pod 'SpotIMCore'`
+1. Set dependency as follows:
+    - For Core framework without ads `pod 'SpotIMCore', '0.0.9'`
+    - For SpotIm framework with ads use `pod 'SpotIMCore', '0.0.10'`
 2. Execute pod install in Terminal
 3. Open workspace file and run
 
@@ -10,19 +12,19 @@
 First import our SDK from the AppDelegate
 `import SpotImCore`
 
-To use the SDK you need to set your unique Spot ID when initializing the SDK. 
-In the `application(application:didFinishLaunchingWithOptions)` call the `setup` method as follows: 
+To use the SDK you need to set your unique Spot ID when initializing the SDK.
+In the `application(application:didFinishLaunchingWithOptions)` call the `setup` method as follows:
 
 ##### Example
 
 ```swift
     func application(
-      _ application: UIApplication, 
+      _ application: UIApplication,
       didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?
     ) -> Bool {
-        
+
         SPClientSettings.setup(spotKey: "YOUR UNIQUE SPOT ID")
-        
+
         return true
     }
 ```
@@ -48,8 +50,8 @@ Then you can instantiate PCVC for specific post (article) ID. PCVC will be passe
 ```swift
 spotIMCoordinator?.preConversationController(
   withPostId: "POST ID",
-  container: navigationController, 
-  completion: { [weak self] preConversationVC in 
+  container: navigationController,
+  completion: { [weak self] preConversationVC in
     // add preConversationVC to your view controller
   }
 )
@@ -90,16 +92,16 @@ Make sure container view is layed out the way it can grow in height and adapt to
 To utilize SSO authentication, provide a view controller that conforms to `SSOAuthenticatable` protocol:
 ```swift
 extension ArticleViewController: SpotImSDKNavigationDelegate {
-    
+
     func controllerForSSOFlow() -> UIViewController & SSOAuthenticatable {
         let controller: AuthenticationViewController = UIStoryboard(
-          name: "Main", 
+          name: "Main",
           bundle: nil
         ).instantiateViewController(withIdentifier: "AuthenticationViewController") as! AuthenticationViewController
-        
+
         return controller
     }
-    
+
 }
 ```
 
@@ -109,53 +111,53 @@ Authentication with SSO:
 
 There are to types of SSO available: **Generic SSO** and **Reverse SSO**. Please contact your Spot.IM advisor to pick the best option for you.	Authentication with SSO:
 
-#### Generic SSO	
+#### Generic SSO
 
-1. Get an instance of `SPAuthenticationProvider`	
-2. Call `startSSO` function and get `codeA` and `jwtToken` from the callback	
-3. Send the `codeA` and the `jwtToken` to your backend to get `codeB`	
-4. Call `completeSSO` with the `codeB` and the `jwtToken` from step 2	
-5. Check `success` and `error` properties in the callback to ensure everything is ok	
+1. Get an instance of `SPAuthenticationProvider`
+2. Call `startSSO` function and get `codeA` and `jwtToken` from the callback
+3. Send the `codeA` and the `jwtToken` to your backend to get `codeB`
+4. Call `completeSSO` with the `codeB` and the `jwtToken` from step 2
+5. Check `success` and `error` properties in the callback to ensure everything is ok
 
-##### Example	
-```swift	
-// 1	
-var ssoAuthProvider: SPAuthenticationProvider = SPDefaultAuthProvider()	
-func authenticate() {	
-    // 2	
-    ssoAuthProvider.startSSO { [weak self] response, error in	
-        if let error = error {	
-            print(error)	
-        } else {	
-            self?.getCodeB(codeA: response?.codeA, jwtToken: response?.jwtToken)	
-        }	
-    }	
-}	
-private func getCodeB(codeA: String?, jwtToken: String?) {	
-    // 3	
-    MyAuthenticationProvider.getCodeB(	
-        with: codeA,	
-        accessToken: jwtToken,	
-        username: username,	
-        accessTokenNetwork: myUserToken) { [weak self] codeB, error in	
-            if let error = error {	
-                print(error)	
-            } else {	
-                self.completeSSO(genericToken: genericToken)	
-            }	
-    }	
-}	
-private func completeSSO(codeB: String?, jwtToken: String?) {	
-    // 4	
-    ssoAuthProvider.completeSSO(with: codeB, genericToken: genericToken) { [weak self] success, error in	
-        // 5	
-        if let error = error {	
-            print(error)	
-        } else if success {	
-            print(“Authenticated successfully!”)	
+##### Example
+```swift
+// 1
+var ssoAuthProvider: SPAuthenticationProvider = SPDefaultAuthProvider()
+func authenticate() {
+    // 2
+    ssoAuthProvider.startSSO { [weak self] response, error in
+        if let error = error {
+            print(error)
+        } else {
+            self?.getCodeB(codeA: response?.codeA, jwtToken: response?.jwtToken)
+        }
+    }
+}
+private func getCodeB(codeA: String?, jwtToken: String?) {
+    // 3
+    MyAuthenticationProvider.getCodeB(
+        with: codeA,
+        accessToken: jwtToken,
+        username: username,
+        accessTokenNetwork: myUserToken) { [weak self] codeB, error in
+            if let error = error {
+                print(error)
+            } else {
+                self.completeSSO(genericToken: genericToken)
+            }
+    }
+}
+private func completeSSO(codeB: String?, jwtToken: String?) {
+    // 4
+    ssoAuthProvider.completeSSO(with: codeB, genericToken: genericToken) { [weak self] success, error in
+        // 5
+        if let error = error {
+            print(error)
+        } else if success {
+            print(“Authenticated successfully!”)
         } 	
-    }	
-}	
+    }
+}
 ```
 
 
@@ -163,7 +165,7 @@ private func completeSSO(codeB: String?, jwtToken: String?) {
 
 1. Authenticate a user with your backend
 2. Get an instance of `SPAuthenticationProvider`
-3. Call `startSSO` function with a userToken 
+3. Call `startSSO` function with a userToken
 4. If there’s no error in the call back and `response?.success` is true, the authentication process finished successfully
 
 ##### Example
