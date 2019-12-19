@@ -2,7 +2,7 @@
 
 ### Installation via CocoaPods:
 1. Set dependency as follows:
-    - For Core framework without ads `pod 'SpotIMCore', '0.0.13'`
+    - For Core framework without ads `pod 'SpotIMCore', '0.0.15'`
     - For SpotIm framework with ads use `pod 'SpotIMCore', '0.0.14'`
 2. Execute pod install in Terminal
 3. Open workspace file and run
@@ -173,7 +173,7 @@ private func completeSSO(codeB: String?, jwtToken: String?) {
 var ssoAuthProvider: SPAuthenticationProvider = SPDefaultAuthProvider()
 
 func authenticate() {
-    ssoAuthProvider.startSSO(with: myUserToken, completion: { (response, error) in
+    ssoAuthProvider.sso(withJwtSecret: secret, completion: { (response, error) in
         if let error = error {
             print(error)
         } else if let success = response?.success, success {
