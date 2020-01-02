@@ -1,32 +1,35 @@
-# Get Started
+# Spot.IM SDK for iOS 🚀
 
-### Installation via CocoaPods:
+This library provides an easy integration with Spot.IM into a native Android app.
+
+## Requirements
+* 
+* iOS 10.3 or later.
+
+## Getting started
+
+### Add the SDK to your project
+
+#### [CocoaPods](https://cocoapods.org)
 1. Set dependency as follows:
     - For Core framework without ads `pod 'SpotIMCore', '0.0.15'`
     - For SpotIm framework with ads use `pod 'SpotIMCore', '0.0.14'`
-2. Execute pod install in Terminal
+2. Execute `pod install` in Terminal
 3. Open workspace file and run
 
-### Setup
+### Initialize The SDK
 
+Add SpotIm initialization code into your AppDelegate
 First import our SDK from the AppDelegate
 `import SpotImCore`
 
 To use the SDK you need to set your unique Spot ID when initializing the SDK.
-In the `application(application:didFinishLaunchingWithOptions)` call the `setup` method as follows:
+In the `application(application:didFinishLaunchingWithOptions)` call the following method:
 
 ##### Example
 
 ```swift
-    func application(
-      _ application: UIApplication,
-      didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?
-    ) -> Bool {
-
-        SPClientSettings.setup(spotKey: "YOUR UNIQUE SPOT ID")
-
-        return true
-    }
+    SpotIm.initialize(spotId: YOUR_UNIQUE_SPOT_ID)
 ```
 
 ### Flows
@@ -41,16 +44,30 @@ When clicking on the text box to create a new comments we bring the user to the 
 
 ### Usage
 
+#### Get SpotImSDKFlowCoordinator
+
 End user is supposed to interact with the Pre-Conversation View Controller (PCVC) first. To get and instance of it, you need an instance of `SpotImSDKFlowCoordinator`:
 ```swift
-spotIMCoordinator = SpotImSDKFlowCoordinator(delegate: self)
+SpotIm.createSpotImFlowCoordinator(navigationDelegate: self) { callback in
+    switch callback {
+        case .success(let coordinator):
+            self.spotIMCoordinator = coordinator
+        case .failure(let error):
+            print(error)
+        @unknown default:
+            print("Got unknown response")
+    }
+}
 ```
 Make sure to have a strong reference, it will be deallocated otherwise.
+
+#### Get PreConversationViewController
+
 Then you can instantiate PCVC for specific post (article) ID. PCVC will be passed to the completion block:
 ```swift
 spotIMCoordinator?.preConversationController(
   withPostId: "POST ID",
-  container: navigationController,
+  navigationController: navigationController,
   completion: { [weak self] preConversationVC in
     // add preConversationVC to your view controller
   }
@@ -60,9 +77,10 @@ spotIMCoordinator?.preConversationController(
 PCVC's view should be added as a subview of a view of another view controller.
 
 ##### ⚠️ IMPORTANT
+
 Please make sure to use the same post id you use on your web application so that the SDK would be able to display the same comments from the web application.
 
-#### Adding Pre-Conversation VC
+#### Adding PreConversationViewController
 
 1. Add PCVC as a child of another VC
 2. Add PCVC view to a view of another VC or a container view
@@ -84,52 +102,58 @@ preConversationVC.view.trailingAnchor.constraint(equalTo: self.containerView.tra
 
 preConversationVC.didMove(toParent: self)
 ```
-##### ⚠️ IMPORTANT
-Make sure container view is layed out the way it can grow in height and adapt to PCVC view height changes.
 
-### Authentication
+#### Listen to PreConversationView size changes
+Make sure the container view can be resized when the PreConversationViewController is filled with comments.
+To understand when the view gets resized, you can implement `SpotImLayoutDelegate` protocol and get a callback via `viewHeightDidChange(to newValue: CGFloat)` method. 
+To get the callback please make sure you set your layout delegate into the SpotImSDKFlowCoordinator before trying to load the view. 
+```swift
+spotIMCoordinator.setLayoutDelegate(delegate: YOUR_DELEGATE_IMPLEMENTATION)
+```
 
-To utilize SSO authentication, provide a view controller that conforms to `SSOAuthenticatable` protocol:
+#### Authentication
+To utilize SSO authentication, provide a view controller that can login to your system via `SpotImSDKNavigationDelegate` protocol:
 ```swift
 extension ArticleViewController: SpotImSDKNavigationDelegate {
-
-    func controllerForSSOFlow() -> UIViewController & SSOAuthenticatable {
-        let controller: AuthenticationViewController = UIStoryboard(
-          name: "Main",
-          bundle: nil
-        ).instantiateViewController(withIdentifier: "AuthenticationViewController") as! AuthenticationViewController
-
-        return controller
+    func controllerForSSOFlow() -> UIViewController {
+        return SOME_LOGIN_VIEW_CONTROLLER
     }
-
 }
 ```
 
-Authentication with SSO:
+##### Authentication with SSO:
 
-#### SSO
+There are to types of SSO available: **Generic SSO** and **SSO with JWT secret**. Please contact your Spot.IM advisor to pick the best option for you.
 
-There are to types of SSO available: **Generic SSO** and **Reverse SSO**. Please contact your Spot.IM advisor to pick the best option for you.	Authentication with SSO:
+##### Generic SSO
 
-#### Generic SSO
-
-1. Get an instance of `SPAuthenticationProvider`
-2. Call `startSSO` function and get `codeA` and `jwtToken` from the callback
-3. Send the `codeA` and the `jwtToken` to your backend to get `codeB`
-4. Call `completeSSO` with the `codeB` and the `jwtToken` from step 2
+1. Authenticate a user with your backend
+2. Call `startSSO` function and get `codeA`
+3. Send the `codeA` and all needed information to your backend system in order to get `codeB`
+4. Call `completeSSO` with the `codeB`
 5. Check `success` and `error` properties in the callback to ensure everything is ok
 
-##### Example
+###### Example
 ```swift
 // 1
-var ssoAuthProvider: SPAuthenticationProvider = SPDefaultAuthProvider()
-func authenticate() {
+func login(username: String, password: String) {
+    MyAuthenticationProvider.login(
+        with: username,
+        password: password) { success, error in
+            if let error = error {
+                handleLoginError()
+            } else {
+                self.authenticateWithSpotIm()
+            }
+        }
+}
+func authenticateWithSpotIm() {
     // 2
-    ssoAuthProvider.startSSO { [weak self] response, error in
+    SpotIm.startSSO { [weak self] response, error in
         if let error = error {
             print(error)
         } else {
-            self?.getCodeB(codeA: response?.codeA, jwtToken: response?.jwtToken)
+            self?.getCodeB(codeA: response?.codeA)
         }
     }
 }
@@ -137,19 +161,18 @@ private func getCodeB(codeA: String?, jwtToken: String?) {
     // 3
     MyAuthenticationProvider.getCodeB(
         with: codeA,
-        accessToken: jwtToken,
-        username: username,
+        // Some identification that this user is authenticated to your backend system
         accessTokenNetwork: myUserToken) { [weak self] codeB, error in
             if let error = error {
                 print(error)
             } else {
-                self.completeSSO(genericToken: genericToken)
+                self.completeSSOWithSpotIm(genericToken: genericToken)
             }
     }
 }
-private func completeSSO(codeB: String?, jwtToken: String?) {
+private func completeSSOWithSpotIm(codeB: String?, jwtToken: String?) {
     // 4
-    ssoAuthProvider.completeSSO(with: codeB, genericToken: genericToken) { [weak self] success, error in
+    SpotIm.completeSSO(with: codeB) { [weak self] success, error in
         // 5
         if let error = error {
             print(error)
@@ -161,19 +184,16 @@ private func completeSSO(codeB: String?, jwtToken: String?) {
 ```
 
 
-#### Reverse SSO
+##### SSO with JWT secret
 
 1. Authenticate a user with your backend
-2. Get an instance of `SPAuthenticationProvider`
-3. Call `startSSO` function with a userToken
-4. If there’s no error in the call back and `response?.success` is true, the authentication process finished successfully
+2. Call `sso(withJWTSecret` function with a user JWT secret
+3. If there’s no error in the callback and `response?.success` is true, the authentication process finished successfully
 
-##### Example
+###### Example
 ```swift
-var ssoAuthProvider: SPAuthenticationProvider = SPDefaultAuthProvider()
-
-func authenticate() {
-    ssoAuthProvider.sso(withJwtSecret: secret, completion: { (response, error) in
+func authenticate(withJWTSecret: secret) {
+    SpotIm.sso(withJwtSecret: secret, completion: { (response, error) in
         if let error = error {
             print(error)
         } else if let success = response?.success, success {
