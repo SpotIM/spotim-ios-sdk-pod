@@ -3,7 +3,7 @@
 This library provides an easy integration with Spot.IM into a native Android app.
 
 ## Requirements
-* 
+
 * iOS 10.3 or later.
 
 ## Getting started
