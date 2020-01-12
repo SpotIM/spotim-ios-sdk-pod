@@ -48,8 +48,8 @@ When clicking on the text box to create a new comments we bring the user to the 
 
 End user is supposed to interact with the Pre-Conversation View Controller (PCVC) first. To get and instance of it, you need an instance of `SpotImSDKFlowCoordinator`:
 ```swift
-SpotIm.createSpotImFlowCoordinator(navigationDelegate: self) { callback in
-    switch callback {
+SpotIm.createSpotImFlowCoordinator(navigationDelegate: self) { result in
+    switch result {
         case .success(let coordinator):
             self.spotIMCoordinator = coordinator
         case .failure(let error):
