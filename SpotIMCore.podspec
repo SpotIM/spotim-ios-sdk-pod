@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SpotIMCore'
-  s.version          = '0.0.15'
+  s.version          = '0.0.18'
   s.swift_versions = ['5.0']
   s.summary          = 'Spot.IM SDK'
   s.description      = 'This SDK allows you to integrate SpotIM into your iOS app.'
@@ -23,5 +23,6 @@ Pod::Spec.new do |s|
   s.source          = { :http => 'https://github.com/SpotIM/spotim-ios-sdk-pod/blob/master/Framework/SpotImCore.framework.zip?raw=true' }
   s.ios.vendored_frameworks = 'SpotImCore.framework'
   s.dependency 'Alamofire', '~> 4.8.2'
+  s.dependency 'PromiseKit', '~> 6.8'
 
 end
