@@ -12,8 +12,7 @@ This library provides an easy integration with Spot.IM into a native Android app
 
 #### [CocoaPods](https://cocoapods.org)
 1. Set dependency as follows:
-    - For Core framework without ads `pod 'SpotIMCore', '0.0.15'`
-    - For SpotIm framework with ads use `pod 'SpotIMCore', '0.0.14'`
+    `pod 'SpotIMCore', '0.0.17'`
 2. Execute `pod install` in Terminal
 3. Open workspace file and run
 
