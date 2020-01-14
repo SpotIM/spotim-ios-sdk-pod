@@ -23,6 +23,6 @@ Pod::Spec.new do |s|
   s.source          = { :http => 'https://github.com/SpotIM/spotim-ios-sdk-pod/blob/master/Framework/SpotImCore.framework.zip?raw=true' }
   s.ios.vendored_frameworks = 'SpotImCore.framework'
   s.dependency 'Alamofire', '~> 4.8.2'
-  s.dependency 'PromiseKit/CorePromise', '~> 6.8'
+  s.dependency 'PromiseKit', '~> 6.8'
 
 end
