@@ -12,7 +12,7 @@ This library provides an easy integration with Spot.IM into a native Android app
 
 #### [CocoaPods](https://cocoapods.org)
 1. Set dependency as follows:
-    `pod 'SpotIMCore', '0.0.18'`
+    `pod 'SpotIMCore', '0.0.20'`
 2. Execute `pod install` in Terminal
 3. Open workspace file and run
 
@@ -104,8 +104,8 @@ preConversationVC.didMove(toParent: self)
 
 #### Listen to PreConversationView size changes
 Make sure the container view can be resized when the PreConversationViewController is filled with comments.
-To understand when the view gets resized, you can implement `SpotImLayoutDelegate` protocol and get a callback via `viewHeightDidChange(to newValue: CGFloat)` method. 
-To get the callback please make sure you set your layout delegate into the SpotImSDKFlowCoordinator before trying to load the view. 
+To understand when the view gets resized, you can implement `SpotImLayoutDelegate` protocol and get a callback via `viewHeightDidChange(to newValue: CGFloat)` method.
+To get the callback please make sure you set your layout delegate into the SpotImSDKFlowCoordinator before trying to load the view.
 ```swift
 spotIMCoordinator.setLayoutDelegate(delegate: YOUR_DELEGATE_IMPLEMENTATION)
 ```
