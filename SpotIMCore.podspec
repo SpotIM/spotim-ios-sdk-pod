@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SpotIMCore'
-  s.version          = '0.0.18'
+  s.version          = '0.0.19'
   s.swift_versions = ['5.0']
   s.summary          = 'Spot.IM SDK'
   s.description      = 'This SDK allows you to integrate SpotIM into your iOS app.'
@@ -24,5 +24,6 @@ Pod::Spec.new do |s|
   s.ios.vendored_frameworks = 'SpotImCore.framework'
   s.dependency 'Alamofire', '~> 4.8.2'
   s.dependency 'PromiseKit', '~> 6.8'
+  s.dependency 'Google-Mobile-Ads-SDK', '~> 7.53'
 
 end
