@@ -12,7 +12,7 @@ This library provides an easy integration with Spot.IM into a native Android app
 
 #### [CocoaPods](https://cocoapods.org)
 1. Set dependency as follows:
-    `pod 'SpotIMCore', '0.0.24'`
+    `pod 'SpotIMCore', '0.0.25'`
 2. Execute `pod install` in Terminal
 3. Open workspace file and run
 
@@ -42,6 +42,13 @@ When the user wants to see more comments we push a new ViewController which disp
 When clicking on the text box to create a new comments we bring the user to the creation screen. The users needs to be logged in inorder to post new comments, this is where the hosting app needs to integrate it's authentication system.
 
 ### Usage
+
+#### Supporting Dark mode theme
+SpotIm screen support dark mode theme with a default gray background color. To set the background color to match the parent app you can use the following API
+
+```swift
+SpotIm.darkModeBackgroundColor = UIColor.PARENT_APP_DARK_THEME_BACKGROUND_COLOR
+```
 
 #### Get SpotImSDKFlowCoordinator
 
@@ -198,6 +205,46 @@ func authenticate(withJWTSecret: secret) {
         } else if let success = response?.success, success {
             print(“Authenticated successfully!”)
         }
+    })
+}
+```
+
+##### Logout
+Call SpotIm logout API whenever a user logs out of your system
+
+###### Example
+```swift
+func logout(withJWTSecret: secret) {
+    SpotIm.logout(completion: { result in
+      switch result {
+          case .success():
+              print("Logout from SpotIm was successful")
+          case .failure(let error):
+              print(error)
+          @unknown default:
+              print("Got unknown response")
+      }
+    })
+}
+```
+
+##### Login status
+An API to understand the status of the current SpotIm user.
+Guest - Means this is a guest unregistered user. You should call startSSO/sooWithJWT if your own login status is 'user is logged in'
+LoggedIn - Mean this is a registered user of SpotIm. You should avoid calling startSSO/sooWithJWT in this case. If you own status is 'user is logged out', you should SpotIm logout method
+
+###### Example
+```swift
+func authenticate(withJWTSecret: secret) {
+    SpotIm.getUserLoginStatus(completion: { result in
+      switch result {
+          case .success(let loginStatus):
+              print("User is \(loginStatus)")
+          case .failure(let error):
+              print(error)
+          @unknown default:
+              print("Got unknown response")
+      }
     })
 }
 ```
