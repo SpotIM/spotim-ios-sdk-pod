@@ -12,7 +12,7 @@ This library provides an easy integration with Spot.IM into a native Android app
 
 #### [CocoaPods](https://cocoapods.org)
 1. Set dependency as follows:
-    `pod 'SpotIMCore', '0.0.26'`
+    `pod 'SpotIMCore', '0.0.27'`
 2. Execute `pod install` in Terminal
 3. Open workspace file and run
 
@@ -48,6 +48,26 @@ SpotIm screen support dark mode theme with a default gray background color. To s
 
 ```swift
 SpotIm.darkModeBackgroundColor = UIColor.PARENT_APP_DARK_THEME_BACKGROUND_COLOR
+```
+
+#### Getting conversation counters
+Getting comments and replies counts for conversations
+
+##### Example
+
+```swift
+SpotIm.getConversationCounters(conversationIds: [CONVERSATION_ID]) { result in
+    switch result {
+        case .success(let counters):
+            let counter = counter["SPECIFIC_CONVERSATION_ID"]
+            print(counter.comments)
+            print(counter.replies)
+        case .failure(let error):
+            print(error)
+        @unknown default:
+            print("Got unknown response")
+    }
+}
 ```
 
 #### Get SpotImSDKFlowCoordinator
