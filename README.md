@@ -12,7 +12,7 @@ This library provides an easy integration with Spot.IM into a native Android app
 
 #### [CocoaPods](https://cocoapods.org)
 1. Set dependency as follows:
-    `pod 'SpotIMCore', '0.0.27'`
+    `pod 'SpotIMCore', '0.0.28'`
 2. Execute `pod install` in Terminal
 3. Open workspace file and run
 
@@ -93,6 +93,7 @@ Then you can instantiate PCVC for specific post (article) ID. PCVC will be passe
 ```swift
 spotIMCoordinator?.preConversationController(
   withPostId: "POST ID",
+  numberOfPreLoadedMessages: 2, // THIS IS OPTIONAL, DEFAULT VALUE IS 2
   navigationController: navigationController,
   completion: { [weak self] preConversationVC in
     // add preConversationVC to your view controller
