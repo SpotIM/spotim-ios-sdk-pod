@@ -93,7 +93,7 @@ Then you can instantiate PCVC for specific post (article) ID. PCVC will be passe
 ```swift
 spotIMCoordinator?.preConversationController(
   withPostId: "POST ID",
-  numberOfPreLoadedMessages: 2, // THIS IS OPTIONAL, DEFAULT VALUE IS 2
+  numberOfPreLoadedMessages: 2, // This is optional, Default = 2, Maximum = 15
   navigationController: navigationController,
   completion: { [weak self] preConversationVC in
     // add preConversationVC to your view controller
