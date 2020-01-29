@@ -271,7 +271,34 @@ func authenticate(withJWTSecret: secret) {
 }
 ```
 
-# Troubleshooting
+## SDK Monetization
+The SDK supports 2 types of ad formats:
+* Banner - 320X50 
+* Interstitial - full page
+
+### Ads Placements
+#### Article page - Banner below the conversation
+<img src="Images/PreConversationBanner.png" width=300>
+
+#### Interstitial - Display ad or video will be shown when navigating to the conversation page only once per article
+<img src="Images/Interstitial.png" width=300>
+
+#### Conversation page
+<img src="Images/ConversationPage.png" width=300>
+
+Note about ads: Ads are currently being A/B tested. The ads will be shown to certain users according to an A/B test. The next step will be testing more ad formats to optimize both experience and revenue.
+
+### Implementation instructions
+In order to see ads in your app using our SDK, there are a few steps:
+
+1. When filled the GAM (Google Ad Manager) form should indicate apps. Once the form is approved (check with your PSM) ads will be eligible to appear. 
+When GAM (Google Ad Manager) form is approved (check with your PSM) ads will be eligible to appear. 
+2. The app-ads.txt needs to be implemented in the web environment:  (www.your-domain.com/app-ads.txt)
+Click here for implementation guidelines.
+3. Our monetization team will create a campaign for native app ads.
+4. Lets make some money!
+
+## Troubleshooting
 
 ##### Cocoapods installaion fails with error
 ```
