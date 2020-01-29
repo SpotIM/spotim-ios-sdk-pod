@@ -13,7 +13,7 @@ This library provides an easy integration with Spot.IM into a native Android app
 
 #### [CocoaPods](https://cocoapods.org)
 1. Set dependency as follows:
-    `pod 'SpotIMCore', '0.0.28'`
+    `pod 'SpotIMCore', '0.0.29'`
 2. Execute `pod install` in Terminal
 3. Open workspace file and run
 
@@ -36,7 +36,7 @@ In the `application(application:didFinishLaunchingWithOptions)` call the followi
 
 Our SDK exposes one major flow to set up. The pre-conversation view is a view that displays a preview of 2 comments from the conversation, a text box to create new comments and a button to see all comments.
 
-The Pre-conversation view should be displayed in your article view controller beloew the article.
+The Pre-conversation view should be displayed in your article view controller below the article.
 
 When the user wants to see more comments we push a new ViewController which displays all comments from the conversation.
 
@@ -94,6 +94,7 @@ Then you can instantiate PCVC for specific post (article) ID. PCVC will be passe
 ```swift
 spotIMCoordinator?.preConversationController(
   withPostId: "POST ID",
+  articleMetadata: SpotImArticleMetadata(url: URL_TO_THE_ARTICLE_PAGE_ON_THE_WEB, title: ARTICLE_TITLE, subtitle: ARTICLE_SUBTITLE, thumbnailUrl: URL_TO_ARTICLE_THUMBNAIL_IMAGE),
   numberOfPreLoadedMessages: 2, // This is optional, Default = 2, Maximum = 15
   navigationController: navigationController,
   completion: { [weak self] preConversationVC in
@@ -273,7 +274,7 @@ func authenticate(withJWTSecret: secret) {
 
 ## SDK Monetization
 The SDK supports 2 types of ad formats:
-* Banner - 320X50 
+* Banner - 320X50
 * Interstitial - full page
 
 ### Ads Placements
@@ -291,8 +292,8 @@ Note about ads: Ads are currently being A/B tested. The ads will be shown to cer
 ### Implementation instructions
 In order to see ads in your app using our SDK, there are a few steps:
 
-1. When filled the GAM (Google Ad Manager) form should indicate apps. Once the form is approved (check with your PSM) ads will be eligible to appear. 
-When GAM (Google Ad Manager) form is approved (check with your PSM) ads will be eligible to appear. 
+1. When filled the GAM (Google Ad Manager) form should indicate apps. Once the form is approved (check with your PSM) ads will be eligible to appear.
+When GAM (Google Ad Manager) form is approved (check with your PSM) ads will be eligible to appear.
 2. The app-ads.txt needs to be implemented in the web environment:  (www.your-domain.com/app-ads.txt)
 Click here for implementation guidelines.
 3. Our monetization team will create a campaign for native app ads.
