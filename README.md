@@ -34,7 +34,7 @@ In the `application(application:didFinishLaunchingWithOptions)` call the followi
 
 ### Flows
 
-Our SDK exposes one major flow to set up. The pre-conversation view is a view that displays a preview of 2 comments from the conversation, a text box to create new comments and a button to see all comments.
+Our SDK exposes one major flow to set up. The pre-conversation view is a view that displays a preview of 2-16 comments from the conversation, a text box to create new comments and a button to see all comments.
 
 The Pre-conversation view should be displayed in your article view controller below the article.
 
