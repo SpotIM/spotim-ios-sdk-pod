@@ -283,7 +283,7 @@ Interstitial Display ad or video will be shown when navigating to the conversati
 
 Article page | Conversation page | Interstitial
 --- | --- | --- |
-<img src="Images/PreConversationBanner.png" width=300> | <img src="Images/ConversationPage.png" width=300> | <img src="Images/Interstitial.png" width=300>  
+<img src="Images/PreConvBanner.png" width=300> | <img src="Images/ConversationPage.png" width=300> | <img src="Images/Interstitial.png" width=300>  
 
 
 Note about ads: Ads are currently being A/B tested. The ads will be shown to certain users according to an A/B test. The next step will be testing more ad formats to optimize both experience and revenue.
