@@ -34,7 +34,7 @@ In the `application(application:didFinishLaunchingWithOptions)` call the followi
 
 ### Flows
 
-Our SDK exposes one major flow to set up. The pre-conversation view is a view that displays a preview of 2 comments from the conversation, a text box to create new comments and a button to see all comments.
+Our SDK exposes one major flow to set up. The pre-conversation view is a view that displays a preview of 2-16 comments from the conversation, a text box to create new comments and a button to see all comments.
 
 The Pre-conversation view should be displayed in your article view controller below the article.
 
@@ -278,14 +278,13 @@ The SDK supports 2 types of ad formats:
 * Interstitial - full page
 
 ### Ads Placements
-#### Article page - Banner below the conversation
-<img src="Images/PreConversationBanner.png" width=300>
 
-#### Interstitial - Display ad or video will be shown when navigating to the conversation page only once per article
-<img src="Images/Interstitial.png" width=300>
+Interstitial Display ad or video will be shown when navigating to the conversation page only once per article. In the article page the banner below the conversation.
 
-#### Conversation page
-<img src="Images/ConversationPage.png" width=300>
+Article page | Conversation page | Interstitial
+--- | --- | --- |
+<img src="Images/PreConvBanner.png" width=300> | <img src="Images/ConversationPage.png" width=300> | <img src="Images/Interstitial.png" width=300>  
+
 
 Note about ads: Ads are currently being A/B tested. The ads will be shown to certain users according to an A/B test. The next step will be testing more ad formats to optimize both experience and revenue.
 
