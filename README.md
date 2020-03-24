@@ -13,7 +13,7 @@ This library provides an easy integration with Spot.IM into a native iOS app.
 
 #### [CocoaPods](https://cocoapods.org)
 1. Set dependency as follows:
-    `pod 'SpotIMCore', '0.0.36'`
+    `pod 'SpotIMCore', '1.0.0'`
 2. Execute `pod install` in Terminal
 3. Open workspace file and run
 
@@ -75,7 +75,7 @@ SpotIm.getConversationCounters(conversationIds: [CONVERSATION_ID]) { result in
 
 End user is supposed to interact with the Pre-Conversation View Controller (PCVC) first. To get and instance of it, you need an instance of `SpotImSDKFlowCoordinator`:
 ```swift
-SpotIm.createSpotImFlowCoordinator(navigationDelegate: self) { result in
+SpotIm.createSpotImFlowCoordinator(loginDelegate: self) { result in
     switch result {
         case .success(let coordinator):
             self.spotIMCoordinator = coordinator
@@ -141,11 +141,11 @@ spotIMCoordinator.setLayoutDelegate(delegate: YOUR_DELEGATE_IMPLEMENTATION)
 ```
 
 #### Authentication
-To utilize SSO authentication, provide a view controller that can login to your system via `SpotImSDKNavigationDelegate` protocol:
+To utilize SSO authentication, provide an implementation to `SpotImLoginDelegate` that can show some login UI and implementing SSO authentication upon successful login  protocol:
 ```swift
-extension ArticleViewController: SpotImSDKNavigationDelegate {
-    func controllerForSSOFlow() -> UIViewController {
-        return SOME_LOGIN_VIEW_CONTROLLER
+extension ArticleViewController: SpotImLoginDelegate {
+    func startLoginFlow() {
+        // Show your login flow here, dismiss the UI once the flow is done and SSO is completed
     }
 }
 ```
