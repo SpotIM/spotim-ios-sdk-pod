@@ -1,0 +1,173 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.2.2 (swiftlang-1103.0.32.6 clang-1103.0.32.51)
+// swift-module-flags: -target armv7-apple-ios10.3 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -module-name SpotImCore
+import AdSupport
+import Alamofire
+import Foundation
+import GoogleMobileAds
+import PromiseKit
+import SafariServices
+import Swift
+import UIKit
+public struct InputConfiguration {
+  public init(appLanguage: Swift.String)
+}
+public struct EmptyParser {
+}
+public struct JSONParser {
+}
+@_hasMissingDesignatedInitializers final public class SPPublicSessionInterface {
+  public static func isMe(userId: Swift.String) -> Swift.Bool
+  @objc deinit
+}
+extension NSNotification.Name {
+  public static let userDisplayNameFrozen: Foundation.Notification.Name
+}
+extension NSNotification.Name {
+  public static let spotIMConfigLoaded: Foundation.Notification.Name
+}
+public enum SpotImError : Swift.Error {
+  case notInitialized
+  case configurationSdkDisabled
+  case internalError(Swift.String)
+}
+public enum SpotImResult<T> {
+  case success(T)
+  case failure(SpotImCore.SpotImError)
+  public var value: T? {
+    get
+  }
+  public var error: SpotImCore.SpotImError? {
+    get
+  }
+}
+public enum SpotImLoginStatus {
+  case guest
+  case loggedIn
+  public static func == (a: SpotImCore.SpotImLoginStatus, b: SpotImCore.SpotImLoginStatus) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+}
+public struct SpotImConversationCounters : Swift.Codable {
+  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+}
+public struct SpotImArticleMetadata {
+  public init(url: Swift.String, title: Swift.String, subtitle: Swift.String, thumbnailUrl: Swift.String)
+}
+@_hasMissingDesignatedInitializers public class SpotIm {
+  public static var reinit: Swift.Bool
+  public static func initialize(spotId: Swift.String)
+  public static func sso(withJwtSecret secret: Swift.String, completion: @escaping SpotImCore.AuthStratCompleteionHandler)
+  public static func startSSO(completion: @escaping SpotImCore.AuthStratCompleteionHandler)
+  public static func completeSSO(with codeB: Swift.String, completion: @escaping SpotImCore.AuthCompletionHandler)
+  @available(*, deprecated, message: "Use SpotIm.createSpotImFlowCoordinator(loginDelegate: LoginDelegate, completion: @escaping ((SpotImResult<SpotImSDKFlowCoordinator>) -> Void)) instead")
+  public static func createSpotImFlowCoordinator(navigationDelegate: SpotImCore.SpotImSDKNavigationDelegate, completion: @escaping ((SpotImCore.SpotImResult<SpotImCore.SpotImSDKFlowCoordinator>) -> Swift.Void))
+  public static func createSpotImFlowCoordinator(loginDelegate: SpotImCore.SpotImLoginDelegate, completion: @escaping ((SpotImCore.SpotImResult<SpotImCore.SpotImSDKFlowCoordinator>) -> Swift.Void))
+  public static func getConversationCounters(conversationIds: [Swift.String], completion: @escaping ((SpotImCore.SpotImResult<[Swift.String : SpotImCore.SpotImConversationCounters]>) -> Swift.Void))
+  public static var darkModeBackgroundColor: UIKit.UIColor {
+    get
+    set
+  }
+  public static func getUserLoginStatus(completion: @escaping ((SpotImCore.SpotImResult<SpotImCore.SpotImLoginStatus>) -> Swift.Void))
+  public static func logout(completion: @escaping ((SpotImCore.SpotImResult<Swift.Void>) -> Swift.Void))
+  @objc deinit
+}
+public typealias AuthCompletionHandler = (Swift.Bool, Swift.Error?) -> Swift.Void
+public typealias AuthStratCompleteionHandler = (SpotImCore.SSOStartResponse?, Swift.Error?) -> Swift.Void
+public protocol SSOAthenticationDelegate : AnyObject {
+  func ssoFlowStarted()
+  func ssoFlowDidSucceed()
+  func ssoFlowDidFail(with error: Swift.Error?)
+  func userLogout()
+}
+public struct SSOStartResponse : Swift.Codable {
+  public var codeA: Swift.String?
+  public var jwtToken: Swift.String?
+  public var autoComplete: Swift.Bool
+  public var success: Swift.Bool
+  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+}
+public typealias JSON = [Swift.String : Any]
+public enum ParserError : Swift.Error {
+  case keyNotFound
+  public static func == (a: SpotImCore.ParserError, b: SpotImCore.ParserError) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+}
+public protocol SpotImSDKNavigationDelegate : AnyObject {
+  func controllerForSSOFlow() -> UIKit.UIViewController
+}
+public protocol SpotImLayoutDelegate : AnyObject {
+  func viewHeightDidChange(to newValue: CoreGraphics.CGFloat)
+}
+public protocol AuthenticationViewDelegate : AnyObject {
+  func authenticationStarted()
+}
+public protocol SpotImLoginDelegate : AnyObject {
+  func startLoginFlow()
+}
+@_hasMissingDesignatedInitializers final public class SpotImSDKFlowCoordinator {
+  final public func setLayoutDelegate(delegate: SpotImCore.SpotImLayoutDelegate)
+  final public func preConversationController(withPostId postId: Swift.String, articleMetadata: SpotImCore.SpotImArticleMetadata, numberOfPreLoadedMessages: Swift.Int = 2, navigationController: UIKit.UINavigationController, completion: @escaping (UIKit.UIViewController) -> Swift.Void)
+  @objc deinit
+}
+extension SpotImSDKFlowCoordinator : SpotImCore.SSOAthenticationDelegate {
+  final public func ssoFlowStarted()
+  final public func ssoFlowDidSucceed()
+  final public func ssoFlowDidFail(with error: Swift.Error?)
+  final public func userLogout()
+}
+@_hasMissingDesignatedInitializers public class SPClientSettings {
+  public static let main: SpotImCore.SPClientSettings
+  @available(*, deprecated, message: "Use SpotIm.initialize(spotId: String) instead")
+  public func setup(spotKey: Swift.String?)
+  @objc public func appMovedToForeground(notification: Foundation.Notification)
+  public static var overrideUserInterfaceStyle: SpotImCore.SPUserInterfaceStyle?
+  @objc deinit
+}
+public enum SPUserInterfaceStyle : Swift.Int {
+  case light
+  case dark
+  public typealias RawValue = Swift.Int
+  public init?(rawValue: Swift.Int)
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public enum Result<T> {
+  case success(T)
+  case failure(Swift.Error)
+  public var value: T? {
+    get
+  }
+  public var error: Swift.Error? {
+    get
+  }
+}
+extension Result {
+  @discardableResult
+  public func map<U>(_ function: (T) -> U) -> SpotImCore.Result<U>
+  @discardableResult
+  public func map<U>(_ function: () -> U) -> SpotImCore.Result<U>
+  @discardableResult
+  public func next<U>(_ function: (T) -> SpotImCore.Result<U>) -> SpotImCore.Result<U>
+  @discardableResult
+  public func next<U>(_ function: () -> SpotImCore.Result<U>) -> SpotImCore.Result<U>
+  @discardableResult
+  public func onError(_ function: (Swift.Error) -> Swift.Error) -> SpotImCore.Result<T>
+  @discardableResult
+  public func require() -> T
+}
+extension SpotImCore.SpotImLoginStatus : Swift.Equatable {}
+extension SpotImCore.SpotImLoginStatus : Swift.Hashable {}
+extension SpotImCore.ParserError : Swift.Equatable {}
+extension SpotImCore.ParserError : Swift.Hashable {}
+extension SpotImCore.SPUserInterfaceStyle : Swift.Equatable {}
+extension SpotImCore.SPUserInterfaceStyle : Swift.Hashable {}
+extension SpotImCore.SPUserInterfaceStyle : Swift.RawRepresentable {}
