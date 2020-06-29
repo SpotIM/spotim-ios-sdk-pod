@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
   s.license         = { :type => 'CUSTOM', :file => 'LICENSE' }
   s.author          = { 'Itay Dressler' => 'itay.d@spot.im' }
   s.platform        = :ios
-  s.ios.deployment_target = '9.0'
+  s.ios.deployment_target = '10.3'
 
 # the Pre-Compiled Framework:
   s.source          = { :git => 'https://github.com/SpotIM/spotim-ios-sdk-pod.git', :tag => s.version.to_s }
