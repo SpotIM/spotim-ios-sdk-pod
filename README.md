@@ -13,7 +13,7 @@ This library provides an easy integration with Spot.IM into a native iOS app.
 
 #### [CocoaPods](https://cocoapods.org)
 1. Set dependency as follows:
-    `pod 'SpotIMCore', '1.0.5'`
+    `pod 'SpotIMCore', '1.0.6'`
 2. Execute `pod install` in Terminal
 3. Open workspace file and run
 
@@ -49,6 +49,12 @@ SpotIm screen support dark mode theme with a default gray background color. To s
 
 ```swift
 SpotIm.darkModeBackgroundColor = UIColor.PARENT_APP_DARK_THEME_BACKGROUND_COLOR
+```
+
+By default, SpotIm SDK will take the system theme and set it to the SDK. If your app supports overriding the system settings and setting dark/light theme manually, you can use the folloing API to set it manually to the SDK as well:
+
+```swift
+SpotIm.overrideUserInterfaceStyle = .dark/.light
 ```
 
 #### Getting conversation counters

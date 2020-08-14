@@ -71,6 +71,10 @@ public struct SpotImArticleMetadata {
     get
     set
   }
+  public static var overrideUserInterfaceStyle: SpotImCore.SPUserInterfaceStyle? {
+    get
+    set
+  }
   public static func getUserLoginStatus(completion: @escaping ((SpotImCore.SpotImResult<SpotImCore.SpotImLoginStatus>) -> Swift.Void))
   public static func logout(completion: @escaping ((SpotImCore.SpotImResult<Swift.Void>) -> Swift.Void))
   @objc deinit
@@ -128,6 +132,7 @@ extension SpotImSDKFlowCoordinator : SpotImCore.SSOAthenticationDelegate {
   @available(*, deprecated, message: "Use SpotIm.initialize(spotId: String) instead")
   public func setup(spotKey: Swift.String?)
   @objc public func appMovedToForeground(notification: Foundation.Notification)
+  @available(*, deprecated, message: "Use SpotIm.overrideUserInterfaceStyle instead")
   public static var overrideUserInterfaceStyle: SpotImCore.SPUserInterfaceStyle?
   @objc deinit
 }
