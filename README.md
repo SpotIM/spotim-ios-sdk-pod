@@ -51,10 +51,11 @@ SpotIm screen support dark mode theme with a default gray background color. To s
 SpotIm.darkModeBackgroundColor = UIColor.PARENT_APP_DARK_THEME_BACKGROUND_COLOR
 ```
 
-By default, SpotIm SDK will take the system theme and set it to the SDK. If your app supports overriding the system settings and setting dark/light theme manually, you can use the folloing API to set it manually to the SDK as well:
+By default, SpotIm SDK will take the system theme and set it to the SDK.
+If your app supports overriding the system settings manually, you can use the following overrideUserInterfaceStyle API to set it manually to the SDK as well.
 
 ```swift
-SpotIm.overrideUserInterfaceStyle = .dark/.light
+SpotIm.overrideUserInterfaceStyle = SPUserInterfaceStyle.dark
 ```
 
 #### Getting conversation counters
