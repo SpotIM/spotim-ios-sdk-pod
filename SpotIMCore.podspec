@@ -18,6 +18,9 @@ Pod::Spec.new do |s|
   s.author          = { 'Itay Dressler' => 'itay.d@spot.im' }
   s.platform        = :ios
   s.ios.deployment_target = '10.3'
+  # Exclude arm64 arch for simulators as we don't support Apple Silicon
+  s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+  s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
 
 # the Pre-Compiled Framework:
   s.source          = { :git => 'https://github.com/SpotIM/spotim-ios-sdk-pod.git', :tag => s.version.to_s }
