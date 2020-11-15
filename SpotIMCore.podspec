@@ -27,6 +27,6 @@ Pod::Spec.new do |s|
   s.ios.vendored_frameworks = 'SpotImCore.framework'
   s.dependency 'Alamofire', '~> 5.2'
   s.dependency 'PromiseKit', '~> 6.8'
-  s.dependency 'Google-Mobile-Ads-SDK', '~> 7.67'
+  s.dependency 'Google-Mobile-Ads-SDK', '= 7.67'
 
 end
