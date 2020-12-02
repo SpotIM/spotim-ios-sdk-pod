@@ -10,9 +10,9 @@ Pod::Spec.new do |s|
   s.name             = 'SpotIMCore'
   s.version          = '1.0.15'
   s.swift_versions = ['5.0']
-  s.summary          = 'Spot.IM SDK'
-  s.description      = 'This SDK allows you to integrate SpotIM into your iOS app.'
-  s.homepage        = "http://www.spot.im"
+  s.summary          = 'OpenWeb SDK'
+  s.description      = 'This SDK allows you to integrate OpenWeb into your iOS app.'
+  s.homepage        = "https://www.openweb.com"
   s.screenshots     = 'https://user-images.githubusercontent.com/607917/35287547-4076605c-006b-11e8-9674-a1c9e4f8f681.png', 'https://user-images.githubusercontent.com/607917/35287551-423452be-006b-11e8-96e9-7bf7a3ae27b6.png', 'https://user-images.githubusercontent.com/607917/35287552-4259dc5a-006b-11e8-9a27-c14b37a5a32b.png'
   s.license         = { :type => 'CUSTOM', :file => 'LICENSE' }
   s.author          = { 'Itay Dressler' => 'itay.d@spot.im' }
