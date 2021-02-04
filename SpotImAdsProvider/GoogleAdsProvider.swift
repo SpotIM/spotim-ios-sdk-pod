@@ -108,10 +108,8 @@ extension GoogleAdsProvider: GADBannerViewDelegate {
     func adViewDidReceiveAd(_ bannerView: GADBannerView) {
         bannerView.translatesAutoresizingMaskIntoConstraints = false
         self.bannerView.addSubview(bannerView)
-        bannerView.layout {
-            $0.centerX.equal(to: self.bannerView.centerXAnchor)
-            $0.centerY.equal(to: self.bannerView.centerYAnchor)
-        }
+        bannerView.centerXAnchor.constraint(equalTo: self.bannerView.centerXAnchor).isActive = true
+        bannerView.centerYAnchor.constraint(equalTo: self.bannerView.centerYAnchor).isActive = true
         bannerDelegate?.bannerLoaded(adBannerSize: bannerView.adSize.size)
     }
     
