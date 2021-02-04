@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SpotIMCore'
-  s.version          = '1.0.16'
+  s.version          = '0.0.1'
   s.swift_versions = ['5.0']
   s.summary          = 'OpenWeb SDK'
   s.description      = 'This SDK allows you to integrate OpenWeb into your iOS app.'
@@ -24,9 +24,9 @@ Pod::Spec.new do |s|
 
 # the Pre-Compiled Framework:
   s.source          = { :git => 'https://github.com/SpotIM/spotim-ios-sdk-pod.git', :tag => s.version.to_s }
+  s.ios.source_files = 'SpotImAdsProvider/*.swift'
   s.ios.vendored_frameworks = 'SpotImCore.framework'
   s.dependency 'Alamofire', '~> 5.2'
   s.dependency 'PromiseKit', '~> 6.8'
-  s.dependency 'Google-Mobile-Ads-SDK', '~> 7.67'
 
 end
