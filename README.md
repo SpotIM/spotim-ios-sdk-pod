@@ -50,7 +50,7 @@ SpotIm.initialize(spotId: YOUR_UNIQUE_SPOT_ID)
 SpotIm.setGoogleAdsProvider(googleAdsProvider: GoogleAdsProvider())
 ```
 
-<img src="Images/AdsProviderInXcode.png" width=300>
+<img src="Images/AdsProviderInXcode.jpeg" width=300>
 
 ### Flows
 
