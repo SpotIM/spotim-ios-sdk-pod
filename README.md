@@ -17,21 +17,6 @@ This library provides an easy integration with Spot.IM into a native iOS app.
 2. Execute `pod install` in Terminal
 3. Open workspace file and run
 
-#### Installation With Ads
-
-For SpotImCore installations with ads - you should follow these steps:
-
-1. Find `SpotImAdsProvider` dir in `SpotImCore` pod folder (after running `pod install` you'll see it under `Pods` project).
-
-2. Copy `SpotImAdsProvider` dir to your app target (make sure `GoogleAdsProvider.swift` is included in your target and is placed in your app target dir).
-
-3. You must include the following line right after `SpotIm.initialize(spotId: spotId)`
-
-```
-SpotIm.setGoogleAdsProvider(googleAdsProvider: GoogleAdsProvider())
-```
-
-<img src="Images/AdsProviderInXcode.png" width=300>
 
 ### Initialize The SDK
 
@@ -47,6 +32,25 @@ In the `application(application:didFinishLaunchingWithOptions)` call the followi
 ```swift
     SpotIm.initialize(spotId: YOUR_UNIQUE_SPOT_ID)
 ```
+
+#### Installation With Ads
+
+For SpotImCore installations with ads - you should follow these steps:
+
+1. Find `SpotImAdsProvider` dir in `SpotImCore` pod folder (after running `pod install` you'll see it under `Pods` project).
+
+2. Copy `SpotImAdsProvider` dir to your app target (make sure `GoogleAdsProvider.swift` is included in your target and is placed in your app target dir).
+
+3. You must include the following line right after `SpotIm.initialize(spotId: spotId)`
+
+##### Example
+
+```swift
+SpotIm.initialize(spotId: YOUR_UNIQUE_SPOT_ID)
+SpotIm.setGoogleAdsProvider(googleAdsProvider: GoogleAdsProvider())
+```
+
+<img src="Images/AdsProviderInXcode.png" width=300>
 
 ### Flows
 
