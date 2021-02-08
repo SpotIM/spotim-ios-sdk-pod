@@ -37,11 +37,13 @@ In the `application(application:didFinishLaunchingWithOptions)` call the followi
 
 For SpotImCore installations with ads - you should follow these steps:
 
-1. Find `SpotImAdsProvider` dir in `SpotImCore` pod folder (after running `pod install` you'll see it under `Pods` project).
+1. Include `pod Google-Mobile-Ads-SDK` in your app Podfile.
 
-2. Copy `SpotImAdsProvider` dir to your app target (make sure `GoogleAdsProvider.swift` is included in your target and is placed in your app target dir).
+2. Find `SpotImAdsProvider` dir in `SpotImCore` pod folder (after running `pod install` you'll see it under `Pods` project).
 
-3. You must include the following line right after `SpotIm.initialize(spotId: spotId)`
+3. Copy `SpotImAdsProvider` dir to your app target (make sure `GoogleAdsProvider.swift` is included in your target and is placed in your app target dir).
+
+4. You must include the following line right after `SpotIm.initialize(spotId: spotId)`
 
 ##### Example
 
