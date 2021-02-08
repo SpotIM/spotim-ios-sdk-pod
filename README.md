@@ -37,7 +37,7 @@ In the `application(application:didFinishLaunchingWithOptions)` call the followi
 
 For SpotImCore installations with ads - you should follow these steps:
 
-1. Include `pod Google-Mobile-Ads-SDK` in your app Podfile.
+1. Include `pod 'Google-Mobile-Ads-SDK', '~> 7.69.0'` in your app Podfile.
 
 2. Find `SpotImAdsProvider` dir in `SpotImCore` pod folder (after running `pod install` you'll see it under `Pods` project).
 
