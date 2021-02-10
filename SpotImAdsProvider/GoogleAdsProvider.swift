@@ -10,7 +10,7 @@ import UIKit
 import GoogleMobileAds
 import SpotImCore
 
-final class GoogleAdsProvider: NSObject, AdsProvider {
+@objc final class GoogleAdsProvider: NSObject, AdsProvider {
     let bannerView: BaseView = .init()
     weak var bannerDelegate: AdsProviderBannerDelegate?
     weak var interstitialDelegate: AdsProviderInterstitialDelegate?
@@ -21,6 +21,10 @@ final class GoogleAdsProvider: NSObject, AdsProvider {
     
     override init() {
         super.init()
+    }
+    
+    @objc public class func setSpotImSDKWithProvider() {
+      SpotIm.setGoogleAdsProvider(googleAdsProvider: GoogleAdsProvider())
     }
     
     func version() -> String { return "1.0" }
