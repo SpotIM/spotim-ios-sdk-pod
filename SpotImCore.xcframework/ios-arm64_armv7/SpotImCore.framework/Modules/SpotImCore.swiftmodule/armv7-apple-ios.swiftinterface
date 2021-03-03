@@ -6,6 +6,7 @@ import Alamofire
 import Foundation
 import PromiseKit
 import SafariServices
+@_exported import SpotImCore
 import Swift
 import UIKit
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class BaseView : UIKit.UIView {
