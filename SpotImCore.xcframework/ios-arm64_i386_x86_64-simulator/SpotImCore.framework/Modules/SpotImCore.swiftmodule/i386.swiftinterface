@@ -85,7 +85,7 @@ public struct SpotImArticleMetadata {
 @_hasMissingDesignatedInitializers public class SpotIm {
   public static var reinit: Swift.Bool
   public static var googleAdsProvider: SpotImCore.AdsProvider?
-  public static var customFontFamiliy: Swift.String?
+  public static var customFontFamily: Swift.String?
   public static func initialize(spotId: Swift.String)
   public static func setGoogleAdsProvider(googleAdsProvider: SpotImCore.AdsProvider)
   public static func sso(withJwtSecret secret: Swift.String, completion: @escaping SpotImCore.AuthStratCompleteionHandler)
@@ -140,12 +140,18 @@ public protocol AuthenticationViewDelegate : AnyObject {
 }
 public protocol SpotImLoginDelegate : AnyObject {
   func startLoginFlow()
+  func controllerForSSOFlow() -> UIKit.UIViewController
+}
+extension SpotImLoginDelegate {
+  public func controllerForSSOFlow() -> UIKit.UIViewController
+  public func startLoginFlow()
 }
 @_hasMissingDesignatedInitializers final public class SpotImSDKFlowCoordinator {
   final public func setLayoutDelegate(delegate: SpotImCore.SpotImLayoutDelegate)
   final public func preConversationController(withPostId postId: Swift.String, articleMetadata: SpotImCore.SpotImArticleMetadata, numberOfPreLoadedMessages: Swift.Int = 2, navigationController: UIKit.UINavigationController, completion: @escaping (UIKit.UIViewController) -> Swift.Void)
-  final public func showFullConversationViewController(navigationController: UIKit.UINavigationController, withPostId postId: Swift.String, articleMetadata: SpotImCore.SpotImArticleMetadata)
-  final public func showFullConversationViewController(navigationController: UIKit.UINavigationController, withPostId postId: Swift.String, articleMetadata: SpotImCore.SpotImArticleMetadata, selectedCommentId: Swift.String?)
+  final public func pushFullConversationViewController(navigationController: UIKit.UINavigationController, withPostId postId: Swift.String, articleMetadata: SpotImCore.SpotImArticleMetadata)
+  final public func pushFullConversationViewController(navigationController: UIKit.UINavigationController, withPostId postId: Swift.String, articleMetadata: SpotImCore.SpotImArticleMetadata, selectedCommentId: Swift.String?)
+  final public func presentFullConversationViewController(inViewController viewController: UIKit.UIViewController, withPostId postId: Swift.String, articleMetadata: SpotImCore.SpotImArticleMetadata, selectedCommentId: Swift.String?)
   @objc deinit
 }
 extension SpotImSDKFlowCoordinator : SpotImCore.SSOAthenticationDelegate {
