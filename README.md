@@ -13,7 +13,7 @@ This library provides an easy integration with Spot.IM into a native iOS app.
 
 #### [CocoaPods](https://cocoapods.org)
 1. Set dependency as follows:
-    `pod 'SpotIMCore', '1.4.1'`
+    `pod 'SpotIMCore', '1.4.2'`
 2. Execute `pod install` in Terminal
 3. Open workspace file and run
 
