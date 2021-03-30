@@ -86,6 +86,7 @@ public struct SpotImArticleMetadata {
   public static var reinit: Swift.Bool
   public static var googleAdsProvider: SpotImCore.AdsProvider?
   public static var customFontFamily: Swift.String?
+  public static var displayArticleHeader: Swift.Bool
   public static func initialize(spotId: Swift.String)
   public static func setGoogleAdsProvider(googleAdsProvider: SpotImCore.AdsProvider)
   public static func sso(withJwtSecret secret: Swift.String, completion: @escaping SpotImCore.AuthStratCompleteionHandler)
@@ -101,6 +102,8 @@ public struct SpotImArticleMetadata {
   }
   public static var overrideUserInterfaceStyle: SpotImCore.SPUserInterfaceStyle?
   public static func getUserLoginStatus(completion: @escaping ((SpotImCore.SpotImResult<SpotImCore.SpotImLoginStatus>) -> Swift.Void))
+  public static func getUserLoginStatusWithId(completion: @escaping ((SpotImCore.SpotImResult<(SpotImCore.SpotImLoginStatus, Swift.String?)>) -> Swift.Void))
+  public static func getRegisteredUserId() -> Swift.String?
   public static func logout(completion: @escaping ((SpotImCore.SpotImResult<Swift.Void>) -> Swift.Void))
   @objc deinit
 }
@@ -140,10 +143,10 @@ public protocol AuthenticationViewDelegate : AnyObject {
 }
 public protocol SpotImLoginDelegate : AnyObject {
   func startLoginFlow()
-  func controllerForSSOFlow() -> UIKit.UIViewController
+  func presentControllerForSSOFlow(with spotNavController: UIKit.UIViewController)
 }
 extension SpotImLoginDelegate {
-  public func controllerForSSOFlow() -> UIKit.UIViewController
+  public func presentControllerForSSOFlow(with spotNavController: UIKit.UIViewController)
   public func startLoginFlow()
 }
 @_hasMissingDesignatedInitializers final public class SpotImSDKFlowCoordinator {
