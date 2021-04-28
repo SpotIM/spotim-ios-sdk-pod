@@ -21,10 +21,10 @@ jobs:
       env:
         COCOAPODS_TRUNK_TOKEN: ${{ secrets.COCOAPODS_TRUNK_TOKEN }}
       run: |
-        pod spec lint SpotImCore.podspec --allow-warnings
+        pod spec lint SpotIMCore.podspec --allow-warnings
         
     - name: Publish to CocoaPod
       env:
         COCOAPODS_TRUNK_TOKEN: ${{ secrets.COCOAPODS_TRUNK_TOKEN }}
       run: |
-        pod trunk push SpotImCore.podspec --allow-warnings
+        pod trunk push SpotIMCore.podspec --allow-warnings
