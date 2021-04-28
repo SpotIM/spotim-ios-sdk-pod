@@ -80,13 +80,14 @@ public struct SpotImConversationCounters : Swift.Codable {
   public func encode(to encoder: Swift.Encoder) throws
 }
 public struct SpotImArticleMetadata {
-  public init(url: Swift.String, title: Swift.String, subtitle: Swift.String, thumbnailUrl: Swift.String)
+  public init(url: Swift.String, title: Swift.String, subtitle: Swift.String, thumbnailUrl: Swift.String, section: Swift.String = "default")
 }
 @_hasMissingDesignatedInitializers public class SpotIm {
   public static var reinit: Swift.Bool
   public static var googleAdsProvider: SpotImCore.AdsProvider?
   public static var customFontFamily: Swift.String?
   public static var displayArticleHeader: Swift.Bool
+  public static let OVERRIDE_USER_INTERFACE_STYLE_NOTIFICATION: Swift.String
   public static func initialize(spotId: Swift.String)
   public static func setGoogleAdsProvider(googleAdsProvider: SpotImCore.AdsProvider)
   public static func sso(withJwtSecret secret: Swift.String, completion: @escaping SpotImCore.AuthStratCompleteionHandler)
@@ -100,7 +101,10 @@ public struct SpotImArticleMetadata {
     get
     set
   }
-  public static var overrideUserInterfaceStyle: SpotImCore.SPUserInterfaceStyle?
+  public static var overrideUserInterfaceStyle: SpotImCore.SPUserInterfaceStyle? {
+    get
+    set
+  }
   public static func getUserLoginStatus(completion: @escaping ((SpotImCore.SpotImResult<SpotImCore.SpotImLoginStatus>) -> Swift.Void))
   public static func getUserLoginStatusWithId(completion: @escaping ((SpotImCore.SpotImResult<(SpotImCore.SpotImLoginStatus, Swift.String?)>) -> Swift.Void))
   public static func getRegisteredUserId() -> Swift.String?
@@ -144,10 +148,14 @@ public protocol AuthenticationViewDelegate : AnyObject {
 public protocol SpotImLoginDelegate : AnyObject {
   func startLoginFlow()
   func presentControllerForSSOFlow(with spotNavController: UIKit.UIViewController)
+  func shouldDisplayLoginPromptForGuests() -> Swift.Bool
+  func customizeLoginPromptTextView(textView: UIKit.UITextView)
 }
 extension SpotImLoginDelegate {
   public func presentControllerForSSOFlow(with spotNavController: UIKit.UIViewController)
   public func startLoginFlow()
+  public func customizeLoginPromptTextView(textView: UIKit.UITextView)
+  public func shouldDisplayLoginPromptForGuests() -> Swift.Bool
 }
 @_hasMissingDesignatedInitializers final public class SpotImSDKFlowCoordinator {
   final public func setLayoutDelegate(delegate: SpotImCore.SpotImLayoutDelegate)
