@@ -157,6 +157,7 @@ extension SpotImLoginDelegate {
   public func customizeLoginPromptTextView(textView: UIKit.UITextView)
   public func shouldDisplayLoginPromptForGuests() -> Swift.Bool
 }
+public let SPOTIM_NAV_CONTROL_TAG: Swift.Int
 @_hasMissingDesignatedInitializers final public class SpotImSDKFlowCoordinator {
   final public func setLayoutDelegate(delegate: SpotImCore.SpotImLayoutDelegate)
   final public func preConversationController(withPostId postId: Swift.String, articleMetadata: SpotImCore.SpotImArticleMetadata, numberOfPreLoadedMessages: Swift.Int = 2, navigationController: UIKit.UINavigationController, completion: @escaping (UIKit.UIViewController) -> Swift.Void)
