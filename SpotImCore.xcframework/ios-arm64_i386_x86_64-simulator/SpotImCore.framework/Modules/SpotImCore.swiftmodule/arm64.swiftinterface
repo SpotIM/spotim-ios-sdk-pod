@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)
+// swift-compiler-version: Apple Swift version 5.4 (swiftlang-1205.0.26.9 clang-1205.0.19.55)
 // swift-module-flags: -target arm64-apple-ios10.3-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -module-name SpotImCore
 import AdSupport
 import Alamofire
@@ -70,14 +70,14 @@ public enum SpotImLoginStatus {
   case guest
   case loggedIn
   public static func == (a: SpotImCore.SpotImLoginStatus, b: SpotImCore.SpotImLoginStatus) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
     get
   }
-  public func hash(into hasher: inout Swift.Hasher)
 }
 public struct SpotImConversationCounters : Swift.Codable {
-  public init(from decoder: Swift.Decoder) throws
   public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
 }
 public struct SpotImArticleMetadata {
   public init(url: Swift.String, title: Swift.String, subtitle: Swift.String, thumbnailUrl: Swift.String, section: Swift.String = "default")
@@ -124,17 +124,17 @@ public struct SSOStartResponse : Swift.Codable {
   public var jwtToken: Swift.String?
   public var autoComplete: Swift.Bool
   public var success: Swift.Bool
-  public init(from decoder: Swift.Decoder) throws
   public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
 }
 public typealias JSON = [Swift.String : Any]
 public enum ParserError : Swift.Error {
   case keyNotFound
   public static func == (a: SpotImCore.ParserError, b: SpotImCore.ParserError) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
     get
   }
-  public func hash(into hasher: inout Swift.Hasher)
 }
 public protocol SpotImSDKNavigationDelegate : AnyObject {
   func controllerForSSOFlow() -> UIKit.UIViewController
@@ -157,6 +157,7 @@ extension SpotImLoginDelegate {
   public func customizeLoginPromptTextView(textView: UIKit.UITextView)
   public func shouldDisplayLoginPromptForGuests() -> Swift.Bool
 }
+public let SPOTIM_NAV_CONTROL_TAG: Swift.Int
 @_hasMissingDesignatedInitializers final public class SpotImSDKFlowCoordinator {
   final public func setLayoutDelegate(delegate: SpotImCore.SpotImLayoutDelegate)
   final public func preConversationController(withPostId postId: Swift.String, articleMetadata: SpotImCore.SpotImArticleMetadata, numberOfPreLoadedMessages: Swift.Int = 2, navigationController: UIKit.UINavigationController, completion: @escaping (UIKit.UIViewController) -> Swift.Void)
@@ -183,8 +184,8 @@ extension SpotImSDKFlowCoordinator : SpotImCore.SSOAthenticationDelegate {
 public enum SPUserInterfaceStyle : Swift.Int {
   case light
   case dark
-  public typealias RawValue = Swift.Int
   public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
   }
@@ -228,10 +229,10 @@ public enum AdSize {
   case medium
   case large
   public static func == (a: SpotImCore.AdSize, b: SpotImCore.AdSize) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
     get
   }
-  public func hash(into hasher: inout Swift.Hasher)
 }
 public protocol AdsProvider : AnyObject {
   func version() -> Swift.String
