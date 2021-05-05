@@ -17,30 +17,14 @@ jobs:
     - name: Xcode version
       run: /usr/bin/xcodebuild -version
       
-    - name: Update SpotImCore.podspec file with the new version
-      run: |
-        NEW_VERSION="${GITHUB_REF#"refs/tags/"}"
-        PREVIOUS_VERSION=`cat SpotImCore.podspec | grep "s.version" | head -1 | cut -d "=" -f2 | cut -d \" -f2`
-        sed -ie "s/\([[:space:]]*s\.version[[:space:]]*= \"\)${PREVIOUS_VERSION}/\1$NEW_VERSION/" SpotImCore.podspec
-        cat SpotImCore.podspec
-        
-    - name: Push changes of SpotImCore.podspec file
-      run: |
-        git config user.name "Oded Regev via CI"
-        git config user.email "oded@cherrypick-consulting.com"
-        
-        git add SpotImCore.podspec
-        git commit -m "Bump version in SpotImCore.podspec"
-        
-        git push -u origin HEAD:master
     - name: Run pod spec lint
       env:
         COCOAPODS_TRUNK_TOKEN: ${{ secrets.COCOAPODS_TRUNK_TOKEN }}
       run: |
-        pod spec lint SpotImCore.podspec --allow-warnings
+        pod spec lint SpotIMCore.podspec --allow-warnings
         
     - name: Publish to CocoaPod
       env:
         COCOAPODS_TRUNK_TOKEN: ${{ secrets.COCOAPODS_TRUNK_TOKEN }}
       run: |
-        pod trunk push SpotImCore.podspec --allow-warnings
+        pod trunk push SpotIMCore.podspec --allow-warnings
