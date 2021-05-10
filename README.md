@@ -1,4 +1,4 @@
- Spot.IM SDK for iOS 🚀
+# Spot.IM SDK for iOS 🚀
 
 This library provides an easy integration with Spot.IM into a native iOS app.
 
