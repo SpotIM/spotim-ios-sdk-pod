@@ -18,7 +18,7 @@
 		</data>
 		<key>Assets.car</key>
 		<data>
-		OqTji87qAe2o11GNTwr34w9cSgM=
+		6CuKSuLLylYKjLwRQYAb08Vjx4c=
 		</data>
 		<key>Headers/SpotImCore-Swift.h</key>
 		<data>
@@ -30,7 +30,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		9qzdAhNh/bKQq3Q5x2VkJ54TxVY=
+		rAWejSjF3uAoHWDceNPdERs2Y88=
 		</data>
 		<key>Modules/SpotImCore.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -42,7 +42,7 @@
 		</data>
 		<key>Modules/SpotImCore.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		/wv9A5lSBFH6nwfmLe05bIDwwB8=
+		7fWQXfbNpsxZEI9CU2cAeYnSKRo=
 		</data>
 		<key>Modules/SpotImCore.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -54,7 +54,7 @@
 		</data>
 		<key>Modules/SpotImCore.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		/wv9A5lSBFH6nwfmLe05bIDwwB8=
+		7fWQXfbNpsxZEI9CU2cAeYnSKRo=
 		</data>
 		<key>Modules/SpotImCore.swiftmodule/i386-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -66,7 +66,7 @@
 		</data>
 		<key>Modules/SpotImCore.swiftmodule/i386-apple-ios-simulator.swiftmodule</key>
 		<data>
-		vJMBq/KkUZu0wrF7Qstd5mJbJOI=
+		ruxU75Suz7GLJW7qYSOvNVSmpgw=
 		</data>
 		<key>Modules/SpotImCore.swiftmodule/i386.swiftdoc</key>
 		<data>
@@ -78,7 +78,7 @@
 		</data>
 		<key>Modules/SpotImCore.swiftmodule/i386.swiftmodule</key>
 		<data>
-		vJMBq/KkUZu0wrF7Qstd5mJbJOI=
+		ruxU75Suz7GLJW7qYSOvNVSmpgw=
 		</data>
 		<key>Modules/SpotImCore.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -90,7 +90,7 @@
 		</data>
 		<key>Modules/SpotImCore.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		/HkmFHq3L2eBk59h+2BUvAqJInA=
+		55ViEDV5TqIKrfDZsRipWqmvxRE=
 		</data>
 		<key>Modules/SpotImCore.swiftmodule/x86_64.swiftdoc</key>
 		<data>
@@ -102,7 +102,7 @@
 		</data>
 		<key>Modules/SpotImCore.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		/HkmFHq3L2eBk59h+2BUvAqJInA=
+		55ViEDV5TqIKrfDZsRipWqmvxRE=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -152,7 +152,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			WWdboGYqP99hGTmaV5eQ2mulAmc=
+			n8UlgFmyg6AgVvlCtlfzFgu/YVg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -161,7 +161,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			K/Csy3YAlwJJYt/crfTr91BeNx0=
+			G4bvW5tAQ+RcNBxvRXzA7TvoLXY=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -170,7 +170,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			X2D8pROrKz4xkWiRweEKcA8wNdk=
+			h22vDL5K0hAOSS9U0A+xeD3Kl0A=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -183,7 +183,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			WMLk6lKZMEoiKUgdrml7M22mmZQ=
+			ps8Qyz1OlsIkAQOg/QQ3sZ8t6ks=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -196,7 +196,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			tQ5Wxf6HrJ2rg6IAdybEmh9ABo4=
+			OOssT/A+jA11f2RXBNo25lxHNpM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -241,11 +241,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			OqTji87qAe2o11GNTwr34w9cSgM=
+			6CuKSuLLylYKjLwRQYAb08Vjx4c=
 			</data>
 			<key>hash2</key>
 			<data>
-			KvG4jcAdfT3SPyKxWM6szkakvwBtu2kfnBExSA5Ab2Y=
+			zfT9MDUxT6CVmgmHNrmtppPqEDJVKijgw/FjSZQW1gs=
 			</data>
 		</dict>
 		<key>Headers/SpotImCore-Swift.h</key>
@@ -296,11 +296,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			/wv9A5lSBFH6nwfmLe05bIDwwB8=
+			7fWQXfbNpsxZEI9CU2cAeYnSKRo=
 			</data>
 			<key>hash2</key>
 			<data>
-			3R/NpDOQn01tLxz/b7EH+nKwAwhOO0JV0G+goeH3cKg=
+			29hRKzkJ4BXd0D6QEC35NYTYlnSfT7aqbZME6J6b5aw=
 			</data>
 		</dict>
 		<key>Modules/SpotImCore.swiftmodule/arm64.swiftdoc</key>
@@ -329,11 +329,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			/wv9A5lSBFH6nwfmLe05bIDwwB8=
+			7fWQXfbNpsxZEI9CU2cAeYnSKRo=
 			</data>
 			<key>hash2</key>
 			<data>
-			3R/NpDOQn01tLxz/b7EH+nKwAwhOO0JV0G+goeH3cKg=
+			29hRKzkJ4BXd0D6QEC35NYTYlnSfT7aqbZME6J6b5aw=
 			</data>
 		</dict>
 		<key>Modules/SpotImCore.swiftmodule/i386-apple-ios-simulator.swiftdoc</key>
@@ -362,11 +362,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			vJMBq/KkUZu0wrF7Qstd5mJbJOI=
+			ruxU75Suz7GLJW7qYSOvNVSmpgw=
 			</data>
 			<key>hash2</key>
 			<data>
-			aYAPqoq81/8x9REjGB1/XJC6Ikx9E7WOcDh57AETtzY=
+			E/BRYcgJMezmdo02PH3tCU5L/y0PE5N5EHbuPQBrugM=
 			</data>
 		</dict>
 		<key>Modules/SpotImCore.swiftmodule/i386.swiftdoc</key>
@@ -395,11 +395,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			vJMBq/KkUZu0wrF7Qstd5mJbJOI=
+			ruxU75Suz7GLJW7qYSOvNVSmpgw=
 			</data>
 			<key>hash2</key>
 			<data>
-			aYAPqoq81/8x9REjGB1/XJC6Ikx9E7WOcDh57AETtzY=
+			E/BRYcgJMezmdo02PH3tCU5L/y0PE5N5EHbuPQBrugM=
 			</data>
 		</dict>
 		<key>Modules/SpotImCore.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -428,11 +428,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			/HkmFHq3L2eBk59h+2BUvAqJInA=
+			55ViEDV5TqIKrfDZsRipWqmvxRE=
 			</data>
 			<key>hash2</key>
 			<data>
-			jKPmlDq6oaBlaIxDXhLnr38DuWW7W7p/s8tcfx1ON2g=
+			HfQUUXHp6rOGKFN72Ewa0Jo/JKzzlmnqSoJjdsyVdr4=
 			</data>
 		</dict>
 		<key>Modules/SpotImCore.swiftmodule/x86_64.swiftdoc</key>
@@ -461,11 +461,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			/HkmFHq3L2eBk59h+2BUvAqJInA=
+			55ViEDV5TqIKrfDZsRipWqmvxRE=
 			</data>
 			<key>hash2</key>
 			<data>
-			jKPmlDq6oaBlaIxDXhLnr38DuWW7W7p/s8tcfx1ON2g=
+			HfQUUXHp6rOGKFN72Ewa0Jo/JKzzlmnqSoJjdsyVdr4=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -593,11 +593,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			WWdboGYqP99hGTmaV5eQ2mulAmc=
+			n8UlgFmyg6AgVvlCtlfzFgu/YVg=
 			</data>
 			<key>hash2</key>
 			<data>
-			0GxAcClGUpTbZb7SrBupIbzuACZ6Aupaptx/ruQmb2U=
+			GDyllHbaD69XTBe1ck3H2a01b8fIHm79XZuu0ERfKM0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -606,11 +606,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			K/Csy3YAlwJJYt/crfTr91BeNx0=
+			G4bvW5tAQ+RcNBxvRXzA7TvoLXY=
 			</data>
 			<key>hash2</key>
 			<data>
-			BBV7bzB2UwWNcoiOK0tEtbPRrexQYDRYmSwCaaRy8jk=
+			rPWRk14zMLuzVNwiQa+eE7S+CDIi6pyEhtg36jOYdnw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -619,11 +619,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			X2D8pROrKz4xkWiRweEKcA8wNdk=
+			h22vDL5K0hAOSS9U0A+xeD3Kl0A=
 			</data>
 			<key>hash2</key>
 			<data>
-			lsWr9CrBfFYZozQNwAlO60b6ntJ6Dy3NJqq9v3zWVgE=
+			5NK/FHQomVv7umsAYbjXDpKJ8gjq7pxPCNuhTOcKuCw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -643,11 +643,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			WMLk6lKZMEoiKUgdrml7M22mmZQ=
+			ps8Qyz1OlsIkAQOg/QQ3sZ8t6ks=
 			</data>
 			<key>hash2</key>
 			<data>
-			bQHRmFZBLumf7j6YVuNov41qZJFa2udXDR0L9K6UDOM=
+			Jlbv8bkuhohgaRwYQQ7Aenm6iwSPCc/wbVootUFObRs=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -667,11 +667,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			tQ5Wxf6HrJ2rg6IAdybEmh9ABo4=
+			OOssT/A+jA11f2RXBNo25lxHNpM=
 			</data>
 			<key>hash2</key>
 			<data>
-			uPgqUJ5B32AUHYO1J9G0GLM4OGrIL8vmh6LBKnttwvI=
+			Amug4Uh+lNPVhw4WbTX68zDWb1pVk+/fVCOFCxKPCyI=
 			</data>
 			<key>optional</key>
 			<true/>
