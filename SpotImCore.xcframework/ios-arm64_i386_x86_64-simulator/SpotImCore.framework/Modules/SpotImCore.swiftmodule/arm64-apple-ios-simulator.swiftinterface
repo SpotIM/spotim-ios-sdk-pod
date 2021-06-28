@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.4 (swiftlang-1205.0.26.9 clang-1205.0.19.55)
+// swift-compiler-version: Apple Swift version 5.4.2 (swiftlang-1205.0.28.2 clang-1205.0.19.57)
 // swift-module-flags: -target arm64-apple-ios10.3-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -module-name SpotImCore
 import AdSupport
 import Alamofire
@@ -106,6 +106,7 @@ public typealias InitizlizeCompletionHandler = (Swift.Bool, SpotImCore.SpotImErr
   public static var customFontFamily: Swift.String?
   public static var displayArticleHeader: Swift.Bool
   public static var enableCreateCommentNewDesign: Swift.Bool
+  public static var shouldConversationFooterStartFromBottomAnchor: Swift.Bool
   public static let OVERRIDE_USER_INTERFACE_STYLE_NOTIFICATION: Swift.String
   public static func initialize(spotId: Swift.String, completion: SpotImCore.InitizlizeCompletionHandler? = nil)
   public static func setGoogleAdsProvider(googleAdsProvider: SpotImCore.AdsProvider)
