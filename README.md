@@ -21,7 +21,9 @@ This library provides an easy integration with Spot.IM into a native iOS app.
 
 1. create a new branch `3.4.3-custom-release`
 
-2. In the new branch: A) Copy the new XCFramework. B) edit podspec file (keep "version" as is, change the `s.source` with the new tag (3.4.3-custom-release):
+2. In the new branch: 
+- Copy the new XCFramework. 
+- Edit podspec file (keep "version" as is, change the `s.source` with the new tag (3.4.3-custom-release):
 
 ```
 s.source = { :git => 'https://github.com/SpotIM/spotim-ios-sdk-pod.git', :tag => "3.4.3-custom-release" }
