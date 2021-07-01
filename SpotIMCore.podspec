@@ -23,7 +23,7 @@ Pod::Spec.new do |s|
   s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
 
 # the Pre-Compiled Framework:
-  s.source          = { :git => 'https://github.com/SpotIM/spotim-ios-sdk-pod.git', 'tag => "1.5.7-no-debugging-options' }
+  s.source = { :git => 'https://github.com/SpotIM/spotim-ios-sdk-pod.git', :tag => "1.5.7-no-debugging-options" }
   s.ios.resources = 'SpotImAdsProvider/*.swift'
   s.ios.vendored_frameworks = 'SpotImCore.xcframework'
   s.dependency 'Alamofire', '~> 5.2'
