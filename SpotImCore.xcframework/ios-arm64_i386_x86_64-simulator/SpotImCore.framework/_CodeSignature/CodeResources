@@ -18,7 +18,7 @@
 		</data>
 		<key>Assets.car</key>
 		<data>
-		RwnjMJOszHMy7xV4PaazxBt400k=
+		VFmjgkrjW/RE+R4tWRvcpIdvRVU=
 		</data>
 		<key>Headers/SpotImCore-Swift.h</key>
 		<data>
@@ -42,7 +42,7 @@
 		</data>
 		<key>Modules/SpotImCore.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		x6FnY+8ACoLTx62UPj3A3je8VPA=
+		wJQ9Aa4/CgM7w0Np0eOGTf1R6yU=
 		</data>
 		<key>Modules/SpotImCore.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -54,7 +54,7 @@
 		</data>
 		<key>Modules/SpotImCore.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		x6FnY+8ACoLTx62UPj3A3je8VPA=
+		wJQ9Aa4/CgM7w0Np0eOGTf1R6yU=
 		</data>
 		<key>Modules/SpotImCore.swiftmodule/i386-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -66,7 +66,7 @@
 		</data>
 		<key>Modules/SpotImCore.swiftmodule/i386-apple-ios-simulator.swiftmodule</key>
 		<data>
-		O6a+PC4sxtad3PzDenFXyYPmNWE=
+		kbZ2PSRomCIyC/NhFVRKqLIGg5U=
 		</data>
 		<key>Modules/SpotImCore.swiftmodule/i386.swiftdoc</key>
 		<data>
@@ -78,7 +78,7 @@
 		</data>
 		<key>Modules/SpotImCore.swiftmodule/i386.swiftmodule</key>
 		<data>
-		O6a+PC4sxtad3PzDenFXyYPmNWE=
+		kbZ2PSRomCIyC/NhFVRKqLIGg5U=
 		</data>
 		<key>Modules/SpotImCore.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -90,7 +90,7 @@
 		</data>
 		<key>Modules/SpotImCore.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		nBQgdazCwwGNFcf0m7FMJJCeRfQ=
+		+PFZR+T0TzIrz4uarORfiDHB4MM=
 		</data>
 		<key>Modules/SpotImCore.swiftmodule/x86_64.swiftdoc</key>
 		<data>
@@ -102,7 +102,7 @@
 		</data>
 		<key>Modules/SpotImCore.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		nBQgdazCwwGNFcf0m7FMJJCeRfQ=
+		+PFZR+T0TzIrz4uarORfiDHB4MM=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -241,11 +241,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			RwnjMJOszHMy7xV4PaazxBt400k=
+			VFmjgkrjW/RE+R4tWRvcpIdvRVU=
 			</data>
 			<key>hash2</key>
 			<data>
-			/onM14puuFSafIcrNV2ftdUw3q6JMu/o2NRudbFikkk=
+			GhtOgGg9B/M8uMHxKdgauD5lcgCY1808DMQDg+QVH0M=
 			</data>
 		</dict>
 		<key>Headers/SpotImCore-Swift.h</key>
@@ -296,11 +296,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			x6FnY+8ACoLTx62UPj3A3je8VPA=
+			wJQ9Aa4/CgM7w0Np0eOGTf1R6yU=
 			</data>
 			<key>hash2</key>
 			<data>
-			ogWab+KCHUxSoPeLqfJIa6E6YnFGn64xP+b94rxvmKw=
+			2IVucLE1i0gfQTvU35b5VaHWHdjMRGzOaRBJlxJ+nfc=
 			</data>
 		</dict>
 		<key>Modules/SpotImCore.swiftmodule/arm64.swiftdoc</key>
@@ -329,11 +329,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			x6FnY+8ACoLTx62UPj3A3je8VPA=
+			wJQ9Aa4/CgM7w0Np0eOGTf1R6yU=
 			</data>
 			<key>hash2</key>
 			<data>
-			ogWab+KCHUxSoPeLqfJIa6E6YnFGn64xP+b94rxvmKw=
+			2IVucLE1i0gfQTvU35b5VaHWHdjMRGzOaRBJlxJ+nfc=
 			</data>
 		</dict>
 		<key>Modules/SpotImCore.swiftmodule/i386-apple-ios-simulator.swiftdoc</key>
@@ -362,11 +362,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			O6a+PC4sxtad3PzDenFXyYPmNWE=
+			kbZ2PSRomCIyC/NhFVRKqLIGg5U=
 			</data>
 			<key>hash2</key>
 			<data>
-			nJ3yBcI7yVwOIvEEg/oyie31OSVKgar8GH+EpUCwthw=
+			V4fVQXzuha1whP88nVFcPSRTalpn2ezvLwjPfb/7ZUI=
 			</data>
 		</dict>
 		<key>Modules/SpotImCore.swiftmodule/i386.swiftdoc</key>
@@ -395,11 +395,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			O6a+PC4sxtad3PzDenFXyYPmNWE=
+			kbZ2PSRomCIyC/NhFVRKqLIGg5U=
 			</data>
 			<key>hash2</key>
 			<data>
-			nJ3yBcI7yVwOIvEEg/oyie31OSVKgar8GH+EpUCwthw=
+			V4fVQXzuha1whP88nVFcPSRTalpn2ezvLwjPfb/7ZUI=
 			</data>
 		</dict>
 		<key>Modules/SpotImCore.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -428,11 +428,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			nBQgdazCwwGNFcf0m7FMJJCeRfQ=
+			+PFZR+T0TzIrz4uarORfiDHB4MM=
 			</data>
 			<key>hash2</key>
 			<data>
-			VOus3QhKEbFy7wZK2QVjWVi/z96omCWNq7wy5Trc4iE=
+			ItFiiPygiUYKaoP4qBzs7y9qyDiAUVblmoilH4UAmHY=
 			</data>
 		</dict>
 		<key>Modules/SpotImCore.swiftmodule/x86_64.swiftdoc</key>
@@ -461,11 +461,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			nBQgdazCwwGNFcf0m7FMJJCeRfQ=
+			+PFZR+T0TzIrz4uarORfiDHB4MM=
 			</data>
 			<key>hash2</key>
 			<data>
-			VOus3QhKEbFy7wZK2QVjWVi/z96omCWNq7wy5Trc4iE=
+			ItFiiPygiUYKaoP4qBzs7y9qyDiAUVblmoilH4UAmHY=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
