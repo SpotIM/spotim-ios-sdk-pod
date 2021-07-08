@@ -87,7 +87,7 @@ public struct SpotImConversationCounters : Swift.Codable {
   public init(from decoder: Swift.Decoder) throws
 }
 public struct SpotImArticleMetadata {
-  public init(url: Swift.String, title: Swift.String, subtitle: Swift.String, thumbnailUrl: Swift.String, section: Swift.String = "default")
+  public init(url: Swift.String, title: Swift.String, subtitle: Swift.String, thumbnailUrl: Swift.String, section: Swift.String = "default", customBIData: [Swift.String : Swift.String]? = nil)
 }
 public enum SpotImSortByOption {
   case best
