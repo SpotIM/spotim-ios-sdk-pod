@@ -49,6 +49,32 @@ extension SPNetworkError : Foundation.CustomNSError {
 extension NSNotification.Name {
   public static let userDisplayNameFrozen: Foundation.Notification.Name
 }
+public enum SPAnalyticsEventType : Swift.Equatable {
+  case loaded
+  case viewed
+  case mainViewed
+  case messageContextMenuClicked
+  case userProfileClicked
+  case myProfileClicked
+  case loginClicked
+  case reading
+  case loadMoreRepliesClicked
+  case hideMoreRepliesClicked
+  case appInit
+  case appOpened
+  case appClosed
+  case sortByOpened
+  case sortByClicked
+  case createMessageClicked
+  case backClicked
+  case loadMoreComments
+  case engineStatus
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: SpotImCore.SPAnalyticsEventType, b: SpotImCore.SPAnalyticsEventType) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class BaseLabel : UIKit.UILabel {
   @available(*, unavailable, message: "Loading this view from a nib is unsupported in this project")
   @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
@@ -56,6 +82,25 @@ extension NSNotification.Name {
 }
 extension NSNotification.Name {
   public static let spotIMConfigLoaded: Foundation.Notification.Name
+}
+public struct SPAnalyticsEventInfo {
+  public let eventType: Swift.String
+  public let source: Swift.String
+  public let isRegistered: Swift.Bool
+  public let splitName: Swift.String
+  public let itemType: Swift.String?
+  public let targetType: Swift.String?
+  public let segment: Swift.String?
+  public let lang: Swift.String?
+  public let domain: Swift.String?
+  public let userId: Swift.String?
+  public let messageId: Swift.String?
+  public let relatedMessageId: Swift.String?
+  public let readingSeconds: Swift.Int?
+  public let itemId: Swift.String?
+  public let totalComments: Swift.Int?
+  public let engineStatusType: Swift.String?
+  public let publisherCustomData: [Swift.String : Swift.String]?
 }
 public enum SpotImError : Swift.Error {
   case notInitialized
@@ -99,6 +144,9 @@ public enum SpotImSortByOption {
     get
   }
 }
+public protocol SPAnalyticsEventDelegate {
+  func trackEvent(type: SpotImCore.SPAnalyticsEventType, event: SpotImCore.SPAnalyticsEventInfo)
+}
 public typealias InitizlizeCompletionHandler = (Swift.Bool, SpotImCore.SpotImError?) -> Swift.Void
 @_hasMissingDesignatedInitializers public class SpotIm {
   public static var reinit: Swift.Bool
@@ -130,6 +178,7 @@ public typealias InitizlizeCompletionHandler = (Swift.Bool, SpotImCore.SpotImErr
   public static func getRegisteredUserId() -> Swift.String?
   public static func setCustomSortByOptionText(option: SpotImCore.SpotImSortByOption, text: Swift.String)
   public static func logout(completion: @escaping ((SpotImCore.SpotImResult<Swift.Void>) -> Swift.Void))
+  public static func setAnalyticsEventDelegate(delegate: SpotImCore.SPAnalyticsEventDelegate)
   @objc deinit
 }
 public typealias AuthCompletionHandler = (Swift.Bool, Swift.Error?) -> Swift.Void
@@ -276,6 +325,7 @@ public protocol AdsProvider : AnyObject {
   var bannerDelegate: SpotImCore.AdsProviderBannerDelegate? { get set }
   var interstitialDelegate: SpotImCore.AdsProviderInterstitialDelegate? { get set }
 }
+extension SpotImCore.SPAnalyticsEventType : Swift.Hashable {}
 extension SpotImCore.SpotImLoginStatus : Swift.Equatable {}
 extension SpotImCore.SpotImLoginStatus : Swift.Hashable {}
 extension SpotImCore.SpotImSortByOption : Swift.Equatable {}
