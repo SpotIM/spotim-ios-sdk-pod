@@ -49,29 +49,41 @@ extension SPNetworkError : Foundation.CustomNSError {
 extension NSNotification.Name {
   public static let userDisplayNameFrozen: Foundation.Notification.Name
 }
-public enum SPAnalyticsEventType : Swift.Equatable {
+public enum SPEventType : Swift.String {
   case loaded
   case viewed
   case mainViewed
   case messageContextMenuClicked
+  case messageContextMenuClosed
   case userProfileClicked
   case myProfileClicked
   case loginClicked
   case reading
   case loadMoreRepliesClicked
   case hideMoreRepliesClicked
+  case commentReadMoreClicked
+  case commentReadLessClicked
   case appInit
   case appOpened
   case appClosed
   case sortByOpened
   case sortByClicked
   case createMessageClicked
+  case commentPostClicked
   case backClicked
   case loadMoreComments
   case engineStatus
-  public func hash(into hasher: inout Swift.Hasher)
-  public static func == (a: SpotImCore.SPAnalyticsEventType, b: SpotImCore.SPAnalyticsEventType) -> Swift.Bool
-  public var hashValue: Swift.Int {
+  case communityGuidelinesLinkClicked
+  case commentShareClicked
+  case commentReportClicked
+  case commentDeleteClicked
+  case commentRankUpButtonClicked
+  case commentRankDownButtonClicked
+  case commentRankUpButtonUndo
+  case commentRankDownButtonUndo
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
     get
   }
 }
@@ -83,7 +95,7 @@ public enum SPAnalyticsEventType : Swift.Equatable {
 extension NSNotification.Name {
   public static let spotIMConfigLoaded: Foundation.Notification.Name
 }
-public struct SPAnalyticsEventInfo {
+public struct SPEventInfo {
   public let eventType: Swift.String
   public let source: Swift.String
   public let isRegistered: Swift.Bool
@@ -101,6 +113,7 @@ public struct SPAnalyticsEventInfo {
   public let totalComments: Swift.Int?
   public let engineStatusType: Swift.String?
   public let publisherCustomData: [Swift.String : Swift.String]?
+  public let targetUrl: Swift.String?
 }
 public enum SpotImError : Swift.Error {
   case notInitialized
@@ -145,7 +158,7 @@ public enum SpotImSortByOption {
   }
 }
 public protocol SPAnalyticsEventDelegate {
-  func trackEvent(type: SpotImCore.SPAnalyticsEventType, event: SpotImCore.SPAnalyticsEventInfo)
+  func trackEvent(type: SpotImCore.SPEventType, event: SpotImCore.SPEventInfo)
 }
 public typealias InitizlizeCompletionHandler = (Swift.Bool, SpotImCore.SpotImError?) -> Swift.Void
 @_hasMissingDesignatedInitializers public class SpotIm {
@@ -325,7 +338,9 @@ public protocol AdsProvider : AnyObject {
   var bannerDelegate: SpotImCore.AdsProviderBannerDelegate? { get set }
   var interstitialDelegate: SpotImCore.AdsProviderInterstitialDelegate? { get set }
 }
-extension SpotImCore.SPAnalyticsEventType : Swift.Hashable {}
+extension SpotImCore.SPEventType : Swift.Equatable {}
+extension SpotImCore.SPEventType : Swift.Hashable {}
+extension SpotImCore.SPEventType : Swift.RawRepresentable {}
 extension SpotImCore.SpotImLoginStatus : Swift.Equatable {}
 extension SpotImCore.SpotImLoginStatus : Swift.Hashable {}
 extension SpotImCore.SpotImSortByOption : Swift.Equatable {}
