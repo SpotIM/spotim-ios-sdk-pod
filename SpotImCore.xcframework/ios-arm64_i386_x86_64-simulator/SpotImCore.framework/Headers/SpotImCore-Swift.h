@@ -211,6 +211,13 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 @class NSCoder;
 
+SWIFT_CLASS("_TtC10SpotImCore10BaseButton")
+@interface BaseButton : UIButton
+- (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER SWIFT_UNAVAILABLE_MSG("Loading this view from a nib is unsupported in this project");
+@end
+
+
 SWIFT_CLASS("_TtC10SpotImCore9BaseLabel")
 @interface BaseLabel : UILabel
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
@@ -232,6 +239,11 @@ SWIFT_CLASS("_TtC10SpotImCore8BaseView")
 
 
 
+
+
+SWIFT_CLASS("_TtC10SpotImCore20SPShowCommentsButton")
+@interface SPShowCommentsButton : BaseButton
+@end
 
 
 
@@ -469,6 +481,13 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 @class NSCoder;
 
+SWIFT_CLASS("_TtC10SpotImCore10BaseButton")
+@interface BaseButton : UIButton
+- (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER SWIFT_UNAVAILABLE_MSG("Loading this view from a nib is unsupported in this project");
+@end
+
+
 SWIFT_CLASS("_TtC10SpotImCore9BaseLabel")
 @interface BaseLabel : UILabel
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
@@ -490,6 +509,11 @@ SWIFT_CLASS("_TtC10SpotImCore8BaseView")
 
 
 
+
+
+SWIFT_CLASS("_TtC10SpotImCore20SPShowCommentsButton")
+@interface SPShowCommentsButton : BaseButton
+@end
 
 
 
@@ -727,6 +751,13 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 @class NSCoder;
 
+SWIFT_CLASS("_TtC10SpotImCore10BaseButton")
+@interface BaseButton : UIButton
+- (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER SWIFT_UNAVAILABLE_MSG("Loading this view from a nib is unsupported in this project");
+@end
+
+
 SWIFT_CLASS("_TtC10SpotImCore9BaseLabel")
 @interface BaseLabel : UILabel
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
@@ -748,6 +779,11 @@ SWIFT_CLASS("_TtC10SpotImCore8BaseView")
 
 
 
+
+
+SWIFT_CLASS("_TtC10SpotImCore20SPShowCommentsButton")
+@interface SPShowCommentsButton : BaseButton
+@end
 
 
 

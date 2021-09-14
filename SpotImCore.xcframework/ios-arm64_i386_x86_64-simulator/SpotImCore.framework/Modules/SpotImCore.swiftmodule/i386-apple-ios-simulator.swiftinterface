@@ -81,6 +81,7 @@ public enum SPEventType : Swift.String {
   case commentRankDownButtonClicked
   case commentRankUpButtonUndo
   case commentRankDownButtonUndo
+  case fullConversationAdCloseClicked
   public init?(rawValue: Swift.String)
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
@@ -90,6 +91,10 @@ public enum SPEventType : Swift.String {
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class BaseLabel : UIKit.UILabel {
   @available(*, unavailable, message: "Loading this view from a nib is unsupported in this project")
   @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class SPShowCommentsButton : SpotImCore.BaseButton {
+  public func getCommentsCount() -> Swift.String?
   @objc deinit
 }
 extension NSNotification.Name {
@@ -145,13 +150,35 @@ public struct SpotImConversationCounters : Swift.Codable {
   public init(from decoder: Swift.Decoder) throws
 }
 public struct SpotImArticleMetadata {
-  public init(url: Swift.String, title: Swift.String, subtitle: Swift.String, thumbnailUrl: Swift.String, section: Swift.String = "default", customBIData: [Swift.String : Swift.String]? = nil)
+  public init(url: Swift.String, title: Swift.String, subtitle: Swift.String, thumbnailUrl: Swift.String, section: Swift.String = "default", customBIData: [Swift.String : Swift.String]? = nil, readOnlyMode: SpotImCore.SpotImReadOnlyMode = .default)
+  public mutating func setCustomBIData(_ data: [Swift.String : Swift.String])
+  public mutating func setReadOnlymode(_ mode: SpotImCore.SpotImReadOnlyMode)
 }
 public enum SpotImSortByOption {
   case best
   case newest
   case oldest
   public static func == (a: SpotImCore.SpotImSortByOption, b: SpotImCore.SpotImSortByOption) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum SpotImButtonOnlyMode {
+  case disable
+  case withTitle
+  case withoutTitle
+  public static func == (a: SpotImCore.SpotImButtonOnlyMode, b: SpotImCore.SpotImButtonOnlyMode) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum SpotImReadOnlyMode {
+  case `default`
+  case enable
+  case disable
+  public static func == (a: SpotImCore.SpotImReadOnlyMode, b: SpotImCore.SpotImReadOnlyMode) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
     get
@@ -168,6 +195,7 @@ public typealias InitizlizeCompletionHandler = (Swift.Bool, SpotImCore.SpotImErr
   public static var displayArticleHeader: Swift.Bool
   public static var enableCreateCommentNewDesign: Swift.Bool
   public static var shouldConversationFooterStartFromBottomAnchor: Swift.Bool
+  public static var buttonOnlyMode: SpotImCore.SpotImButtonOnlyMode
   public static let OVERRIDE_USER_INTERFACE_STYLE_NOTIFICATION: Swift.String
   public static func initialize(spotId: Swift.String, completion: SpotImCore.InitizlizeCompletionHandler? = nil)
   public static func setGoogleAdsProvider(googleAdsProvider: SpotImCore.AdsProvider)
@@ -192,6 +220,8 @@ public typealias InitizlizeCompletionHandler = (Swift.Bool, SpotImCore.SpotImErr
   public static func setCustomSortByOptionText(option: SpotImCore.SpotImSortByOption, text: Swift.String)
   public static func logout(completion: @escaping ((SpotImCore.SpotImResult<Swift.Void>) -> Swift.Void))
   public static func setAnalyticsEventDelegate(delegate: SpotImCore.SPAnalyticsEventDelegate)
+  public static func setButtonOnlyMode(mode: SpotImCore.SpotImButtonOnlyMode)
+  public static func getButtonOnlyMode() -> SpotImCore.SpotImButtonOnlyMode
   @objc deinit
 }
 public typealias AuthCompletionHandler = (Swift.Bool, Swift.Error?) -> Swift.Void
@@ -241,6 +271,8 @@ public enum CustomizableView {
   case conversationFooter(view: UIKit.UIView)
   case communityGuidelines(textView: UIKit.UITextView)
   case navigationItemTitle(textView: UIKit.UITextView)
+  case showCommentsButton(button: SpotImCore.SPShowCommentsButton)
+  case preConversationHeader(titleLabel: UIKit.UILabel, counterLabel: UIKit.UILabel)
 }
 public protocol SpotImCustomUIDelegate : AnyObject {
   func customizeView(view: SpotImCore.CustomizableView, isDarkMode: Swift.Bool)
@@ -265,6 +297,11 @@ extension SpotImSDKFlowCoordinator : SpotImCore.SSOAthenticationDelegate {
   final public func ssoFlowDidSucceed()
   final public func ssoFlowDidFail(with error: Swift.Error?)
   final public func userLogout()
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class BaseButton : UIKit.UIButton {
+  @available(*, unavailable, message: "Loading this view from a nib is unsupported in this project")
+  @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc deinit
 }
 @_hasMissingDesignatedInitializers public class SPClientSettings {
   public static let main: SpotImCore.SPClientSettings
@@ -309,7 +346,7 @@ extension Result {
   public func require() -> T
 }
 public protocol AdsProviderBannerDelegate : AnyObject {
-  func bannerLoaded(adBannerSize: CoreGraphics.CGSize)
+  func bannerLoaded(bannerView: UIKit.UIView, adBannerSize: CoreGraphics.CGSize, adUnitID: Swift.String)
   func bannerFailedToLoad(error: Swift.Error)
 }
 public protocol AdsProviderInterstitialDelegate : AnyObject {
@@ -334,7 +371,6 @@ public protocol AdsProvider : AnyObject {
   func setupAdsBanner(with adId: Swift.String, in controller: UIKit.UIViewController, validSizes: Swift.Set<SpotImCore.AdSize>)
   func setupInterstitial(with adId: Swift.String)
   func showInterstitial(in controller: UIKit.UIViewController) -> Swift.Bool
-  var bannerView: SpotImCore.BaseView { get }
   var bannerDelegate: SpotImCore.AdsProviderBannerDelegate? { get set }
   var interstitialDelegate: SpotImCore.AdsProviderInterstitialDelegate? { get set }
 }
@@ -345,6 +381,10 @@ extension SpotImCore.SpotImLoginStatus : Swift.Equatable {}
 extension SpotImCore.SpotImLoginStatus : Swift.Hashable {}
 extension SpotImCore.SpotImSortByOption : Swift.Equatable {}
 extension SpotImCore.SpotImSortByOption : Swift.Hashable {}
+extension SpotImCore.SpotImButtonOnlyMode : Swift.Equatable {}
+extension SpotImCore.SpotImButtonOnlyMode : Swift.Hashable {}
+extension SpotImCore.SpotImReadOnlyMode : Swift.Equatable {}
+extension SpotImCore.SpotImReadOnlyMode : Swift.Hashable {}
 extension SpotImCore.ParserError : Swift.Equatable {}
 extension SpotImCore.ParserError : Swift.Hashable {}
 extension SpotImCore.SPUserInterfaceStyle : Swift.Equatable {}
