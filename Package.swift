@@ -11,7 +11,7 @@ let package = Package(
         .watchOS(.v3)
     ],
     products: [
-        .library(name: "SpotIMCore", targets: ["SpotIMCore"])
+        .library(name: "SpotIMCore", targets: ["SpotIMCoreXCFramework"])
     ],
     dependencies: [
         // Here we define our package's external dependencies
@@ -29,10 +29,6 @@ let package = Package(
         .binaryTarget(
             name: "SpotIMCoreXCFramework",
             path: "SpotImCore.xcframework"
-        )
-        .target(
-            name: "SpotIMCore",
-            dependencies: ["SpotIMCoreXCFramework", "Alamofire", "PromiseKit"]
         )
     ]
 )
