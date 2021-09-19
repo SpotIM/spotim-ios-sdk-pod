@@ -13,18 +13,6 @@ let package = Package(
     products: [
         .library(name: "SpotIMCore", targets: ["SpotIMCoreXCFramework"])
     ],
-    dependencies: [
-        // Here we define our package's external dependencies
-        // and from where they can be fetched:
-        .package(
-            url: "https://github.com/Alamofire/Alamofire",
-            .upToNextMinor(from: "5.2.0")
-        ),
-        .package(
-            url: "https://github.com/mxcl/PromiseKit",
-            .upToNextMinor(from: "6.8.0")
-        )
-    ],
     targets: [
         .binaryTarget(
             name: "SpotIMCoreXCFramework",
