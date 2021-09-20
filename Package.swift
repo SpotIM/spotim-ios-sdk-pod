@@ -28,7 +28,7 @@ let package = Package(
         .binaryTarget(
             name: "SpotIMCoreXCFramework",
             path: "SpotImCore.xcframework"
-        )
+        ),
         .target(
             name: "SpotIMCore",
             dependencies: ["SpotIMCoreXCFramework", "Alamofire", "PromiseKit"]
