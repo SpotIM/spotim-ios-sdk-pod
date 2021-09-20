@@ -10,7 +10,7 @@ let package = Package(
         .watchOS(.v3)
     ],
     products: [
-        .library(name: "SpotIMCore", targets: ["SpotIMCore"])
+        .library(name: "SpotIMCore", targets: ["DummyTarget"])
     ],
     dependencies: [
         // Here we define our package's external dependencies
