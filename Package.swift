@@ -10,7 +10,7 @@ let package = Package(
         .watchOS(.v3)
     ],
     products: [
-        .library(name: "SpotIMCore", targets: ["DummyTarget"])
+        .library(name: "SpotIMCore", targets: ["WrapperSPMTarget"])
     ],
     dependencies: [
         // Here we define our package's external dependencies
@@ -30,7 +30,7 @@ let package = Package(
             path: "SpotImCore.xcframework"
         ),
         .target(
-            name: "DummyTarget",
+            name: "WrapperSPMTarget",
             dependencies: [
                 .target(name: "SpotIMCoreXCFramework", condition: .when(platforms: .some([.iOS]))),
                 "Alamofire",
