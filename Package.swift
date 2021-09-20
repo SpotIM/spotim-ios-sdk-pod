@@ -31,7 +31,11 @@ let package = Package(
         ),
         .target(
             name: "SpotIMCore",
-            dependencies: ["SpotIMCoreXCFramework", "Alamofire", "PromiseKit"]
+            dependencies: [
+                .target(name: "SpotIMCoreXCFramework", condition: .when(platforms: .some([.iOS]))),
+                "Alamofire",
+                "PromiseKit"
+            ]
         )
     ]
 )
