@@ -32,7 +32,6 @@ let package = Package(
         .target(
             name: "SpotIMCore",
             dependencies: ["SpotIMCoreXCFramework", "Alamofire", "PromiseKit"],
-            path: "",
             exclude: ["SpotImAdsProvider"]
         )
     ]
