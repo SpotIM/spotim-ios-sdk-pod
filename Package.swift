@@ -31,8 +31,7 @@ let package = Package(
         ),
         .target(
             name: "SpotIMCore",
-            dependencies: ["SpotIMCoreXCFramework", "Alamofire", "PromiseKit"],
-            path: ""
+            dependencies: ["SpotIMCoreXCFramework", "Alamofire", "PromiseKit"]
         )
     ]
 )
