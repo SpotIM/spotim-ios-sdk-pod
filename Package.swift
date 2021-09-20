@@ -30,7 +30,7 @@ let package = Package(
             path: "SpotImCore.xcframework"
         ),
         .target(
-            name: "SpotIMCore",
+            name: "DummyTarget",
             dependencies: [
                 .target(name: "SpotIMCoreXCFramework", condition: .when(platforms: .some([.iOS]))),
                 "Alamofire",
