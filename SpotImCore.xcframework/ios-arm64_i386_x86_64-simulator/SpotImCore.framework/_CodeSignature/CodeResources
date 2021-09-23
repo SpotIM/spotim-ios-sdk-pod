@@ -18,7 +18,7 @@
 		</data>
 		<key>Assets.car</key>
 		<data>
-		sTeB8rnfLYUcJ/yO0ENDUXeKomM=
+		UICjtOjNJ15fFZhtlEnALslngrw=
 		</data>
 		<key>Headers/SpotImCore-Swift.h</key>
 		<data>
@@ -30,7 +30,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		f24eQqU+8Pq6eSqEO6DyHBpXm4k=
+		PH/pXySos0zde7KV36lXJcZ8nFk=
 		</data>
 		<key>Modules/SpotImCore.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -42,7 +42,7 @@
 		</data>
 		<key>Modules/SpotImCore.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		2Y/fmxF0nvecIp/rEciaQNEl4dc=
+		U/Vya2Hs9hba5IzpHFY050sg2OQ=
 		</data>
 		<key>Modules/SpotImCore.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -54,7 +54,7 @@
 		</data>
 		<key>Modules/SpotImCore.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		2Y/fmxF0nvecIp/rEciaQNEl4dc=
+		U/Vya2Hs9hba5IzpHFY050sg2OQ=
 		</data>
 		<key>Modules/SpotImCore.swiftmodule/i386-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -66,7 +66,7 @@
 		</data>
 		<key>Modules/SpotImCore.swiftmodule/i386-apple-ios-simulator.swiftmodule</key>
 		<data>
-		1PQyWjD7+Cr4L8SyqsURVqHZo5k=
+		fEmTpozHg/IVg1WCBdS3N+kmuvA=
 		</data>
 		<key>Modules/SpotImCore.swiftmodule/i386.swiftdoc</key>
 		<data>
@@ -78,7 +78,7 @@
 		</data>
 		<key>Modules/SpotImCore.swiftmodule/i386.swiftmodule</key>
 		<data>
-		1PQyWjD7+Cr4L8SyqsURVqHZo5k=
+		fEmTpozHg/IVg1WCBdS3N+kmuvA=
 		</data>
 		<key>Modules/SpotImCore.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -90,7 +90,7 @@
 		</data>
 		<key>Modules/SpotImCore.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		SqWKdtzzA8MnlJWyJ4AGQVTn4QU=
+		N+0flHCTbzuef7DUF07vVWiwp4Q=
 		</data>
 		<key>Modules/SpotImCore.swiftmodule/x86_64.swiftdoc</key>
 		<data>
@@ -102,7 +102,7 @@
 		</data>
 		<key>Modules/SpotImCore.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		SqWKdtzzA8MnlJWyJ4AGQVTn4QU=
+		N+0flHCTbzuef7DUF07vVWiwp4Q=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -241,11 +241,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			sTeB8rnfLYUcJ/yO0ENDUXeKomM=
+			UICjtOjNJ15fFZhtlEnALslngrw=
 			</data>
 			<key>hash2</key>
 			<data>
-			P8OgDux//FkzeK4dEDmMIS+kxk6ggJwoUBWtyWib7P0=
+			tgQPqmg2QK1ByGU+1zpZLPdvmfdY1A7uigKQ6FqXyMU=
 			</data>
 		</dict>
 		<key>Headers/SpotImCore-Swift.h</key>
@@ -296,11 +296,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			2Y/fmxF0nvecIp/rEciaQNEl4dc=
+			U/Vya2Hs9hba5IzpHFY050sg2OQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			YcXT6tMDfErMZRkeL2dEa/FT0f+/BT8F9PPkbWZJldc=
+			zu9ZmhKhryZ8/g7qp3yp7d2Okn44YVhI6VOhINB0Iy4=
 			</data>
 		</dict>
 		<key>Modules/SpotImCore.swiftmodule/arm64.swiftdoc</key>
@@ -329,11 +329,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			2Y/fmxF0nvecIp/rEciaQNEl4dc=
+			U/Vya2Hs9hba5IzpHFY050sg2OQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			YcXT6tMDfErMZRkeL2dEa/FT0f+/BT8F9PPkbWZJldc=
+			zu9ZmhKhryZ8/g7qp3yp7d2Okn44YVhI6VOhINB0Iy4=
 			</data>
 		</dict>
 		<key>Modules/SpotImCore.swiftmodule/i386-apple-ios-simulator.swiftdoc</key>
@@ -362,11 +362,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			1PQyWjD7+Cr4L8SyqsURVqHZo5k=
+			fEmTpozHg/IVg1WCBdS3N+kmuvA=
 			</data>
 			<key>hash2</key>
 			<data>
-			KMUKNThjtWUmKfobdeyTdOPOvfuV6ChYm+wcCONAZKw=
+			JIuHYVG8/b7y2DNRR3688yOzu4D+b46LKlePUPlwFWs=
 			</data>
 		</dict>
 		<key>Modules/SpotImCore.swiftmodule/i386.swiftdoc</key>
@@ -395,11 +395,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			1PQyWjD7+Cr4L8SyqsURVqHZo5k=
+			fEmTpozHg/IVg1WCBdS3N+kmuvA=
 			</data>
 			<key>hash2</key>
 			<data>
-			KMUKNThjtWUmKfobdeyTdOPOvfuV6ChYm+wcCONAZKw=
+			JIuHYVG8/b7y2DNRR3688yOzu4D+b46LKlePUPlwFWs=
 			</data>
 		</dict>
 		<key>Modules/SpotImCore.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -428,11 +428,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			SqWKdtzzA8MnlJWyJ4AGQVTn4QU=
+			N+0flHCTbzuef7DUF07vVWiwp4Q=
 			</data>
 			<key>hash2</key>
 			<data>
-			+3Jr28EN38bhrPc1sajm9XUQQMsWIrWIyEK/Hml7f78=
+			DoE8MBCJBLf5wNEeY8BI+OO7WzzOyVKP++LmDZS9at8=
 			</data>
 		</dict>
 		<key>Modules/SpotImCore.swiftmodule/x86_64.swiftdoc</key>
@@ -461,11 +461,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			SqWKdtzzA8MnlJWyJ4AGQVTn4QU=
+			N+0flHCTbzuef7DUF07vVWiwp4Q=
 			</data>
 			<key>hash2</key>
 			<data>
-			+3Jr28EN38bhrPc1sajm9XUQQMsWIrWIyEK/Hml7f78=
+			DoE8MBCJBLf5wNEeY8BI+OO7WzzOyVKP++LmDZS9at8=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
