@@ -79,6 +79,10 @@ final class GoogleAdsProvider: NSObject, AdsProvider {
             return kGADAdSizeMediumRectangle
         }
     }
+
+    @objc public class func setSpotImSDKWithProvider() {
+        SpotIm.setGoogleAdsProvider(googleAdsProvider: GoogleAdsProvider())
+    }
 }
 
 extension GoogleAdsProvider: GADInterstitialDelegate {
