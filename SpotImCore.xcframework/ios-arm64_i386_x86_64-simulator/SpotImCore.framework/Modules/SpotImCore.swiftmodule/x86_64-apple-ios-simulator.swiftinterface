@@ -100,7 +100,7 @@ public enum SPEventType : Swift.String {
 extension NSNotification.Name {
   public static let spotIMConfigLoaded: Foundation.Notification.Name
 }
-public struct SPEventInfo {
+public struct SPEventInfo : Swift.Codable {
   public let eventType: Swift.String
   public let source: Swift.String
   public let isRegistered: Swift.Bool
@@ -119,6 +119,8 @@ public struct SPEventInfo {
   public let engineStatusType: Swift.String?
   public let publisherCustomData: [Swift.String : Swift.String]?
   public let targetUrl: Swift.String?
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
 }
 public enum SpotImError : Swift.Error {
   case notInitialized
