@@ -196,6 +196,7 @@ public typealias InitizlizeCompletionHandler = (_ success: Swift.Bool, _ error: 
   public static var googleAdsProvider: SpotImCore.AdsProvider?
   public static var customFontFamily: Swift.String?
   public static var displayArticleHeader: Swift.Bool
+  public static var reactNativeShowLoginScreenOnRootVC: Swift.Bool
   public static var enableCreateCommentNewDesign: Swift.Bool
   public static var shouldConversationFooterStartFromBottomAnchor: Swift.Bool
   public static var buttonOnlyMode: SpotImCore.SpotImButtonOnlyMode
