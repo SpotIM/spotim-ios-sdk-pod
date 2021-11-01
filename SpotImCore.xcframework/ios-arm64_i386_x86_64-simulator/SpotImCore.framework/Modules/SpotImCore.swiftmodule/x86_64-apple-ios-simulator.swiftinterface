@@ -282,6 +282,7 @@ public enum CustomizableView {
 public protocol SpotImCustomUIDelegate : AnyObject {
   func customizeView(view: SpotImCore.CustomizableView, isDarkMode: Swift.Bool)
 }
+public typealias SPShowFullConversationCompletionHandler = (_ success: Swift.Bool, _ error: SpotImCore.SpotImError?) -> Swift.Void
 extension SpotImCore.SpotImLoginDelegate {
   public func presentControllerForSSOFlow(with spotNavController: UIKit.UIViewController)
   public func startLoginFlow()
@@ -292,9 +293,9 @@ public let SPOTIM_NAV_CONTROL_TAG: Swift.Int
   final public func setLayoutDelegate(delegate: SpotImCore.SpotImLayoutDelegate)
   final public func setCustomUIDelegate(delegate: SpotImCore.SpotImCustomUIDelegate)
   final public func preConversationController(withPostId postId: Swift.String, articleMetadata: SpotImCore.SpotImArticleMetadata, numberOfPreLoadedMessages: Swift.Int = 2, navigationController: UIKit.UINavigationController, completion: @escaping (UIKit.UIViewController) -> Swift.Void)
-  final public func pushFullConversationViewController(navigationController: UIKit.UINavigationController, withPostId postId: Swift.String, articleMetadata: SpotImCore.SpotImArticleMetadata)
-  final public func pushFullConversationViewController(navigationController: UIKit.UINavigationController, withPostId postId: Swift.String, articleMetadata: SpotImCore.SpotImArticleMetadata, selectedCommentId: Swift.String?)
-  final public func presentFullConversationViewController(inViewController viewController: UIKit.UIViewController, withPostId postId: Swift.String, articleMetadata: SpotImCore.SpotImArticleMetadata, selectedCommentId: Swift.String?)
+  final public func pushFullConversationViewController(navigationController: UIKit.UINavigationController, withPostId postId: Swift.String, articleMetadata: SpotImCore.SpotImArticleMetadata, completion: SpotImCore.SPShowFullConversationCompletionHandler? = nil)
+  final public func pushFullConversationViewController(navigationController: UIKit.UINavigationController, withPostId postId: Swift.String, articleMetadata: SpotImCore.SpotImArticleMetadata, selectedCommentId: Swift.String?, completion: SpotImCore.SPShowFullConversationCompletionHandler? = nil)
+  final public func presentFullConversationViewController(inViewController viewController: UIKit.UIViewController, withPostId postId: Swift.String, articleMetadata: SpotImCore.SpotImArticleMetadata, selectedCommentId: Swift.String?, completion: SpotImCore.SPShowFullConversationCompletionHandler? = nil)
   @objc deinit
 }
 extension SpotImCore.SpotImSDKFlowCoordinator : SpotImCore.SSOAthenticationDelegate {
