@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.5 (swiftlang-1300.0.31.1 clang-1300.0.29.1)
+// swift-compiler-version: Apple Swift version 5.4.2 (swiftlang-1205.0.28.2 clang-1205.0.19.57)
 // swift-module-flags: -target i386-apple-ios10.3-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -module-name SpotImCore
 import AdSupport
 import Alamofire
@@ -10,10 +10,9 @@ import SafariServices
 import Swift
 import UIKit
 import WebKit
-import _Concurrency
-@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class BaseView : UIKit.UIView {
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class BaseView : UIKit.UIView {
   @available(*, unavailable, message: "Loading this view from a nib is unsupported in this project")
-  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
   @objc deinit
 }
 public struct InputConfiguration {
@@ -30,12 +29,12 @@ public enum SPNetworkError : Swift.Error {
   case noInternet
   case requestFailed
 }
-extension SpotImCore.SPNetworkError : Foundation.LocalizedError {
+extension SPNetworkError : Foundation.LocalizedError {
   public var errorDescription: Swift.String? {
     get
   }
 }
-extension SpotImCore.SPNetworkError : Foundation.CustomNSError {
+extension SPNetworkError : Foundation.CustomNSError {
   public static var errorDomain: Swift.String {
     get
   }
@@ -47,7 +46,7 @@ extension SpotImCore.SPNetworkError : Foundation.CustomNSError {
   public static func isMe(userId: Swift.String) -> Swift.Bool
   @objc deinit
 }
-extension Foundation.NSNotification.Name {
+extension NSNotification.Name {
   public static let userDisplayNameFrozen: Foundation.Notification.Name
 }
 public enum SPEventType : Swift.String {
@@ -89,16 +88,16 @@ public enum SPEventType : Swift.String {
     get
   }
 }
-@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class BaseLabel : UIKit.UILabel {
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class BaseLabel : UIKit.UILabel {
   @available(*, unavailable, message: "Loading this view from a nib is unsupported in this project")
-  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
   @objc deinit
 }
-@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class SPShowCommentsButton : SpotImCore.BaseButton {
-  @_Concurrency.MainActor(unsafe) public func getCommentsCount() -> Swift.String?
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class SPShowCommentsButton : SpotImCore.BaseButton {
+  public func getCommentsCount() -> Swift.String?
   @objc deinit
 }
-extension Foundation.NSNotification.Name {
+extension NSNotification.Name {
   public static let spotIMConfigLoaded: Foundation.Notification.Name
 }
 public struct SPEventInfo : Swift.Codable {
@@ -190,7 +189,7 @@ public enum SpotImReadOnlyMode {
 public protocol SPAnalyticsEventDelegate {
   func trackEvent(type: SpotImCore.SPEventType, event: SpotImCore.SPEventInfo)
 }
-public typealias InitizlizeCompletionHandler = (_ success: Swift.Bool, _ error: SpotImCore.SpotImError?) -> Swift.Void
+public typealias InitizlizeCompletionHandler = (Swift.Bool, SpotImCore.SpotImError?) -> Swift.Void
 @_hasMissingDesignatedInitializers public class SpotIm {
   public static var reinit: Swift.Bool
   public static var googleAdsProvider: SpotImCore.AdsProvider?
@@ -229,8 +228,8 @@ public typealias InitizlizeCompletionHandler = (_ success: Swift.Bool, _ error: 
   public static func getButtonOnlyMode() -> SpotImCore.SpotImButtonOnlyMode
   @objc deinit
 }
-public typealias AuthCompletionHandler = (_ success: Swift.Bool, _ error: Swift.Error?) -> Swift.Void
-public typealias AuthStratCompleteionHandler = (_ response: SpotImCore.SSOStartResponse?, _ error: Swift.Error?) -> Swift.Void
+public typealias AuthCompletionHandler = (Swift.Bool, Swift.Error?) -> Swift.Void
+public typealias AuthStratCompleteionHandler = (SpotImCore.SSOStartResponse?, Swift.Error?) -> Swift.Void
 public protocol SSOAthenticationDelegate : AnyObject {
   func ssoFlowStarted()
   func ssoFlowDidSucceed()
@@ -282,8 +281,8 @@ public enum CustomizableView {
 public protocol SpotImCustomUIDelegate : AnyObject {
   func customizeView(view: SpotImCore.CustomizableView, isDarkMode: Swift.Bool)
 }
-public typealias SPShowFullConversationCompletionHandler = (_ success: Swift.Bool, _ error: SpotImCore.SpotImError?) -> Swift.Void
-extension SpotImCore.SpotImLoginDelegate {
+public typealias SPShowFullConversationCompletionHandler = (Swift.Bool, SpotImCore.SpotImError?) -> Swift.Void
+extension SpotImLoginDelegate {
   public func presentControllerForSSOFlow(with spotNavController: UIKit.UIViewController)
   public func startLoginFlow()
   public func shouldDisplayLoginPromptForGuests() -> Swift.Bool
@@ -298,15 +297,15 @@ public let SPOTIM_NAV_CONTROL_TAG: Swift.Int
   final public func presentFullConversationViewController(inViewController viewController: UIKit.UIViewController, withPostId postId: Swift.String, articleMetadata: SpotImCore.SpotImArticleMetadata, selectedCommentId: Swift.String?, completion: SpotImCore.SPShowFullConversationCompletionHandler? = nil)
   @objc deinit
 }
-extension SpotImCore.SpotImSDKFlowCoordinator : SpotImCore.SSOAthenticationDelegate {
+extension SpotImSDKFlowCoordinator : SpotImCore.SSOAthenticationDelegate {
   final public func ssoFlowStarted()
   final public func ssoFlowDidSucceed()
   final public func ssoFlowDidFail(with error: Swift.Error?)
   final public func userLogout()
 }
-@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class BaseButton : UIKit.UIButton {
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class BaseButton : UIKit.UIButton {
   @available(*, unavailable, message: "Loading this view from a nib is unsupported in this project")
-  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
   @objc deinit
 }
 @_hasMissingDesignatedInitializers public class SPClientSettings {
@@ -337,7 +336,7 @@ public enum Result<T> {
     get
   }
 }
-extension SpotImCore.Result {
+extension Result {
   @discardableResult
   public func map<U>(_ function: (T) -> U) -> SpotImCore.Result<U>
   @discardableResult
