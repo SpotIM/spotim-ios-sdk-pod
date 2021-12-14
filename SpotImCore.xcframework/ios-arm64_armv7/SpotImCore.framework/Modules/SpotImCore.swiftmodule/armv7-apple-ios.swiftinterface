@@ -90,6 +90,10 @@ public enum SPEventType : Swift.String {
   }
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class BaseLabel : UIKit.UILabel {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func drawText(in rect: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public var intrinsicContentSize: CoreGraphics.CGSize {
+    @_Concurrency.MainActor(unsafe) @objc get
+  }
   @available(*, unavailable, message: "Loading this view from a nib is unsupported in this project")
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
   @objc deinit
@@ -149,6 +153,8 @@ public enum SpotImLoginStatus {
   }
 }
 public struct SpotImConversationCounters : Swift.Codable {
+  public let comments: Swift.Int
+  public let replies: Swift.Int
   public func encode(to encoder: Swift.Encoder) throws
   public init(from decoder: Swift.Decoder) throws
 }

@@ -221,6 +221,8 @@ SWIFT_CLASS("_TtC10SpotImCore10BaseButton")
 SWIFT_CLASS("_TtC10SpotImCore9BaseLabel")
 @interface BaseLabel : UILabel
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
+- (void)drawTextInRect:(CGRect)rect;
+@property (nonatomic, readonly) CGSize intrinsicContentSize;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER SWIFT_UNAVAILABLE_MSG("Loading this view from a nib is unsupported in this project");
 @end
 
@@ -491,6 +493,8 @@ SWIFT_CLASS("_TtC10SpotImCore10BaseButton")
 SWIFT_CLASS("_TtC10SpotImCore9BaseLabel")
 @interface BaseLabel : UILabel
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
+- (void)drawTextInRect:(CGRect)rect;
+@property (nonatomic, readonly) CGSize intrinsicContentSize;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER SWIFT_UNAVAILABLE_MSG("Loading this view from a nib is unsupported in this project");
 @end
 
