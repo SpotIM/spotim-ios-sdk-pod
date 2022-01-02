@@ -5,6 +5,8 @@ import AdSupport
 import Alamofire
 import Foundation
 import PromiseKit
+import RxCocoa
+import RxSwift
 import SafariServices
 @_exported import SpotImCore
 import Swift
