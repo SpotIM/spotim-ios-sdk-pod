@@ -28,5 +28,7 @@ Pod::Spec.new do |s|
   s.ios.vendored_frameworks = 'SpotImCore.xcframework'
   s.dependency 'Alamofire', '~> 5.2'
   s.dependency 'PromiseKit', '~> 6.8'
+  s.dependency 'RxSwift'
+  s.dependency 'RxCocoa'
 
 end
