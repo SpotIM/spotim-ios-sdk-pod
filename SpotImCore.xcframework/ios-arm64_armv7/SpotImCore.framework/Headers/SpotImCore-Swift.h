@@ -209,17 +209,26 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 # pragma pop_macro("any")
 #endif
 
+
+
+
+
+
+
+
+
+
 @class NSCoder;
 
-SWIFT_CLASS("_TtC10SpotImCore10BaseButton")
-@interface BaseButton : UIButton
+SWIFT_CLASS("_TtC10SpotImCore12OWBaseButton")
+@interface OWBaseButton : UIButton
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER SWIFT_UNAVAILABLE_MSG("Loading this view from a nib is unsupported in this project");
 @end
 
 
-SWIFT_CLASS("_TtC10SpotImCore9BaseLabel")
-@interface BaseLabel : UILabel
+SWIFT_CLASS("_TtC10SpotImCore11OWBaseLabel")
+@interface OWBaseLabel : UILabel
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 - (void)drawTextInRect:(CGRect)rect;
 @property (nonatomic, readonly) CGSize intrinsicContentSize;
@@ -227,24 +236,15 @@ SWIFT_CLASS("_TtC10SpotImCore9BaseLabel")
 @end
 
 
-SWIFT_CLASS("_TtC10SpotImCore8BaseView")
-@interface BaseView : UIView
+SWIFT_CLASS("_TtC10SpotImCore10OWBaseView")
+@interface OWBaseView : UIView
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER SWIFT_UNAVAILABLE_MSG("Loading this view from a nib is unsupported in this project");
 @end
 
 
-
-
-
-
-
-
-
-
-
 SWIFT_CLASS("_TtC10SpotImCore20SPShowCommentsButton")
-@interface SPShowCommentsButton : BaseButton
+@interface SPShowCommentsButton : OWBaseButton
 @end
 
 
@@ -481,17 +481,26 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 # pragma pop_macro("any")
 #endif
 
+
+
+
+
+
+
+
+
+
 @class NSCoder;
 
-SWIFT_CLASS("_TtC10SpotImCore10BaseButton")
-@interface BaseButton : UIButton
+SWIFT_CLASS("_TtC10SpotImCore12OWBaseButton")
+@interface OWBaseButton : UIButton
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER SWIFT_UNAVAILABLE_MSG("Loading this view from a nib is unsupported in this project");
 @end
 
 
-SWIFT_CLASS("_TtC10SpotImCore9BaseLabel")
-@interface BaseLabel : UILabel
+SWIFT_CLASS("_TtC10SpotImCore11OWBaseLabel")
+@interface OWBaseLabel : UILabel
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 - (void)drawTextInRect:(CGRect)rect;
 @property (nonatomic, readonly) CGSize intrinsicContentSize;
@@ -499,24 +508,15 @@ SWIFT_CLASS("_TtC10SpotImCore9BaseLabel")
 @end
 
 
-SWIFT_CLASS("_TtC10SpotImCore8BaseView")
-@interface BaseView : UIView
+SWIFT_CLASS("_TtC10SpotImCore10OWBaseView")
+@interface OWBaseView : UIView
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER SWIFT_UNAVAILABLE_MSG("Loading this view from a nib is unsupported in this project");
 @end
 
 
-
-
-
-
-
-
-
-
-
 SWIFT_CLASS("_TtC10SpotImCore20SPShowCommentsButton")
-@interface SPShowCommentsButton : BaseButton
+@interface SPShowCommentsButton : OWBaseButton
 @end
 
 
