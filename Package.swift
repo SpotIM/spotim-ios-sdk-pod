@@ -19,7 +19,7 @@ let package = Package(
         .package(
             url: "https://github.com/mxcl/PromiseKit",
             .exact(from: "6.8.0")
-        )
+        ),
         .package(
             url: "https://github.com/ReactiveX/RxSwift",
             .exact(from: "6.5.0")
