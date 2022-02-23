@@ -21,7 +21,7 @@ let package = Package(
             .exact("6.8.0")
         ),
         .package(
-            url: "https://github.com/ReactiveX/RxSwift",
+            url: "https://github.com/ReactiveX/RxSwift.git",
             .exact("6.5.0")
         )
     ],
