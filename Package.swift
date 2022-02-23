@@ -2,12 +2,12 @@
 import PackageDescription
 
 let package = Package(
-    name: "SpotIMCore",
+    name: "SpotImCore",
     platforms: [
         .iOS(.v10)
     ],
     products: [
-        .library(name: "SpotIMCore", targets: ["WrapperSPMTarget"])
+        .library(name: "SpotImCore", targets: ["WrapperSPMTarget"])
     ],
     dependencies: [
         // Here we define our package's external dependencies
