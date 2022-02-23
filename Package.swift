@@ -14,15 +14,15 @@ let package = Package(
         // and from where they can be fetched:
         .package(
             url: "https://github.com/Alamofire/Alamofire",
-            .exact(from: "5.2.0")
+            .exact("5.2.0")
         ),
         .package(
             url: "https://github.com/mxcl/PromiseKit",
-            .exact(from: "6.8.0")
+            .exact("6.8.0")
         ),
         .package(
             url: "https://github.com/ReactiveX/RxSwift",
-            .exact(from: "6.5.0")
+            .exact("6.5.0")
         )
     ],
     targets: [
