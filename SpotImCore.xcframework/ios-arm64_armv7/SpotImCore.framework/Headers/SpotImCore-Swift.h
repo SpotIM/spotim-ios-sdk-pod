@@ -215,9 +215,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 
 
-
-
-
 @class NSCoder;
 
 SWIFT_CLASS("_TtC10SpotImCore12OWBaseButton")
@@ -246,6 +243,19 @@ SWIFT_CLASS("_TtC10SpotImCore10OWBaseView")
 SWIFT_CLASS("_TtC10SpotImCore20SPShowCommentsButton")
 @interface SPShowCommentsButton : OWBaseButton
 @end
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -487,9 +497,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 
 
-
-
-
 @class NSCoder;
 
 SWIFT_CLASS("_TtC10SpotImCore12OWBaseButton")
@@ -518,6 +525,19 @@ SWIFT_CLASS("_TtC10SpotImCore10OWBaseView")
 SWIFT_CLASS("_TtC10SpotImCore20SPShowCommentsButton")
 @interface SPShowCommentsButton : OWBaseButton
 @end
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

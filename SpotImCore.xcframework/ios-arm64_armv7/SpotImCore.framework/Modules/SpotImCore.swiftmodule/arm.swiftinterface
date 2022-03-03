@@ -291,6 +291,7 @@ public enum CustomizableView {
   case navigationItemTitle(textView: UIKit.UITextView)
   case showCommentsButton(button: SpotImCore.SPShowCommentsButton)
   case preConversationHeader(titleLabel: UIKit.UILabel, counterLabel: UIKit.UILabel)
+  case commentCreationActionButton(button: SpotImCore.OWBaseButton)
 }
 public protocol SpotImCustomUIDelegate : AnyObject {
   func customizeView(view: SpotImCore.CustomizableView, isDarkMode: Swift.Bool)
