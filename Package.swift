@@ -2,23 +2,23 @@
 import PackageDescription
 
 let package = Package(
-    name: "SpotImCore",
+    name: "SpotIMCore",
     platforms: [
         .iOS(.v10)
     ],
     products: [
-        .library(name: "SpotImCore", targets: ["WrapperSPMTarget"])
+        .library(name: "SpotIMCore", targets: ["WrapperSPMTarget"])
     ],
     dependencies: [
         // Here we define our package's external dependencies
         // and from where they can be fetched:
         .package(
             url: "https://github.com/Alamofire/Alamofire",
-            .exact("5.2.0")
+            .upToNextMinor(from: "5.2.0")
         ),
         .package(
             url: "https://github.com/mxcl/PromiseKit",
-            .exact("6.8.0")
+            .upToNextMinor(from: "6.8.0")
         ),
         .package(
             url: "https://github.com/ReactiveX/RxSwift.git",
