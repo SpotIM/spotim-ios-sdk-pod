@@ -240,6 +240,7 @@ public typealias InitizlizeCompletionHandler = (_ success: Swift.Bool, _ error: 
   public static func setAnalyticsEventDelegate(delegate: SpotImCore.SPAnalyticsEventDelegate)
   public static func setButtonOnlyMode(mode: SpotImCore.SpotImButtonOnlyMode)
   public static func getButtonOnlyMode() -> SpotImCore.SpotImButtonOnlyMode
+  public static func setInitialSort(option: SpotImCore.SpotImSortByOption)
   @objc deinit
 }
 public typealias AuthCompletionHandler = (_ success: Swift.Bool, _ error: Swift.Error?) -> Swift.Void
@@ -313,12 +314,12 @@ public let SPOTIM_NAV_CONTROL_TAG: Swift.Int
 @_hasMissingDesignatedInitializers final public class SpotImSDKFlowCoordinator {
   final public func setLayoutDelegate(delegate: SpotImCore.SpotImLayoutDelegate)
   final public func setCustomUIDelegate(delegate: SpotImCore.SpotImCustomUIDelegate)
-  final public func preConversationController(withPostId postId: Swift.String, articleMetadata: SpotImCore.SpotImArticleMetadata, numberOfPreLoadedMessages: Swift.Int = 2, navigationController: UIKit.UINavigationController, completion: @escaping (UIKit.UIViewController) -> Swift.Void)
-  final public func openFullConversationViewController(postId: Swift.String, articleMetadata: SpotImCore.SpotImArticleMetadata, presentationalMode: SpotImCore.SPViewControllerPresentationalMode, selectedCommentId: Swift.String? = nil, completion: SpotImCore.SPShowFullConversationCompletionHandler? = nil)
-  final public func openNewCommentViewController(postId: Swift.String, articleMetadata: SpotImCore.SpotImArticleMetadata, fullConversationPresentationalMode: SpotImCore.SPViewControllerPresentationalMode, completion: SpotImCore.SPOpenNewCommentCompletionHandler? = nil)
+  final public func preConversationController(withPostId postId: Swift.String, articleMetadata: SpotImCore.SpotImArticleMetadata, numberOfPreLoadedMessages: Swift.Int = 2, navigationController: UIKit.UINavigationController, callbacks: SpotImCore.SPViewActionsCallbacks? = nil, completion: @escaping (UIKit.UIViewController) -> Swift.Void)
+  final public func openFullConversationViewController(postId: Swift.String, articleMetadata: SpotImCore.SpotImArticleMetadata, presentationalMode: SpotImCore.SPViewControllerPresentationalMode, selectedCommentId: Swift.String? = nil, callbacks: SpotImCore.SPViewActionsCallbacks? = nil, completion: SpotImCore.SPShowFullConversationCompletionHandler? = nil)
+  final public func openNewCommentViewController(postId: Swift.String, articleMetadata: SpotImCore.SpotImArticleMetadata, fullConversationPresentationalMode: SpotImCore.SPViewControllerPresentationalMode, callbacks: SpotImCore.SPViewActionsCallbacks? = nil, completion: SpotImCore.SPOpenNewCommentCompletionHandler? = nil)
   final public func pushFullConversationViewController(navigationController: UIKit.UINavigationController, withPostId postId: Swift.String, articleMetadata: SpotImCore.SpotImArticleMetadata, completion: SpotImCore.SPShowFullConversationCompletionHandler? = nil)
-  final public func pushFullConversationViewController(navigationController: UIKit.UINavigationController, withPostId postId: Swift.String, articleMetadata: SpotImCore.SpotImArticleMetadata, selectedCommentId: Swift.String?, completion: SpotImCore.SPShowFullConversationCompletionHandler? = nil)
-  final public func presentFullConversationViewController(inViewController viewController: UIKit.UIViewController, withPostId postId: Swift.String, articleMetadata: SpotImCore.SpotImArticleMetadata, selectedCommentId: Swift.String?, completion: SpotImCore.SPShowFullConversationCompletionHandler? = nil)
+  final public func pushFullConversationViewController(navigationController: UIKit.UINavigationController, withPostId postId: Swift.String, articleMetadata: SpotImCore.SpotImArticleMetadata, selectedCommentId: Swift.String?, callbacks: SpotImCore.SPViewActionsCallbacks? = nil, completion: SpotImCore.SPShowFullConversationCompletionHandler? = nil)
+  final public func presentFullConversationViewController(inViewController viewController: UIKit.UIViewController, withPostId postId: Swift.String, articleMetadata: SpotImCore.SpotImArticleMetadata, selectedCommentId: Swift.String?, callbacks: SpotImCore.SPViewActionsCallbacks? = nil, completion: SpotImCore.SPShowFullConversationCompletionHandler? = nil)
   @objc deinit
 }
 extension SpotImCore.SpotImSDKFlowCoordinator : SpotImCore.SSOAthenticationDelegate {
@@ -347,6 +348,29 @@ public enum SPUserInterfaceStyle : Swift.Int {
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
+    get
+  }
+}
+public typealias SPViewActionsCallbacks = (SpotImCore.SPViewActionCallbackType, SpotImCore.SPViewSourceType, Swift.String) -> Swift.Void
+public enum SPViewSourceType {
+  case preConversation
+  case conversation
+  case createComment
+  case login
+  public var description: Swift.String {
+    get
+  }
+  public static func == (a: SpotImCore.SPViewSourceType, b: SpotImCore.SPViewSourceType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum SPViewActionCallbackType {
+  case articleHeaderPressed
+  public static func == (a: SpotImCore.SPViewActionCallbackType, b: SpotImCore.SPViewActionCallbackType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
     get
   }
 }
@@ -419,5 +443,9 @@ extension SpotImCore.OWParserError : Swift.Hashable {}
 extension SpotImCore.SPUserInterfaceStyle : Swift.Equatable {}
 extension SpotImCore.SPUserInterfaceStyle : Swift.Hashable {}
 extension SpotImCore.SPUserInterfaceStyle : Swift.RawRepresentable {}
+extension SpotImCore.SPViewSourceType : Swift.Equatable {}
+extension SpotImCore.SPViewSourceType : Swift.Hashable {}
+extension SpotImCore.SPViewActionCallbackType : Swift.Equatable {}
+extension SpotImCore.SPViewActionCallbackType : Swift.Hashable {}
 extension SpotImCore.AdSize : Swift.Equatable {}
 extension SpotImCore.AdSize : Swift.Hashable {}
