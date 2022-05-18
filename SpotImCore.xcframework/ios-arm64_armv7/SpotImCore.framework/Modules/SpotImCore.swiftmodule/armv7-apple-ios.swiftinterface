@@ -14,6 +14,8 @@ import Swift
 import UIKit
 import WebKit
 import _Concurrency
+import os.log
+import os
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class OWBaseView : UIKit.UIView {
   @available(*, unavailable, message: "Loading this view from a nib is unsupported in this project")
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
@@ -241,6 +243,7 @@ public typealias InitizlizeCompletionHandler = (_ success: Swift.Bool, _ error: 
   public static func setButtonOnlyMode(mode: SpotImCore.SpotImButtonOnlyMode)
   public static func getButtonOnlyMode() -> SpotImCore.SpotImButtonOnlyMode
   public static func setInitialSort(option: SpotImCore.SpotImSortByOption)
+  public static func configureLogger(logLevel: SpotImCore.SPLogLevel, logMethods: [SpotImCore.SPLogMethod])
   @objc deinit
 }
 public typealias AuthCompletionHandler = (_ success: Swift.Bool, _ error: Swift.Error?) -> Swift.Void
@@ -297,7 +300,7 @@ public enum CustomizableView {
   case emptyStateReadOnlyLabel(label: UIKit.UILabel)
 }
 public protocol SpotImCustomUIDelegate : AnyObject {
-  func customizeView(view: SpotImCore.CustomizableView, isDarkMode: Swift.Bool)
+  func customizeView(view: SpotImCore.CustomizableView, isDarkMode: Swift.Bool, postId: Swift.String)
 }
 public typealias SPShowFullConversationCompletionHandler = (_ success: Swift.Bool, _ error: SpotImCore.SpotImError?) -> Swift.Void
 public typealias SPOpenNewCommentCompletionHandler = (_ success: Swift.Bool, _ error: SpotImCore.SpotImError?) -> Swift.Void
@@ -328,6 +331,9 @@ extension SpotImCore.SpotImSDKFlowCoordinator : SpotImCore.SSOAthenticationDeleg
   final public func ssoFlowDidFail(with error: Swift.Error?)
   final public func userLogout()
 }
+public enum SPLogMethod {
+  case nsLog, osLog, file(maxFilesNumber: Swift.Int)
+}
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class OWBaseButton : UIKit.UIButton {
   @available(*, unavailable, message: "Loading this view from a nib is unsupported in this project")
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
@@ -348,6 +354,14 @@ public enum SPUserInterfaceStyle : Swift.Int {
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
+    get
+  }
+}
+public enum SPLogLevel {
+  case none, error, medium, verbose
+  public static func == (a: SpotImCore.SPLogLevel, b: SpotImCore.SPLogLevel) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
     get
   }
 }
@@ -443,6 +457,8 @@ extension SpotImCore.OWParserError : Swift.Hashable {}
 extension SpotImCore.SPUserInterfaceStyle : Swift.Equatable {}
 extension SpotImCore.SPUserInterfaceStyle : Swift.Hashable {}
 extension SpotImCore.SPUserInterfaceStyle : Swift.RawRepresentable {}
+extension SpotImCore.SPLogLevel : Swift.Equatable {}
+extension SpotImCore.SPLogLevel : Swift.Hashable {}
 extension SpotImCore.SPViewSourceType : Swift.Equatable {}
 extension SpotImCore.SPViewSourceType : Swift.Hashable {}
 extension SpotImCore.SPViewActionCallbackType : Swift.Equatable {}
