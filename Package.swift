@@ -1,13 +1,10 @@
-// swift-tools-version:5.3
+// swift-tools-version:5.5
 import PackageDescription
 
 let package = Package(
     name: "SpotIMCore",
     platforms: [
-        .macOS(.v10_12),
-        .iOS(.v10),
-        .tvOS(.v10),
-        .watchOS(.v3)
+        .iOS(.v10)
     ],
     products: [
         .library(name: "SpotIMCore", targets: ["WrapperSPMTarget"])
@@ -22,6 +19,10 @@ let package = Package(
         .package(
             url: "https://github.com/mxcl/PromiseKit",
             .upToNextMinor(from: "6.8.0")
+        ),
+        .package(
+            url: "https://github.com/ReactiveX/RxSwift.git",
+            .upToNextMinor(from: "6.5.0")
         )
     ],
     targets: [
@@ -34,7 +35,9 @@ let package = Package(
             dependencies: [
                 .target(name: "SpotIMCoreXCFramework", condition: .when(platforms: .some([.iOS]))),
                 "Alamofire",
-                "PromiseKit"
+                "PromiseKit",
+                "RxSwift",
+                .product(name: "RxCocoa", package: "RxSwift")
             ]
         )
     ]
