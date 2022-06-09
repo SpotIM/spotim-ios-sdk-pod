@@ -22,7 +22,7 @@ let package = Package(
         ),
         .package(
             url: "https://github.com/ReactiveX/RxSwift.git",
-            .exact("6.5.0")
+            .upToNextMinor(from: "6.5.0")
         )
     ],
     targets: [
@@ -37,7 +37,7 @@ let package = Package(
                 "Alamofire",
                 "PromiseKit",
                 "RxSwift",
-                "RxCocoa"
+                .product(name: "RxCocoa", package: "RxSwift")
             ]
         )
     ]
