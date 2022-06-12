@@ -18,9 +18,9 @@ Pod::Spec.new do |s|
   s.author          = { 'Alon Haiut' => 'alon.h@openweb.com' }
   s.platform        = :ios
   s.ios.deployment_target = '10.3'
-  # Exclude arm64 arch for simulators as we don't support Apple Silicon
-  s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
-  s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+  # Setting all dependencies `BUILD_LIBRARY_FOR_DISTRIBUTION` to `YES`
+  s.user_target_xcconfig = { 'BUILD_LIBRARY_FOR_DISTRIBUTION' => 'YES' }
+  s.pod_target_xcconfig = { 'BUILD_LIBRARY_FOR_DISTRIBUTION' => 'YES' }
 
 # the Pre-Compiled Framework:
   s.source          = { :git => 'https://github.com/SpotIM/spotim-ios-sdk-pod.git', :tag => s.version.to_s }
