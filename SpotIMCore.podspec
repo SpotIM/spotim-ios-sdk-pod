@@ -18,8 +18,7 @@ Pod::Spec.new do |s|
   s.author          = { 'Alon Haiut' => 'alon.h@openweb.com' }
   s.platform        = :ios
   s.ios.deployment_target = '10.3'
-  # Setting all dependencies `BUILD_LIBRARY_FOR_DISTRIBUTION` to `YES`
-  s.user_target_xcconfig = { 'BUILD_LIBRARY_FOR_DISTRIBUTION' => 'YES' }
+  # Setting pod `BUILD_LIBRARY_FOR_DISTRIBUTION` to `YES`
   s.pod_target_xcconfig = { 'BUILD_LIBRARY_FOR_DISTRIBUTION' => 'YES' }
 
 # the Pre-Compiled Framework:
