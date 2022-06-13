@@ -18,17 +18,16 @@ Pod::Spec.new do |s|
   s.author          = { 'Alon Haiut' => 'alon.h@openweb.com' }
   s.platform        = :ios
   s.ios.deployment_target = '10.3'
-  # Exclude arm64 arch for simulators as we don't support Apple Silicon
-  s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
-  s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+  # Setting pod `BUILD_LIBRARY_FOR_DISTRIBUTION` to `YES`
+  s.pod_target_xcconfig = { 'BUILD_LIBRARY_FOR_DISTRIBUTION' => 'YES' }
 
 # the Pre-Compiled Framework:
   s.source          = { :git => 'https://github.com/SpotIM/spotim-ios-sdk-pod.git', :tag => s.version.to_s }
   s.ios.resources = 'SpotImAdsProvider/*.swift'
   s.ios.vendored_frameworks = 'SpotImCore.xcframework'
-  s.dependency 'Alamofire', '~> 5.2'
-  s.dependency 'PromiseKit', '~> 6.8'
-  s.dependency 'RxSwift'
-  s.dependency 'RxCocoa'
+  s.dependency 'Alamofire', '~> 5.6.1'
+  s.dependency 'PromiseKit', '~> 6.17.1'
+  s.dependency 'RxSwift', '~> 6.5'
+  s.dependency 'RxCocoa', '~> 6.5'
 
 end
