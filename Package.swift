@@ -4,7 +4,7 @@ import PackageDescription
 let package = Package(
     name: "SpotIMCore",
     platforms: [
-        .iOS(.v10)
+        .iOS(.v11)
     ],
     products: [
         .library(name: "SpotIMCore", targets: ["WrapperSPMTarget"])
@@ -27,13 +27,13 @@ let package = Package(
     ],
     targets: [
         .binaryTarget(
-            name: "SpotIMCoreXCFramework",
+            name: "SpotIMCore",
             path: "SpotImCore.xcframework"
         ),
         .target(
             name: "WrapperSPMTarget",
             dependencies: [
-                .target(name: "SpotIMCoreXCFramework", condition: .when(platforms: .some([.iOS]))),
+                .target(name: "SpotIMCore", condition: .when(platforms: .some([.iOS]))),
                 "Alamofire",
                 "PromiseKit",
                 "RxSwift",
