@@ -27,7 +27,7 @@ let package = Package(
     ],
     targets: [
         .binaryTarget(
-            name: "SpotIMCore",
+            name: "SpotImCore",
             path: "SpotImCore.xcframework"
         ),
         .target(
