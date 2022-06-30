@@ -33,7 +33,7 @@ let package = Package(
         .target(
             name: "WrapperSPMTarget",
             dependencies: [
-                .target(name: "SpotIMCore", condition: .when(platforms: .some([.iOS]))),
+                .target(name: "SpotImCore", condition: .when(platforms: .some([.iOS]))),
                 "Alamofire",
                 "PromiseKit",
                 "RxSwift",
