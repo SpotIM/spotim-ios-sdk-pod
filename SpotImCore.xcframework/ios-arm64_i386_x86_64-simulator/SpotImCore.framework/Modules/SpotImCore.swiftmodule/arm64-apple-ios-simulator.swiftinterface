@@ -79,6 +79,7 @@ public enum SPEventType : Swift.String {
   case sortByClicked
   case createMessageClicked
   case commentPostClicked
+  case createMessageSuccessfully
   case backClicked
   case loadMoreComments
   case engineStatus
@@ -225,6 +226,7 @@ public typealias InitizlizeCompletionHandler = (Swift.Result<Swift.Void, SpotImC
   public static func getButtonOnlyMode() -> SpotImCore.SpotImButtonOnlyMode
   public static func setInitialSort(option: SpotImCore.SpotImSortByOption)
   public static func configureLogger(logLevel: SpotImCore.SPLogLevel, logMethods: [SpotImCore.SPLogMethod])
+  public static func setAdditionalConfigurations(configurations: [SpotImCore.SPAdditionalConfiguration])
   @objc deinit
 }
 public typealias AuthCompletionHandler = (Swift.Result<Swift.String, Swift.Error>) -> Swift.Void
@@ -324,6 +326,14 @@ public enum SPLogLevel {
     get
   }
 }
+public enum SPAdditionalConfiguration {
+  case suppressFinmbFilter
+  public static func == (a: SpotImCore.SPAdditionalConfiguration, b: SpotImCore.SPAdditionalConfiguration) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
 public typealias SPViewActionsCallbacks = (SpotImCore.SPViewActionCallbackType, SpotImCore.SPViewSourceType, Swift.String) -> Swift.Void
 public enum SPViewSourceType {
   case preConversation
@@ -341,11 +351,7 @@ public enum SPViewSourceType {
 }
 public enum SPViewActionCallbackType {
   case articleHeaderPressed
-  public static func == (a: SpotImCore.SPViewActionCallbackType, b: SpotImCore.SPViewActionCallbackType) -> Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
-  public var hashValue: Swift.Int {
-    get
-  }
+  case openUserProfile(userId: Swift.String)
 }
 public enum OWResult<T> {
   case success(T)
@@ -416,9 +422,9 @@ extension SpotImCore.SPUserInterfaceStyle : Swift.Hashable {}
 extension SpotImCore.SPUserInterfaceStyle : Swift.RawRepresentable {}
 extension SpotImCore.SPLogLevel : Swift.Equatable {}
 extension SpotImCore.SPLogLevel : Swift.Hashable {}
+extension SpotImCore.SPAdditionalConfiguration : Swift.Equatable {}
+extension SpotImCore.SPAdditionalConfiguration : Swift.Hashable {}
 extension SpotImCore.SPViewSourceType : Swift.Equatable {}
 extension SpotImCore.SPViewSourceType : Swift.Hashable {}
-extension SpotImCore.SPViewActionCallbackType : Swift.Equatable {}
-extension SpotImCore.SPViewActionCallbackType : Swift.Hashable {}
 extension SpotImCore.AdSize : Swift.Equatable {}
 extension SpotImCore.AdSize : Swift.Hashable {}
