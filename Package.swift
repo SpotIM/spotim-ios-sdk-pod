@@ -14,11 +14,11 @@ let package = Package(
         // and from where they can be fetched:
         .package(
             url: "https://github.com/Alamofire/Alamofire",
-            .upToNextMinor(from: "5.2.0")
+            .upToNextMinor(from: "5.6.2")
         ),
         .package(
             url: "https://github.com/mxcl/PromiseKit",
-            .upToNextMinor(from: "6.8.0")
+            .upToNextMinor(from: "6.17.1")
         ),
         .package(
             url: "https://github.com/ReactiveX/RxSwift.git",
