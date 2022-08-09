@@ -280,6 +280,7 @@ SWIFT_CLASS("_TtC10SpotImCore20SPShowCommentsButton")
 
 
 
+
 #if __has_attribute(external_source_symbol)
 # pragma clang attribute pop
 #endif
@@ -530,6 +531,7 @@ SWIFT_CLASS("_TtC10SpotImCore10OWBaseView")
 SWIFT_CLASS("_TtC10SpotImCore20SPShowCommentsButton")
 @interface SPShowCommentsButton : OWBaseButton
 @end
+
 
 
 

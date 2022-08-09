@@ -351,7 +351,7 @@ public enum SPViewSourceType {
 }
 public enum SPViewActionCallbackType {
   case articleHeaderPressed
-  case openUserProfile(userId: Swift.String)
+  case openUserProfile(userId: Swift.String, navigationController: UIKit.UINavigationController)
 }
 public enum OWResult<T> {
   case success(T)
