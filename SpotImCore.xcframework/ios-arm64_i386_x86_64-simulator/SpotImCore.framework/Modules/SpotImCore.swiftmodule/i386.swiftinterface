@@ -266,7 +266,7 @@ public enum CustomizableView {
   case sayControlInMainConversation(labelContainer: SpotImCore.OWBaseView, label: SpotImCore.OWBaseLabel)
   case conversationFooter(view: UIKit.UIView)
   case communityGuidelines(textView: UIKit.UITextView)
-  case navigationItemTitle(textView: UIKit.UITextView)
+  case navigationItemTitle(label: UIKit.UILabel)
   case showCommentsButton(button: SpotImCore.SPShowCommentsButton)
   case preConversationHeader(titleLabel: UIKit.UILabel, counterLabel: UIKit.UILabel)
   case commentCreationActionButton(button: SpotImCore.OWBaseButton)
