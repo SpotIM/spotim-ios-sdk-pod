@@ -17,10 +17,6 @@ let package = Package(
             .upToNextMinor(from: "5.6.2")
         ),
         .package(
-            url: "https://github.com/mxcl/PromiseKit",
-            .upToNextMinor(from: "6.17.1")
-        ),
-        .package(
             url: "https://github.com/ReactiveX/RxSwift.git",
             .upToNextMinor(from: "6.5.0")
         )
@@ -35,7 +31,6 @@ let package = Package(
             dependencies: [
                 .target(name: "SpotImCore", condition: .when(platforms: .some([.iOS]))),
                 "Alamofire",
-                "PromiseKit",
                 "RxSwift",
                 .product(name: "RxCocoa", package: "RxSwift")
             ]
