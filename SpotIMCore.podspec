@@ -26,7 +26,6 @@ Pod::Spec.new do |s|
   s.ios.resources = 'SpotImAdsProvider/*.swift'
   s.ios.vendored_frameworks = 'SpotImCore.xcframework'
   s.dependency 'Alamofire', '~> 5.6.2'
-  s.dependency 'PromiseKit', '~> 6.17.1'
   s.dependency 'RxSwift', '~> 6.5'
   s.dependency 'RxCocoa', '~> 6.5'
 
