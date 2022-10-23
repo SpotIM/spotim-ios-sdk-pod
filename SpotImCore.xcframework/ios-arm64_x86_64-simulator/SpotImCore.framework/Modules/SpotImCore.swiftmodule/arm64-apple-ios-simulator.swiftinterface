@@ -1,7 +1,6 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.7 (swiftlang-5.7.0.127.4 clang-1400.0.29.50)
+// swift-compiler-version: Apple Swift version 5.5 (swiftlang-1300.0.31.1 clang-1300.0.29.1)
 // swift-module-flags: -target arm64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -module-name SpotImCore
-// swift-module-flags-ignorable: -enable-bare-slash-regex
 import AVKit
 import AdSupport
 import Alamofire
@@ -14,7 +13,6 @@ import Swift
 import UIKit
 import WebKit
 import _Concurrency
-import _StringProcessing
 import os.log
 import os
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class OWBaseView : UIKit.UIView {
@@ -101,9 +99,9 @@ public enum SPEventType : Swift.String {
   }
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class OWBaseLabel : UIKit.UILabel {
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func drawText(in rect: CoreFoundation.CGRect)
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public var intrinsicContentSize: CoreFoundation.CGSize {
-    @objc get
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func drawText(in rect: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public var intrinsicContentSize: CoreGraphics.CGSize {
+    @_Concurrency.MainActor(unsafe) @objc get
   }
   @available(*, unavailable, message: "Loading this view from a nib is unsupported in this project")
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
@@ -250,7 +248,7 @@ public enum OWParserError : Swift.Error {
   }
 }
 public protocol SpotImLayoutDelegate : AnyObject {
-  func viewHeightDidChange(to newValue: CoreFoundation.CGFloat)
+  func viewHeightDidChange(to newValue: CoreGraphics.CGFloat)
 }
 public protocol AuthenticationViewDelegate : AnyObject {
   func authenticationStarted()
@@ -379,7 +377,7 @@ extension SpotImCore.OWResult {
   public func require() -> T
 }
 public protocol AdsProviderBannerDelegate : AnyObject {
-  func bannerLoaded(bannerView: UIKit.UIView, adBannerSize: CoreFoundation.CGSize, adUnitID: Swift.String)
+  func bannerLoaded(bannerView: UIKit.UIView, adBannerSize: CoreGraphics.CGSize, adUnitID: Swift.String)
   func bannerFailedToLoad(error: Swift.Error)
 }
 public protocol AdsProviderInterstitialDelegate : AnyObject {

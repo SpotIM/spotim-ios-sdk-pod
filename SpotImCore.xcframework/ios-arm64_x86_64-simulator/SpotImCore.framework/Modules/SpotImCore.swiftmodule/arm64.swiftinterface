@@ -1,0 +1,429 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.5 (swiftlang-1300.0.31.1 clang-1300.0.29.1)
+// swift-module-flags: -target arm64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -module-name SpotImCore
+import AVKit
+import AdSupport
+import Alamofire
+import Foundation
+import RxCocoa
+import RxSwift
+import SafariServices
+@_exported import SpotImCore
+import Swift
+import UIKit
+import WebKit
+import _Concurrency
+import os.log
+import os
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class OWBaseView : UIKit.UIView {
+  @available(*, unavailable, message: "Loading this view from a nib is unsupported in this project")
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc deinit
+}
+public protocol OWImagePickerDelegate : AnyObject {
+  func didSelect(image: UIKit.UIImage?)
+}
+public struct InputConfiguration {
+  public init(appLanguage: Swift.String)
+}
+public struct OWEmptyParser {
+}
+public struct OWJSONParser {
+}
+public enum SPNetworkError : Swift.Error {
+  case custom(_: Swift.String)
+  case `default`
+  case emptyResponse
+  case noInternet
+  case requestFailed
+}
+extension SpotImCore.SPNetworkError : Foundation.LocalizedError {
+  public var errorDescription: Swift.String? {
+    get
+  }
+}
+extension SpotImCore.SPNetworkError : Foundation.CustomNSError {
+  public static var errorDomain: Swift.String {
+    get
+  }
+  public var errorCode: Swift.Int {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers final public class SPPublicSessionInterface {
+  public static func isMe(userId: Swift.String) -> Swift.Bool
+  @objc deinit
+}
+extension Foundation.NSNotification.Name {
+  public static let userDisplayNameFrozen: Foundation.Notification.Name
+}
+public enum SPEventType : Swift.String {
+  case loaded
+  case viewed
+  case mainViewed
+  case messageContextMenuClicked
+  case messageContextMenuClosed
+  case userProfileClicked
+  case myProfileClicked
+  case loginClicked
+  case reading
+  case loadMoreRepliesClicked
+  case hideMoreRepliesClicked
+  case commentReadMoreClicked
+  case commentReadLessClicked
+  case appInit
+  case appOpened
+  case appClosed
+  case sortByOpened
+  case sortByClicked
+  case createMessageClicked
+  case commentPostClicked
+  case createMessageSuccessfully
+  case backClicked
+  case loadMoreComments
+  case engineStatus
+  case communityGuidelinesLinkClicked
+  case commentShareClicked
+  case commentReportClicked
+  case commentDeleteClicked
+  case commentRankUpButtonClicked
+  case commentRankDownButtonClicked
+  case commentRankUpButtonUndo
+  case commentRankDownButtonUndo
+  case fullConversationAdCloseClicked
+  case commentEdited
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class OWBaseLabel : UIKit.UILabel {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func drawText(in rect: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public var intrinsicContentSize: CoreGraphics.CGSize {
+    @_Concurrency.MainActor(unsafe) @objc get
+  }
+  @available(*, unavailable, message: "Loading this view from a nib is unsupported in this project")
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class SPShowCommentsButton : SpotImCore.OWBaseButton {
+  @_Concurrency.MainActor(unsafe) public func getCommentsCount() -> Swift.String?
+  @objc deinit
+}
+extension Foundation.NSNotification.Name {
+  public static let spotIMConfigLoaded: Foundation.Notification.Name
+}
+public struct SPEventInfo : Swift.Codable {
+  public let eventType: Swift.String
+  public let source: Swift.String
+  public let isRegistered: Swift.Bool
+  public let splitName: Swift.String
+  public let itemType: Swift.String?
+  public let targetType: Swift.String?
+  public let segment: Swift.String?
+  public let lang: Swift.String?
+  public let domain: Swift.String?
+  public let userId: Swift.String?
+  public let messageId: Swift.String?
+  public let relatedMessageId: Swift.String?
+  public let readingSeconds: Swift.Int?
+  public let itemId: Swift.String?
+  public let totalComments: Swift.Int?
+  public let engineStatusType: Swift.String?
+  public let publisherCustomData: [Swift.String : Swift.String]?
+  public let targetUrl: Swift.String?
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public enum SpotImError : Swift.Error {
+  case notInitialized
+  case alreadyInitialized
+  case configurationSdkDisabled
+  case internalError(Swift.String)
+}
+public enum SpotImLoginStatus {
+  case guest
+  case ssoLoggedIn(userId: Swift.String)
+}
+public struct SpotImConversationCounters : Swift.Codable {
+  public let comments: Swift.Int
+  public let replies: Swift.Int
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct SpotImArticleMetadata {
+  public init(url: Swift.String, title: Swift.String, subtitle: Swift.String, thumbnailUrl: Swift.String, section: Swift.String = "default", customBIData: [Swift.String : Swift.String]? = nil, readOnlyMode: SpotImCore.SpotImReadOnlyMode = .default)
+  public mutating func setCustomBIData(_ data: [Swift.String : Swift.String])
+  public mutating func setReadOnlymode(_ mode: SpotImCore.SpotImReadOnlyMode)
+}
+public enum SpotImSortByOption {
+  case best
+  case newest
+  case oldest
+  public static func == (a: SpotImCore.SpotImSortByOption, b: SpotImCore.SpotImSortByOption) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum SpotImButtonOnlyMode {
+  case disable
+  case withTitle
+  case withoutTitle
+  public static func == (a: SpotImCore.SpotImButtonOnlyMode, b: SpotImCore.SpotImButtonOnlyMode) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum SpotImReadOnlyMode {
+  case `default`
+  case enable
+  case disable
+  public static func == (a: SpotImCore.SpotImReadOnlyMode, b: SpotImCore.SpotImReadOnlyMode) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public protocol SPAnalyticsEventDelegate {
+  func trackEvent(type: SpotImCore.SPEventType, event: SpotImCore.SPEventInfo)
+}
+public typealias InitizlizeCompletionHandler = (Swift.Result<Swift.Void, SpotImCore.SpotImError>) -> Swift.Void
+@_hasMissingDesignatedInitializers public class SpotIm {
+  public static var reinit: Swift.Bool
+  public static var googleAdsProvider: SpotImCore.AdsProvider?
+  public static var customFontFamily: Swift.String?
+  public static var displayArticleHeader: Swift.Bool
+  public static var reactNativeShowLoginScreenOnRootVC: Swift.Bool
+  public static var enableCreateCommentNewDesign: Swift.Bool
+  public static var shouldConversationFooterStartFromBottomAnchor: Swift.Bool
+  public static var buttonOnlyMode: SpotImCore.SpotImButtonOnlyMode
+  public static var enableCustomNavigationItemTitle: Swift.Bool
+  public static let OVERRIDE_USER_INTERFACE_STYLE_NOTIFICATION: Swift.String
+  public static func initialize(spotId: Swift.String, completion: SpotImCore.InitizlizeCompletionHandler? = nil)
+  public static func setGoogleAdsProvider(googleAdsProvider: SpotImCore.AdsProvider)
+  public static func sso(withJwtSecret secret: Swift.String, completion: @escaping SpotImCore.AuthStratCompleteionHandler)
+  public static func startSSO(completion: @escaping SpotImCore.AuthStratCompleteionHandler)
+  public static func completeSSO(with codeB: Swift.String, completion: @escaping SpotImCore.AuthCompletionHandler)
+  public static func createSpotImFlowCoordinator(loginDelegate: SpotImCore.SpotImLoginDelegate, completion: @escaping ((Swift.Result<SpotImCore.SpotImSDKFlowCoordinator, SpotImCore.SpotImError>) -> Swift.Void))
+  public static func getConversationCounters(conversationIds: [Swift.String], completion: @escaping ((Swift.Result<[Swift.String : SpotImCore.SpotImConversationCounters], SpotImCore.SpotImError>) -> Swift.Void))
+  public static var darkModeBackgroundColor: UIKit.UIColor {
+    get
+    set
+  }
+  public static var overrideUserInterfaceStyle: SpotImCore.SPUserInterfaceStyle? {
+    get
+    set
+  }
+  public static func getUserLoginStatus(completion: @escaping ((Swift.Result<SpotImCore.SpotImLoginStatus, SpotImCore.SpotImError>) -> Swift.Void))
+  public static func logout(completion: @escaping ((Swift.Result<Swift.Void, SpotImCore.SpotImError>) -> Swift.Void))
+  public static func setCustomSortByOptionText(option: SpotImCore.SpotImSortByOption, text: Swift.String)
+  public static func setAnalyticsEventDelegate(delegate: SpotImCore.SPAnalyticsEventDelegate)
+  public static func setButtonOnlyMode(mode: SpotImCore.SpotImButtonOnlyMode)
+  public static func getButtonOnlyMode() -> SpotImCore.SpotImButtonOnlyMode
+  public static func setInitialSort(option: SpotImCore.SpotImSortByOption)
+  public static func configureLogger(logLevel: SpotImCore.SPLogLevel, logMethods: [SpotImCore.SPLogMethod])
+  public static func setAdditionalConfigurations(configurations: [SpotImCore.SPAdditionalConfiguration])
+  @objc deinit
+}
+public typealias AuthCompletionHandler = (Swift.Result<Swift.String, Swift.Error>) -> Swift.Void
+public typealias AuthStratCompleteionHandler = (Swift.Result<SpotImCore.SSOStartResponse, Swift.Error>) -> Swift.Void
+public struct SSOStartResponse : Swift.Codable {
+  public var codeA: Swift.String?
+  public var jwtToken: Swift.String?
+  public var autoComplete: Swift.Bool
+  public var success: Swift.Bool
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public typealias JSON = [Swift.String : Any]
+public enum OWParserError : Swift.Error {
+  case keyNotFound
+  public static func == (a: SpotImCore.OWParserError, b: SpotImCore.OWParserError) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public protocol SpotImLayoutDelegate : AnyObject {
+  func viewHeightDidChange(to newValue: CoreGraphics.CGFloat)
+}
+public protocol AuthenticationViewDelegate : AnyObject {
+  func authenticationStarted()
+}
+public protocol SpotImLoginDelegate : AnyObject {
+  func startLoginUIFlow(navigationController: UIKit.UINavigationController)
+  func renewSSOAuthentication(userId: Swift.String)
+  func shouldDisplayLoginPromptForGuests() -> Swift.Bool
+}
+public enum CustomizableView {
+  case loginPrompt(textView: UIKit.UITextView)
+  case communityQuestion(textView: UIKit.UITextView)
+  case sayControlInPreConversation(labelContainer: UIKit.UIView, label: UIKit.UILabel)
+  case sayControlInMainConversation(labelContainer: UIKit.UIView, label: UIKit.UILabel)
+  case conversationFooter(view: UIKit.UIView)
+  case communityGuidelines(textView: UIKit.UITextView)
+  case navigationItemTitle(label: UIKit.UILabel)
+  case showCommentsButton(button: SpotImCore.SPShowCommentsButton)
+  case preConversationHeader(titleLabel: UIKit.UILabel, counterLabel: UIKit.UILabel)
+  case commentCreationActionButton(button: SpotImCore.OWBaseButton)
+  case readOnlyLabel(label: UIKit.UILabel)
+  case emptyStateReadOnlyLabel(label: UIKit.UILabel)
+}
+public protocol SpotImCustomUIDelegate : AnyObject {
+  func customizeView(view: SpotImCore.CustomizableView, isDarkMode: Swift.Bool, postId: Swift.String)
+}
+public typealias SPShowFullConversationCompletionHandler = (_ success: Swift.Bool, _ error: SpotImCore.SpotImError?) -> Swift.Void
+public typealias SPOpenNewCommentCompletionHandler = (_ success: Swift.Bool, _ error: SpotImCore.SpotImError?) -> Swift.Void
+public enum SPViewControllerPresentationalMode {
+  case present(viewController: UIKit.UIViewController)
+  case push(navigationController: UIKit.UINavigationController)
+}
+extension SpotImCore.SpotImLoginDelegate {
+  public func startLoginUIFlow(navigationController: UIKit.UINavigationController)
+  public func renewSSOAuthentication(userId: Swift.String)
+  public func shouldDisplayLoginPromptForGuests() -> Swift.Bool
+}
+public let SPOTIM_NAV_CONTROL_TAG: Swift.Int
+@_hasMissingDesignatedInitializers final public class SpotImSDKFlowCoordinator {
+  final public func setLayoutDelegate(delegate: SpotImCore.SpotImLayoutDelegate)
+  final public func setCustomUIDelegate(delegate: SpotImCore.SpotImCustomUIDelegate)
+  final public func preConversationController(withPostId postId: Swift.String, articleMetadata: SpotImCore.SpotImArticleMetadata, numberOfPreLoadedMessages: Swift.Int = 2, navigationController: UIKit.UINavigationController, callbacks: SpotImCore.SPViewActionsCallbacks? = nil, completion: @escaping (UIKit.UIViewController) -> Swift.Void)
+  final public func openFullConversationViewController(postId: Swift.String, articleMetadata: SpotImCore.SpotImArticleMetadata, presentationalMode: SpotImCore.SPViewControllerPresentationalMode, selectedCommentId: Swift.String? = nil, callbacks: SpotImCore.SPViewActionsCallbacks? = nil, completion: SpotImCore.SPShowFullConversationCompletionHandler? = nil)
+  final public func openNewCommentViewController(postId: Swift.String, articleMetadata: SpotImCore.SpotImArticleMetadata, fullConversationPresentationalMode: SpotImCore.SPViewControllerPresentationalMode, callbacks: SpotImCore.SPViewActionsCallbacks? = nil, completion: SpotImCore.SPOpenNewCommentCompletionHandler? = nil)
+  @objc deinit
+}
+public enum SPLogMethod {
+  case nsLog, osLog, file(maxFilesNumber: Swift.Int)
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class OWBaseButton : UIKit.UIButton {
+  @available(*, unavailable, message: "Loading this view from a nib is unsupported in this project")
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class SPClientSettings {
+  public static let main: SpotImCore.SPClientSettings
+  @objc public func appMovedToForeground(notification: Foundation.Notification)
+  @objc deinit
+}
+public enum SPUserInterfaceStyle : Swift.Int {
+  case light
+  case dark
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public enum SPLogLevel {
+  case none, error, medium, verbose
+  public static func == (a: SpotImCore.SPLogLevel, b: SpotImCore.SPLogLevel) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum SPAdditionalConfiguration {
+  case suppressFinmbFilter
+  public static func == (a: SpotImCore.SPAdditionalConfiguration, b: SpotImCore.SPAdditionalConfiguration) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public typealias SPViewActionsCallbacks = (SpotImCore.SPViewActionCallbackType, SpotImCore.SPViewSourceType, Swift.String) -> Swift.Void
+public enum SPViewSourceType {
+  case preConversation
+  case conversation
+  case createComment
+  case login
+  public var description: Swift.String {
+    get
+  }
+  public static func == (a: SpotImCore.SPViewSourceType, b: SpotImCore.SPViewSourceType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum SPViewActionCallbackType {
+  case articleHeaderPressed
+  case openUserProfile(userId: Swift.String, navigationController: UIKit.UINavigationController)
+}
+public enum OWResult<T> {
+  case success(T)
+  case failure(Swift.Error)
+  public var value: T? {
+    get
+  }
+  public var error: Swift.Error? {
+    get
+  }
+}
+extension SpotImCore.OWResult {
+  @discardableResult
+  public func map<U>(_ function: (T) -> U) -> SpotImCore.OWResult<U>
+  @discardableResult
+  public func map<U>(_ function: () -> U) -> SpotImCore.OWResult<U>
+  @discardableResult
+  public func next<U>(_ function: (T) -> SpotImCore.OWResult<U>) -> SpotImCore.OWResult<U>
+  @discardableResult
+  public func next<U>(_ function: () -> SpotImCore.OWResult<U>) -> SpotImCore.OWResult<U>
+  @discardableResult
+  public func onError(_ function: (Swift.Error) -> Swift.Error) -> SpotImCore.OWResult<T>
+  @discardableResult
+  public func require() -> T
+}
+public protocol AdsProviderBannerDelegate : AnyObject {
+  func bannerLoaded(bannerView: UIKit.UIView, adBannerSize: CoreGraphics.CGSize, adUnitID: Swift.String)
+  func bannerFailedToLoad(error: Swift.Error)
+}
+public protocol AdsProviderInterstitialDelegate : AnyObject {
+  func interstitialLoaded()
+  func interstitialWillBeShown()
+  func interstitialDidDismiss()
+  func interstitialFailedToLoad(error: Swift.Error)
+}
+public enum AdSize {
+  case small
+  case medium
+  case large
+  public static func == (a: SpotImCore.AdSize, b: SpotImCore.AdSize) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public protocol AdsProvider : AnyObject {
+  func version() -> Swift.String
+  func setSpotId(spotId: Swift.String)
+  func setupAdsBanner(with adId: Swift.String, in controller: UIKit.UIViewController, validSizes: Swift.Set<SpotImCore.AdSize>)
+  func setupInterstitial(with adId: Swift.String)
+  func showInterstitial(in controller: UIKit.UIViewController) -> Swift.Bool
+  var bannerDelegate: SpotImCore.AdsProviderBannerDelegate? { get set }
+  var interstitialDelegate: SpotImCore.AdsProviderInterstitialDelegate? { get set }
+}
+extension SpotImCore.SPEventType : Swift.Equatable {}
+extension SpotImCore.SPEventType : Swift.Hashable {}
+extension SpotImCore.SPEventType : Swift.RawRepresentable {}
+extension SpotImCore.SpotImSortByOption : Swift.Equatable {}
+extension SpotImCore.SpotImSortByOption : Swift.Hashable {}
+extension SpotImCore.SpotImButtonOnlyMode : Swift.Equatable {}
+extension SpotImCore.SpotImButtonOnlyMode : Swift.Hashable {}
+extension SpotImCore.SpotImReadOnlyMode : Swift.Equatable {}
+extension SpotImCore.SpotImReadOnlyMode : Swift.Hashable {}
+extension SpotImCore.OWParserError : Swift.Equatable {}
+extension SpotImCore.OWParserError : Swift.Hashable {}
+extension SpotImCore.SPUserInterfaceStyle : Swift.Equatable {}
+extension SpotImCore.SPUserInterfaceStyle : Swift.Hashable {}
+extension SpotImCore.SPUserInterfaceStyle : Swift.RawRepresentable {}
+extension SpotImCore.SPLogLevel : Swift.Equatable {}
+extension SpotImCore.SPLogLevel : Swift.Hashable {}
+extension SpotImCore.SPAdditionalConfiguration : Swift.Equatable {}
+extension SpotImCore.SPAdditionalConfiguration : Swift.Hashable {}
+extension SpotImCore.SPViewSourceType : Swift.Equatable {}
+extension SpotImCore.SPViewSourceType : Swift.Hashable {}
+extension SpotImCore.AdSize : Swift.Equatable {}
+extension SpotImCore.AdSize : Swift.Hashable {}
