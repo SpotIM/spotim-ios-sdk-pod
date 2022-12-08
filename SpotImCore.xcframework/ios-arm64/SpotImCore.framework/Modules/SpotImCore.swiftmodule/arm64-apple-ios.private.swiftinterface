@@ -263,19 +263,18 @@ public protocol SpotImLoginDelegate : AnyObject {
 public enum CustomizableView {
   case loginPrompt(textView: UIKit.UITextView)
   case communityQuestion(textView: UIKit.UITextView)
-  case sayControlInPreConversation(labelContainer: UIKit.UIView, label: UIKit.UILabel)
-  case sayControlInMainConversation(labelContainer: UIKit.UIView, label: UIKit.UILabel)
-  case conversationFooter(view: UIKit.UIView)
+  case sayControl(labelContainer: UIKit.UIView, label: UIKit.UILabel)
+  case footer(view: UIKit.UIView)
   case communityGuidelines(textView: UIKit.UITextView)
   case navigationItemTitle(label: UIKit.UILabel)
   case showCommentsButton(button: SpotImCore.SPShowCommentsButton)
-  case preConversationHeader(titleLabel: UIKit.UILabel, counterLabel: UIKit.UILabel)
+  case header(titleLabel: UIKit.UILabel, counterLabel: UIKit.UILabel)
   case commentCreationActionButton(button: SpotImCore.OWBaseButton)
   case readOnlyLabel(label: UIKit.UILabel)
   case emptyStateReadOnlyLabel(label: UIKit.UILabel)
 }
 public protocol SpotImCustomUIDelegate : AnyObject {
-  func customizeView(view: SpotImCore.CustomizableView, isDarkMode: Swift.Bool, postId: Swift.String)
+  func customizeView(view: SpotImCore.CustomizableView, isDarkMode: Swift.Bool, source: SpotImCore.SPViewSourceType?, postId: Swift.String)
 }
 public typealias SPShowFullConversationCompletionHandler = (_ success: Swift.Bool, _ error: SpotImCore.SpotImError?) -> Swift.Void
 public typealias SPOpenNewCommentCompletionHandler = (_ success: Swift.Bool, _ error: SpotImCore.SpotImError?) -> Swift.Void

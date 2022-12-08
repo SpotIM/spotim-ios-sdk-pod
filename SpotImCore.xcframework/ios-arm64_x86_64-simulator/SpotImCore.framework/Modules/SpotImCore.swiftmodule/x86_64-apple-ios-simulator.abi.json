@@ -3844,6 +3844,13 @@
       },
       {
         "kind": "Import",
+        "name": "RxCocoa",
+        "printedName": "RxCocoa",
+        "declKind": "Import",
+        "moduleName": "SpotImCore"
+      },
+      {
+        "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
@@ -5858,8 +5865,8 @@
       },
       {
         "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
+        "name": "UIKit",
+        "printedName": "UIKit",
         "declKind": "Import",
         "moduleName": "SpotImCore",
         "declAttributes": [
@@ -6091,6 +6098,16 @@
         "printedName": "RxSwift",
         "declKind": "Import",
         "moduleName": "SpotImCore"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "SpotImCore",
+        "declAttributes": [
+          "RawDocComment"
+        ]
       },
       {
         "kind": "Import",
@@ -10322,6 +10339,23 @@
       },
       {
         "kind": "Import",
+        "name": "RxSwift",
+        "printedName": "RxSwift",
+        "declKind": "Import",
+        "moduleName": "SpotImCore"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "SpotImCore",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
@@ -11089,8 +11123,8 @@
           },
           {
             "kind": "Var",
-            "name": "sayControlInPreConversation",
-            "printedName": "sayControlInPreConversation",
+            "name": "sayControl",
+            "printedName": "sayControl",
             "children": [
               {
                 "kind": "TypeFunc",
@@ -11146,77 +11180,14 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "s:10SpotImCore16CustomizableViewO27sayControlInPreConversationyACSo6UIViewC_So7UILabelCtcACmF",
-            "mangledName": "$s10SpotImCore16CustomizableViewO27sayControlInPreConversationyACSo6UIViewC_So7UILabelCtcACmF",
+            "usr": "s:10SpotImCore16CustomizableViewO10sayControlyACSo6UIViewC_So7UILabelCtcACmF",
+            "mangledName": "$s10SpotImCore16CustomizableViewO10sayControlyACSo6UIViewC_So7UILabelCtcACmF",
             "moduleName": "SpotImCore"
           },
           {
             "kind": "Var",
-            "name": "sayControlInMainConversation",
-            "printedName": "sayControlInMainConversation",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(SpotImCore.CustomizableView.Type) -> (UIKit.UIView, UIKit.UILabel) -> SpotImCore.CustomizableView",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(UIKit.UIView, UIKit.UILabel) -> SpotImCore.CustomizableView",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "CustomizableView",
-                        "printedName": "SpotImCore.CustomizableView",
-                        "usr": "s:10SpotImCore16CustomizableViewO"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Tuple",
-                        "printedName": "(labelContainer: UIKit.UIView, label: UIKit.UILabel)",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "UIView",
-                            "printedName": "UIKit.UIView",
-                            "usr": "c:objc(cs)UIView"
-                          },
-                          {
-                            "kind": "TypeNominal",
-                            "name": "UILabel",
-                            "printedName": "UIKit.UILabel",
-                            "usr": "c:objc(cs)UILabel"
-                          }
-                        ]
-                      }
-                    ]
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "SpotImCore.CustomizableView.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "CustomizableView",
-                        "printedName": "SpotImCore.CustomizableView",
-                        "usr": "s:10SpotImCore16CustomizableViewO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:10SpotImCore16CustomizableViewO28sayControlInMainConversationyACSo6UIViewC_So7UILabelCtcACmF",
-            "mangledName": "$s10SpotImCore16CustomizableViewO28sayControlInMainConversationyACSo6UIViewC_So7UILabelCtcACmF",
-            "moduleName": "SpotImCore"
-          },
-          {
-            "kind": "Var",
-            "name": "conversationFooter",
-            "printedName": "conversationFooter",
+            "name": "footer",
+            "printedName": "footer",
             "children": [
               {
                 "kind": "TypeFunc",
@@ -11266,8 +11237,8 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "s:10SpotImCore16CustomizableViewO18conversationFooteryACSo6UIViewC_tcACmF",
-            "mangledName": "$s10SpotImCore16CustomizableViewO18conversationFooteryACSo6UIViewC_tcACmF",
+            "usr": "s:10SpotImCore16CustomizableViewO6footeryACSo6UIViewC_tcACmF",
+            "mangledName": "$s10SpotImCore16CustomizableViewO6footeryACSo6UIViewC_tcACmF",
             "moduleName": "SpotImCore"
           },
           {
@@ -11443,8 +11414,8 @@
           },
           {
             "kind": "Var",
-            "name": "preConversationHeader",
-            "printedName": "preConversationHeader",
+            "name": "header",
+            "printedName": "header",
             "children": [
               {
                 "kind": "TypeFunc",
@@ -11500,8 +11471,8 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "s:10SpotImCore16CustomizableViewO21preConversationHeaderyACSo7UILabelC_AFtcACmF",
-            "mangledName": "$s10SpotImCore16CustomizableViewO21preConversationHeaderyACSo7UILabelC_AFtcACmF",
+            "usr": "s:10SpotImCore16CustomizableViewO6headeryACSo7UILabelC_AFtcACmF",
+            "mangledName": "$s10SpotImCore16CustomizableViewO6headeryACSo7UILabelC_AFtcACmF",
             "moduleName": "SpotImCore"
           },
           {
@@ -11692,7 +11663,7 @@
           {
             "kind": "Function",
             "name": "customizeView",
-            "printedName": "customizeView(view:isDarkMode:postId:)",
+            "printedName": "customizeView(view:isDarkMode:source:postId:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -11713,14 +11684,28 @@
               },
               {
                 "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "SpotImCore.SPViewSourceType?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SPViewSourceType",
+                    "printedName": "SpotImCore.SPViewSourceType",
+                    "usr": "s:10SpotImCore16SPViewSourceTypeO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
                 "name": "String",
                 "printedName": "Swift.String",
                 "usr": "s:SS"
               }
             ],
             "declKind": "Func",
-            "usr": "s:10SpotImCore0aB16CustomUIDelegateP13customizeView4view10isDarkMode6postIdyAA012CustomizableG0O_SbSStF",
-            "mangledName": "$s10SpotImCore0aB16CustomUIDelegateP13customizeView4view10isDarkMode6postIdyAA012CustomizableG0O_SbSStF",
+            "usr": "s:10SpotImCore0aB16CustomUIDelegateP13customizeView4view10isDarkMode6source6postIdyAA012CustomizableG0O_SbAA16SPViewSourceTypeOSgSStF",
+            "mangledName": "$s10SpotImCore0aB16CustomUIDelegateP13customizeView4view10isDarkMode6source6postIdyAA012CustomizableG0O_SbAA16SPViewSourceTypeOSgSStF",
             "moduleName": "SpotImCore",
             "genericSig": "<τ_0_0 where τ_0_0 : SpotImCore.SpotImCustomUIDelegate>",
             "sugared_genericSig": "<Self where Self : SpotImCore.SpotImCustomUIDelegate>",
@@ -12712,6 +12697,30 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "SpotImCore",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "SpotImCore"
+      },
+      {
+        "kind": "Import",
+        "name": "SafariServices",
+        "printedName": "SafariServices",
+        "declKind": "Import",
+        "moduleName": "SpotImCore"
+      },
+      {
+        "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
@@ -12938,6 +12947,30 @@
         "declAttributes": [
           "RawDocComment"
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "SpotImCore",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "RxSwift",
+        "printedName": "RxSwift",
+        "declKind": "Import",
+        "moduleName": "SpotImCore"
+      },
+      {
+        "kind": "Import",
+        "name": "SafariServices",
+        "printedName": "SafariServices",
+        "declKind": "Import",
+        "moduleName": "SpotImCore"
       },
       {
         "kind": "Import",
@@ -13238,6 +13271,16 @@
         "printedName": "RxSwift",
         "declKind": "Import",
         "moduleName": "SpotImCore"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "SpotImCore",
+        "declAttributes": [
+          "RawDocComment"
+        ]
       },
       {
         "kind": "Import",
@@ -24791,7 +24834,7 @@
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/ViewControllers\/SPPreConversationViewController\/SPPreConversationViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 6504,
+      "offset": 6554,
       "length": 5,
       "value": "false"
     },
@@ -24805,21 +24848,21 @@
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/ViewControllers\/SPPreConversationViewController\/SPPreConversationViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 26140,
+      "offset": 26267,
       "length": 2,
       "value": "64"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/ViewControllers\/SPPreConversationViewController\/SPPreConversationViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 26186,
+      "offset": 26313,
       "length": 2,
       "value": "50"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/ViewControllers\/SPPreConversationViewController\/SPPreConversationViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 26236,
+      "offset": 26363,
       "length": 2,
       "value": "40"
     },
@@ -24987,98 +25030,98 @@
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/Views - Old without VMs\/TableViewCells\/SPCommentCell.swift",
       "kind": "FloatLiteral",
-      "offset": 18843,
+      "offset": 18827,
       "length": 4,
       "value": "16.0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/Views - Old without VMs\/TableViewCells\/SPCommentCell.swift",
       "kind": "FloatLiteral",
-      "offset": 18890,
+      "offset": 18874,
       "length": 4,
       "value": "17.0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/Views - Old without VMs\/TableViewCells\/SPCommentCell.swift",
       "kind": "FloatLiteral",
-      "offset": 18931,
+      "offset": 18915,
       "length": 4,
       "value": "14.0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/Views - Old without VMs\/TableViewCells\/SPCommentCell.swift",
       "kind": "FloatLiteral",
-      "offset": 18981,
+      "offset": 18965,
       "length": 4,
       "value": "38.0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/Views - Old without VMs\/TableViewCells\/SPCommentCell.swift",
       "kind": "FloatLiteral",
-      "offset": 19025,
+      "offset": 19009,
       "length": 4,
       "value": "15.0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/Views - Old without VMs\/TableViewCells\/SPCommentCell.swift",
       "kind": "FloatLiteral",
-      "offset": 19070,
+      "offset": 19054,
       "length": 4,
       "value": "16.0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/Views - Old without VMs\/TableViewCells\/SPCommentCell.swift",
       "kind": "FloatLiteral",
-      "offset": 19116,
+      "offset": 19100,
       "length": 4,
       "value": "16.0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/Views - Old without VMs\/TableViewCells\/SPCommentCell.swift",
       "kind": "FloatLiteral",
-      "offset": 19173,
+      "offset": 19157,
       "length": 3,
       "value": "5.0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/Views - Old without VMs\/TableViewCells\/SPCommentCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 19226,
+      "offset": 19210,
       "length": 2,
       "value": "32"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/Views - Old without VMs\/TableViewCells\/SPCommentCell.swift",
       "kind": "FloatLiteral",
-      "offset": 19277,
+      "offset": 19261,
       "length": 4,
       "value": "31.0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/Views - Old without VMs\/TableViewCells\/SPCommentCell.swift",
       "kind": "FloatLiteral",
-      "offset": 19332,
+      "offset": 19316,
       "length": 4,
       "value": "44.0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/Views - Old without VMs\/TableViewCells\/SPCommentCell.swift",
       "kind": "FloatLiteral",
-      "offset": 19384,
+      "offset": 19368,
       "length": 4,
       "value": "12.0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/Views - Old without VMs\/TableViewCells\/SPCommentCell.swift",
       "kind": "FloatLiteral",
-      "offset": 19434,
+      "offset": 19418,
       "length": 4,
       "value": "28.0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/Views - Old without VMs\/TableViewCells\/SPCommentCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 19490,
+      "offset": 19474,
       "length": 2,
       "value": "16"
     },
@@ -25715,7 +25758,7 @@
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/ViewControllers\/SPBaseConversationViewController\/SPBaseConversationViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 4894,
+      "offset": 4952,
       "length": 5,
       "value": "false"
     },
@@ -25729,7 +25772,7 @@
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/ViewControllers\/SPBaseConversationViewController\/SPBaseConversationViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 15487,
+      "offset": 15575,
       "length": 1,
       "value": "7"
     },
@@ -25813,14 +25856,14 @@
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/ViewControllers\/MainConversation\/SPMainConversationModel.swift",
       "kind": "StringLiteral",
-      "offset": 19144,
+      "offset": 19290,
       "length": 12,
       "value": "\"message_id\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/ViewControllers\/MainConversation\/SPMainConversationModel.swift",
       "kind": "StringLiteral",
-      "offset": 19187,
+      "offset": 19333,
       "length": 11,
       "value": "\"parent_Id\""
     },
@@ -27108,28 +27151,28 @@
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/ViewControllers\/CommentCreation\/GenericViewController\/SPCommentCreationViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 37140,
+      "offset": 37202,
       "length": 4,
       "value": "16.0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/ViewControllers\/CommentCreation\/GenericViewController\/SPCommentCreationViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 37190,
+      "offset": 37252,
       "length": 4,
       "value": "25.0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/ViewControllers\/CommentCreation\/GenericViewController\/SPCommentCreationViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 37247,
+      "offset": 37309,
       "length": 4,
       "value": "10.0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/ViewControllers\/CommentCreation\/GenericViewController\/SPCommentCreationViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 37295,
+      "offset": 37357,
       "length": 4,
       "value": "54.0"
     },
@@ -27780,6 +27823,41 @@
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/PreConversation\/Models\/OWCommunityGuidelinesView.swift",
       "kind": "StringLiteral",
+      "offset": 328,
+      "length": 25,
+      "value": "\"community_guidelines_id\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/PreConversation\/Models\/OWCommunityGuidelinesView.swift",
+      "kind": "FloatLiteral",
+      "offset": 406,
+      "length": 4,
+      "value": "16.0"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/PreConversation\/Models\/OWCommunityGuidelinesView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 602,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/PreConversation\/Models\/OWCommunityGuidelinesView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 635,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/PreConversation\/Models\/OWCommunityGuidelinesView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 670,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/PreConversation\/Models\/OWCommunityGuidelinesView.swift",
+      "kind": "StringLiteral",
       "offset": 227,
       "length": 25,
       "value": "\"SpotImCore.OWCommunityGuidelinesView\""
@@ -28067,322 +28145,329 @@
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Models\/SPCommentViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 1218,
+      "offset": 1181,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Models\/SPCommentViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 1312,
+      "offset": 1261,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Models\/SPCommentViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 1383,
+      "offset": 1355,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Models\/SPCommentViewModel.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1426,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Models\/SPCommentViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 1424,
+      "offset": 1467,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Models\/SPCommentViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 1461,
+      "offset": 1504,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Models\/SPCommentViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 8921,
+      "offset": 9018,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Models\/SPCommentViewModel.swift",
       "kind": "FloatLiteral",
-      "offset": 12177,
+      "offset": 12270,
       "length": 4,
       "value": "16.0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Models\/SPCommentViewModel.swift",
       "kind": "FloatLiteral",
-      "offset": 12228,
+      "offset": 12321,
       "length": 4,
       "value": "17.0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Models\/SPCommentViewModel.swift",
       "kind": "FloatLiteral",
-      "offset": 12273,
+      "offset": 12366,
       "length": 4,
       "value": "14.0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Models\/SPCommentViewModel.swift",
       "kind": "FloatLiteral",
-      "offset": 12327,
+      "offset": 12420,
       "length": 4,
       "value": "22.0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Models\/SPCommentViewModel.swift",
       "kind": "FloatLiteral",
-      "offset": 12375,
+      "offset": 12468,
       "length": 4,
       "value": "15.0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Models\/SPCommentViewModel.swift",
       "kind": "FloatLiteral",
-      "offset": 12429,
+      "offset": 12522,
       "length": 4,
       "value": "42.0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Models\/SPCommentViewModel.swift",
       "kind": "FloatLiteral",
-      "offset": 12485,
+      "offset": 12578,
       "length": 4,
       "value": "16.0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Models\/SPCommentViewModel.swift",
       "kind": "FloatLiteral",
-      "offset": 12535,
+      "offset": 12628,
       "length": 4,
       "value": "16.0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Models\/SPCommentViewModel.swift",
       "kind": "FloatLiteral",
-      "offset": 12596,
+      "offset": 12689,
       "length": 4,
       "value": "14.0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Models\/SPCommentViewModel.swift",
       "kind": "FloatLiteral",
-      "offset": 12655,
+      "offset": 12748,
       "length": 4,
       "value": "44.0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Models\/SPCommentViewModel.swift",
       "kind": "FloatLiteral",
-      "offset": 12713,
+      "offset": 12806,
       "length": 4,
       "value": "69.0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Models\/SPCommentViewModel.swift",
       "kind": "FloatLiteral",
-      "offset": 12771,
+      "offset": 12864,
       "length": 4,
       "value": "32.0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Models\/SPCommentViewModel.swift",
       "kind": "FloatLiteral",
-      "offset": 12828,
+      "offset": 12921,
       "length": 4,
       "value": "31.0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Models\/SPCommentViewModel.swift",
       "kind": "FloatLiteral",
-      "offset": 12884,
+      "offset": 12977,
       "length": 4,
       "value": "12.0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Models\/SPCommentViewModel.swift",
       "kind": "FloatLiteral",
-      "offset": 12939,
+      "offset": 13032,
       "length": 4,
       "value": "19.0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Models\/SPCommentViewModel.swift",
       "kind": "FloatLiteral",
-      "offset": 12997,
+      "offset": 13090,
       "length": 4,
       "value": "28.0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Models\/SPCommentViewModel.swift",
       "kind": "FloatLiteral",
-      "offset": 13052,
+      "offset": 13145,
       "length": 5,
       "value": "226.0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Models\/SPCommentViewModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 13100,
+      "offset": 13193,
       "length": 2,
       "value": "44"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Models\/SPCommentViewModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 13150,
+      "offset": 13243,
       "length": 2,
       "value": "25"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Models\/SPCommentViewModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 13202,
+      "offset": 13295,
       "length": 2,
       "value": "19"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Models\/SPCommentViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 16566,
+      "offset": 16655,
       "length": 19,
       "value": "\"user.badges.admin\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Models\/SPCommentViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 16608,
+      "offset": 16697,
       "length": 23,
       "value": "\"user.badges.jurnalist\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Models\/SPCommentViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 16653,
+      "offset": 16742,
       "length": 23,
       "value": "\"user.badges.moderator\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Models\/SPCommentViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 16707,
+      "offset": 16796,
       "length": 33,
       "value": "\"user.badges.community-moderator\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Models\/SPCommentViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 16566,
+      "offset": 16655,
       "length": 19,
       "value": "\"user.badges.admin\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Models\/SPCommentViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 16608,
+      "offset": 16697,
       "length": 23,
       "value": "\"user.badges.jurnalist\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Models\/SPCommentViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 16653,
+      "offset": 16742,
       "length": 23,
       "value": "\"user.badges.moderator\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Models\/SPCommentViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 16707,
+      "offset": 16796,
       "length": 33,
       "value": "\"user.badges.community-moderator\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Models\/SPCommentViewModel.swift",
       "kind": "FloatLiteral",
-      "offset": 17037,
+      "offset": 17126,
       "length": 4,
       "value": "16.0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Models\/SPCommentViewModel.swift",
       "kind": "FloatLiteral",
-      "offset": 17084,
+      "offset": 17173,
       "length": 4,
       "value": "17.0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Models\/SPCommentViewModel.swift",
       "kind": "FloatLiteral",
-      "offset": 17125,
+      "offset": 17214,
       "length": 4,
       "value": "14.0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Models\/SPCommentViewModel.swift",
       "kind": "FloatLiteral",
-      "offset": 17169,
+      "offset": 17258,
       "length": 4,
       "value": "15.0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Models\/SPCommentViewModel.swift",
       "kind": "FloatLiteral",
-      "offset": 17221,
+      "offset": 17310,
       "length": 4,
       "value": "16.0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Models\/SPCommentViewModel.swift",
       "kind": "FloatLiteral",
-      "offset": 17267,
+      "offset": 17356,
       "length": 4,
       "value": "16.0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Models\/SPCommentViewModel.swift",
       "kind": "FloatLiteral",
-      "offset": 17324,
+      "offset": 17413,
       "length": 4,
       "value": "14.0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Models\/SPCommentViewModel.swift",
       "kind": "FloatLiteral",
-      "offset": 17379,
+      "offset": 17468,
       "length": 4,
       "value": "44.0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Models\/SPCommentViewModel.swift",
       "kind": "FloatLiteral",
-      "offset": 17433,
+      "offset": 17522,
       "length": 4,
       "value": "69.0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Models\/SPCommentViewModel.swift",
       "kind": "FloatLiteral",
-      "offset": 17487,
+      "offset": 17576,
       "length": 4,
       "value": "32.0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Models\/SPCommentViewModel.swift",
       "kind": "FloatLiteral",
-      "offset": 17540,
+      "offset": 17629,
       "length": 4,
       "value": "31.0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Models\/SPCommentViewModel.swift",
       "kind": "FloatLiteral",
-      "offset": 17592,
+      "offset": 17681,
       "length": 4,
       "value": "12.0"
     },
@@ -29236,56 +29321,56 @@
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/Views - Old without VMs\/SPMainConversationFooterView.swift",
       "kind": "BooleanLiteral",
-      "offset": 3520,
+      "offset": 3568,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/Views - Old without VMs\/SPMainConversationFooterView.swift",
       "kind": "IntegerLiteral",
-      "offset": 5952,
+      "offset": 6000,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/Views - Old without VMs\/SPMainConversationFooterView.swift",
       "kind": "IntegerLiteral",
-      "offset": 5995,
+      "offset": 6043,
       "length": 2,
       "value": "40"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/Views - Old without VMs\/SPMainConversationFooterView.swift",
       "kind": "IntegerLiteral",
-      "offset": 6042,
+      "offset": 6090,
       "length": 2,
       "value": "15"
-    },
-    {
-      "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/Views - Old without VMs\/SPMainConversationFooterView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 6091,
-      "length": 2,
-      "value": "12"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/Views - Old without VMs\/SPMainConversationFooterView.swift",
       "kind": "IntegerLiteral",
       "offset": 6139,
       "length": 2,
+      "value": "12"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/Views - Old without VMs\/SPMainConversationFooterView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6187,
+      "length": 2,
       "value": "48"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/Views - Old without VMs\/SPMainConversationFooterView.swift",
       "kind": "IntegerLiteral",
-      "offset": 6189,
+      "offset": 6237,
       "length": 2,
       "value": "15"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/Views - Old without VMs\/SPMainConversationFooterView.swift",
       "kind": "IntegerLiteral",
-      "offset": 6227,
+      "offset": 6275,
       "length": 2,
       "value": "16"
     },
@@ -29551,21 +29636,21 @@
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Services\/OWLogger.swift",
       "kind": "StringLiteral",
-      "offset": 3382,
+      "offset": 3388,
       "length": 4,
       "value": "\"na\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Services\/OWLogger.swift",
       "kind": "StringLiteral",
-      "offset": 3449,
+      "offset": 3455,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Services\/OWLogger.swift",
       "kind": "IntegerLiteral",
-      "offset": 3488,
+      "offset": 3494,
       "length": 3,
       "value": "100"
     },
@@ -30013,84 +30098,84 @@
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Coordinators\/SpotImSDKFlowCoordinator.swift",
       "kind": "IntegerLiteral",
-      "offset": 3044,
+      "offset": 2949,
       "length": 8,
       "value": "11223344"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Coordinators\/SpotImSDKFlowCoordinator.swift",
       "kind": "StringLiteral",
-      "offset": 3231,
+      "offset": 3136,
       "length": 33,
       "value": "\"USER_LOGIN_SUCCESS_NOTIFICATION\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Coordinators\/SpotImSDKFlowCoordinator.swift",
       "kind": "Array",
-      "offset": 3745,
+      "offset": 3650,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Coordinators\/SpotImSDKFlowCoordinator.swift",
       "kind": "BooleanLiteral",
-      "offset": 3882,
+      "offset": 3787,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Coordinators\/SpotImSDKFlowCoordinator.swift",
       "kind": "BooleanLiteral",
-      "offset": 4220,
+      "offset": 4125,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Coordinators\/SpotImSDKFlowCoordinator.swift",
       "kind": "IntegerLiteral",
-      "offset": 6516,
+      "offset": 6421,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Coordinators\/SpotImSDKFlowCoordinator.swift",
       "kind": "BooleanLiteral",
-      "offset": 19728,
+      "offset": 19633,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Coordinators\/SpotImSDKFlowCoordinator.swift",
       "kind": "BooleanLiteral",
-      "offset": 21298,
+      "offset": 21203,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Coordinators\/SpotImSDKFlowCoordinator.swift",
       "kind": "FloatLiteral",
-      "offset": 26412,
+      "offset": 26389,
       "length": 4,
       "value": "70.0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Coordinators\/SpotImSDKFlowCoordinator.swift",
       "kind": "FloatLiteral",
-      "offset": 26475,
+      "offset": 26452,
       "length": 4,
       "value": "6.0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Coordinators\/SpotImSDKFlowCoordinator.swift",
       "kind": "FloatLiteral",
-      "offset": 26534,
+      "offset": 26511,
       "length": 4,
       "value": "10.0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Coordinators\/SpotImSDKFlowCoordinator.swift",
       "kind": "FloatLiteral",
-      "offset": 26593,
+      "offset": 26570,
       "length": 4,
       "value": "20.0"
     },
@@ -30244,14 +30329,14 @@
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/DataSources\/SPMainConversationDataSource.swift",
       "kind": "BooleanLiteral",
-      "offset": 27934,
+      "offset": 28180,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/DataSources\/SPMainConversationDataSource.swift",
       "kind": "BooleanLiteral",
-      "offset": 27959,
+      "offset": 28205,
       "length": 5,
       "value": "false"
     },
@@ -30356,28 +30441,28 @@
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Models\/Configs\/Configuration\/SPConfigurationConversation.swift",
       "kind": "StringLiteral",
-      "offset": 905,
+      "offset": 942,
       "length": 17,
       "value": "\"subscriberBadge\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Models\/Configs\/Configuration\/SPConfigurationConversation.swift",
       "kind": "StringLiteral",
-      "offset": 958,
+      "offset": 995,
       "length": 14,
       "value": "\"disableShare\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Models\/Configs\/Configuration\/SPConfigurationConversation.swift",
       "kind": "StringLiteral",
-      "offset": 905,
+      "offset": 942,
       "length": 17,
       "value": "\"subscriberBadge\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Models\/Configs\/Configuration\/SPConfigurationConversation.swift",
       "kind": "StringLiteral",
-      "offset": 958,
+      "offset": 995,
       "length": 14,
       "value": "\"disableShare\""
     },
@@ -30408,6 +30493,20 @@
       "offset": 2120,
       "length": 5,
       "value": "false"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/ViewControllers\/OWSafariViewController\/OWSafariViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 216,
+      "length": 22,
+      "value": "\"SpotImCore.OWSafariViewController\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/ViewControllers\/OWSafariViewController\/OWSafariViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 216,
+      "length": 22,
+      "value": "\"SpotImCore.OWSafariViewController\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Extensions\/Double+Equal.swift",
@@ -30702,6 +30801,13 @@
       "offset": 160,
       "length": 17,
       "value": "\"SpotImCore.OWBaseUIImageView\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Coordinators\/Infra - Currently not in used\/OWSafariTabCoordinator.swift",
+      "kind": "StringLiteral",
+      "offset": 496,
+      "length": 22,
+      "value": "\"SpotImCore.OWSafariTabCoordinator\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Models\/Configs\/Configuration\/SPConfigurationInitialization.swift",
@@ -31105,49 +31211,49 @@
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/Views - Old without VMs\/CommunityGuidelinesView\/SPCommunityGuidelinesView.swift",
       "kind": "StringLiteral",
-      "offset": 447,
+      "offset": 473,
       "length": 25,
       "value": "\"community_guidelines_id\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/Views - Old without VMs\/CommunityGuidelinesView\/SPCommunityGuidelinesView.swift",
       "kind": "StringLiteral",
-      "offset": 514,
+      "offset": 540,
       "length": 36,
       "value": "\"community_guidelines_title_text_id\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/Views - Old without VMs\/CommunityGuidelinesView\/SPCommunityGuidelinesView.swift",
       "kind": "FloatLiteral",
-      "offset": 5522,
+      "offset": 5631,
       "length": 4,
       "value": "15.0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/Views - Old without VMs\/CommunityGuidelinesView\/SPCommunityGuidelinesView.swift",
       "kind": "FloatLiteral",
-      "offset": 5575,
+      "offset": 5684,
       "length": 4,
       "value": "16.0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/Views - Old without VMs\/CommunityGuidelinesView\/SPCommunityGuidelinesView.swift",
       "kind": "FloatLiteral",
-      "offset": 5622,
+      "offset": 5731,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/Views - Old without VMs\/CommunityGuidelinesView\/SPCommunityGuidelinesView.swift",
       "kind": "FloatLiteral",
-      "offset": 5693,
+      "offset": 5802,
       "length": 4,
       "value": "16.0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/Views - Old without VMs\/CommunityGuidelinesView\/SPCommunityGuidelinesView.swift",
       "kind": "FloatLiteral",
-      "offset": 5757,
+      "offset": 5866,
       "length": 3,
       "value": "8.0"
     },
@@ -31265,64 +31371,78 @@
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/PreConversation\/Views\/OWPreConversationView.swift",
+      "kind": "FloatLiteral",
+      "offset": 1078,
+      "length": 3,
+      "value": "1.0"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/PreConversation\/Views\/OWPreConversationView.swift",
+      "kind": "FloatLiteral",
+      "offset": 1138,
+      "length": 4,
+      "value": "16.0"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/PreConversation\/Views\/OWPreConversationView.swift",
       "kind": "StringLiteral",
-      "offset": 1180,
+      "offset": 1300,
       "length": 29,
       "value": "\"Full Conversation - testing\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/PreConversation\/Views\/OWPreConversationView.swift",
       "kind": "FloatLiteral",
-      "offset": 1327,
+      "offset": 1447,
       "length": 4,
       "value": "12.0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/PreConversation\/Views\/OWPreConversationView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1358,
+      "offset": 1478,
       "length": 2,
       "value": "20"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/PreConversation\/Views\/OWPreConversationView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1418,
+      "offset": 1538,
       "length": 2,
       "value": "20"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/PreConversation\/Views\/OWPreConversationView.swift",
       "kind": "StringLiteral",
-      "offset": 1581,
+      "offset": 1701,
       "length": 28,
       "value": "\"Comment Creation - testing\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/PreConversation\/Views\/OWPreConversationView.swift",
       "kind": "FloatLiteral",
-      "offset": 1727,
+      "offset": 1847,
       "length": 4,
       "value": "12.0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/PreConversation\/Views\/OWPreConversationView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1758,
+      "offset": 1878,
       "length": 2,
       "value": "20"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/PreConversation\/Views\/OWPreConversationView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1818,
+      "offset": 1938,
       "length": 2,
       "value": "20"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/PreConversation\/Views\/OWPreConversationView.swift",
       "kind": "BooleanLiteral",
-      "offset": 3060,
+      "offset": 3481,
       "length": 5,
       "value": "false"
     },
@@ -31341,6 +31461,27 @@
       "value": "\"SpotImCore.OWCommentCreationCoordinator\""
     },
     {
+      "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Helpers\/OWSettingsWrapper.swift",
+      "kind": "StringLiteral",
+      "offset": 267,
+      "length": 12,
+      "value": "\"sdkVersion\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Helpers\/OWSettingsWrapper.swift",
+      "kind": "StringLiteral",
+      "offset": 321,
+      "length": 7,
+      "value": "\"plist\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Helpers\/OWSettingsWrapper.swift",
+      "kind": "StringLiteral",
+      "offset": 382,
+      "length": 17,
+      "value": "\"OpenWebSettings\""
+    },
+    {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/Views - Old without VMs\/CommunityQuestionView\/SPCommunityQuestionView.swift",
       "kind": "StringLiteral",
       "offset": 313,
@@ -31350,42 +31491,42 @@
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/Views - Old without VMs\/CommunityQuestionView\/SPCommunityQuestionView.swift",
       "kind": "FloatLiteral",
-      "offset": 3473,
+      "offset": 3514,
       "length": 4,
       "value": "20.0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/Views - Old without VMs\/CommunityQuestionView\/SPCommunityQuestionView.swift",
       "kind": "FloatLiteral",
-      "offset": 3520,
+      "offset": 3561,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/Views - Old without VMs\/CommunityQuestionView\/SPCommunityQuestionView.swift",
       "kind": "FloatLiteral",
-      "offset": 3575,
+      "offset": 3616,
       "length": 4,
       "value": "16.0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/Views - Old without VMs\/CommunityQuestionView\/SPCommunityQuestionView.swift",
       "kind": "FloatLiteral",
-      "offset": 3642,
+      "offset": 3683,
       "length": 4,
       "value": "16.0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/Views - Old without VMs\/CommunityQuestionView\/SPCommunityQuestionView.swift",
       "kind": "FloatLiteral",
-      "offset": 3710,
+      "offset": 3751,
       "length": 3,
       "value": "5.0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/Views - Old without VMs\/CommunityQuestionView\/SPCommunityQuestionView.swift",
       "kind": "FloatLiteral",
-      "offset": 3781,
+      "offset": 3822,
       "length": 4,
       "value": "16.0"
     },
@@ -32596,98 +32737,98 @@
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Models\/SPUser.swift",
       "kind": "BooleanLiteral",
-      "offset": 1084,
+      "offset": 1115,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/Views - Old without VMs\/TableViewCells\/SPReplyCell.swift",
       "kind": "FloatLiteral",
-      "offset": 13758,
+      "offset": 13742,
       "length": 4,
       "value": "16.0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/Views - Old without VMs\/TableViewCells\/SPReplyCell.swift",
       "kind": "FloatLiteral",
-      "offset": 13805,
+      "offset": 13789,
       "length": 4,
       "value": "17.0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/Views - Old without VMs\/TableViewCells\/SPReplyCell.swift",
       "kind": "FloatLiteral",
-      "offset": 13846,
+      "offset": 13830,
       "length": 4,
       "value": "14.0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/Views - Old without VMs\/TableViewCells\/SPReplyCell.swift",
       "kind": "FloatLiteral",
-      "offset": 13890,
+      "offset": 13874,
       "length": 4,
       "value": "15.0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/Views - Old without VMs\/TableViewCells\/SPReplyCell.swift",
       "kind": "FloatLiteral",
-      "offset": 13935,
+      "offset": 13919,
       "length": 4,
       "value": "42.0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/Views - Old without VMs\/TableViewCells\/SPReplyCell.swift",
       "kind": "FloatLiteral",
-      "offset": 13981,
+      "offset": 13965,
       "length": 4,
       "value": "16.0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/Views - Old without VMs\/TableViewCells\/SPReplyCell.swift",
       "kind": "FloatLiteral",
-      "offset": 14038,
+      "offset": 14022,
       "length": 3,
       "value": "5.0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/Views - Old without VMs\/TableViewCells\/SPReplyCell.swift",
       "kind": "FloatLiteral",
-      "offset": 14091,
+      "offset": 14075,
       "length": 4,
       "value": "32.0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/Views - Old without VMs\/TableViewCells\/SPReplyCell.swift",
       "kind": "FloatLiteral",
-      "offset": 14144,
+      "offset": 14128,
       "length": 4,
       "value": "31.0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/Views - Old without VMs\/TableViewCells\/SPReplyCell.swift",
       "kind": "FloatLiteral",
-      "offset": 14199,
+      "offset": 14183,
       "length": 4,
       "value": "44.0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/Views - Old without VMs\/TableViewCells\/SPReplyCell.swift",
       "kind": "FloatLiteral",
-      "offset": 14251,
+      "offset": 14235,
       "length": 4,
       "value": "12.0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/Views - Old without VMs\/TableViewCells\/SPReplyCell.swift",
       "kind": "FloatLiteral",
-      "offset": 14301,
+      "offset": 14285,
       "length": 4,
       "value": "28.0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/Views - Old without VMs\/TableViewCells\/SPReplyCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 14357,
+      "offset": 14341,
       "length": 2,
       "value": "16"
     },
@@ -32750,14 +32891,56 @@
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/PreConversation\/Models\/OWCommunityQuestionView.swift",
       "kind": "StringLiteral",
-      "offset": 225,
+      "offset": 309,
+      "length": 23,
+      "value": "\"community_question_id\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/PreConversation\/Models\/OWCommunityQuestionView.swift",
+      "kind": "FloatLiteral",
+      "offset": 372,
+      "length": 4,
+      "value": "20.0"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/PreConversation\/Models\/OWCommunityQuestionView.swift",
+      "kind": "FloatLiteral",
+      "offset": 432,
+      "length": 4,
+      "value": "16.0"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/PreConversation\/Models\/OWCommunityQuestionView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 566,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/PreConversation\/Models\/OWCommunityQuestionView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 602,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/PreConversation\/Models\/OWCommunityQuestionView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 635,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/PreConversation\/Models\/OWCommunityQuestionView.swift",
+      "kind": "StringLiteral",
+      "offset": 210,
       "length": 23,
       "value": "\"SpotImCore.OWCommunityQuestionView\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Network\/Infra - Currently not in used\/OWNetworkAPI.swift",
       "kind": "StringLiteral",
-      "offset": 1345,
+      "offset": 1393,
       "length": 24,
       "value": "\"OpenWebSDKNetworkQueue\""
     },
@@ -32788,6 +32971,13 @@
       "offset": 3798,
       "length": 5,
       "value": "false"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/SharedViews\/CommunityGuidelines\/ViewModels\/OWCommunityGuidelinesViewModel.swift",
+      "kind": "FloatLiteral",
+      "offset": 894,
+      "length": 4,
+      "value": "15.0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Manager\/ManagerLayers\/InternalLayers\/OWCustomizationsLayer.swift",

@@ -325,6 +325,7 @@ SWIFT_CLASS("_TtC10SpotImCore20SPShowCommentsButton")
 
 
 
+
 #endif
 #if defined(__cplusplus)
 #endif
@@ -621,6 +622,7 @@ SWIFT_CLASS("_TtC10SpotImCore10OWBaseView")
 SWIFT_CLASS("_TtC10SpotImCore20SPShowCommentsButton")
 @interface SPShowCommentsButton : OWBaseButton
 @end
+
 
 
 
