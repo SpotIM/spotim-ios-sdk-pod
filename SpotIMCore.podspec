@@ -25,7 +25,6 @@ Pod::Spec.new do |s|
   s.source          = { :git => 'https://github.com/SpotIM/spotim-ios-sdk-pod.git', :tag => s.version.to_s }
   s.ios.resources = 'SpotImAdsProvider/*.swift'
   s.ios.vendored_frameworks = 'SpotImCore.xcframework'
-  s.dependency 'Alamofire', '~> 5.6.2'
   s.dependency 'RxSwift', '~> 6.5'
   s.dependency 'RxCocoa', '~> 6.5'
 

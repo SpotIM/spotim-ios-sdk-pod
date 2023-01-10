@@ -13,10 +13,6 @@ let package = Package(
         // Here we define our package's external dependencies
         // and from where they can be fetched:
         .package(
-            url: "https://github.com/Alamofire/Alamofire",
-            .upToNextMinor(from: "5.6.2")
-        ),
-        .package(
             url: "https://github.com/ReactiveX/RxSwift.git",
             .upToNextMinor(from: "6.5.0")
         )
@@ -30,7 +26,6 @@ let package = Package(
             name: "WrapperSPMTarget",
             dependencies: [
                 .target(name: "SpotImCore", condition: .when(platforms: .some([.iOS]))),
-                "Alamofire",
                 "RxSwift",
                 .product(name: "RxCocoa", package: "RxSwift")
             ]
