@@ -6,6 +6,6 @@ framework module SpotImCore {
 }
 
 module SpotImCore.Swift {
-  header "SpotImCore-Swift.h"
-  requires objc
+    header "SpotImCore-Swift.h"
+    requires objc
 }
