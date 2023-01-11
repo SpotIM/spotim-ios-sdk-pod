@@ -4,14 +4,17 @@
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import AVKit
 import AdSupport
-import Alamofire
+import Dispatch
 import Foundation
+import MobileCoreServices
 import RxCocoa
 import RxSwift
 import SafariServices
 @_exported import SpotImCore
 import Swift
+import SystemConfiguration
 import UIKit
+import UniformTypeIdentifiers
 import WebKit
 import _Concurrency
 import _StringProcessing
@@ -38,6 +41,7 @@ public enum SPNetworkError : Swift.Error {
   case emptyResponse
   case noInternet
   case requestFailed
+  case missingStatusCode
 }
 extension SpotImCore.SPNetworkError : Foundation.LocalizedError {
   public var errorDescription: Swift.String? {

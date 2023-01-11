@@ -258,6 +258,12 @@ using UInt = size_t;
 
 
 
+
+
+
+
+
+
 @class NSCoder;
 
 SWIFT_CLASS("_TtC10SpotImCore12OWBaseButton")
@@ -283,9 +289,12 @@ SWIFT_CLASS("_TtC10SpotImCore10OWBaseView")
 @end
 
 
+
 SWIFT_CLASS("_TtC10SpotImCore20SPShowCommentsButton")
 @interface SPShowCommentsButton : OWBaseButton
 @end
+
+
 
 
 
@@ -594,6 +603,12 @@ using UInt = size_t;
 
 
 
+
+
+
+
+
+
 @class NSCoder;
 
 SWIFT_CLASS("_TtC10SpotImCore12OWBaseButton")
@@ -619,9 +634,12 @@ SWIFT_CLASS("_TtC10SpotImCore10OWBaseView")
 @end
 
 
+
 SWIFT_CLASS("_TtC10SpotImCore20SPShowCommentsButton")
 @interface SPShowCommentsButton : OWBaseButton
 @end
+
+
 
 
 
