@@ -189,6 +189,30 @@
       },
       {
         "kind": "Import",
+        "name": "RxSwift",
+        "printedName": "RxSwift",
+        "declKind": "Import",
+        "moduleName": "SpotImCore",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "RxCocoa",
+        "printedName": "RxCocoa",
+        "declKind": "Import",
+        "moduleName": "SpotImCore"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "SpotImCore"
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -513,6 +537,16 @@
         "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "SpotImCore",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
         "declKind": "Import",
         "moduleName": "SpotImCore",
         "declAttributes": [
@@ -1346,6 +1380,37 @@
       },
       {
         "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "SpotImCore"
+      },
+      {
+        "kind": "Import",
+        "name": "RxSwift",
+        "printedName": "RxSwift",
+        "declKind": "Import",
+        "moduleName": "SpotImCore"
+      },
+      {
+        "kind": "Import",
+        "name": "RxCocoa",
+        "printedName": "RxCocoa",
+        "declKind": "Import",
+        "moduleName": "SpotImCore"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "SpotImCore",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -1368,6 +1433,16 @@
         "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "SpotImCore",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
         "declKind": "Import",
         "moduleName": "SpotImCore",
         "declAttributes": [
@@ -1493,6 +1568,37 @@
         "kind": "Import",
         "name": "RxSwift",
         "printedName": "RxSwift",
+        "declKind": "Import",
+        "moduleName": "SpotImCore"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "SpotImCore",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "RxSwift",
+        "printedName": "RxSwift",
+        "declKind": "Import",
+        "moduleName": "SpotImCore"
+      },
+      {
+        "kind": "Import",
+        "name": "RxCocoa",
+        "printedName": "RxCocoa",
+        "declKind": "Import",
+        "moduleName": "SpotImCore"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
         "declKind": "Import",
         "moduleName": "SpotImCore"
       },
@@ -2904,6 +3010,43 @@
             "moduleName": "SpotImCore"
           },
           {
+            "kind": "Var",
+            "name": "commentMuteClicked",
+            "printedName": "commentMuteClicked",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(SpotImCore.SPEventType.Type) -> SpotImCore.SPEventType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SPEventType",
+                    "printedName": "SpotImCore.SPEventType",
+                    "usr": "s:10SpotImCore11SPEventTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "SpotImCore.SPEventType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SPEventType",
+                        "printedName": "SpotImCore.SPEventType",
+                        "usr": "s:10SpotImCore11SPEventTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10SpotImCore11SPEventTypeO18commentMuteClickedyA2CmF",
+            "mangledName": "$s10SpotImCore11SPEventTypeO18commentMuteClickedyA2CmF",
+            "moduleName": "SpotImCore"
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init(rawValue:)",
@@ -3376,6 +3519,23 @@
       },
       {
         "kind": "Import",
+        "name": "RxSwift",
+        "printedName": "RxSwift",
+        "declKind": "Import",
+        "moduleName": "SpotImCore"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "SpotImCore",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -3652,6 +3812,30 @@
       },
       {
         "kind": "Import",
+        "name": "RxSwift",
+        "printedName": "RxSwift",
+        "declKind": "Import",
+        "moduleName": "SpotImCore"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "SpotImCore",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "RxSwift",
+        "printedName": "RxSwift",
+        "declKind": "Import",
+        "moduleName": "SpotImCore"
+      },
+      {
+        "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
@@ -3870,6 +4054,16 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "SpotImCore",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
@@ -3892,6 +4086,229 @@
         "kind": "Import",
         "name": "RxSwift",
         "printedName": "RxSwift",
+        "declKind": "Import",
+        "moduleName": "SpotImCore"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "SpotImCore",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "RxSwift",
+        "printedName": "RxSwift",
+        "declKind": "Import",
+        "moduleName": "SpotImCore"
+      },
+      {
+        "kind": "Import",
+        "name": "RxCocoa",
+        "printedName": "RxCocoa",
+        "declKind": "Import",
+        "moduleName": "SpotImCore"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "SpotImCore",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "SpotImCore",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "SpotImCore",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "SpotImCore",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "SpotImCore",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "SpotImCore",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "SpotImCore",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "SpotImCore",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "SpotImCore",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "SpotImCore",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "RxSwift",
+        "printedName": "RxSwift",
+        "declKind": "Import",
+        "moduleName": "SpotImCore"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "SpotImCore",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "RxSwift",
+        "printedName": "RxSwift",
+        "declKind": "Import",
+        "moduleName": "SpotImCore"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "SpotImCore",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "RxSwift",
+        "printedName": "RxSwift",
+        "declKind": "Import",
+        "moduleName": "SpotImCore"
+      },
+      {
+        "kind": "Import",
+        "name": "RxCocoa",
+        "printedName": "RxCocoa",
+        "declKind": "Import",
+        "moduleName": "SpotImCore"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "SpotImCore"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "SpotImCore",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "SpotImCore",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "SpotImCore"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "SpotImCore",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
         "declKind": "Import",
         "moduleName": "SpotImCore"
       },
@@ -3933,219 +4350,6 @@
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "SpotImCore",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "SpotImCore",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "SpotImCore",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "SpotImCore",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "SpotImCore",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "SpotImCore",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "SpotImCore",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "SpotImCore",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "SpotImCore",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "RxSwift",
-        "printedName": "RxSwift",
-        "declKind": "Import",
-        "moduleName": "SpotImCore"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "SpotImCore",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "RxSwift",
-        "printedName": "RxSwift",
-        "declKind": "Import",
-        "moduleName": "SpotImCore"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "SpotImCore",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "RxSwift",
-        "printedName": "RxSwift",
-        "declKind": "Import",
-        "moduleName": "SpotImCore"
-      },
-      {
-        "kind": "Import",
-        "name": "RxCocoa",
-        "printedName": "RxCocoa",
-        "declKind": "Import",
-        "moduleName": "SpotImCore"
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "SpotImCore"
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "SpotImCore",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "SpotImCore",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "SpotImCore"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "SpotImCore",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "SpotImCore"
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "SpotImCore",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "RxSwift",
-        "printedName": "RxSwift",
-        "declKind": "Import",
-        "moduleName": "SpotImCore"
-      },
-      {
-        "kind": "Import",
-        "name": "RxCocoa",
-        "printedName": "RxCocoa",
-        "declKind": "Import",
-        "moduleName": "SpotImCore"
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
         "declKind": "Import",
         "moduleName": "SpotImCore",
         "declAttributes": [
@@ -4417,6 +4621,23 @@
       },
       {
         "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "SpotImCore"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "SpotImCore",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -4463,6 +4684,30 @@
         "kind": "Import",
         "name": "RxSwift",
         "printedName": "RxSwift",
+        "declKind": "Import",
+        "moduleName": "SpotImCore"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "SpotImCore",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "RxSwift",
+        "printedName": "RxSwift",
+        "declKind": "Import",
+        "moduleName": "SpotImCore"
+      },
+      {
+        "kind": "Import",
+        "name": "RxCocoa",
+        "printedName": "RxCocoa",
         "declKind": "Import",
         "moduleName": "SpotImCore"
       },
@@ -5806,6 +6051,16 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "SpotImCore",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
@@ -6197,6 +6452,16 @@
         "printedName": "RxSwift",
         "declKind": "Import",
         "moduleName": "SpotImCore"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "SpotImCore",
+        "declAttributes": [
+          "RawDocComment"
+        ]
       },
       {
         "kind": "Import",
@@ -10441,6 +10706,30 @@
       },
       {
         "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "SpotImCore",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "RxSwift",
+        "printedName": "RxSwift",
+        "declKind": "Import",
+        "moduleName": "SpotImCore"
+      },
+      {
+        "kind": "Import",
+        "name": "RxCocoa",
+        "printedName": "RxCocoa",
+        "declKind": "Import",
+        "moduleName": "SpotImCore"
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -10471,6 +10760,30 @@
       },
       {
         "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "SpotImCore",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "RxSwift",
+        "printedName": "RxSwift",
+        "declKind": "Import",
+        "moduleName": "SpotImCore"
+      },
+      {
+        "kind": "Import",
+        "name": "RxCocoa",
+        "printedName": "RxCocoa",
+        "declKind": "Import",
+        "moduleName": "SpotImCore"
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -10478,6 +10791,30 @@
         "declAttributes": [
           "RawDocComment"
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "SpotImCore",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "RxSwift",
+        "printedName": "RxSwift",
+        "declKind": "Import",
+        "moduleName": "SpotImCore"
+      },
+      {
+        "kind": "Import",
+        "name": "RxCocoa",
+        "printedName": "RxCocoa",
+        "declKind": "Import",
+        "moduleName": "SpotImCore"
       },
       {
         "kind": "Import",
@@ -10835,6 +11172,37 @@
         "kind": "Import",
         "name": "RxSwift",
         "printedName": "RxSwift",
+        "declKind": "Import",
+        "moduleName": "SpotImCore"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "SpotImCore",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "RxSwift",
+        "printedName": "RxSwift",
+        "declKind": "Import",
+        "moduleName": "SpotImCore"
+      },
+      {
+        "kind": "Import",
+        "name": "RxCocoa",
+        "printedName": "RxCocoa",
+        "declKind": "Import",
+        "moduleName": "SpotImCore"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
         "declKind": "Import",
         "moduleName": "SpotImCore"
       },
@@ -12711,6 +13079,13 @@
       },
       {
         "kind": "Import",
+        "name": "RxSwift",
+        "printedName": "RxSwift",
+        "declKind": "Import",
+        "moduleName": "SpotImCore"
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -12733,6 +13108,16 @@
         "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "SpotImCore",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
         "declKind": "Import",
         "moduleName": "SpotImCore",
         "declAttributes": [
@@ -13226,6 +13611,30 @@
       },
       {
         "kind": "Import",
+        "name": "RxSwift",
+        "printedName": "RxSwift",
+        "declKind": "Import",
+        "moduleName": "SpotImCore",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "RxCocoa",
+        "printedName": "RxCocoa",
+        "declKind": "Import",
+        "moduleName": "SpotImCore"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "SpotImCore"
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -13320,6 +13729,30 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "SpotImCore",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "SpotImCore"
+      },
+      {
+        "kind": "Import",
+        "name": "RxSwift",
+        "printedName": "RxSwift",
+        "declKind": "Import",
+        "moduleName": "SpotImCore"
+      },
+      {
+        "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
@@ -13370,6 +13803,16 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "SpotImCore",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
@@ -13377,6 +13820,30 @@
         "declAttributes": [
           "RawDocComment"
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "RxSwift",
+        "printedName": "RxSwift",
+        "declKind": "Import",
+        "moduleName": "SpotImCore",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "RxCocoa",
+        "printedName": "RxCocoa",
+        "declKind": "Import",
+        "moduleName": "SpotImCore"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "SpotImCore"
       },
       {
         "kind": "Import",
@@ -14574,6 +15041,16 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "SpotImCore",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
@@ -14638,6 +15115,23 @@
         "declAttributes": [
           "RawDocComment"
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "SpotImCore",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "RxSwift",
+        "printedName": "RxSwift",
+        "declKind": "Import",
+        "moduleName": "SpotImCore"
       },
       {
         "kind": "Import",
@@ -17905,6 +18399,16 @@
         "printedName": "RxCocoa",
         "declKind": "Import",
         "moduleName": "SpotImCore"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "SpotImCore",
+        "declAttributes": [
+          "RawDocComment"
+        ]
       },
       {
         "kind": "Import",
@@ -26625,98 +27129,98 @@
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/Views - Old without VMs\/TableViewCells\/SPCommentCell.swift",
       "kind": "FloatLiteral",
-      "offset": 18819,
+      "offset": 18971,
       "length": 4,
       "value": "16.0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/Views - Old without VMs\/TableViewCells\/SPCommentCell.swift",
       "kind": "FloatLiteral",
-      "offset": 18866,
+      "offset": 19018,
       "length": 4,
       "value": "17.0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/Views - Old without VMs\/TableViewCells\/SPCommentCell.swift",
       "kind": "FloatLiteral",
-      "offset": 18907,
+      "offset": 19059,
       "length": 4,
       "value": "14.0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/Views - Old without VMs\/TableViewCells\/SPCommentCell.swift",
       "kind": "FloatLiteral",
-      "offset": 18957,
+      "offset": 19109,
       "length": 4,
       "value": "38.0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/Views - Old without VMs\/TableViewCells\/SPCommentCell.swift",
       "kind": "FloatLiteral",
-      "offset": 19001,
+      "offset": 19153,
       "length": 4,
       "value": "15.0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/Views - Old without VMs\/TableViewCells\/SPCommentCell.swift",
       "kind": "FloatLiteral",
-      "offset": 19046,
+      "offset": 19198,
       "length": 4,
       "value": "16.0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/Views - Old without VMs\/TableViewCells\/SPCommentCell.swift",
       "kind": "FloatLiteral",
-      "offset": 19092,
+      "offset": 19244,
       "length": 4,
       "value": "16.0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/Views - Old without VMs\/TableViewCells\/SPCommentCell.swift",
       "kind": "FloatLiteral",
-      "offset": 19149,
+      "offset": 19301,
       "length": 3,
       "value": "5.0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/Views - Old without VMs\/TableViewCells\/SPCommentCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 19202,
+      "offset": 19354,
       "length": 2,
       "value": "32"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/Views - Old without VMs\/TableViewCells\/SPCommentCell.swift",
       "kind": "FloatLiteral",
-      "offset": 19253,
+      "offset": 19405,
       "length": 4,
       "value": "31.0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/Views - Old without VMs\/TableViewCells\/SPCommentCell.swift",
       "kind": "FloatLiteral",
-      "offset": 19308,
+      "offset": 19460,
       "length": 4,
       "value": "44.0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/Views - Old without VMs\/TableViewCells\/SPCommentCell.swift",
       "kind": "FloatLiteral",
-      "offset": 19360,
+      "offset": 19512,
       "length": 4,
       "value": "12.0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/Views - Old without VMs\/TableViewCells\/SPCommentCell.swift",
       "kind": "FloatLiteral",
-      "offset": 19410,
+      "offset": 19562,
       "length": 4,
       "value": "28.0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/Views - Old without VMs\/TableViewCells\/SPCommentCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 19466,
+      "offset": 19618,
       "length": 2,
       "value": "16"
     },
@@ -27393,6 +27897,48 @@
       "value": "7"
     },
     {
+      "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Services\/OWImageProvider.swift",
+      "kind": "StringLiteral",
+      "offset": 455,
+      "length": 3,
+      "value": "\"#\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Services\/OWImageProvider.swift",
+      "kind": "StringLiteral",
+      "offset": 500,
+      "length": 10,
+      "value": "\"avatars\/\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Services\/OWImageProvider.swift",
+      "kind": "StringLiteral",
+      "offset": 559,
+      "length": 22,
+      "value": "\"dpr_3,c_thumb,g_face\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Services\/OWImageProvider.swift",
+      "kind": "StringLiteral",
+      "offset": 625,
+      "length": 5,
+      "value": "\",w_\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Services\/OWImageProvider.swift",
+      "kind": "StringLiteral",
+      "offset": 675,
+      "length": 5,
+      "value": "\",h_\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Services\/OWImageProvider.swift",
+      "kind": "StringLiteral",
+      "offset": 717,
+      "length": 38,
+      "value": "\"https:\/\/images.spot.im\/image\/upload\/\""
+    },
+    {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Network\/New Network API - After the refactor\/Endpoints\/OWConversationEndpoints.swift",
       "kind": "IntegerLiteral",
       "offset": 4104,
@@ -27472,21 +28018,21 @@
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/ViewControllers\/MainConversation\/SPMainConversationModel.swift",
       "kind": "StringLiteral",
-      "offset": 20355,
+      "offset": 20471,
       "length": 12,
       "value": "\"message_id\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/ViewControllers\/MainConversation\/SPMainConversationModel.swift",
       "kind": "StringLiteral",
-      "offset": 20398,
+      "offset": 20514,
       "length": 11,
       "value": "\"parent_Id\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/ViewControllers\/MainConversation\/SPMainConversationModel.swift",
       "kind": "StringLiteral",
-      "offset": 20438,
+      "offset": 20554,
       "length": 9,
       "value": "\"user_id\""
     },
@@ -28002,6 +28548,111 @@
       "value": "false"
     },
     {
+      "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/SharedViews\/Comment\/Views\/OWCommentLabelView.swift",
+      "kind": "StringLiteral",
+      "offset": 281,
+      "length": 18,
+      "value": "\"comment_label_id\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/SharedViews\/Comment\/Views\/OWCommentLabelView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 351,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/SharedViews\/Comment\/Views\/OWCommentLabelView.swift",
+      "kind": "FloatLiteral",
+      "offset": 400,
+      "length": 4,
+      "value": "10.0"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/SharedViews\/Comment\/Views\/OWCommentLabelView.swift",
+      "kind": "FloatLiteral",
+      "offset": 444,
+      "length": 4,
+      "value": "13.0"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/SharedViews\/Comment\/Views\/OWCommentLabelView.swift",
+      "kind": "FloatLiteral",
+      "offset": 495,
+      "length": 4,
+      "value": "24.0"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/SharedViews\/Comment\/Views\/OWCommentLabelView.swift",
+      "kind": "FloatLiteral",
+      "offset": 545,
+      "length": 4,
+      "value": "14.0"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/SharedViews\/Comment\/Views\/OWCommentLabelView.swift",
+      "kind": "FloatLiteral",
+      "offset": 599,
+      "length": 3,
+      "value": "5.0"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/SharedViews\/Comment\/Views\/OWCommentLabelView.swift",
+      "kind": "FloatLiteral",
+      "offset": 656,
+      "length": 4,
+      "value": "28.0"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/SharedViews\/Comment\/Views\/OWCommentLabelView.swift",
+      "kind": "FloatLiteral",
+      "offset": 716,
+      "length": 3,
+      "value": "0.2"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/SharedViews\/Comment\/Views\/OWCommentLabelView.swift",
+      "kind": "FloatLiteral",
+      "offset": 767,
+      "length": 3,
+      "value": "0.1"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/SharedViews\/Comment\/Views\/OWCommentLabelView.swift",
+      "kind": "FloatLiteral",
+      "offset": 825,
+      "length": 3,
+      "value": "0.7"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/SharedViews\/Comment\/Views\/OWCommentLabelView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 884,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/SharedViews\/Comment\/Views\/OWCommentLabelView.swift",
+      "kind": "FloatLiteral",
+      "offset": 938,
+      "length": 3,
+      "value": "0.7"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/SharedViews\/Comment\/Views\/OWCommentLabelView.swift",
+      "kind": "FloatLiteral",
+      "offset": 995,
+      "length": 3,
+      "value": "0.4"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/SharedViews\/Comment\/Views\/OWCommentLabelView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1427,
+      "length": 4,
+      "value": "true"
+    },
+    {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/Base\/Views\/SPAnimatedButton.swift",
       "kind": "IntegerLiteral",
       "offset": 858,
@@ -28317,13 +28968,6 @@
       "value": "1.0"
     },
     {
-      "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Models\/PreConversation\/OWPreConversationSettings.swift",
-      "kind": "IntegerLiteral",
-      "offset": 550,
-      "length": 1,
-      "value": "2"
-    },
-    {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/OWSnapKit\/OWConstraintDSL.swift",
       "kind": "IntegerLiteral",
       "offset": 322,
@@ -28487,93 +29131,100 @@
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Services\/OWKeychain.swift",
       "kind": "StringLiteral",
-      "offset": 454,
+      "offset": 798,
       "length": 18,
       "value": "\"com.open-web.sdk\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Services\/OWKeychain.swift",
       "kind": "StringLiteral",
-      "offset": 1020,
+      "offset": 1582,
       "length": 22,
       "value": "\"session.guest.userId\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Services\/OWKeychain.swift",
       "kind": "StringLiteral",
-      "offset": 1078,
+      "offset": 1640,
       "length": 14,
       "value": "\"session.user\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Services\/OWKeychain.swift",
       "kind": "StringLiteral",
-      "offset": 1134,
+      "offset": 1696,
       "length": 29,
       "value": "\"session.authorization.token\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Services\/OWKeychain.swift",
       "kind": "StringLiteral",
-      "offset": 1199,
+      "offset": 1761,
       "length": 23,
       "value": "\"session.openweb.toekn\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Services\/OWKeychain.swift",
       "kind": "StringLiteral",
-      "offset": 1262,
+      "offset": 1824,
       "length": 27,
       "value": "\"session.reported.comments\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Services\/OWKeychain.swift",
       "kind": "StringLiteral",
-      "offset": 1326,
+      "offset": 1888,
       "length": 25,
       "value": "\"keychain.data.migration\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Services\/OWKeychain.swift",
       "kind": "StringLiteral",
-      "offset": 1020,
+      "offset": 1582,
       "length": 22,
       "value": "\"session.guest.userId\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Services\/OWKeychain.swift",
       "kind": "StringLiteral",
-      "offset": 1078,
+      "offset": 1640,
       "length": 14,
       "value": "\"session.user\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Services\/OWKeychain.swift",
       "kind": "StringLiteral",
-      "offset": 1134,
+      "offset": 1696,
       "length": 29,
       "value": "\"session.authorization.token\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Services\/OWKeychain.swift",
       "kind": "StringLiteral",
-      "offset": 1199,
+      "offset": 1761,
       "length": 23,
       "value": "\"session.openweb.toekn\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Services\/OWKeychain.swift",
       "kind": "StringLiteral",
-      "offset": 1262,
+      "offset": 1824,
       "length": 27,
       "value": "\"session.reported.comments\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Services\/OWKeychain.swift",
       "kind": "StringLiteral",
-      "offset": 1326,
+      "offset": 1888,
       "length": 25,
       "value": "\"keychain.data.migration\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Services\/OWPersistenceRxHelper.swift",
+      "kind": "Dictionary",
+      "offset": 1086,
+      "length": 3,
+      "value": "[]"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/Views - Old without VMs\/CommentHeader\/SPCommentCreationNewHeaderView.swift",
@@ -28907,28 +29558,28 @@
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/ViewControllers\/CommentCreation\/GenericViewController\/SPCommentCreationViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 38794,
+      "offset": 38819,
       "length": 4,
       "value": "16.0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/ViewControllers\/CommentCreation\/GenericViewController\/SPCommentCreationViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 38844,
+      "offset": 38869,
       "length": 4,
       "value": "25.0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/ViewControllers\/CommentCreation\/GenericViewController\/SPCommentCreationViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 38901,
+      "offset": 38926,
       "length": 4,
       "value": "10.0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/ViewControllers\/CommentCreation\/GenericViewController\/SPCommentCreationViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 38949,
+      "offset": 38974,
       "length": 4,
       "value": "54.0"
     },
@@ -29726,9 +30377,16 @@
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/SharedViews\/CommentCreationEntry\/ViewModels\/OWCommentCreationEntryViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 3634,
+      "offset": 3666,
       "length": 20,
       "value": "\"What do you think?\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/SharedViews\/Cells\/Comment\/ViewModels\/OWCommentCellViewModel.swift",
+      "kind": "StringLiteral",
+      "offset": 857,
+      "length": 2,
+      "value": "\"\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Services\/SPReadingTracker.swift",
@@ -29775,7 +30433,7 @@
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/Views - Old without VMs\/TableViewCells\/CommentCellViews\/Views\/OWCommentActionsView.swift",
       "kind": "BooleanLiteral",
-      "offset": 2307,
+      "offset": 2352,
       "length": 5,
       "value": "false"
     },
@@ -29885,6 +30543,34 @@
       "value": "false"
     },
     {
+      "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/SharedViews\/Comment\/Views\/OWCommentEngagementView.swift",
+      "kind": "FloatLiteral",
+      "offset": 318,
+      "length": 4,
+      "value": "16.0"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/SharedViews\/Comment\/Views\/OWCommentEngagementView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 364,
+      "length": 2,
+      "value": "14"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/SharedViews\/Comment\/Views\/OWCommentEngagementView.swift",
+      "kind": "StringLiteral",
+      "offset": 399,
+      "length": 25,
+      "value": "\"comment_actions_view_id\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/SharedViews\/Comment\/Views\/OWCommentEngagementView.swift",
+      "kind": "StringLiteral",
+      "offset": 468,
+      "length": 38,
+      "value": "\"comment_actions_view_reply_button_id\""
+    },
+    {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/RxDataSources\/DataSources\/OWCollectionViewSectionedDataSource.swift",
       "kind": "BooleanLiteral",
       "offset": 1226,
@@ -29904,6 +30590,41 @@
       "offset": 221,
       "length": 35,
       "value": "\"SpotImCore.OWCollectionViewSectionedDataSource\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/SharedViews\/Comment\/ViewModels\/OWCommentContentViewModel.swift",
+      "kind": "FloatLiteral",
+      "offset": 1015,
+      "length": 5,
+      "value": "226.0"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/SharedViews\/Comment\/ViewModels\/OWCommentContentViewModel.swift",
+      "kind": "FloatLiteral",
+      "offset": 1064,
+      "length": 3,
+      "value": "0.0"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/SharedViews\/Comment\/ViewModels\/OWCommentContentViewModel.swift",
+      "kind": "FloatLiteral",
+      "offset": 1111,
+      "length": 4,
+      "value": "25.0"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/SharedViews\/Comment\/ViewModels\/OWCommentContentViewModel.swift",
+      "kind": "FloatLiteral",
+      "offset": 1159,
+      "length": 4,
+      "value": "40.0"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/SharedViews\/Comment\/ViewModels\/OWCommentContentViewModel.swift",
+      "kind": "FloatLiteral",
+      "offset": 1209,
+      "length": 4,
+      "value": "55.0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Models\/SPCommentViewModel.swift",
@@ -29936,371 +30657,371 @@
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Models\/SPCommentViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 996,
+      "offset": 1006,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Models\/SPCommentViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 1028,
+      "offset": 1038,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Models\/SPCommentViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 1074,
+      "offset": 1084,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Models\/SPCommentViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 1107,
+      "offset": 1117,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Models\/SPCommentViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 1138,
+      "offset": 1148,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Models\/SPCommentViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 1181,
+      "offset": 1191,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Models\/SPCommentViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 1261,
+      "offset": 1271,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Models\/SPCommentViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 1355,
+      "offset": 1365,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Models\/SPCommentViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 1426,
+      "offset": 1436,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Models\/SPCommentViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 1467,
+      "offset": 1477,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Models\/SPCommentViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 1504,
+      "offset": 1514,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Models\/SPCommentViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 1548,
+      "offset": 1558,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Models\/SPCommentViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 9097,
+      "offset": 9117,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Models\/SPCommentViewModel.swift",
       "kind": "FloatLiteral",
-      "offset": 12454,
+      "offset": 12474,
       "length": 4,
       "value": "16.0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Models\/SPCommentViewModel.swift",
       "kind": "FloatLiteral",
-      "offset": 12505,
+      "offset": 12525,
       "length": 4,
       "value": "17.0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Models\/SPCommentViewModel.swift",
       "kind": "FloatLiteral",
-      "offset": 12550,
+      "offset": 12570,
       "length": 4,
       "value": "14.0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Models\/SPCommentViewModel.swift",
       "kind": "FloatLiteral",
-      "offset": 12604,
+      "offset": 12624,
       "length": 4,
       "value": "22.0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Models\/SPCommentViewModel.swift",
       "kind": "FloatLiteral",
-      "offset": 12652,
+      "offset": 12672,
       "length": 4,
       "value": "15.0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Models\/SPCommentViewModel.swift",
       "kind": "FloatLiteral",
-      "offset": 12706,
+      "offset": 12726,
       "length": 4,
       "value": "42.0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Models\/SPCommentViewModel.swift",
       "kind": "FloatLiteral",
-      "offset": 12762,
+      "offset": 12782,
       "length": 4,
       "value": "16.0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Models\/SPCommentViewModel.swift",
       "kind": "FloatLiteral",
-      "offset": 12812,
+      "offset": 12832,
       "length": 4,
       "value": "16.0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Models\/SPCommentViewModel.swift",
       "kind": "FloatLiteral",
-      "offset": 12873,
+      "offset": 12893,
       "length": 4,
       "value": "14.0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Models\/SPCommentViewModel.swift",
       "kind": "FloatLiteral",
-      "offset": 12932,
+      "offset": 12952,
       "length": 4,
       "value": "44.0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Models\/SPCommentViewModel.swift",
       "kind": "FloatLiteral",
-      "offset": 12990,
+      "offset": 13010,
       "length": 4,
       "value": "69.0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Models\/SPCommentViewModel.swift",
       "kind": "FloatLiteral",
-      "offset": 13048,
+      "offset": 13068,
       "length": 4,
       "value": "32.0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Models\/SPCommentViewModel.swift",
       "kind": "FloatLiteral",
-      "offset": 13105,
+      "offset": 13125,
       "length": 4,
       "value": "31.0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Models\/SPCommentViewModel.swift",
       "kind": "FloatLiteral",
-      "offset": 13161,
+      "offset": 13181,
       "length": 4,
       "value": "12.0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Models\/SPCommentViewModel.swift",
       "kind": "FloatLiteral",
-      "offset": 13216,
+      "offset": 13236,
       "length": 4,
       "value": "19.0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Models\/SPCommentViewModel.swift",
       "kind": "FloatLiteral",
-      "offset": 13274,
+      "offset": 13294,
       "length": 4,
       "value": "28.0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Models\/SPCommentViewModel.swift",
       "kind": "FloatLiteral",
-      "offset": 13329,
+      "offset": 13349,
       "length": 5,
       "value": "226.0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Models\/SPCommentViewModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 13377,
+      "offset": 13397,
       "length": 2,
       "value": "44"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Models\/SPCommentViewModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 13427,
+      "offset": 13447,
       "length": 2,
       "value": "25"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Models\/SPCommentViewModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 13479,
+      "offset": 13499,
       "length": 2,
       "value": "19"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Models\/SPCommentViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 16839,
+      "offset": 16859,
       "length": 19,
       "value": "\"user.badges.admin\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Models\/SPCommentViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 16881,
+      "offset": 16901,
       "length": 23,
       "value": "\"user.badges.jurnalist\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Models\/SPCommentViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 16926,
+      "offset": 16946,
       "length": 23,
       "value": "\"user.badges.moderator\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Models\/SPCommentViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 16980,
+      "offset": 17000,
       "length": 33,
       "value": "\"user.badges.community-moderator\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Models\/SPCommentViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 16839,
+      "offset": 16859,
       "length": 19,
       "value": "\"user.badges.admin\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Models\/SPCommentViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 16881,
+      "offset": 16901,
       "length": 23,
       "value": "\"user.badges.jurnalist\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Models\/SPCommentViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 16926,
+      "offset": 16946,
       "length": 23,
       "value": "\"user.badges.moderator\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Models\/SPCommentViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 16980,
+      "offset": 17000,
       "length": 33,
       "value": "\"user.badges.community-moderator\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Models\/SPCommentViewModel.swift",
       "kind": "FloatLiteral",
-      "offset": 17310,
+      "offset": 17340,
       "length": 4,
       "value": "16.0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Models\/SPCommentViewModel.swift",
       "kind": "FloatLiteral",
-      "offset": 17357,
+      "offset": 17387,
       "length": 4,
       "value": "17.0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Models\/SPCommentViewModel.swift",
       "kind": "FloatLiteral",
-      "offset": 17398,
+      "offset": 17428,
       "length": 4,
       "value": "14.0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Models\/SPCommentViewModel.swift",
       "kind": "FloatLiteral",
-      "offset": 17442,
+      "offset": 17472,
       "length": 4,
       "value": "15.0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Models\/SPCommentViewModel.swift",
       "kind": "FloatLiteral",
-      "offset": 17494,
+      "offset": 17524,
       "length": 4,
       "value": "16.0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Models\/SPCommentViewModel.swift",
       "kind": "FloatLiteral",
-      "offset": 17540,
+      "offset": 17570,
       "length": 4,
       "value": "16.0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Models\/SPCommentViewModel.swift",
       "kind": "FloatLiteral",
-      "offset": 17597,
+      "offset": 17627,
       "length": 4,
       "value": "14.0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Models\/SPCommentViewModel.swift",
       "kind": "FloatLiteral",
-      "offset": 17652,
+      "offset": 17682,
       "length": 4,
       "value": "44.0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Models\/SPCommentViewModel.swift",
       "kind": "FloatLiteral",
-      "offset": 17706,
+      "offset": 17736,
       "length": 4,
       "value": "69.0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Models\/SPCommentViewModel.swift",
       "kind": "FloatLiteral",
-      "offset": 17760,
+      "offset": 17790,
       "length": 4,
       "value": "32.0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Models\/SPCommentViewModel.swift",
       "kind": "FloatLiteral",
-      "offset": 17813,
+      "offset": 17843,
       "length": 4,
       "value": "31.0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Models\/SPCommentViewModel.swift",
       "kind": "FloatLiteral",
-      "offset": 17865,
+      "offset": 17895,
       "length": 4,
       "value": "12.0"
     },
@@ -30732,6 +31453,48 @@
       "value": "false"
     },
     {
+      "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/SdkAPI\/Infra - Currently not in used\/Enums\/OWConversationSpacing.swift",
+      "kind": "FloatLiteral",
+      "offset": 1044,
+      "length": 3,
+      "value": "6.0"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/SdkAPI\/Infra - Currently not in used\/Enums\/OWConversationSpacing.swift",
+      "kind": "FloatLiteral",
+      "offset": 1135,
+      "length": 3,
+      "value": "8.0"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/SdkAPI\/Infra - Currently not in used\/Enums\/OWConversationSpacing.swift",
+      "kind": "FloatLiteral",
+      "offset": 1239,
+      "length": 3,
+      "value": "8.0"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/SdkAPI\/Infra - Currently not in used\/Enums\/OWConversationSpacing.swift",
+      "kind": "FloatLiteral",
+      "offset": 1342,
+      "length": 3,
+      "value": "8.0"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/SdkAPI\/Infra - Currently not in used\/Enums\/OWConversationSpacing.swift",
+      "kind": "FloatLiteral",
+      "offset": 1418,
+      "length": 4,
+      "value": "20.0"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/SdkAPI\/Infra - Currently not in used\/Enums\/OWConversationSpacing.swift",
+      "kind": "FloatLiteral",
+      "offset": 1462,
+      "length": 3,
+      "value": "0.0"
+    },
+    {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/Views - Old without VMs\/TableViewCells\/CommentCellViews\/Views\/MessageContainerView.swift",
       "kind": "StringLiteral",
       "offset": 277,
@@ -31147,35 +31910,35 @@
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/Views - Old without VMs\/TableViewCells\/CommentCellViews\/Views\/CommentLabelView.swift",
       "kind": "FloatLiteral",
-      "offset": 5135,
+      "offset": 5143,
       "length": 4,
       "value": "13.0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/Views - Old without VMs\/TableViewCells\/CommentCellViews\/Views\/CommentLabelView.swift",
       "kind": "FloatLiteral",
-      "offset": 5182,
+      "offset": 5190,
       "length": 4,
       "value": "24.0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/Views - Old without VMs\/TableViewCells\/CommentCellViews\/Views\/CommentLabelView.swift",
       "kind": "FloatLiteral",
-      "offset": 5228,
+      "offset": 5236,
       "length": 4,
       "value": "14.0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/Views - Old without VMs\/TableViewCells\/CommentCellViews\/Views\/CommentLabelView.swift",
       "kind": "FloatLiteral",
-      "offset": 5276,
+      "offset": 5284,
       "length": 4,
       "value": "10.0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/Views - Old without VMs\/TableViewCells\/CommentCellViews\/Views\/CommentLabelView.swift",
       "kind": "FloatLiteral",
-      "offset": 5326,
+      "offset": 5334,
       "length": 3,
       "value": "5.0"
     },
@@ -31192,6 +31955,13 @@
       "offset": 813,
       "length": 8,
       "value": "\"SpotImCore.OWRouter\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Models\/PreConversation\/OWPreConversationStyle+Extensions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 303,
+      "length": 1,
+      "value": "1"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Services\/OWAnalyticsService.swift",
@@ -32090,6 +32860,307 @@
       "value": "0"
     },
     {
+      "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/SharedViews\/Comment\/Views\/OWCommentHeaderView.swift",
+      "kind": "FloatLiteral",
+      "offset": 316,
+      "length": 4,
+      "value": "39.0"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/SharedViews\/Comment\/Views\/OWCommentHeaderView.swift",
+      "kind": "FloatLiteral",
+      "offset": 381,
+      "length": 4,
+      "value": "11.0"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/SharedViews\/Comment\/Views\/OWCommentHeaderView.swift",
+      "kind": "FloatLiteral",
+      "offset": 425,
+      "length": 4,
+      "value": "16.0"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/SharedViews\/Comment\/Views\/OWCommentHeaderView.swift",
+      "kind": "FloatLiteral",
+      "offset": 479,
+      "length": 4,
+      "value": "12.0"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/SharedViews\/Comment\/Views\/OWCommentHeaderView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 534,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/SharedViews\/Comment\/Views\/OWCommentHeaderView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 585,
+      "length": 1,
+      "value": "6"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/SharedViews\/Comment\/Views\/OWCommentHeaderView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 634,
+      "length": 2,
+      "value": "44"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/SharedViews\/Comment\/Views\/OWCommentHeaderView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 688,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/SharedViews\/Comment\/Views\/OWCommentHeaderView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 739,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/SharedViews\/Comment\/Views\/OWCommentHeaderView.swift",
+      "kind": "StringLiteral",
+      "offset": 782,
+      "length": 24,
+      "value": "\"comment_header_view_id\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/SharedViews\/Comment\/Views\/OWCommentHeaderView.swift",
+      "kind": "StringLiteral",
+      "offset": 852,
+      "length": 35,
+      "value": "\"comment_header_user_name_label_id\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/SharedViews\/Comment\/Views\/OWCommentHeaderView.swift",
+      "kind": "StringLiteral",
+      "offset": 933,
+      "length": 40,
+      "value": "\"comment_header_user_badge_tag_label_id\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/SharedViews\/Comment\/Views\/OWCommentHeaderView.swift",
+      "kind": "StringLiteral",
+      "offset": 1025,
+      "length": 46,
+      "value": "\"comment_header_user_subscriber_badge_view_id\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/SharedViews\/Comment\/Views\/OWCommentHeaderView.swift",
+      "kind": "StringLiteral",
+      "offset": 1113,
+      "length": 30,
+      "value": "\"comment_header_date_label_id\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/SharedViews\/Comment\/Views\/OWCommentHeaderView.swift",
+      "kind": "StringLiteral",
+      "offset": 1188,
+      "length": 33,
+      "value": "\"comment_header_option_button_id\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/SharedViews\/Comment\/Views\/OWCommentHeaderView.swift",
+      "kind": "StringLiteral",
+      "offset": 1272,
+      "length": 40,
+      "value": "\"comment_header_hidden_message_label_id\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/SharedViews\/Comment\/Views\/OWCommentHeaderView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1689,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/SharedViews\/Comment\/Views\/OWCommentHeaderView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1912,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/SharedViews\/Comment\/Views\/OWCommentHeaderView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2018,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/SharedViews\/Comment\/Views\/OWCommentHeaderView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2043,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/SharedViews\/Comment\/Views\/OWCommentHeaderView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2731,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/SharedViews\/Comment\/Views\/OWCommentHeaderView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3025,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/SharedViews\/Comment\/Views\/OWCommentHeaderView.swift",
+      "kind": "StringLiteral",
+      "offset": 3134,
+      "length": 11,
+      "value": "\"menu_icon\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/SharedViews\/Comment\/Views\/OWCommentHeaderView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3164,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/SharedViews\/Comment\/Views\/OWCommentHeaderView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3285,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/SharedViews\/Comment\/Views\/OWCommentHeaderView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3294,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/SharedViews\/Comment\/Views\/OWCommentHeaderView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3305,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/SharedViews\/Comment\/Views\/OWCommentHeaderView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3315,
+      "length": 2,
+      "value": "8"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/SharedViews\/Comment\/Views\/OWCommentHeaderView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3443,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/SharedViews\/Comment\/Views\/OWCommentHeaderView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3595,
+      "length": 2,
+      "value": "17"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/SharedViews\/Comment\/Views\/OWCommentHeaderView.swift",
+      "kind": "FloatLiteral",
+      "offset": 3625,
+      "length": 3,
+      "value": "3.5"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/SharedViews\/Comment\/Views\/OWCommentRatingView.swift",
+      "kind": "FloatLiteral",
+      "offset": 316,
+      "length": 4,
+      "value": "32.0"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/SharedViews\/Comment\/Views\/OWCommentRatingView.swift",
+      "kind": "FloatLiteral",
+      "offset": 367,
+      "length": 3,
+      "value": "4.0"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/SharedViews\/Comment\/Views\/OWCommentRatingView.swift",
+      "kind": "FloatLiteral",
+      "offset": 410,
+      "length": 4,
+      "value": "16.0"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/SharedViews\/Comment\/Views\/OWCommentRatingView.swift",
+      "kind": "StringLiteral",
+      "offset": 447,
+      "length": 24,
+      "value": "\"comment_voting_view_id\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/SharedViews\/Comment\/Views\/OWCommentRatingView.swift",
+      "kind": "StringLiteral",
+      "offset": 516,
+      "length": 39,
+      "value": "\"comment_voting_view_rank_up_button_id\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/SharedViews\/Comment\/Views\/OWCommentRatingView.swift",
+      "kind": "StringLiteral",
+      "offset": 602,
+      "length": 41,
+      "value": "\"comment_voting_view_rank_down_button_id\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/SharedViews\/Comment\/Views\/OWCommentRatingView.swift",
+      "kind": "StringLiteral",
+      "offset": 687,
+      "length": 38,
+      "value": "\"comment_voting_view_rank_up_label_id\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/SharedViews\/Comment\/Views\/OWCommentRatingView.swift",
+      "kind": "StringLiteral",
+      "offset": 771,
+      "length": 40,
+      "value": "\"comment_voting_view_rank_down_label_id\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/SharedViews\/Comment\/Views\/OWCommentRatingView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1448,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/SharedViews\/Comment\/Views\/OWCommentRatingView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1454,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/SharedViews\/Comment\/Views\/OWCommentRatingView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2180,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/SharedViews\/Comment\/Views\/OWCommentRatingView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2186,
+      "length": 1,
+      "value": "0"
+    },
+    {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Network\/Infrastructure\/OWNetworkHTTPHeaders.swift",
       "kind": "Array",
       "offset": 315,
@@ -32337,30 +33408,37 @@
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/SharedViews\/OnlineUsersViewingCounter\/ViewModels\/OWOnlineViewingUsersCounterViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 1658,
+      "offset": 1666,
       "length": 14,
       "value": "\"viewingUsers\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/SharedViews\/OnlineUsersViewingCounter\/ViewModels\/OWOnlineViewingUsersCounterViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 1691,
+      "offset": 1699,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/SharedViews\/OnlineUsersViewingCounter\/ViewModels\/OWOnlineViewingUsersCounterViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 2778,
+      "offset": 2794,
       "length": 14,
       "value": "\"viewingUsers\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/SharedViews\/OnlineUsersViewingCounter\/ViewModels\/OWOnlineViewingUsersCounterViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 2811,
+      "offset": 2827,
       "length": 5,
       "value": "false"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/SharedViews\/Comment\/ViewModels\/OWCommentEngagementViewModel.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1857,
+      "length": 1,
+      "value": "0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Coordinators\/SpotImSDKFlowCoordinator.swift",
@@ -32547,6 +33625,20 @@
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/CommentCreation\/Views\/OWCommentCreationView.swift",
       "kind": "StringLiteral",
+      "offset": 734,
+      "length": 35,
+      "value": "\"Reply to: \""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/CommentCreation\/Views\/OWCommentCreationView.swift",
+      "kind": "StringLiteral",
+      "offset": 768,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/CommentCreation\/Views\/OWCommentCreationView.swift",
+      "kind": "StringLiteral",
       "offset": 202,
       "length": 21,
       "value": "\"SpotImCore.OWCommentCreationView\""
@@ -32596,14 +33688,14 @@
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/DataSources\/SPMainConversationDataSource.swift",
       "kind": "BooleanLiteral",
-      "offset": 28774,
+      "offset": 29032,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/DataSources\/SPMainConversationDataSource.swift",
       "kind": "BooleanLiteral",
-      "offset": 28799,
+      "offset": 29057,
       "length": 5,
       "value": "false"
     },
@@ -32652,21 +33744,21 @@
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Services\/OWUserDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 544,
+      "offset": 911,
       "length": 18,
       "value": "\"com.open-web.sdk\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Services\/OWUserDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 1294,
+      "offset": 1883,
       "length": 9,
       "value": "\"testKey\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Services\/OWUserDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 1294,
+      "offset": 1883,
       "length": 9,
       "value": "\"testKey\""
     },
@@ -32706,6 +33798,27 @@
       "value": "6"
     },
     {
+      "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/SdkAPI\/Infra - Currently not in used\/Enums\/OWPreConversationStyle.swift",
+      "kind": "IntegerLiteral",
+      "offset": 895,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/SdkAPI\/Infra - Currently not in used\/Enums\/OWPreConversationStyle.swift",
+      "kind": "IntegerLiteral",
+      "offset": 943,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/SdkAPI\/Infra - Currently not in used\/Enums\/OWPreConversationStyle.swift",
+      "kind": "IntegerLiteral",
+      "offset": 991,
+      "length": 1,
+      "value": "8"
+    },
+    {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Models\/Configs\/Configuration\/SPConfigurationConversation.swift",
       "kind": "StringLiteral",
       "offset": 942,
@@ -32716,8 +33829,15 @@
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Models\/Configs\/Configuration\/SPConfigurationConversation.swift",
       "kind": "StringLiteral",
       "offset": 995,
-      "length": 14,
-      "value": "\"disableShare\""
+      "length": 15,
+      "value": "\"disable_share\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Models\/Configs\/Configuration\/SPConfigurationConversation.swift",
+      "kind": "StringLiteral",
+      "offset": 1048,
+      "length": 23,
+      "value": "\"showCommentEditOption\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Models\/Configs\/Configuration\/SPConfigurationConversation.swift",
@@ -32730,8 +33850,15 @@
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Models\/Configs\/Configuration\/SPConfigurationConversation.swift",
       "kind": "StringLiteral",
       "offset": 995,
-      "length": 14,
-      "value": "\"disableShare\""
+      "length": 15,
+      "value": "\"disable_share\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Models\/Configs\/Configuration\/SPConfigurationConversation.swift",
+      "kind": "StringLiteral",
+      "offset": 1048,
+      "length": 23,
+      "value": "\"showCommentEditOption\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Network\/Network API - Before the refactor\/DataProviders\/SPConversationsFacade.swift",
@@ -33030,7 +34157,7 @@
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Services\/OWSharedServicesProvider.swift",
       "kind": "StringLiteral",
-      "offset": 2925,
+      "offset": 2985,
       "length": 20,
       "value": "\"Logger initialized\""
     },
@@ -33511,6 +34638,13 @@
       "value": "\"policy.rogerMode\""
     },
     {
+      "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/SharedViews\/AvatarView\/ViewModels\/OWAvatarViewModel.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1150,
+      "length": 4,
+      "value": "true"
+    },
+    {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/Views - Old without VMs\/CommentFooter\/SPCommentFooterView.swift",
       "kind": "StringLiteral",
       "offset": 558,
@@ -33656,6 +34790,13 @@
       "offset": 352,
       "length": 10,
       "value": "[204, 205]"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/SharedViews\/Comment\/ViewModels\/OWCommentLabelsContainerViewModel.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1152,
+      "length": 1,
+      "value": "3"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Network\/Infrastructure\/OWNetworkRequest.swift",
@@ -33903,6 +35044,13 @@
       "value": "8.0"
     },
     {
+      "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/SharedViews\/Cells\/Spacer\/Views\/OWSpacerCell.swift",
+      "kind": "FloatLiteral",
+      "offset": 306,
+      "length": 3,
+      "value": "1.0"
+    },
+    {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Network\/Network API - Before the refactor\/NetworkCommon\/SPNetworkConstants.swift",
       "kind": "StringLiteral",
       "offset": 229,
@@ -33989,105 +35137,112 @@
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/PreConversation\/Views\/OWPreConversationView.swift",
       "kind": "IntegerLiteral",
-      "offset": 458,
+      "offset": 463,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/PreConversation\/Views\/OWPreConversationView.swift",
+      "kind": "FloatLiteral",
+      "offset": 513,
+      "length": 4,
+      "value": "16.0"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/PreConversation\/Views\/OWPreConversationView.swift",
       "kind": "IntegerLiteral",
-      "offset": 971,
+      "offset": 1028,
       "length": 3,
       "value": "400"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/PreConversation\/Views\/OWPreConversationView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1060,
-      "length": 3,
-      "value": "400"
+      "offset": 1117,
+      "length": 4,
+      "value": "1200"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/PreConversation\/Views\/OWPreConversationView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1108,
+      "offset": 1166,
       "length": 3,
       "value": "700"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/PreConversation\/Views\/OWPreConversationView.swift",
       "kind": "FloatLiteral",
-      "offset": 1167,
+      "offset": 1225,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/PreConversation\/Views\/OWPreConversationView.swift",
-      "kind": "FloatLiteral",
-      "offset": 1218,
-      "length": 4,
-      "value": "16.0"
-    },
-    {
-      "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/PreConversation\/Views\/OWPreConversationView.swift",
       "kind": "StringLiteral",
-      "offset": 1380,
+      "offset": 1386,
       "length": 29,
       "value": "\"Full Conversation - testing\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/PreConversation\/Views\/OWPreConversationView.swift",
       "kind": "FloatLiteral",
-      "offset": 1527,
+      "offset": 1533,
       "length": 4,
       "value": "12.0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/PreConversation\/Views\/OWPreConversationView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1558,
+      "offset": 1564,
       "length": 2,
       "value": "20"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/PreConversation\/Views\/OWPreConversationView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1618,
+      "offset": 1624,
       "length": 2,
       "value": "20"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/PreConversation\/Views\/OWPreConversationView.swift",
       "kind": "StringLiteral",
-      "offset": 1781,
+      "offset": 1787,
       "length": 28,
       "value": "\"Comment Creation - testing\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/PreConversation\/Views\/OWPreConversationView.swift",
       "kind": "FloatLiteral",
-      "offset": 1927,
+      "offset": 1933,
       "length": 4,
       "value": "12.0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/PreConversation\/Views\/OWPreConversationView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1958,
+      "offset": 1964,
       "length": 2,
       "value": "20"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/PreConversation\/Views\/OWPreConversationView.swift",
       "kind": "IntegerLiteral",
-      "offset": 2018,
+      "offset": 2024,
       "length": 2,
       "value": "20"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/PreConversation\/Views\/OWPreConversationView.swift",
       "kind": "BooleanLiteral",
-      "offset": 3585,
+      "offset": 3590,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/PreConversation\/Views\/OWPreConversationView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3632,
       "length": 5,
       "value": "false"
     },
@@ -34184,6 +35339,41 @@
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/SharedViews\/Comment\/Views\/OWCommentView.swift",
+      "kind": "FloatLiteral",
+      "offset": 295,
+      "length": 4,
+      "value": "16.0"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/SharedViews\/Comment\/Views\/OWCommentView.swift",
+      "kind": "FloatLiteral",
+      "offset": 343,
+      "length": 4,
+      "value": "16.0"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/SharedViews\/Comment\/Views\/OWCommentView.swift",
+      "kind": "FloatLiteral",
+      "offset": 388,
+      "length": 4,
+      "value": "38.0"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/SharedViews\/Comment\/Views\/OWCommentView.swift",
+      "kind": "FloatLiteral",
+      "offset": 446,
+      "length": 4,
+      "value": "10.0"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/SharedViews\/Comment\/Views\/OWCommentView.swift",
+      "kind": "FloatLiteral",
+      "offset": 507,
+      "length": 3,
+      "value": "5.0"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/SharedViews\/Comment\/Views\/OWCommentView.swift",
       "kind": "StringLiteral",
       "offset": 194,
       "length": 13,
@@ -34206,28 +35396,28 @@
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/Views - Old without VMs\/CommentLabelsContainerView\/SPCommentLabelsContainerView.swift",
       "kind": "FloatLiteral",
-      "offset": 4988,
+      "offset": 5008,
       "length": 4,
       "value": "13.0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/Views - Old without VMs\/CommentLabelsContainerView\/SPCommentLabelsContainerView.swift",
       "kind": "FloatLiteral",
-      "offset": 5051,
+      "offset": 5071,
       "length": 4,
       "value": "10.0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/Views - Old without VMs\/CommentLabelsContainerView\/SPCommentLabelsContainerView.swift",
       "kind": "FloatLiteral",
-      "offset": 5113,
+      "offset": 5133,
       "length": 4,
       "value": "28.0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/Views - Old without VMs\/CommentLabelsContainerView\/SPCommentLabelsContainerView.swift",
       "kind": "FloatLiteral",
-      "offset": 5178,
+      "offset": 5198,
       "length": 4,
       "value": "10.0"
     },
@@ -34359,10 +35549,31 @@
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/SharedViews\/Comment\/Views\/OWCommentContentView.swift",
-      "kind": "StringLiteral",
-      "offset": 206,
-      "length": 20,
-      "value": "\"SpotImCore.OWCommentContentView\""
+      "kind": "FloatLiteral",
+      "offset": 309,
+      "length": 4,
+      "value": "16.0"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/SharedViews\/Comment\/Views\/OWCommentContentView.swift",
+      "kind": "FloatLiteral",
+      "offset": 367,
+      "length": 4,
+      "value": "12.0"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/SharedViews\/Comment\/Views\/OWCommentContentView.swift",
+      "kind": "FloatLiteral",
+      "offset": 430,
+      "length": 4,
+      "value": "10.0"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/SharedViews\/Comment\/Views\/OWCommentContentView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 545,
+      "length": 1,
+      "value": "0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/SharedViews\/PreConversationFooter\/Views\/OWPreConversationFooterView.swift",
@@ -35583,93 +36794,107 @@
       "value": "false"
     },
     {
+      "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/SharedViews\/Comment\/Views\/OWCommentLabelsContainerView.swift",
+      "kind": "StringLiteral",
+      "offset": 301,
+      "length": 29,
+      "value": "\"comment_labels_container_id\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/SharedViews\/Comment\/Views\/OWCommentLabelsContainerView.swift",
+      "kind": "FloatLiteral",
+      "offset": 402,
+      "length": 4,
+      "value": "10.0"
+    },
+    {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/Views - Old without VMs\/TableViewCells\/SPReplyCell.swift",
       "kind": "FloatLiteral",
-      "offset": 13734,
+      "offset": 13886,
       "length": 4,
       "value": "16.0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/Views - Old without VMs\/TableViewCells\/SPReplyCell.swift",
       "kind": "FloatLiteral",
-      "offset": 13781,
+      "offset": 13933,
       "length": 4,
       "value": "17.0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/Views - Old without VMs\/TableViewCells\/SPReplyCell.swift",
       "kind": "FloatLiteral",
-      "offset": 13822,
+      "offset": 13974,
       "length": 4,
       "value": "14.0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/Views - Old without VMs\/TableViewCells\/SPReplyCell.swift",
       "kind": "FloatLiteral",
-      "offset": 13866,
+      "offset": 14018,
       "length": 4,
       "value": "15.0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/Views - Old without VMs\/TableViewCells\/SPReplyCell.swift",
       "kind": "FloatLiteral",
-      "offset": 13911,
+      "offset": 14063,
       "length": 4,
       "value": "42.0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/Views - Old without VMs\/TableViewCells\/SPReplyCell.swift",
       "kind": "FloatLiteral",
-      "offset": 13957,
+      "offset": 14109,
       "length": 4,
       "value": "16.0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/Views - Old without VMs\/TableViewCells\/SPReplyCell.swift",
       "kind": "FloatLiteral",
-      "offset": 14014,
+      "offset": 14166,
       "length": 3,
       "value": "5.0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/Views - Old without VMs\/TableViewCells\/SPReplyCell.swift",
       "kind": "FloatLiteral",
-      "offset": 14067,
+      "offset": 14219,
       "length": 4,
       "value": "32.0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/Views - Old without VMs\/TableViewCells\/SPReplyCell.swift",
       "kind": "FloatLiteral",
-      "offset": 14120,
+      "offset": 14272,
       "length": 4,
       "value": "31.0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/Views - Old without VMs\/TableViewCells\/SPReplyCell.swift",
       "kind": "FloatLiteral",
-      "offset": 14175,
+      "offset": 14327,
       "length": 4,
       "value": "44.0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/Views - Old without VMs\/TableViewCells\/SPReplyCell.swift",
       "kind": "FloatLiteral",
-      "offset": 14227,
+      "offset": 14379,
       "length": 4,
       "value": "12.0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/Views - Old without VMs\/TableViewCells\/SPReplyCell.swift",
       "kind": "FloatLiteral",
-      "offset": 14277,
+      "offset": 14429,
       "length": 4,
       "value": "28.0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/Views - Old without VMs\/TableViewCells\/SPReplyCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 14333,
+      "offset": 14485,
       "length": 2,
       "value": "16"
     },
