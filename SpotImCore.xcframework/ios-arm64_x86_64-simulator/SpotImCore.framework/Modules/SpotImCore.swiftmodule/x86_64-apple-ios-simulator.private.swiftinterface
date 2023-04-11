@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.7 (swiftlang-5.7.0.127.4 clang-1400.0.29.50)
+// swift-compiler-version: Apple Swift version 5.8 (swiftlang-5.8.0.124.2 clang-1403.0.22.11.100)
 // swift-module-flags: -target x86_64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -module-name SpotImCore
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import AVKit
@@ -140,8 +140,8 @@ public struct SPEventInfo : Swift.Codable {
   public let engineStatusType: Swift.String?
   public let publisherCustomData: [Swift.String : Swift.String]?
   public let targetUrl: Swift.String?
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public enum SpotImError : Swift.Error {
   case notInitialized
@@ -156,8 +156,8 @@ public enum SpotImLoginStatus {
 public struct SpotImConversationCounters : Swift.Codable {
   public let comments: Swift.Int
   public let replies: Swift.Int
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct SpotImArticleMetadata {
   public init(url: Swift.String, title: Swift.String, subtitle: Swift.String, thumbnailUrl: Swift.String, section: Swift.String = "default", customBIData: [Swift.String : Swift.String]? = nil, readOnlyMode: SpotImCore.SpotImReadOnlyMode = .default)
@@ -200,7 +200,7 @@ public protocol SPAnalyticsEventDelegate {
 public typealias InitizlizeCompletionHandler = (Swift.Result<Swift.Void, SpotImCore.SpotImError>) -> Swift.Void
 @_hasMissingDesignatedInitializers public class SpotIm {
   public static var reinit: Swift.Bool
-  public static var googleAdsProvider: SpotImCore.AdsProvider?
+  public static var googleAdsProvider: (any SpotImCore.AdsProvider)?
   public static var customFontFamily: Swift.String?
   public static var displayArticleHeader: Swift.Bool
   public static var reactNativeShowLoginScreenOnRootVC: Swift.Bool
@@ -210,11 +210,11 @@ public typealias InitizlizeCompletionHandler = (Swift.Result<Swift.Void, SpotImC
   public static var enableCustomNavigationItemTitle: Swift.Bool
   public static let OVERRIDE_USER_INTERFACE_STYLE_NOTIFICATION: Swift.String
   public static func initialize(spotId: Swift.String, completion: SpotImCore.InitizlizeCompletionHandler? = nil)
-  public static func setGoogleAdsProvider(googleAdsProvider: SpotImCore.AdsProvider)
+  public static func setGoogleAdsProvider(googleAdsProvider: any SpotImCore.AdsProvider)
   public static func sso(withJwtSecret secret: Swift.String, completion: @escaping SpotImCore.AuthStratCompleteionHandler)
   public static func startSSO(completion: @escaping SpotImCore.AuthStratCompleteionHandler)
   public static func completeSSO(with codeB: Swift.String, completion: @escaping SpotImCore.AuthCompletionHandler)
-  public static func createSpotImFlowCoordinator(loginDelegate: SpotImCore.SpotImLoginDelegate, completion: @escaping ((Swift.Result<SpotImCore.SpotImSDKFlowCoordinator, SpotImCore.SpotImError>) -> Swift.Void))
+  public static func createSpotImFlowCoordinator(loginDelegate: any SpotImCore.SpotImLoginDelegate, completion: @escaping ((Swift.Result<SpotImCore.SpotImSDKFlowCoordinator, SpotImCore.SpotImError>) -> Swift.Void))
   public static func getConversationCounters(conversationIds: [Swift.String], completion: @escaping ((Swift.Result<[Swift.String : SpotImCore.SpotImConversationCounters], SpotImCore.SpotImError>) -> Swift.Void))
   public static var darkModeBackgroundColor: UIKit.UIColor {
     get
@@ -227,7 +227,7 @@ public typealias InitizlizeCompletionHandler = (Swift.Result<Swift.Void, SpotImC
   public static func getUserLoginStatus(completion: @escaping ((Swift.Result<SpotImCore.SpotImLoginStatus, SpotImCore.SpotImError>) -> Swift.Void))
   public static func logout(completion: @escaping ((Swift.Result<Swift.Void, SpotImCore.SpotImError>) -> Swift.Void))
   public static func setCustomSortByOptionText(option: SpotImCore.SpotImSortByOption, text: Swift.String)
-  public static func setAnalyticsEventDelegate(delegate: SpotImCore.SPAnalyticsEventDelegate)
+  public static func setAnalyticsEventDelegate(delegate: any SpotImCore.SPAnalyticsEventDelegate)
   public static func setButtonOnlyMode(mode: SpotImCore.SpotImButtonOnlyMode)
   public static func getButtonOnlyMode() -> SpotImCore.SpotImButtonOnlyMode
   public static func setInitialSort(option: SpotImCore.SpotImSortByOption)
@@ -235,15 +235,15 @@ public typealias InitizlizeCompletionHandler = (Swift.Result<Swift.Void, SpotImC
   public static func setAdditionalConfigurations(configurations: [SpotImCore.SPAdditionalConfiguration])
   @objc deinit
 }
-public typealias AuthCompletionHandler = (Swift.Result<Swift.String, Swift.Error>) -> Swift.Void
-public typealias AuthStratCompleteionHandler = (Swift.Result<SpotImCore.SSOStartResponse, Swift.Error>) -> Swift.Void
+public typealias AuthCompletionHandler = (Swift.Result<Swift.String, any Swift.Error>) -> Swift.Void
+public typealias AuthStratCompleteionHandler = (Swift.Result<SpotImCore.SSOStartResponse, any Swift.Error>) -> Swift.Void
 public struct SSOStartResponse : Swift.Codable {
   public var codeA: Swift.String?
   public var jwtToken: Swift.String?
   public var autoComplete: Swift.Bool
   public var success: Swift.Bool
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public typealias JSON = [Swift.String : Any]
 public enum OWParserError : Swift.Error {
@@ -294,8 +294,8 @@ extension SpotImCore.SpotImLoginDelegate {
 }
 public let SPOTIM_NAV_CONTROL_TAG: Swift.Int
 @_hasMissingDesignatedInitializers final public class SpotImSDKFlowCoordinator {
-  final public func setLayoutDelegate(delegate: SpotImCore.SpotImLayoutDelegate)
-  final public func setCustomUIDelegate(delegate: SpotImCore.SpotImCustomUIDelegate)
+  final public func setLayoutDelegate(delegate: any SpotImCore.SpotImLayoutDelegate)
+  final public func setCustomUIDelegate(delegate: any SpotImCore.SpotImCustomUIDelegate)
   final public func preConversationController(withPostId postId: Swift.String, articleMetadata: SpotImCore.SpotImArticleMetadata, numberOfPreLoadedMessages: Swift.Int = 2, navigationController: UIKit.UINavigationController, callbacks: SpotImCore.SPViewActionsCallbacks? = nil, completion: @escaping (UIKit.UIViewController) -> Swift.Void)
   final public func openFullConversationViewController(postId: Swift.String, articleMetadata: SpotImCore.SpotImArticleMetadata, presentationalMode: SpotImCore.SPViewControllerPresentationalMode, selectedCommentId: Swift.String? = nil, callbacks: SpotImCore.SPViewActionsCallbacks? = nil, completion: SpotImCore.SPShowFullConversationCompletionHandler? = nil)
   final public func openNewCommentViewController(postId: Swift.String, articleMetadata: SpotImCore.SpotImArticleMetadata, fullConversationPresentationalMode: SpotImCore.SPViewControllerPresentationalMode, callbacks: SpotImCore.SPViewActionsCallbacks? = nil, completion: SpotImCore.SPOpenNewCommentCompletionHandler? = nil)
@@ -360,11 +360,11 @@ public enum SPViewActionCallbackType {
 }
 public enum OWResult<T> {
   case success(T)
-  case failure(Swift.Error)
+  case failure(any Swift.Error)
   public var value: T? {
     get
   }
-  public var error: Swift.Error? {
+  public var error: (any Swift.Error)? {
     get
   }
 }
@@ -378,19 +378,19 @@ extension SpotImCore.OWResult {
   @discardableResult
   public func next<U>(_ function: () -> SpotImCore.OWResult<U>) -> SpotImCore.OWResult<U>
   @discardableResult
-  public func onError(_ function: (Swift.Error) -> Swift.Error) -> SpotImCore.OWResult<T>
+  public func onError(_ function: (any Swift.Error) -> any Swift.Error) -> SpotImCore.OWResult<T>
   @discardableResult
   public func require() -> T
 }
 public protocol AdsProviderBannerDelegate : AnyObject {
   func bannerLoaded(bannerView: UIKit.UIView, adBannerSize: CoreFoundation.CGSize, adUnitID: Swift.String)
-  func bannerFailedToLoad(error: Swift.Error)
+  func bannerFailedToLoad(error: any Swift.Error)
 }
 public protocol AdsProviderInterstitialDelegate : AnyObject {
   func interstitialLoaded()
   func interstitialWillBeShown()
   func interstitialDidDismiss()
-  func interstitialFailedToLoad(error: Swift.Error)
+  func interstitialFailedToLoad(error: any Swift.Error)
 }
 public enum AdSize {
   case small
@@ -408,8 +408,8 @@ public protocol AdsProvider : AnyObject {
   func setupAdsBanner(with adId: Swift.String, in controller: UIKit.UIViewController, validSizes: Swift.Set<SpotImCore.AdSize>)
   func setupInterstitial(with adId: Swift.String)
   func showInterstitial(in controller: UIKit.UIViewController) -> Swift.Bool
-  var bannerDelegate: SpotImCore.AdsProviderBannerDelegate? { get set }
-  var interstitialDelegate: SpotImCore.AdsProviderInterstitialDelegate? { get set }
+  var bannerDelegate: (any SpotImCore.AdsProviderBannerDelegate)? { get set }
+  var interstitialDelegate: (any SpotImCore.AdsProviderInterstitialDelegate)? { get set }
 }
 extension SpotImCore.SPEventType : Swift.Equatable {}
 extension SpotImCore.SPEventType : Swift.Hashable {}
