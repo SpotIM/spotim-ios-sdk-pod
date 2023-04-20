@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.7 (swiftlang-5.7.0.127.4 clang-1400.0.29.50)
+// swift-compiler-version: Apple Swift version 5.8 (swiftlang-5.8.0.124.2 clang-1403.0.22.11.100)
 // swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -module-name SpotImCore
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import AVKit
@@ -25,15 +25,42 @@ import os
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
   @objc deinit
 }
+public enum OWInitialSortStrategy {
+  case useServerConfig
+  case use(sortOption: SpotImCore.OWSortOption)
+}
 public protocol OWImagePickerDelegate : AnyObject {
   func didSelect(image: UIKit.UIImage?)
+}
+public enum OWThemeStyle {
+  case light
+  case dark
+  public static func == (a: SpotImCore.OWThemeStyle, b: SpotImCore.OWThemeStyle) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
 }
 public struct InputConfiguration {
   public init(appLanguage: Swift.String)
 }
+public enum OWLocaleStrategy : Swift.Codable {
+  case useDevice
+  case useServerConfig
+  case use(locale: Foundation.Locale)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
 public struct OWEmptyParser {
 }
 public struct OWJSONParser {
+}
+extension SpotImCore.OWLocaleStrategy : Swift.Equatable {
+  public static func == (lhs: SpotImCore.OWLocaleStrategy, rhs: SpotImCore.OWLocaleStrategy) -> Swift.Bool
+}
+public protocol OWUIViews {
+  func preConversation(postId: SpotImCore.OWPostId, article: any SpotImCore.OWArticleProtocol, additionalSettings: (any SpotImCore.OWPreConversationSettingsProtocol)?, callbacks: SpotImCore.OWViewActionsCallbacks?, completion: @escaping SpotImCore.OWViewCompletion)
+  func conversation(postId: SpotImCore.OWPostId, article: any SpotImCore.OWArticleProtocol, additionalSettings: (any SpotImCore.OWConversationSettingsProtocol)?, callbacks: SpotImCore.OWViewActionsCallbacks?, completion: @escaping SpotImCore.OWViewCompletion)
 }
 public enum SPNetworkError : Swift.Error {
   case custom(_: Swift.String)
@@ -56,6 +83,7 @@ extension SpotImCore.SPNetworkError : Foundation.CustomNSError {
     get
   }
 }
+public typealias OWViewActionsCallbacks = (SpotImCore.OWViewActionCallbackType, SpotImCore.OWViewSourceType, Swift.String) -> Swift.Void
 @_hasMissingDesignatedInitializers final public class SPPublicSessionInterface {
   public static func isMe(userId: Swift.String) -> Swift.Bool
   @objc deinit
@@ -63,6 +91,45 @@ extension SpotImCore.SPNetworkError : Foundation.CustomNSError {
 extension Foundation.NSNotification.Name {
   public static let userDisplayNameFrozen: Foundation.Notification.Name
 }
+public protocol OWUI {
+  var flows: any SpotImCore.OWUIFlows { get }
+  var views: any SpotImCore.OWUIViews { get }
+  var customizations: any SpotImCore.OWCustomizations { get }
+  var authenticationUI: any SpotImCore.OWUIAuthentication { get }
+}
+public struct OWConversationSettingsBuilder : SpotImCore.OWConversationSettingsProtocol {
+  public var selectedCommentId: Swift.String?
+  public var style: SpotImCore.OWConversationStyle
+  public init(style: SpotImCore.OWConversationStyle = .regular, selectedCommentId: Swift.String? = nil)
+  @discardableResult
+  public mutating func selectedCommentId(_ id: Swift.String?) -> SpotImCore.OWConversationSettingsBuilder
+  @discardableResult
+  public mutating func style(_ style: SpotImCore.OWConversationStyle) -> SpotImCore.OWConversationSettingsBuilder
+}
+public typealias OWAuthenticationFlowCallback = (SpotImCore.OWRouteringMode, @escaping SpotImCore.OWBasicCompletion) -> Swift.Void
+public enum OWConversationStyle : Swift.Codable {
+  case regular
+  case compact
+  case custom(communityGuidelinesStyle: SpotImCore.OWCommunityGuidelinesStyle, communityQuestionsStyle: SpotImCore.OWCommunityQuestionsStyle, spacing: SpotImCore.OWConversationSpacing)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public typealias OWDefaultCompletion = (Swift.Result<Swift.Void, SpotImCore.OWError>) -> Swift.Void
+public struct OWConversationCounter {
+  public let commentsNumber: Swift.Int
+  public let repliesNumber: Swift.Int
+}
+public enum OWReadOnlyMode {
+  case `default`
+  case enable
+  case disable
+  public static func == (a: SpotImCore.OWReadOnlyMode, b: SpotImCore.OWReadOnlyMode) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public typealias OWProviderSSOHandler = (Swift.Result<SpotImCore.OWSSOProviderModel, SpotImCore.OWError>) -> Swift.Void
 public enum SPEventType : Swift.String {
   case loaded
   case viewed
@@ -114,6 +181,61 @@ public enum SPEventType : Swift.String {
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
   @objc deinit
 }
+public protocol OWLoggerConfiguration {
+  var level: SpotImCore.OWLogLevel { get set }
+  var methods: [SpotImCore.OWLogMethod] { get set }
+}
+public struct OWPreConversationSettings : SpotImCore.OWPreConversationSettingsProtocol {
+  public let style: SpotImCore.OWPreConversationStyle
+  public init(style: SpotImCore.OWPreConversationStyle = .regular())
+}
+public protocol OWCommentThreadSettingsProtocol {
+  var conversationSettings: any SpotImCore.OWConversationSettingsProtocol { get }
+}
+public protocol OWMonetization {
+}
+public typealias OWUserAuthenticationStatusCompletion = (Swift.Result<SpotImCore.OWUserAuthenticationStatus, SpotImCore.OWError>) -> Swift.Void
+public typealias OWSpotId = Swift.String
+public typealias OWPostId = Swift.String
+public typealias OWCommentId = Swift.String
+public enum OWPreConversationSummaryStyle {
+  case none
+  case regular
+  case compact
+  public static func == (a: SpotImCore.OWPreConversationSummaryStyle, b: SpotImCore.OWPreConversationSummaryStyle) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public struct OWArticleSettings : SpotImCore.OWArticleSettingsProtocol {
+  public let section: Swift.String
+  public let showHeader: Swift.Bool
+  public let readOnlyMode: SpotImCore.OWReadOnlyMode
+  public init(section: Swift.String, showHeader: Swift.Bool = true, readOnlyMode: SpotImCore.OWReadOnlyMode = .default)
+}
+public protocol OWAnalytics {
+}
+public enum OWCommunityGuidelinesStyle : Swift.Codable {
+  case none
+  case regular
+  case compact
+  public static func == (a: SpotImCore.OWCommunityGuidelinesStyle, b: SpotImCore.OWCommunityGuidelinesStyle) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public var hashValue: Swift.Int {
+    get
+  }
+  public init(from decoder: any Swift.Decoder) throws
+}
+public protocol OWPreConversationSettingsProtocol {
+  var style: SpotImCore.OWPreConversationStyle { get }
+}
+public struct OWCommentCreationSettings : SpotImCore.OWCommentCreationSettingsProtocol {
+  public let conversationSettings: any SpotImCore.OWConversationSettingsProtocol
+  public let style: SpotImCore.OWCommentCreationStyle
+  public init(conversationSettings: any SpotImCore.OWConversationSettingsProtocol, style: SpotImCore.OWCommentCreationStyle = .regular)
+}
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class SPShowCommentsButton : SpotImCore.OWBaseButton {
   @_Concurrency.MainActor(unsafe) public func getCommentsCount() -> Swift.String?
   @objc deinit
@@ -140,8 +262,103 @@ public struct SPEventInfo : Swift.Codable {
   public let engineStatusType: Swift.String?
   public let publisherCustomData: [Swift.String : Swift.String]?
   public let targetUrl: Swift.String?
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public protocol OWSortingCustomizations {
+  func setTitle(_ title: Swift.String, forOption sortOption: SpotImCore.OWSortOption)
+  var initialOption: SpotImCore.OWInitialSortStrategy { get set }
+}
+public enum OWCommunityQuestionsStyle : Swift.Codable {
+  case none
+  case regular
+  public static func == (a: SpotImCore.OWCommunityQuestionsStyle, b: SpotImCore.OWCommunityQuestionsStyle) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public var hashValue: Swift.Int {
+    get
+  }
+  public init(from decoder: any Swift.Decoder) throws
+}
+public enum OWSortOption : Swift.String {
+  case best
+  case newest
+  case oldest
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum OWViewSourceType {
+  case preConversation
+  case conversation
+  case commentCreation
+  case commentThread
+  public static func == (a: SpotImCore.OWViewSourceType, b: SpotImCore.OWViewSourceType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public struct OWConversationSettings : SpotImCore.OWConversationSettingsProtocol {
+  public let selectedCommentId: Swift.String?
+  public let style: SpotImCore.OWConversationStyle
+  public init(style: SpotImCore.OWConversationStyle = .regular, selectedCommentId: Swift.String? = nil)
+}
+public enum OWConversationSpacing : Swift.Codable {
+  public struct Metrics {
+    public static let defaultSpaceBetweenComments: CoreFoundation.CGFloat
+    public static let defaultSpaceBelowHeader: CoreFoundation.CGFloat
+    public static let defaultSpaceBelowCommunityGuidelines: CoreFoundation.CGFloat
+    public static let defaultSpaceBelowCommunityQuestions: CoreFoundation.CGFloat
+    public static let maxSpace: CoreFoundation.CGFloat
+    public static let minSpace: CoreFoundation.CGFloat
+  }
+  case regular
+  case compact
+  case custom(betweenComments: CoreFoundation.CGFloat, belowHeader: CoreFoundation.CGFloat, belowCommunityGuidelines: CoreFoundation.CGFloat, belowCommunityQuestions: CoreFoundation.CGFloat)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+extension SpotImCore.OWPreConversationStyle : Swift.Equatable {
+  public static func == (lhs: SpotImCore.OWPreConversationStyle, rhs: SpotImCore.OWPreConversationStyle) -> Swift.Bool
+}
+public enum OWSupportedLanguage : Swift.String, Swift.Codable, Swift.CaseIterable {
+  case hebrew
+  case english
+  case arabic
+  case spanish
+  case portoguese
+  case french
+  public init?(rawValue: Swift.String)
+  public typealias AllCases = [SpotImCore.OWSupportedLanguage]
+  public typealias RawValue = Swift.String
+  public static var allCases: [SpotImCore.OWSupportedLanguage] {
+    get
+  }
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum OWViewActionCallbackType : Swift.Codable {
+  case contentPressed
+  case showMoreCommentsPressed
+  case writeCommentPressed
+  case articleHeaderPressed
+  case communityGuidelinesPressed
+  case communityQuestionsPressed
+  case postCommentPressed
+  case adClosed
+  case adTapped
+  case closeConversationPressed
+  public static func == (a: SpotImCore.OWViewActionCallbackType, b: SpotImCore.OWViewActionCallbackType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public var hashValue: Swift.Int {
+    get
+  }
+  public init(from decoder: any Swift.Decoder) throws
 }
 public enum SpotImError : Swift.Error {
   case notInitialized
@@ -156,8 +373,8 @@ public enum SpotImLoginStatus {
 public struct SpotImConversationCounters : Swift.Codable {
   public let comments: Swift.Int
   public let replies: Swift.Int
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct SpotImArticleMetadata {
   public init(url: Swift.String, title: Swift.String, subtitle: Swift.String, thumbnailUrl: Swift.String, section: Swift.String = "default", customBIData: [Swift.String : Swift.String]? = nil, readOnlyMode: SpotImCore.SpotImReadOnlyMode = .default)
@@ -200,7 +417,7 @@ public protocol SPAnalyticsEventDelegate {
 public typealias InitizlizeCompletionHandler = (Swift.Result<Swift.Void, SpotImCore.SpotImError>) -> Swift.Void
 @_hasMissingDesignatedInitializers public class SpotIm {
   public static var reinit: Swift.Bool
-  public static var googleAdsProvider: SpotImCore.AdsProvider?
+  public static var googleAdsProvider: (any SpotImCore.AdsProvider)?
   public static var customFontFamily: Swift.String?
   public static var displayArticleHeader: Swift.Bool
   public static var reactNativeShowLoginScreenOnRootVC: Swift.Bool
@@ -210,11 +427,11 @@ public typealias InitizlizeCompletionHandler = (Swift.Result<Swift.Void, SpotImC
   public static var enableCustomNavigationItemTitle: Swift.Bool
   public static let OVERRIDE_USER_INTERFACE_STYLE_NOTIFICATION: Swift.String
   public static func initialize(spotId: Swift.String, completion: SpotImCore.InitizlizeCompletionHandler? = nil)
-  public static func setGoogleAdsProvider(googleAdsProvider: SpotImCore.AdsProvider)
+  public static func setGoogleAdsProvider(googleAdsProvider: any SpotImCore.AdsProvider)
   public static func sso(withJwtSecret secret: Swift.String, completion: @escaping SpotImCore.AuthStratCompleteionHandler)
   public static func startSSO(completion: @escaping SpotImCore.AuthStratCompleteionHandler)
   public static func completeSSO(with codeB: Swift.String, completion: @escaping SpotImCore.AuthCompletionHandler)
-  public static func createSpotImFlowCoordinator(loginDelegate: SpotImCore.SpotImLoginDelegate, completion: @escaping ((Swift.Result<SpotImCore.SpotImSDKFlowCoordinator, SpotImCore.SpotImError>) -> Swift.Void))
+  public static func createSpotImFlowCoordinator(loginDelegate: any SpotImCore.SpotImLoginDelegate, completion: @escaping ((Swift.Result<SpotImCore.SpotImSDKFlowCoordinator, SpotImCore.SpotImError>) -> Swift.Void))
   public static func getConversationCounters(conversationIds: [Swift.String], completion: @escaping ((Swift.Result<[Swift.String : SpotImCore.SpotImConversationCounters], SpotImCore.SpotImError>) -> Swift.Void))
   public static var darkModeBackgroundColor: UIKit.UIColor {
     get
@@ -227,7 +444,7 @@ public typealias InitizlizeCompletionHandler = (Swift.Result<Swift.Void, SpotImC
   public static func getUserLoginStatus(completion: @escaping ((Swift.Result<SpotImCore.SpotImLoginStatus, SpotImCore.SpotImError>) -> Swift.Void))
   public static func logout(completion: @escaping ((Swift.Result<Swift.Void, SpotImCore.SpotImError>) -> Swift.Void))
   public static func setCustomSortByOptionText(option: SpotImCore.SpotImSortByOption, text: Swift.String)
-  public static func setAnalyticsEventDelegate(delegate: SpotImCore.SPAnalyticsEventDelegate)
+  public static func setAnalyticsEventDelegate(delegate: any SpotImCore.SPAnalyticsEventDelegate)
   public static func setButtonOnlyMode(mode: SpotImCore.SpotImButtonOnlyMode)
   public static func getButtonOnlyMode() -> SpotImCore.SpotImButtonOnlyMode
   public static func setInitialSort(option: SpotImCore.SpotImSortByOption)
@@ -235,15 +452,33 @@ public typealias InitizlizeCompletionHandler = (Swift.Result<Swift.Void, SpotImC
   public static func setAdditionalConfigurations(configurations: [SpotImCore.SPAdditionalConfiguration])
   @objc deinit
 }
-public typealias AuthCompletionHandler = (Swift.Result<Swift.String, Swift.Error>) -> Swift.Void
-public typealias AuthStratCompleteionHandler = (Swift.Result<SpotImCore.SSOStartResponse, Swift.Error>) -> Swift.Void
+public enum OWLogLevel {
+  case none, error, medium, verbose
+  public static func == (a: SpotImCore.OWLogLevel, b: SpotImCore.OWLogLevel) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum OWLogMethod {
+  case nsLog, osLog, file(maxFilesNumber: Swift.Int)
+}
+extension SpotImCore.OWLogMethod : Swift.Hashable {
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: SpotImCore.OWLogMethod, b: SpotImCore.OWLogMethod) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public typealias AuthCompletionHandler = (Swift.Result<Swift.String, any Swift.Error>) -> Swift.Void
+public typealias AuthStratCompleteionHandler = (Swift.Result<SpotImCore.SSOStartResponse, any Swift.Error>) -> Swift.Void
 public struct SSOStartResponse : Swift.Codable {
   public var codeA: Swift.String?
   public var jwtToken: Swift.String?
   public var autoComplete: Swift.Bool
   public var success: Swift.Bool
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public typealias JSON = [Swift.String : Any]
 public enum OWParserError : Swift.Error {
@@ -254,6 +489,21 @@ public enum OWParserError : Swift.Error {
     get
   }
 }
+public enum OWViewableMode {
+  case partOfFlow
+  case independent
+  public static func == (a: SpotImCore.OWViewableMode, b: SpotImCore.OWViewableMode) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum OWSSOFlowType {
+  case start(completion: SpotImCore.OWSSOStartHandler)
+  case complete(codeB: Swift.String, completion: SpotImCore.OWSSOCompletionHandler)
+  case usingProvider(privder: SpotImCore.OWSSOProvider, token: Swift.String, completion: SpotImCore.OWProviderSSOHandler)
+}
+public typealias OWSSOCompletionHandler = (Swift.Result<SpotImCore.OWSSOCompletionModel, SpotImCore.OWError>) -> Swift.Void
 public protocol SpotImLayoutDelegate : AnyObject {
   func viewHeightDidChange(to newValue: CoreFoundation.CGFloat)
 }
@@ -294,20 +544,208 @@ extension SpotImCore.SpotImLoginDelegate {
 }
 public let SPOTIM_NAV_CONTROL_TAG: Swift.Int
 @_hasMissingDesignatedInitializers final public class SpotImSDKFlowCoordinator {
-  final public func setLayoutDelegate(delegate: SpotImCore.SpotImLayoutDelegate)
-  final public func setCustomUIDelegate(delegate: SpotImCore.SpotImCustomUIDelegate)
+  final public func setLayoutDelegate(delegate: any SpotImCore.SpotImLayoutDelegate)
+  final public func setCustomUIDelegate(delegate: any SpotImCore.SpotImCustomUIDelegate)
   final public func preConversationController(withPostId postId: Swift.String, articleMetadata: SpotImCore.SpotImArticleMetadata, numberOfPreLoadedMessages: Swift.Int = 2, navigationController: UIKit.UINavigationController, callbacks: SpotImCore.SPViewActionsCallbacks? = nil, completion: @escaping (UIKit.UIViewController) -> Swift.Void)
   final public func openFullConversationViewController(postId: Swift.String, articleMetadata: SpotImCore.SpotImArticleMetadata, presentationalMode: SpotImCore.SPViewControllerPresentationalMode, selectedCommentId: Swift.String? = nil, callbacks: SpotImCore.SPViewActionsCallbacks? = nil, completion: SpotImCore.SPShowFullConversationCompletionHandler? = nil)
   final public func openNewCommentViewController(postId: Swift.String, articleMetadata: SpotImCore.SpotImArticleMetadata, fullConversationPresentationalMode: SpotImCore.SPViewControllerPresentationalMode, callbacks: SpotImCore.SPViewActionsCallbacks? = nil, completion: SpotImCore.SPOpenNewCommentCompletionHandler? = nil)
   @objc deinit
 }
+public typealias OWCustomizableElementCallback = (SpotImCore.OWCustomizableElement, SpotImCore.OWViewSourceType, SpotImCore.OWThemeStyle, Swift.String?) -> Swift.Void
+public enum OWCustomizableElement {
+  case headerTitle(label: UIKit.UILabel)
+  case headerCounter(label: UIKit.UILabel)
+}
+public enum OWSSOProvider {
+  case gigya
+  case piano
+  case auth0
+  public static func == (a: SpotImCore.OWSSOProvider, b: SpotImCore.OWSSOProvider) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public struct OWSSOProviderModel {
+  public let userId: Swift.String
+}
+public protocol OWManagerProtocol {
+  var spotId: SpotImCore.OWSpotId { get set }
+  var ui: any SpotImCore.OWUI { get }
+  var analytics: any SpotImCore.OWAnalytics { get }
+  var monetization: any SpotImCore.OWMonetization { get }
+  var authentication: any SpotImCore.OWAuthentication { get }
+  var helpers: any SpotImCore.OWHelpers { get }
+}
+public protocol OWUIFlows {
+  func preConversation(postId: SpotImCore.OWPostId, article: any SpotImCore.OWArticleProtocol, presentationalMode: SpotImCore.OWPresentationalMode, additionalSettings: (any SpotImCore.OWPreConversationSettingsProtocol)?, callbacks: SpotImCore.OWViewActionsCallbacks?, completion: @escaping SpotImCore.OWViewCompletion)
+  func conversation(postId: SpotImCore.OWPostId, article: any SpotImCore.OWArticleProtocol, presentationalMode: SpotImCore.OWPresentationalMode, additionalSettings: (any SpotImCore.OWConversationSettingsProtocol)?, callbacks: SpotImCore.OWViewActionsCallbacks?, completion: @escaping SpotImCore.OWDefaultCompletion)
+  func commentCreation(postId: SpotImCore.OWPostId, article: any SpotImCore.OWArticleProtocol, presentationalMode: SpotImCore.OWPresentationalMode, additionalSettings: (any SpotImCore.OWCommentCreationSettingsProtocol)?, callbacks: SpotImCore.OWViewActionsCallbacks?, completion: @escaping SpotImCore.OWDefaultCompletion)
+  func commentThread(postId: SpotImCore.OWPostId, article: any SpotImCore.OWArticleProtocol, commentId: SpotImCore.OWCommentId, presentationalMode: SpotImCore.OWPresentationalMode, additionalSettings: (any SpotImCore.OWCommentThreadSettingsProtocol)?, callbacks: SpotImCore.OWViewActionsCallbacks?, completion: @escaping SpotImCore.OWDefaultCompletion)
+}
+public enum OWPreConversationStyle : Swift.Codable {
+  public struct Metrics {
+    public static let defaultRegularNumberOfComments: Swift.Int
+    public static let minNumberOfComments: Swift.Int
+    public static let maxNumberOfComments: Swift.Int
+  }
+  case regular(numberOfComments: Swift.Int = Metrics.defaultRegularNumberOfComments)
+  case compact
+  case ctaButtonOnly
+  case ctaWithSummary
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public typealias OWViewCompletion = (Swift.Result<UIKit.UIView, SpotImCore.OWError>) -> Swift.Void
+public enum OWAdditionalConfiguration {
+  case suppressFinmbFilter
+  public static func == (a: SpotImCore.OWAdditionalConfiguration, b: SpotImCore.OWAdditionalConfiguration) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public protocol OWCustomizations {
+  var fontFamily: SpotImCore.OWFontGroupFamily { get set }
+  var sorting: any SpotImCore.OWSortingCustomizations { get }
+  var themeEnforcement: SpotImCore.OWThemeStyleEnforcement { get set }
+  func addElementCallback(_ callback: @escaping SpotImCore.OWCustomizableElementCallback)
+}
+public enum OWSpacerStyle {
+  case comment
+  case community
+  case none
+  public static func == (a: SpotImCore.OWSpacerStyle, b: SpotImCore.OWSpacerStyle) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public struct OWSSOStartModel {
+  public let codeA: Swift.String
+}
+public enum OWError : Swift.Error {
+  case missingSpotId
+  case castingError(description: Swift.String)
+  case preConversationFlow
+  case conversationFlow
+  case commentCreationFlow
+  case commentThreadFlow
+  case preConversationView
+  case conversationView
+  case commentCreationView
+  case commentThreadView
+  case logout
+  case userStatus
+  case ssoStart
+  case ssoComplete
+  case alreadyLoggedIn
+  case missingImplementation
+  public var description: Swift.String {
+    get
+  }
+}
+public protocol OWHelpers {
+  func conversationCounters(forPostIds postIds: [SpotImCore.OWPostId], completion: (Swift.Result<[SpotImCore.OWPostId : SpotImCore.OWConversationCounter], SpotImCore.OWError>) -> Swift.Void)
+  var additionalConfigurations: [SpotImCore.OWAdditionalConfiguration] { get set }
+  var loggerConfiguration: any SpotImCore.OWLoggerConfiguration { get }
+  var languageStrategy: SpotImCore.OWLanguageStrategy { get set }
+  var localeStrategy: SpotImCore.OWLocaleStrategy { get set }
+}
+public protocol OWCommentCreationSettingsProtocol {
+  var conversationSettings: any SpotImCore.OWConversationSettingsProtocol { get }
+  var style: SpotImCore.OWCommentCreationStyle { get }
+}
+public enum OWLanguageStrategy : Swift.Codable {
+  case useDevice
+  case useServerConfig
+  case use(language: SpotImCore.OWSupportedLanguage)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public protocol OWUIAuthentication {
+  var displayAuthenticationFlow: SpotImCore.OWAuthenticationFlowCallback? { get set }
+}
 public enum SPLogMethod {
   case nsLog, osLog, file(maxFilesNumber: Swift.Int)
+}
+public enum OWRouteringMode {
+  case none
+  case flow(navigationController: UIKit.UINavigationController)
+}
+public typealias OWRenewSSOCallback = (Swift.String, @escaping SpotImCore.OWBasicCompletion) -> Swift.Void
+public enum OWCommentCreationStyle {
+  case regular
+  case light
+  case floatingKeyboard
+  public static func == (a: SpotImCore.OWCommentCreationStyle, b: SpotImCore.OWCommentCreationStyle) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public protocol OWConversationSettingsProtocol {
+  var selectedCommentId: Swift.String? { get }
+  var style: SpotImCore.OWConversationStyle { get }
+}
+public struct OWCommentCreationSettingsBuilder : SpotImCore.OWCommentCreationSettingsProtocol {
+  public var conversationSettings: any SpotImCore.OWConversationSettingsProtocol
+  public var style: SpotImCore.OWCommentCreationStyle
+  public init(conversationSettings: any SpotImCore.OWConversationSettingsProtocol, style: SpotImCore.OWCommentCreationStyle = .regular)
+  @discardableResult
+  public mutating func conversationSettings(_ settings: any SpotImCore.OWConversationSettingsProtocol) -> any SpotImCore.OWCommentCreationSettingsProtocol
+  @discardableResult
+  public mutating func style(_ style: SpotImCore.OWCommentCreationStyle) -> any SpotImCore.OWCommentCreationSettingsProtocol
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class OWBaseButton : UIKit.UIButton {
   @available(*, unavailable, message: "Loading this view from a nib is unsupported in this project")
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
   @objc deinit
+}
+public typealias OWSSOStartHandler = (Swift.Result<SpotImCore.OWSSOStartModel, SpotImCore.OWError>) -> Swift.Void
+public enum OWFontGroupFamily : Swift.Codable {
+  case `default`
+  case custom(fontFamily: Swift.String)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public enum OWThemeStyleEnforcement {
+  case none
+  case theme(_: SpotImCore.OWThemeStyle)
+  public static func == (lhs: SpotImCore.OWThemeStyleEnforcement, rhs: SpotImCore.OWThemeStyleEnforcement) -> Swift.Bool
+}
+public enum OWModalPresentationStyle {
+  case fullScreen
+  case pageSheet
+  public static func == (a: SpotImCore.OWModalPresentationStyle, b: SpotImCore.OWModalPresentationStyle) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public struct OWSSOCompletionModel {
+  public let userId: Swift.String
+}
+public protocol OWArticleSettingsProtocol {
+  var section: Swift.String { get }
+  var showHeader: Swift.Bool { get }
+  var readOnlyMode: SpotImCore.OWReadOnlyMode { get }
+}
+public enum OWUserAuthenticationStatus {
+  case notAutenticated
+  case guest
+  case ssoLoggedIn(userId: Swift.String)
+}
+public typealias OWConversationCountersCompletion = (Swift.Result<[SpotImCore.OWPostId : SpotImCore.OWConversationCounter], SpotImCore.OWError>) -> Swift.Void
+public protocol OWAuthentication {
+  func sso(_ flowType: SpotImCore.OWSSOFlowType)
+  func userStatus(completion: @escaping SpotImCore.OWUserAuthenticationStatusCompletion)
+  func logout(completion: @escaping SpotImCore.OWDefaultCompletion)
+  var renewSSO: SpotImCore.OWRenewSSOCallback? { get set }
+  var shouldDisplayLoginPrompt: Swift.Bool { get set }
+}
+extension SpotImCore.OWLanguageStrategy : Swift.Equatable {
+  public static func == (lhs: SpotImCore.OWLanguageStrategy, rhs: SpotImCore.OWLanguageStrategy) -> Swift.Bool
 }
 @_hasMissingDesignatedInitializers public class SPClientSettings {
   public static let main: SpotImCore.SPClientSettings
@@ -331,6 +769,25 @@ public enum SPLogLevel {
     get
   }
 }
+public struct OWArticle : SpotImCore.OWArticleProtocol {
+  public let url: Foundation.URL
+  public let title: Swift.String
+  public let subtitle: Swift.String?
+  public let thumbnailUrl: Foundation.URL?
+  public let additionalSettings: any SpotImCore.OWArticleSettingsProtocol
+  public init(url: Foundation.URL, title: Swift.String, subtitle: Swift.String? = nil, thumbnailUrl: Foundation.URL? = nil, additionalSettings: any SpotImCore.OWArticleSettingsProtocol)
+}
+public protocol OWArticleProtocol {
+  var url: Foundation.URL { get }
+  var title: Swift.String { get }
+  var subtitle: Swift.String? { get }
+  var thumbnailUrl: Foundation.URL? { get }
+  var additionalSettings: any SpotImCore.OWArticleSettingsProtocol { get }
+}
+public enum OWPresentationalMode {
+  case present(viewController: UIKit.UIViewController, style: SpotImCore.OWModalPresentationStyle = .pageSheet)
+  case push(navigationController: UIKit.UINavigationController)
+}
 public enum SPAdditionalConfiguration {
   case suppressFinmbFilter
   public static func == (a: SpotImCore.SPAdditionalConfiguration, b: SpotImCore.SPAdditionalConfiguration) -> Swift.Bool
@@ -338,6 +795,13 @@ public enum SPAdditionalConfiguration {
   public var hashValue: Swift.Int {
     get
   }
+}
+public typealias OWBasicCompletion = () -> Swift.Void
+public struct OWPreConversationSettingsBuilder : SpotImCore.OWPreConversationSettingsProtocol {
+  public var style: SpotImCore.OWPreConversationStyle
+  public init(style: SpotImCore.OWPreConversationStyle = .regular())
+  @discardableResult
+  public mutating func style(_ style: SpotImCore.OWPreConversationStyle) -> SpotImCore.OWPreConversationSettingsBuilder
 }
 public typealias SPViewActionsCallbacks = (SpotImCore.SPViewActionCallbackType, SpotImCore.SPViewSourceType, Swift.String) -> Swift.Void
 public enum SPViewSourceType {
@@ -358,13 +822,17 @@ public enum SPViewActionCallbackType {
   case articleHeaderPressed
   case openUserProfile(userId: Swift.String, navigationController: UIKit.UINavigationController)
 }
+@_hasMissingDesignatedInitializers public class OpenWeb {
+  public static let manager: any SpotImCore.OWManagerProtocol
+  @objc deinit
+}
 public enum OWResult<T> {
   case success(T)
-  case failure(Swift.Error)
+  case failure(any Swift.Error)
   public var value: T? {
     get
   }
-  public var error: Swift.Error? {
+  public var error: (any Swift.Error)? {
     get
   }
 }
@@ -378,19 +846,19 @@ extension SpotImCore.OWResult {
   @discardableResult
   public func next<U>(_ function: () -> SpotImCore.OWResult<U>) -> SpotImCore.OWResult<U>
   @discardableResult
-  public func onError(_ function: (Swift.Error) -> Swift.Error) -> SpotImCore.OWResult<T>
+  public func onError(_ function: (any Swift.Error) -> any Swift.Error) -> SpotImCore.OWResult<T>
   @discardableResult
   public func require() -> T
 }
 public protocol AdsProviderBannerDelegate : AnyObject {
   func bannerLoaded(bannerView: UIKit.UIView, adBannerSize: CoreFoundation.CGSize, adUnitID: Swift.String)
-  func bannerFailedToLoad(error: Swift.Error)
+  func bannerFailedToLoad(error: any Swift.Error)
 }
 public protocol AdsProviderInterstitialDelegate : AnyObject {
   func interstitialLoaded()
   func interstitialWillBeShown()
   func interstitialDidDismiss()
-  func interstitialFailedToLoad(error: Swift.Error)
+  func interstitialFailedToLoad(error: any Swift.Error)
 }
 public enum AdSize {
   case small
@@ -408,20 +876,54 @@ public protocol AdsProvider : AnyObject {
   func setupAdsBanner(with adId: Swift.String, in controller: UIKit.UIViewController, validSizes: Swift.Set<SpotImCore.AdSize>)
   func setupInterstitial(with adId: Swift.String)
   func showInterstitial(in controller: UIKit.UIViewController) -> Swift.Bool
-  var bannerDelegate: SpotImCore.AdsProviderBannerDelegate? { get set }
-  var interstitialDelegate: SpotImCore.AdsProviderInterstitialDelegate? { get set }
+  var bannerDelegate: (any SpotImCore.AdsProviderBannerDelegate)? { get set }
+  var interstitialDelegate: (any SpotImCore.AdsProviderInterstitialDelegate)? { get set }
 }
+extension SpotImCore.OWThemeStyle : Swift.Equatable {}
+extension SpotImCore.OWThemeStyle : Swift.Hashable {}
+extension SpotImCore.OWModalPresentationStyle : Swift.Equatable {}
+extension SpotImCore.OWModalPresentationStyle : Swift.Hashable {}
+extension SpotImCore.OWReadOnlyMode : Swift.Equatable {}
+extension SpotImCore.OWReadOnlyMode : Swift.Hashable {}
 extension SpotImCore.SPEventType : Swift.Equatable {}
 extension SpotImCore.SPEventType : Swift.Hashable {}
 extension SpotImCore.SPEventType : Swift.RawRepresentable {}
+extension SpotImCore.OWSortOption : Swift.Equatable {}
+extension SpotImCore.OWSortOption : Swift.Hashable {}
+extension SpotImCore.OWSortOption : Swift.RawRepresentable {}
+extension SpotImCore.OWPreConversationSummaryStyle : Swift.Equatable {}
+extension SpotImCore.OWPreConversationSummaryStyle : Swift.Hashable {}
+extension SpotImCore.OWSupportedLanguage : Swift.Equatable {}
+extension SpotImCore.OWSupportedLanguage : Swift.Hashable {}
+extension SpotImCore.OWSupportedLanguage : Swift.RawRepresentable {}
+extension SpotImCore.OWCommunityGuidelinesStyle : Swift.Equatable {}
+extension SpotImCore.OWCommunityGuidelinesStyle : Swift.Hashable {}
+extension SpotImCore.OWCommunityQuestionsStyle : Swift.Equatable {}
+extension SpotImCore.OWCommunityQuestionsStyle : Swift.Hashable {}
+extension SpotImCore.OWViewSourceType : Swift.Equatable {}
+extension SpotImCore.OWViewSourceType : Swift.Hashable {}
+extension SpotImCore.OWViewActionCallbackType : Swift.Equatable {}
+extension SpotImCore.OWViewActionCallbackType : Swift.Hashable {}
 extension SpotImCore.SpotImSortByOption : Swift.Equatable {}
 extension SpotImCore.SpotImSortByOption : Swift.Hashable {}
 extension SpotImCore.SpotImButtonOnlyMode : Swift.Equatable {}
 extension SpotImCore.SpotImButtonOnlyMode : Swift.Hashable {}
 extension SpotImCore.SpotImReadOnlyMode : Swift.Equatable {}
 extension SpotImCore.SpotImReadOnlyMode : Swift.Hashable {}
+extension SpotImCore.OWLogLevel : Swift.Equatable {}
+extension SpotImCore.OWLogLevel : Swift.Hashable {}
 extension SpotImCore.OWParserError : Swift.Equatable {}
 extension SpotImCore.OWParserError : Swift.Hashable {}
+extension SpotImCore.OWViewableMode : Swift.Equatable {}
+extension SpotImCore.OWViewableMode : Swift.Hashable {}
+extension SpotImCore.OWSSOProvider : Swift.Equatable {}
+extension SpotImCore.OWSSOProvider : Swift.Hashable {}
+extension SpotImCore.OWAdditionalConfiguration : Swift.Equatable {}
+extension SpotImCore.OWAdditionalConfiguration : Swift.Hashable {}
+extension SpotImCore.OWSpacerStyle : Swift.Equatable {}
+extension SpotImCore.OWSpacerStyle : Swift.Hashable {}
+extension SpotImCore.OWCommentCreationStyle : Swift.Equatable {}
+extension SpotImCore.OWCommentCreationStyle : Swift.Hashable {}
 extension SpotImCore.SPUserInterfaceStyle : Swift.Equatable {}
 extension SpotImCore.SPUserInterfaceStyle : Swift.Hashable {}
 extension SpotImCore.SPUserInterfaceStyle : Swift.RawRepresentable {}
