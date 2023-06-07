@@ -18,15 +18,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		0vr/ArYNLmT30yIFY/IY2uAnVn4=
+		PeS3CUNpeM87wj74lglg8/dWbHk=
 		</data>
 		<key>Modules/SpotImCore.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		Qa/5HsgmsQEHY9S9SL18PeX0P2w=
+		sNxfMuefv/pvMNyQ+H+lNY8o9Vw=
 		</data>
 		<key>Modules/SpotImCore.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		7tJQWP51IXSBslOCANkP3vzm3Ic=
+		ZbiroNO6DFBexs6IP8MimlmnFzQ=
 		</data>
 		<key>Modules/SpotImCore.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -34,19 +34,19 @@
 		</data>
 		<key>Modules/SpotImCore.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		7tJQWP51IXSBslOCANkP3vzm3Ic=
+		ZbiroNO6DFBexs6IP8MimlmnFzQ=
 		</data>
 		<key>Modules/SpotImCore.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		34pbYqHWS+xCmDZqehDIWn5ZAOc=
+		ekOZN95Rh+8a6LMmupn0hwZ2C9Y=
 		</data>
 		<key>Modules/SpotImCore.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		Qa/5HsgmsQEHY9S9SL18PeX0P2w=
+		sNxfMuefv/pvMNyQ+H+lNY8o9Vw=
 		</data>
 		<key>Modules/SpotImCore.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		3PYWrGY4ur8W+0YYqrx1Z6Ws658=
+		QEM8PLazrHoCp1Bda+rr4PhAzkc=
 		</data>
 		<key>Modules/SpotImCore.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -54,11 +54,11 @@
 		</data>
 		<key>Modules/SpotImCore.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		3PYWrGY4ur8W+0YYqrx1Z6Ws658=
+		QEM8PLazrHoCp1Bda+rr4PhAzkc=
 		</data>
 		<key>Modules/SpotImCore.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		95O6up97Szc6sn+8a6g3L29L3Uo=
+		ra36n+Dy3OycffkcSXqN3OJ7DG8=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -86,7 +86,7 @@
 		</data>
 		<key>OpenWebSettings.plist</key>
 		<data>
-		1RhmJt895hjrfEghZu9hltohJ40=
+		f6/NiBL7hHjo+gnsxXeAQC06oAY=
 		</data>
 		<key>ar-001.lproj/Localizable.strings</key>
 		<dict>
@@ -178,14 +178,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			CFTyZ8buOGU+oJvB2cHGSvjajwHbVYrCxx9ArbJrH9g=
+			WNVCvyxxcIkfsG2b02de+F2frW2X0RLsF+BiEgfc6UA=
 			</data>
 		</dict>
 		<key>Modules/SpotImCore.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			AWf8ltGnfAY2NfzD1MPYoMdVpBuMB+0OSw30Xh7rJ/8=
+			BEzdke9VuliWQupU1jTAiAdGFEW3ehzGx1BtWemWk7c=
 			</data>
 		</dict>
 		<key>Modules/SpotImCore.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -199,28 +199,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			AWf8ltGnfAY2NfzD1MPYoMdVpBuMB+0OSw30Xh7rJ/8=
+			BEzdke9VuliWQupU1jTAiAdGFEW3ehzGx1BtWemWk7c=
 			</data>
 		</dict>
 		<key>Modules/SpotImCore.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			y1rHZo5AdKcJWunOXWMjq/yPAewjFL/clP1XGMNRZ2M=
+			DdCMaVThxMZPhGzdk/PXnDogD89g20Kfpn7XEMtAqCg=
 			</data>
 		</dict>
 		<key>Modules/SpotImCore.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			CFTyZ8buOGU+oJvB2cHGSvjajwHbVYrCxx9ArbJrH9g=
+			WNVCvyxxcIkfsG2b02de+F2frW2X0RLsF+BiEgfc6UA=
 			</data>
 		</dict>
 		<key>Modules/SpotImCore.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			j5KDi3LCpWsNzyDl+CjAcHRxYoYG3B5u3oUtMRXzr14=
+			gnhqFWvJGnvA2jDfpg2YED5a1BjTCcrTAv6hAbcUtNo=
 			</data>
 		</dict>
 		<key>Modules/SpotImCore.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -234,14 +234,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			j5KDi3LCpWsNzyDl+CjAcHRxYoYG3B5u3oUtMRXzr14=
+			gnhqFWvJGnvA2jDfpg2YED5a1BjTCcrTAv6hAbcUtNo=
 			</data>
 		</dict>
 		<key>Modules/SpotImCore.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Yo/S0an+sL8fVMxNwnd1Pg47HVb3Uz91JzSvQcUozFE=
+			Lh/4MBptqRYx5Kb/MVcLL8a43A2Zrxg4Iw97yYS3hY4=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -290,7 +290,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			kOuIW5DW6bfSeKhYvJTYqxBUL5+qd+d5MTeE5ZlWi/w=
+			8V5tb5ruJQRWMte/OszbLOt8uhRv7GxuEkNnieN1XkE=
 			</data>
 		</dict>
 		<key>ar-001.lproj/Localizable.strings</key>
