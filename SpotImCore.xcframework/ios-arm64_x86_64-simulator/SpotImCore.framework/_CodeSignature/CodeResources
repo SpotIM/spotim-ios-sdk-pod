@@ -6,11 +6,11 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		gwSa5saa7gplbvr8j8okaQSvODk=
+		1Cv2Vsllb01e4rpPywAyYNXt03I=
 		</data>
 		<key>Headers/SpotImCore-Swift.h</key>
 		<data>
-		En6QN0wXBEvh4R5QxvZyZCD4rfg=
+		OquxuBfyvY+qNKmeMKrGuFAnKY0=
 		</data>
 		<key>Headers/SpotImCore.h</key>
 		<data>
@@ -18,11 +18,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		0vr/ArYNLmT30yIFY/IY2uAnVn4=
+		kcO709q8Cx6wb2XoZSeJ7rIzk1k=
 		</data>
 		<key>Modules/SpotImCore.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		Qa/5HsgmsQEHY9S9SL18PeX0P2w=
+		5Xi700tPzQ2X8BJVn7KQPM+ltAo=
 		</data>
 		<key>Modules/SpotImCore.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -38,11 +38,11 @@
 		</data>
 		<key>Modules/SpotImCore.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		34pbYqHWS+xCmDZqehDIWn5ZAOc=
+		0B+B+SF1pvmYOB9ZylS2Z+ghrCw=
 		</data>
 		<key>Modules/SpotImCore.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		Qa/5HsgmsQEHY9S9SL18PeX0P2w=
+		5Xi700tPzQ2X8BJVn7KQPM+ltAo=
 		</data>
 		<key>Modules/SpotImCore.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -58,7 +58,7 @@
 		</data>
 		<key>Modules/SpotImCore.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		95O6up97Szc6sn+8a6g3L29L3Uo=
+		9IpIwYteISojidLyh0IqU7R2A44=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -86,13 +86,13 @@
 		</data>
 		<key>OpenWebSettings.plist</key>
 		<data>
-		1RhmJt895hjrfEghZu9hltohJ40=
+		GI9vorYRCLgxaWtB7zj4jEvhZ3E=
 		</data>
 		<key>ar-001.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ms+S2BJ7C2OZoMCqjxt5B7rb8wY=
+			4C1/540E6D6U3Ywvt5IVDnPhV0E=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -101,7 +101,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			wjQ+eAiP7L7lRUSHcgOvhWHQNg0=
+			dUM4BcoyHna6jtpjqbwVDVIiut4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -110,7 +110,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			wFzo+h3gvFqDlpZJcpnifcyaBlQ=
+			acLVk2eXHk5K7fS5SKIljXOE9AU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -119,7 +119,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			v+AW2kcVP5IuRlD/H9EhsLVKU5k=
+			goRXdHkY3+aCEYs4K8xbDu6R0rE=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -132,7 +132,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			kjHblYXxV/U7wRcS8yhmOaiqrbc=
+			aqmDY5+kyEdgC9FnxzplLGZxK38=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -145,7 +145,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			wiCDVF2zBq5nTtzqBy63YiC8LAQ=
+			3vcykn/h+jTD6++jjWXQcyjr2Rc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -157,14 +157,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			gxBm9nktS2julBGJm+0rPRrrL15H1/kF8179MorlCpM=
+			Sya6SFyWPE7XsSG98YQofBbAe7FkdrDmd+bULRnQcJE=
 			</data>
 		</dict>
 		<key>Headers/SpotImCore-Swift.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			YirOabFkvyClUXV3niZMbTyrjZkSgla7b8pmh+U5sis=
+			kcdGwzgKPAYH1EerivRDGTvImtMBfHbSDeFDALpLe/Q=
 			</data>
 		</dict>
 		<key>Headers/SpotImCore.h</key>
@@ -178,7 +178,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			CFTyZ8buOGU+oJvB2cHGSvjajwHbVYrCxx9ArbJrH9g=
+			C1ytZBQXQvKQzHvy1vZZQtXU5zHC3qdl8qLtJE/ZINQ=
 			</data>
 		</dict>
 		<key>Modules/SpotImCore.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -206,14 +206,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			y1rHZo5AdKcJWunOXWMjq/yPAewjFL/clP1XGMNRZ2M=
+			1xBFmYxm3rf8v70gCoWUGiPjyfH6CxAjcunVb6xBoS0=
 			</data>
 		</dict>
 		<key>Modules/SpotImCore.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			CFTyZ8buOGU+oJvB2cHGSvjajwHbVYrCxx9ArbJrH9g=
+			C1ytZBQXQvKQzHvy1vZZQtXU5zHC3qdl8qLtJE/ZINQ=
 			</data>
 		</dict>
 		<key>Modules/SpotImCore.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -241,7 +241,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Yo/S0an+sL8fVMxNwnd1Pg47HVb3Uz91JzSvQcUozFE=
+			aQyuGxM++2ElFh/+EOPyrT4F/gRxKqkqWA6uCfPKnq4=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -290,14 +290,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			kOuIW5DW6bfSeKhYvJTYqxBUL5+qd+d5MTeE5ZlWi/w=
+			km0zYEnVgfsn7NXj/oqljQDMVgsmIOUX+CL6PDaRloc=
 			</data>
 		</dict>
 		<key>ar-001.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			QIU0VbGC9gPv2Y4uxPdU8wMuy2mX64/zvXeMPT009LM=
+			PpeLaV54qCOx9t8y0MPRhwiv/8pG0uoaTklin3FZeS8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -306,7 +306,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			K8wymHn72mCib6W4bgrj9hnz4Hzfob5X9Opwe7xx0nY=
+			ZAonQrp2zfkWdfCDUcYOHF9LbV4ALzjMzPSD/XEsZRE=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -315,7 +315,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			0O8jaI5H0tN0h9n8PqNvsXMjaFigTdNT8abU9Ke8BU8=
+			o1Uu0Egzb9hM2jQ8ujEcLm8SB+J9N8BT1rq9+ZTK7Hg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -324,7 +324,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			R7XVbZFQVLx6fnyrH7mTplm3q2kYTdFekCF529JoGSE=
+			kUG4JadrWYCwecHgbZh4z2YElkBK3DrEm9HgZelm8fo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -340,7 +340,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			qzGswD8JmeCbJTqbNxNVyBeyL04Bu0df/dNND9BAOvk=
+			TyECgG8x9UrW0fF8V2br+0lC818i2Jz0KRD9s1L7hcU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -356,7 +356,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Y+EC80+McFzeHfFSMTWrV9+fotbqsDVmWesB49exIsM=
+			45NHbttHNH+jsV1WwijG+5/p9Gx7+Vv7ykc2QhYsgzI=
 			</data>
 			<key>optional</key>
 			<true/>
