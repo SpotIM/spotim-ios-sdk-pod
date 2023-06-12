@@ -57608,56 +57608,49 @@
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/DataSources\/SPMainConversationDataSource.swift",
       "kind": "BooleanLiteral",
-      "offset": 23795,
-      "length": 5,
-      "value": "false"
+      "offset": 23755,
+      "length": 4,
+      "value": "true"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/DataSources\/SPMainConversationDataSource.swift",
       "kind": "IntegerLiteral",
-      "offset": 24650,
+      "offset": 24830,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/DataSources\/SPMainConversationDataSource.swift",
       "kind": "BooleanLiteral",
-      "offset": 25954,
+      "offset": 26086,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/DataSources\/SPMainConversationDataSource.swift",
       "kind": "BooleanLiteral",
-      "offset": 26022,
+      "offset": 26154,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/DataSources\/SPMainConversationDataSource.swift",
       "kind": "IntegerLiteral",
-      "offset": 26742,
+      "offset": 26874,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/DataSources\/SPMainConversationDataSource.swift",
       "kind": "IntegerLiteral",
-      "offset": 26844,
+      "offset": 26976,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/DataSources\/SPMainConversationDataSource.swift",
       "kind": "IntegerLiteral",
-      "offset": 27419,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/DataSources\/SPMainConversationDataSource.swift",
-      "kind": "IntegerLiteral",
-      "offset": 27849,
+      "offset": 27551,
       "length": 1,
       "value": "0"
     },
@@ -57666,14 +57659,14 @@
       "kind": "IntegerLiteral",
       "offset": 27981,
       "length": 1,
-      "value": "1"
+      "value": "0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/DataSources\/SPMainConversationDataSource.swift",
-      "kind": "BooleanLiteral",
-      "offset": 28310,
-      "length": 5,
-      "value": "false"
+      "kind": "IntegerLiteral",
+      "offset": 28113,
+      "length": 1,
+      "value": "1"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/DataSources\/SPMainConversationDataSource.swift",
@@ -57684,281 +57677,288 @@
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/DataSources\/SPMainConversationDataSource.swift",
+      "kind": "BooleanLiteral",
+      "offset": 28574,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/DataSources\/SPMainConversationDataSource.swift",
       "kind": "StringLiteral",
-      "offset": 29051,
+      "offset": 29183,
       "length": 6,
       "value": "\"user\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/DataSources\/SPMainConversationDataSource.swift",
       "kind": "BooleanLiteral",
-      "offset": 29506,
+      "offset": 29638,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/DataSources\/SPMainConversationDataSource.swift",
       "kind": "BooleanLiteral",
-      "offset": 29531,
+      "offset": 29663,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/DataSources\/SPMainConversationDataSource.swift",
       "kind": "IntegerLiteral",
-      "offset": 29659,
+      "offset": 29791,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/DataSources\/SPMainConversationDataSource.swift",
       "kind": "BooleanLiteral",
-      "offset": 29887,
+      "offset": 30019,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/DataSources\/SPMainConversationDataSource.swift",
       "kind": "BooleanLiteral",
-      "offset": 30097,
+      "offset": 30229,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/DataSources\/SPMainConversationDataSource.swift",
       "kind": "IntegerLiteral",
-      "offset": 30171,
+      "offset": 30303,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/DataSources\/SPMainConversationDataSource.swift",
       "kind": "IntegerLiteral",
-      "offset": 30227,
+      "offset": 30359,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/DataSources\/SPMainConversationDataSource.swift",
       "kind": "StringLiteral",
-      "offset": 30945,
+      "offset": 31077,
       "length": 38,
       "value": "\"update: preparing comment view model\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/DataSources\/SPMainConversationDataSource.swift",
       "kind": "BooleanLiteral",
-      "offset": 32179,
+      "offset": 32311,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/DataSources\/SPMainConversationDataSource.swift",
       "kind": "BooleanLiteral",
-      "offset": 32372,
+      "offset": 32504,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/DataSources\/SPMainConversationDataSource.swift",
       "kind": "BooleanLiteral",
-      "offset": 32598,
+      "offset": 32730,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/DataSources\/SPMainConversationDataSource.swift",
       "kind": "BooleanLiteral",
-      "offset": 32660,
+      "offset": 32792,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/DataSources\/SPMainConversationDataSource.swift",
       "kind": "BooleanLiteral",
-      "offset": 33017,
+      "offset": 33149,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/DataSources\/SPMainConversationDataSource.swift",
       "kind": "IntegerLiteral",
-      "offset": 33197,
+      "offset": 33329,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/DataSources\/SPMainConversationDataSource.swift",
       "kind": "IntegerLiteral",
-      "offset": 33201,
+      "offset": 33333,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/DataSources\/SPMainConversationDataSource.swift",
       "kind": "BooleanLiteral",
-      "offset": 33502,
+      "offset": 33634,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/DataSources\/SPMainConversationDataSource.swift",
       "kind": "BooleanLiteral",
-      "offset": 33923,
+      "offset": 34055,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/DataSources\/SPMainConversationDataSource.swift",
       "kind": "IntegerLiteral",
-      "offset": 34120,
+      "offset": 34252,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/DataSources\/SPMainConversationDataSource.swift",
       "kind": "BooleanLiteral",
-      "offset": 34735,
+      "offset": 34867,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/DataSources\/SPMainConversationDataSource.swift",
       "kind": "BooleanLiteral",
-      "offset": 35095,
+      "offset": 35227,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/DataSources\/SPMainConversationDataSource.swift",
       "kind": "BooleanLiteral",
-      "offset": 36186,
+      "offset": 36318,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/DataSources\/SPMainConversationDataSource.swift",
       "kind": "IntegerLiteral",
-      "offset": 36616,
+      "offset": 36748,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/DataSources\/SPMainConversationDataSource.swift",
       "kind": "IntegerLiteral",
-      "offset": 36621,
+      "offset": 36753,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/DataSources\/SPMainConversationDataSource.swift",
       "kind": "StringLiteral",
-      "offset": 36999,
+      "offset": 37131,
       "length": 69,
       "value": "\"pushLocalComment called, sorting is \""
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/DataSources\/SPMainConversationDataSource.swift",
       "kind": "StringLiteral",
-      "offset": 37067,
+      "offset": 37199,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/DataSources\/SPMainConversationDataSource.swift",
       "kind": "IntegerLiteral",
-      "offset": 37119,
+      "offset": 37251,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/DataSources\/SPMainConversationDataSource.swift",
       "kind": "StringLiteral",
-      "offset": 37290,
+      "offset": 37422,
       "length": 65,
       "value": "\"pushLocalComment: Data model not found, adding comment manually\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/DataSources\/SPMainConversationDataSource.swift",
       "kind": "IntegerLiteral",
-      "offset": 37407,
+      "offset": 37539,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/DataSources\/SPMainConversationDataSource.swift",
       "kind": "IntegerLiteral",
-      "offset": 37411,
+      "offset": 37543,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/DataSources\/SPMainConversationDataSource.swift",
       "kind": "StringLiteral",
-      "offset": 37600,
+      "offset": 37732,
       "length": 65,
       "value": "\"pushLocalComment: Updated message count: \""
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/DataSources\/SPMainConversationDataSource.swift",
       "kind": "StringLiteral",
-      "offset": 37664,
+      "offset": 37796,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/DataSources\/SPMainConversationDataSource.swift",
       "kind": "IntegerLiteral",
-      "offset": 38377,
+      "offset": 38509,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/DataSources\/SPMainConversationDataSource.swift",
       "kind": "IntegerLiteral",
-      "offset": 38467,
+      "offset": 38599,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/DataSources\/SPMainConversationDataSource.swift",
       "kind": "IntegerLiteral",
-      "offset": 38555,
+      "offset": 38687,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/DataSources\/SPMainConversationDataSource.swift",
       "kind": "IntegerLiteral",
-      "offset": 38671,
+      "offset": 38803,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/DataSources\/SPMainConversationDataSource.swift",
       "kind": "IntegerLiteral",
-      "offset": 40321,
+      "offset": 40453,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/DataSources\/SPMainConversationDataSource.swift",
       "kind": "IntegerLiteral",
-      "offset": 40557,
+      "offset": 40689,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/DataSources\/SPMainConversationDataSource.swift",
       "kind": "BooleanLiteral",
-      "offset": 41641,
+      "offset": 41773,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/DataSources\/SPMainConversationDataSource.swift",
       "kind": "BooleanLiteral",
-      "offset": 41686,
+      "offset": 41818,
       "length": 4,
       "value": "true"
     },
@@ -58329,217 +58329,217 @@
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Network\/Network API - Before the refactor\/DataProviders\/SPConversationsFacade.swift",
       "kind": "BooleanLiteral",
-      "offset": 1899,
+      "offset": 1933,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Network\/Network API - Before the refactor\/DataProviders\/SPConversationsFacade.swift",
       "kind": "IntegerLiteral",
-      "offset": 1944,
+      "offset": 1978,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Network\/Network API - Before the refactor\/DataProviders\/SPConversationsFacade.swift",
       "kind": "IntegerLiteral",
-      "offset": 2027,
+      "offset": 2061,
       "length": 2,
       "value": "15"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Network\/Network API - Before the refactor\/DataProviders\/SPConversationsFacade.swift",
       "kind": "BooleanLiteral",
-      "offset": 2099,
+      "offset": 2133,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Network\/Network API - Before the refactor\/DataProviders\/SPConversationsFacade.swift",
       "kind": "StringLiteral",
-      "offset": 2690,
+      "offset": 2805,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Network\/Network API - Before the refactor\/DataProviders\/SPConversationsFacade.swift",
       "kind": "StringLiteral",
-      "offset": 3401,
+      "offset": 3516,
       "length": 25,
       "value": "\"Please provide Spot Key\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Network\/Network API - Before the refactor\/DataProviders\/SPConversationsFacade.swift",
       "kind": "IntegerLiteral",
-      "offset": 3613,
+      "offset": 3728,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Network\/Network API - Before the refactor\/DataProviders\/SPConversationsFacade.swift",
       "kind": "IntegerLiteral",
-      "offset": 3669,
+      "offset": 3784,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Network\/Network API - Before the refactor\/DataProviders\/SPConversationsFacade.swift",
       "kind": "IntegerLiteral",
-      "offset": 3673,
+      "offset": 3788,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Network\/Network API - Before the refactor\/DataProviders\/SPConversationsFacade.swift",
       "kind": "StringLiteral",
-      "offset": 3785,
+      "offset": 3900,
       "length": 17,
       "value": "\"conversation_id\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Network\/Network API - Before the refactor\/DataProviders\/SPConversationsFacade.swift",
       "kind": "StringLiteral",
-      "offset": 3804,
+      "offset": 3919,
       "length": 18,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Network\/Network API - Before the refactor\/DataProviders\/SPConversationsFacade.swift",
       "kind": "StringLiteral",
-      "offset": 3815,
+      "offset": 3930,
       "length": 1,
       "value": "\"_\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Network\/Network API - Before the refactor\/DataProviders\/SPConversationsFacade.swift",
       "kind": "StringLiteral",
-      "offset": 3821,
+      "offset": 3936,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Network\/Network API - Before the refactor\/DataProviders\/SPConversationsFacade.swift",
       "kind": "StringLiteral",
-      "offset": 3836,
+      "offset": 3951,
       "length": 9,
       "value": "\"sort_by\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Network\/Network API - Before the refactor\/DataProviders\/SPConversationsFacade.swift",
       "kind": "StringLiteral",
-      "offset": 3874,
+      "offset": 3989,
       "length": 8,
       "value": "\"offset\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Network\/Network API - Before the refactor\/DataProviders\/SPConversationsFacade.swift",
       "kind": "StringLiteral",
-      "offset": 3918,
+      "offset": 4033,
       "length": 7,
       "value": "\"count\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Network\/Network API - Before the refactor\/DataProviders\/SPConversationsFacade.swift",
       "kind": "StringLiteral",
-      "offset": 3949,
+      "offset": 4064,
       "length": 11,
       "value": "\"parent_id\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Network\/Network API - Before the refactor\/DataProviders\/SPConversationsFacade.swift",
       "kind": "StringLiteral",
-      "offset": 3984,
+      "offset": 4099,
       "length": 14,
       "value": "\"extract_data\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Network\/Network API - Before the refactor\/DataProviders\/SPConversationsFacade.swift",
       "kind": "StringLiteral",
-      "offset": 4027,
+      "offset": 4142,
       "length": 7,
       "value": "\"depth\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Network\/Network API - Before the refactor\/DataProviders\/SPConversationsFacade.swift",
       "kind": "BooleanLiteral",
-      "offset": 4173,
+      "offset": 4288,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Network\/Network API - Before the refactor\/DataProviders\/SPConversationsFacade.swift",
       "kind": "BooleanLiteral",
-      "offset": 4497,
+      "offset": 4612,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Network\/Network API - Before the refactor\/DataProviders\/SPConversationsFacade.swift",
       "kind": "BooleanLiteral",
-      "offset": 4852,
+      "offset": 4967,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Network\/Network API - Before the refactor\/DataProviders\/SPConversationsFacade.swift",
       "kind": "StringLiteral",
-      "offset": 5060,
+      "offset": 5175,
       "length": 3,
       "value": "\" \""
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Network\/Network API - Before the refactor\/DataProviders\/SPConversationsFacade.swift",
       "kind": "StringLiteral",
-      "offset": 5814,
+      "offset": 5929,
       "length": 25,
       "value": "\"Please provide Spot Key\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Network\/Network API - Before the refactor\/DataProviders\/SPConversationsFacade.swift",
       "kind": "StringLiteral",
-      "offset": 6094,
+      "offset": 6209,
       "length": 18,
       "value": "\"conversation_ids\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Network\/Network API - Before the refactor\/DataProviders\/SPConversationsFacade.swift",
       "kind": "StringLiteral",
-      "offset": 6630,
+      "offset": 6745,
       "length": 8,
       "value": "\"counts\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Network\/Network API - Before the refactor\/DataProviders\/SPConversationsFacade.swift",
       "kind": "StringLiteral",
-      "offset": 6826,
+      "offset": 6941,
       "length": 39,
       "value": "\"Bad response: no key 'counts' in json\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Network\/Network API - Before the refactor\/DataProviders\/SPConversationsFacade.swift",
       "kind": "StringLiteral",
-      "offset": 7041,
+      "offset": 7156,
       "length": 3,
       "value": "\" \""
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Network\/Network API - Before the refactor\/DataProviders\/SPConversationsFacade.swift",
       "kind": "StringLiteral",
-      "offset": 7830,
+      "offset": 7945,
       "length": 10,
       "value": "\"host_url\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Network\/Network API - Before the refactor\/DataProviders\/SPConversationsFacade.swift",
       "kind": "StringLiteral",
-      "offset": 8384,
+      "offset": 8499,
       "length": 37,
       "value": "\"Succesfully sent conversation async\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/Network\/Network API - Before the refactor\/DataProviders\/SPConversationsFacade.swift",
       "kind": "StringLiteral",
-      "offset": 8562,
+      "offset": 8677,
       "length": 3,
       "value": "\" \""
     },
@@ -59687,7 +59687,7 @@
     {
       "filePath": "\/Users\/distiller\/project\/Spot.IM-Development\/SpotImCore\/UI\/SharedViews\/Cells\/communityGuidelines\/Views\/OWCommunityGuidelinesCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 1359,
+      "offset": 1455,
       "length": 5,
       "value": "false"
     },
