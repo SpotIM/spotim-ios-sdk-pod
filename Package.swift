@@ -1,4 +1,4 @@
-// swift-tools-version:5.8
+// swift package tools-version --set-current
 import PackageDescription
 
 let package = Package(
