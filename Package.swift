@@ -14,7 +14,7 @@ let package = Package(
         // and from where they can be fetched:
         .package(
             url: "https://github.com/ReactiveX/RxSwift.git",
-            .upToNextMinor(from: "6.6.0")
+            .upToNextMinor(from: "6.5.0")
         )
     ],
     targets: [
