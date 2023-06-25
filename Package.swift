@@ -20,10 +20,7 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "SpotImCore",
-            path: "SpotImCore.xcframework"
-        ),
-        .target(
-            name: "WrapperSPMTarget",
+            path: "SpotImCore.xcframework",
             dependencies: [
                 .target(name: "SpotImCore", condition: .when(platforms: .some([.iOS]))),
                 "RxSwift",
