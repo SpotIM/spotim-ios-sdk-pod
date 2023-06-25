@@ -22,11 +22,10 @@ let package = Package(
             name: "SpotImCore",
             path: "SpotImCore.xcframework"
         ),
-        .target(
-            name: "WrapperSPMTarget",
+        .target(name: "SpotIMCore", condition: .when(platforms: .some([.iOS])),
             dependencies: [
-                .target(name: "SpotImCore", condition: .when(platforms: .some([.iOS]))),
-                "RxSwift"
+                "RxSwift",
+                .product(name: "RxCocoa", package: "RxSwift")
             ]
         )
     ]
