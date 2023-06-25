@@ -23,7 +23,7 @@ let package = Package(
             path: "SpotImCore.xcframework"
         ),
         .target(
-            name: "SpotImCore",
+            name: "WrapperSPMTarget",
             dependencies: ["RxSwift", "RxCocoa"])
     ]
 )
