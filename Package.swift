@@ -18,10 +18,6 @@ let package = Package(
         )
     ],
     targets: [
-        .binaryTarget(
-            name: "SpotImCore",
-            path: "SpotImCore.xcframework"
-        ),
         .target(
             name: "WrapperSPMTarget",
             dependencies: ["RxSwift", "RxCocoa"]),
