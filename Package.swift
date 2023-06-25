@@ -7,7 +7,7 @@ let package = Package(
         .iOS(.v11)
     ],
     products: [
-        .library(name: "SpotIMCore", targets: ["WrapperSPMTarget"])
+        .library(name: "SpotIMCore", targets: ["SpotIMCore"])
     ],
     dependencies: [
         // Here we define our package's external dependencies
