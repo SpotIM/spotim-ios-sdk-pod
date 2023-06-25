@@ -12,6 +12,10 @@ let package = Package(
     dependencies: [
         // Here we define our package's external dependencies
         // and from where they can be fetched:
+        .package(
+            url: "https://github.com/ReactiveX/RxSwift.git",
+            .upToNextMinor(from: "6.6.0")
+        )
     ],
     targets: [
         .binaryTarget(
