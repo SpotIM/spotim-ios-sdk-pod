@@ -27,7 +27,7 @@ let package = Package(
             dependencies: [
                 .target(name: "SpotImCore", condition: .when(platforms: .some([.iOS]))),
                 "RxSwift",
-                .product(name: "RxCocoa-Dynamic", package: "RxSwift")
+                .product(name: "RxCocoa", package: "RxSwift")
             ]
         )
     ]
