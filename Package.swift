@@ -26,7 +26,7 @@ let package = Package(
             name: "WrapperSPMTarget",
             dependencies: [
                 .target(name: "SpotImCore", condition: .when(platforms: .some([.iOS]))),
-                "RxSwift-Dynamic",
+                "RxSwift",
                 .product(name: "RxCocoa-Dynamic", package: "RxSwift")
             ]
         )
