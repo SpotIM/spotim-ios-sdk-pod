@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SpotIMCore'
-  s.version          = '1.18.5'
+  s.version          = '2.0.0-alpha06'
   s.swift_versions = ['5.0']
   s.summary          = 'OpenWeb SDK'
   s.description      = 'This SDK allows you to integrate OpenWeb into your iOS app.'
@@ -22,7 +22,7 @@ Pod::Spec.new do |s|
   s.pod_target_xcconfig = { 'BUILD_LIBRARY_FOR_DISTRIBUTION' => 'YES' }
 
 # the Pre-Compiled Framework:
-  s.source          = { :git => 'https://github.com/SpotIM/spotim-ios-sdk-pod.git', :tag => s.version.to_s }
+  s.source          = { :git => 'https://github.com/SpotIM/spotim-ios-sdk-pod.git', :tag => '2.0.0-alpha06-xcode14.3.1' }
   s.ios.resources = 'SpotImAdsProvider/*.swift'
   s.ios.vendored_frameworks = 'SpotImCore.xcframework'
   s.dependency 'RxSwift', '~> 6.5'
