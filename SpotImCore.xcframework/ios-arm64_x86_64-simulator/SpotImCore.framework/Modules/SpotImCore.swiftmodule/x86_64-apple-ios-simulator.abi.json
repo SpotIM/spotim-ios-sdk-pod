@@ -109,6 +109,13 @@
           },
           {
             "kind": "Conformance",
+            "name": "UITraitChangeObservable",
+            "printedName": "UITraitChangeObservable",
+            "usr": "s:5UIKit23UITraitChangeObservableP",
+            "mangledName": "$s5UIKit23UITraitChangeObservableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "__DefaultCustomPlaygroundQuickLookable",
             "printedName": "__DefaultCustomPlaygroundQuickLookable",
             "usr": "s:s38__DefaultCustomPlaygroundQuickLookableP",
@@ -3696,6 +3703,13 @@
           },
           {
             "kind": "Conformance",
+            "name": "UITraitChangeObservable",
+            "printedName": "UITraitChangeObservable",
+            "usr": "s:5UIKit23UITraitChangeObservableP",
+            "mangledName": "$s5UIKit23UITraitChangeObservableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "__DefaultCustomPlaygroundQuickLookable",
             "printedName": "__DefaultCustomPlaygroundQuickLookable",
             "usr": "s:s38__DefaultCustomPlaygroundQuickLookableP",
@@ -5326,6 +5340,13 @@
             ],
             "usr": "s:7RxSwift18ReactiveCompatibleP",
             "mangledName": "$s7RxSwift18ReactiveCompatibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "UITraitChangeObservable",
+            "printedName": "UITraitChangeObservable",
+            "usr": "s:5UIKit23UITraitChangeObservableP",
+            "mangledName": "$s5UIKit23UITraitChangeObservableP"
           },
           {
             "kind": "Conformance",
@@ -16024,6 +16045,13 @@
           },
           {
             "kind": "Conformance",
+            "name": "UITraitChangeObservable",
+            "printedName": "UITraitChangeObservable",
+            "usr": "s:5UIKit23UITraitChangeObservableP",
+            "mangledName": "$s5UIKit23UITraitChangeObservableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "__DefaultCustomPlaygroundQuickLookable",
             "printedName": "__DefaultCustomPlaygroundQuickLookable",
             "usr": "s:s38__DefaultCustomPlaygroundQuickLookableP",
@@ -20532,6 +20560,34 @@
         "moduleName": "SpotImCore"
       },
       {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "SpotImCore"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "SpotImCore"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "SpotImCore"
+      },
+      {
+        "kind": "Import",
+        "name": "DeveloperToolsSupport",
+        "printedName": "DeveloperToolsSupport",
+        "declKind": "Import",
+        "moduleName": "SpotImCore"
+      },
+      {
         "kind": "TypeDecl",
         "name": "String",
         "printedName": "String",
@@ -21062,6 +21118,41 @@
             "printedName": "CVarArg",
             "usr": "s:s7CVarArgP",
             "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Transferable",
+            "printedName": "Transferable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Representation",
+                "printedName": "Representation",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpaqueTypeArchetype",
+                    "printedName": "some CoreTransferable.TransferRepresentation",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TransferRepresentation",
+                        "printedName": "CoreTransferable.TransferRepresentation",
+                        "usr": "s:16CoreTransferable22TransferRepresentationP"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Sendable",
+                        "printedName": "Swift.Sendable",
+                        "usr": "s:s8SendableP"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "usr": "s:16CoreTransferable0B0P",
+            "mangledName": "$s16CoreTransferable0B0P"
           }
         ]
       },
@@ -21160,6 +21251,13 @@
             ],
             "usr": "s:7RxSwift18ReactiveCompatibleP",
             "mangledName": "$s7RxSwift18ReactiveCompatibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "UITraitChangeObservable",
+            "printedName": "UITraitChangeObservable",
+            "usr": "s:5UIKit23UITraitChangeObservableP",
+            "mangledName": "$s5UIKit23UITraitChangeObservableP"
           },
           {
             "kind": "Conformance",
@@ -21267,6 +21365,13 @@
             ],
             "usr": "s:7RxSwift18ReactiveCompatibleP",
             "mangledName": "$s7RxSwift18ReactiveCompatibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "UITraitChangeObservable",
+            "printedName": "UITraitChangeObservable",
+            "usr": "s:5UIKit23UITraitChangeObservableP",
+            "mangledName": "$s5UIKit23UITraitChangeObservableP"
           },
           {
             "kind": "Conformance",
@@ -21558,6 +21663,16 @@
         "mangledName": "$s10Foundation11JSONDecoderC",
         "moduleName": "Foundation",
         "isOpen": true,
+        "intro_Macosx": "10.10",
+        "intro_iOS": "8.0",
+        "intro_tvOS": "9.0",
+        "intro_watchOS": "2.0",
+        "declAttributes": [
+          "Available",
+          "Available",
+          "Available",
+          "Available"
+        ],
         "isExternal": true,
         "conformances": [
           {
@@ -21606,6 +21721,16 @@
         "usr": "s:10Foundation10URLRequestV",
         "mangledName": "$s10Foundation10URLRequestV",
         "moduleName": "Foundation",
+        "intro_Macosx": "10.10",
+        "intro_iOS": "8.0",
+        "intro_tvOS": "9.0",
+        "intro_watchOS": "2.0",
+        "declAttributes": [
+          "Available",
+          "Available",
+          "Available",
+          "Available"
+        ],
         "isExternal": true,
         "conformances": [
           {
@@ -22225,48 +22350,39 @@
           },
           {
             "kind": "Conformance",
-            "name": "DataProtocol",
-            "printedName": "DataProtocol",
+            "name": "_ObjectiveCBridgeable",
+            "printedName": "_ObjectiveCBridgeable",
             "children": [
               {
                 "kind": "TypeWitness",
-                "name": "Regions",
-                "printedName": "Regions",
+                "name": "_ObjectiveCType",
+                "printedName": "_ObjectiveCType",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "CollectionOfOne",
-                    "printedName": "Swift.CollectionOfOne<[Swift.UInt8]>",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Array",
-                        "printedName": "[Swift.UInt8]",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "UInt8",
-                            "printedName": "Swift.UInt8",
-                            "usr": "s:s5UInt8V"
-                          }
-                        ],
-                        "usr": "s:Sa"
-                      }
-                    ],
-                    "usr": "s:s15CollectionOfOneV"
+                    "name": "NSArray",
+                    "printedName": "Foundation.NSArray",
+                    "usr": "c:objc(cs)NSArray"
                   }
                 ]
               }
             ],
-            "usr": "s:10Foundation12DataProtocolP",
-            "mangledName": "$s10Foundation12DataProtocolP"
+            "usr": "s:s21_ObjectiveCBridgeableP",
+            "mangledName": "$ss21_ObjectiveCBridgeableP"
           },
           {
             "kind": "Conformance",
-            "name": "MutableDataProtocol",
-            "printedName": "MutableDataProtocol",
-            "usr": "s:10Foundation19MutableDataProtocolP",
-            "mangledName": "$s10Foundation19MutableDataProtocolP"
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ContiguousBytes",
+            "printedName": "ContiguousBytes",
+            "usr": "s:10Foundation15ContiguousBytesP",
+            "mangledName": "$s10Foundation15ContiguousBytesP"
           },
           {
             "kind": "Conformance",
@@ -22312,39 +22428,48 @@
           },
           {
             "kind": "Conformance",
-            "name": "_ObjectiveCBridgeable",
-            "printedName": "_ObjectiveCBridgeable",
+            "name": "DataProtocol",
+            "printedName": "DataProtocol",
             "children": [
               {
                 "kind": "TypeWitness",
-                "name": "_ObjectiveCType",
-                "printedName": "_ObjectiveCType",
+                "name": "Regions",
+                "printedName": "Regions",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "NSArray",
-                    "printedName": "Foundation.NSArray",
-                    "usr": "c:objc(cs)NSArray"
+                    "name": "CollectionOfOne",
+                    "printedName": "Swift.CollectionOfOne<[Swift.UInt8]>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[Swift.UInt8]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "UInt8",
+                            "printedName": "Swift.UInt8",
+                            "usr": "s:s5UInt8V"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:s15CollectionOfOneV"
                   }
                 ]
               }
             ],
-            "usr": "s:s21_ObjectiveCBridgeableP",
-            "mangledName": "$ss21_ObjectiveCBridgeableP"
+            "usr": "s:10Foundation12DataProtocolP",
+            "mangledName": "$s10Foundation12DataProtocolP"
           },
           {
             "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "ContiguousBytes",
-            "printedName": "ContiguousBytes",
-            "usr": "s:10Foundation15ContiguousBytesP",
-            "mangledName": "$s10Foundation15ContiguousBytesP"
+            "name": "MutableDataProtocol",
+            "printedName": "MutableDataProtocol",
+            "usr": "s:10Foundation19MutableDataProtocolP",
+            "mangledName": "$s10Foundation19MutableDataProtocolP"
           }
         ]
       },
@@ -22552,6 +22677,13 @@
           },
           {
             "kind": "Conformance",
+            "name": "UITraitChangeObservable",
+            "printedName": "UITraitChangeObservable",
+            "usr": "s:5UIKit23UITraitChangeObservableP",
+            "mangledName": "$s5UIKit23UITraitChangeObservableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "__DefaultCustomPlaygroundQuickLookable",
             "printedName": "__DefaultCustomPlaygroundQuickLookable",
             "usr": "s:s38__DefaultCustomPlaygroundQuickLookableP",
@@ -22668,6 +22800,13 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "UITraitChangeObservable",
+            "printedName": "UITraitChangeObservable",
+            "usr": "s:5UIKit23UITraitChangeObservableP",
+            "mangledName": "$s5UIKit23UITraitChangeObservableP"
           }
         ]
       },
@@ -23051,6 +23190,28 @@
           },
           {
             "kind": "Conformance",
+            "name": "_FormatSpecifiable",
+            "printedName": "_FormatSpecifiable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "_Arg",
+                "printedName": "_Arg",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int64",
+                    "printedName": "Swift.Int64",
+                    "usr": "s:s5Int64V"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7SwiftUI18_FormatSpecifiableP",
+            "mangledName": "$s7SwiftUI18_FormatSpecifiableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "KVORepresentable",
             "printedName": "KVORepresentable",
             "children": [
@@ -23145,6 +23306,42 @@
             "printedName": "Encodable",
             "usr": "s:SE",
             "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Animatable",
+            "printedName": "Animatable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "AnimatableData",
+                "printedName": "AnimatableData",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AnimatablePair",
+                    "printedName": "SwiftUI.AnimatablePair<CoreGraphics.CGFloat, CoreGraphics.CGFloat>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CGFloat",
+                        "printedName": "CoreGraphics.CGFloat",
+                        "usr": "s:14CoreFoundation7CGFloatV"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CGFloat",
+                        "printedName": "CoreGraphics.CGFloat",
+                        "usr": "s:14CoreFoundation7CGFloatV"
+                      }
+                    ],
+                    "usr": "s:7SwiftUI14AnimatablePairV"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7SwiftUI10AnimatableP",
+            "mangledName": "$s7SwiftUI10AnimatableP"
           },
           {
             "kind": "Conformance",
@@ -23245,6 +23442,42 @@
           },
           {
             "kind": "Conformance",
+            "name": "Animatable",
+            "printedName": "Animatable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "AnimatableData",
+                "printedName": "AnimatableData",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AnimatablePair",
+                    "printedName": "SwiftUI.AnimatablePair<CoreGraphics.CGFloat, CoreGraphics.CGFloat>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CGFloat",
+                        "printedName": "CoreGraphics.CGFloat",
+                        "usr": "s:14CoreFoundation7CGFloatV"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CGFloat",
+                        "printedName": "CoreGraphics.CGFloat",
+                        "usr": "s:14CoreFoundation7CGFloatV"
+                      }
+                    ],
+                    "usr": "s:7SwiftUI14AnimatablePairV"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7SwiftUI10AnimatableP",
+            "mangledName": "$s7SwiftUI10AnimatableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "KVORepresentable",
             "printedName": "KVORepresentable",
             "children": [
@@ -23297,20 +23530,6 @@
           },
           {
             "kind": "Conformance",
-            "name": "Decodable",
-            "printedName": "Decodable",
-            "usr": "s:Se",
-            "mangledName": "$sSe"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Encodable",
-            "printedName": "Encodable",
-            "usr": "s:SE",
-            "mangledName": "$sSE"
-          },
-          {
-            "kind": "Conformance",
             "name": "_ObjectiveCBridgeable",
             "printedName": "_ObjectiveCBridgeable",
             "children": [
@@ -23330,6 +23549,20 @@
             ],
             "usr": "s:s21_ObjectiveCBridgeableP",
             "mangledName": "$ss21_ObjectiveCBridgeableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
           }
         ]
       },
@@ -23689,6 +23922,28 @@
             ],
             "usr": "s:s21_ObjectiveCBridgeableP",
             "mangledName": "$ss21_ObjectiveCBridgeableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_FormatSpecifiable",
+            "printedName": "_FormatSpecifiable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "_Arg",
+                "printedName": "_Arg",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UInt64",
+                    "printedName": "Swift.UInt64",
+                    "usr": "s:s6UInt64V"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7SwiftUI18_FormatSpecifiableP",
+            "mangledName": "$s7SwiftUI18_FormatSpecifiableP"
           },
           {
             "kind": "Conformance",
@@ -24155,6 +24410,35 @@
             ],
             "usr": "s:s21_ObjectiveCBridgeableP",
             "mangledName": "$ss21_ObjectiveCBridgeableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "VectorArithmetic",
+            "printedName": "VectorArithmetic",
+            "usr": "s:7SwiftUI16VectorArithmeticP",
+            "mangledName": "$s7SwiftUI16VectorArithmeticP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_FormatSpecifiable",
+            "printedName": "_FormatSpecifiable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "_Arg",
+                "printedName": "_Arg",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7SwiftUI18_FormatSpecifiableP",
+            "mangledName": "$s7SwiftUI18_FormatSpecifiableP"
           }
         ]
       },
@@ -24599,6 +24883,57 @@
             ],
             "usr": "s:s21_ObjectiveCBridgeableP",
             "mangledName": "$ss21_ObjectiveCBridgeableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "VectorArithmetic",
+            "printedName": "VectorArithmetic",
+            "usr": "s:7SwiftUI16VectorArithmeticP",
+            "mangledName": "$s7SwiftUI16VectorArithmeticP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_FormatSpecifiable",
+            "printedName": "_FormatSpecifiable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "_Arg",
+                "printedName": "_Arg",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7SwiftUI18_FormatSpecifiableP",
+            "mangledName": "$s7SwiftUI18_FormatSpecifiableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Animatable",
+            "printedName": "Animatable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "AnimatableData",
+                "printedName": "AnimatableData",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7SwiftUI10AnimatableP",
+            "mangledName": "$s7SwiftUI10AnimatableP"
           }
         ]
       },
@@ -24908,6 +25243,57 @@
             ],
             "usr": "s:s21_ObjectiveCBridgeableP",
             "mangledName": "$ss21_ObjectiveCBridgeableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "VectorArithmetic",
+            "printedName": "VectorArithmetic",
+            "usr": "s:7SwiftUI16VectorArithmeticP",
+            "mangledName": "$s7SwiftUI16VectorArithmeticP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_FormatSpecifiable",
+            "printedName": "_FormatSpecifiable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "_Arg",
+                "printedName": "_Arg",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7SwiftUI18_FormatSpecifiableP",
+            "mangledName": "$s7SwiftUI18_FormatSpecifiableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Animatable",
+            "printedName": "Animatable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "AnimatableData",
+                "printedName": "AnimatableData",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7SwiftUI10AnimatableP",
+            "mangledName": "$s7SwiftUI10AnimatableP"
           }
         ]
       },
@@ -25124,6 +25510,13 @@
           },
           {
             "kind": "Conformance",
+            "name": "UITraitChangeObservable",
+            "printedName": "UITraitChangeObservable",
+            "usr": "s:5UIKit23UITraitChangeObservableP",
+            "mangledName": "$s5UIKit23UITraitChangeObservableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "__DefaultCustomPlaygroundQuickLookable",
             "printedName": "__DefaultCustomPlaygroundQuickLookable",
             "usr": "s:s38__DefaultCustomPlaygroundQuickLookableP",
@@ -25212,6 +25605,16 @@
         "usr": "s:10Foundation3URLV",
         "mangledName": "$s10Foundation3URLV",
         "moduleName": "Foundation",
+        "intro_Macosx": "10.10",
+        "intro_iOS": "8.0",
+        "intro_tvOS": "9.0",
+        "intro_watchOS": "2.0",
+        "declAttributes": [
+          "Available",
+          "Available",
+          "Available",
+          "Available"
+        ],
         "isExternal": true,
         "conformances": [
           {
@@ -25320,6 +25723,41 @@
             "printedName": "_ExpressibleByFileReferenceLiteral",
             "usr": "s:s34_ExpressibleByFileReferenceLiteralP",
             "mangledName": "$ss34_ExpressibleByFileReferenceLiteralP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Transferable",
+            "printedName": "Transferable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Representation",
+                "printedName": "Representation",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpaqueTypeArchetype",
+                    "printedName": "some CoreTransferable.TransferRepresentation",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TransferRepresentation",
+                        "printedName": "CoreTransferable.TransferRepresentation",
+                        "usr": "s:16CoreTransferable22TransferRepresentationP"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Sendable",
+                        "printedName": "Swift.Sendable",
+                        "usr": "s:s8SendableP"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "usr": "s:16CoreTransferable0B0P",
+            "mangledName": "$s16CoreTransferable0B0P"
           }
         ]
       },
@@ -25686,6 +26124,28 @@
             ],
             "usr": "s:s21_ObjectiveCBridgeableP",
             "mangledName": "$ss21_ObjectiveCBridgeableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_FormatSpecifiable",
+            "printedName": "_FormatSpecifiable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "_Arg",
+                "printedName": "_Arg",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int32",
+                    "printedName": "Swift.Int32",
+                    "usr": "s:s5Int32V"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7SwiftUI18_FormatSpecifiableP",
+            "mangledName": "$s7SwiftUI18_FormatSpecifiableP"
           }
         ]
       },
@@ -26052,6 +26512,28 @@
             ],
             "usr": "s:s21_ObjectiveCBridgeableP",
             "mangledName": "$ss21_ObjectiveCBridgeableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_FormatSpecifiable",
+            "printedName": "_FormatSpecifiable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "_Arg",
+                "printedName": "_Arg",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int32",
+                    "printedName": "Swift.Int32",
+                    "usr": "s:s5Int32V"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7SwiftUI18_FormatSpecifiableP",
+            "mangledName": "$s7SwiftUI18_FormatSpecifiableP"
           }
         ]
       },
@@ -26418,6 +26900,28 @@
             ],
             "usr": "s:s21_ObjectiveCBridgeableP",
             "mangledName": "$ss21_ObjectiveCBridgeableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_FormatSpecifiable",
+            "printedName": "_FormatSpecifiable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "_Arg",
+                "printedName": "_Arg",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int32",
+                    "printedName": "Swift.Int32",
+                    "usr": "s:s5Int32V"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7SwiftUI18_FormatSpecifiableP",
+            "mangledName": "$s7SwiftUI18_FormatSpecifiableP"
           },
           {
             "kind": "Conformance",
@@ -26816,6 +27320,28 @@
           },
           {
             "kind": "Conformance",
+            "name": "_FormatSpecifiable",
+            "printedName": "_FormatSpecifiable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "_Arg",
+                "printedName": "_Arg",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int64",
+                    "printedName": "Swift.Int64",
+                    "usr": "s:s5Int64V"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7SwiftUI18_FormatSpecifiableP",
+            "mangledName": "$s7SwiftUI18_FormatSpecifiableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "KVORepresentable",
             "printedName": "KVORepresentable",
             "children": [
@@ -27201,6 +27727,28 @@
             ],
             "usr": "s:s21_ObjectiveCBridgeableP",
             "mangledName": "$ss21_ObjectiveCBridgeableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_FormatSpecifiable",
+            "printedName": "_FormatSpecifiable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "_Arg",
+                "printedName": "_Arg",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UInt32",
+                    "printedName": "Swift.UInt32",
+                    "usr": "s:s6UInt32V"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7SwiftUI18_FormatSpecifiableP",
+            "mangledName": "$s7SwiftUI18_FormatSpecifiableP"
           }
         ]
       },
@@ -27567,6 +28115,28 @@
             ],
             "usr": "s:s21_ObjectiveCBridgeableP",
             "mangledName": "$ss21_ObjectiveCBridgeableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_FormatSpecifiable",
+            "printedName": "_FormatSpecifiable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "_Arg",
+                "printedName": "_Arg",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UInt32",
+                    "printedName": "Swift.UInt32",
+                    "usr": "s:s6UInt32V"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7SwiftUI18_FormatSpecifiableP",
+            "mangledName": "$s7SwiftUI18_FormatSpecifiableP"
           }
         ]
       },
@@ -27926,6 +28496,28 @@
             ],
             "usr": "s:s21_ObjectiveCBridgeableP",
             "mangledName": "$ss21_ObjectiveCBridgeableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_FormatSpecifiable",
+            "printedName": "_FormatSpecifiable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "_Arg",
+                "printedName": "_Arg",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UInt32",
+                    "printedName": "Swift.UInt32",
+                    "usr": "s:s6UInt32V"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7SwiftUI18_FormatSpecifiableP",
+            "mangledName": "$s7SwiftUI18_FormatSpecifiableP"
           },
           {
             "kind": "Conformance",
@@ -28317,6 +28909,28 @@
           },
           {
             "kind": "Conformance",
+            "name": "_FormatSpecifiable",
+            "printedName": "_FormatSpecifiable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "_Arg",
+                "printedName": "_Arg",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UInt64",
+                    "printedName": "Swift.UInt64",
+                    "usr": "s:s6UInt64V"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7SwiftUI18_FormatSpecifiableP",
+            "mangledName": "$s7SwiftUI18_FormatSpecifiableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "KVORepresentable",
             "printedName": "KVORepresentable",
             "children": [
@@ -28438,6 +29052,13 @@
           },
           {
             "kind": "Conformance",
+            "name": "UITraitChangeObservable",
+            "printedName": "UITraitChangeObservable",
+            "usr": "s:5UIKit23UITraitChangeObservableP",
+            "mangledName": "$s5UIKit23UITraitChangeObservableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "__DefaultCustomPlaygroundQuickLookable",
             "printedName": "__DefaultCustomPlaygroundQuickLookable",
             "usr": "s:s38__DefaultCustomPlaygroundQuickLookableP",
@@ -28461,6 +29082,16 @@
         "mangledName": "$s10Foundation19PropertyListDecoderC",
         "moduleName": "Foundation",
         "isOpen": true,
+        "intro_Macosx": "10.10",
+        "intro_iOS": "8.0",
+        "intro_tvOS": "9.0",
+        "intro_watchOS": "2.0",
+        "declAttributes": [
+          "Available",
+          "Available",
+          "Available",
+          "Available"
+        ],
         "isExternal": true,
         "conformances": [
           {
@@ -28509,6 +29140,16 @@
         "usr": "s:10Foundation13URLComponentsV",
         "mangledName": "$s10Foundation13URLComponentsV",
         "moduleName": "Foundation",
+        "intro_Macosx": "10.10",
+        "intro_iOS": "8.0",
+        "intro_tvOS": "9.0",
+        "intro_watchOS": "2.0",
+        "declAttributes": [
+          "Available",
+          "Available",
+          "Available",
+          "Available"
+        ],
         "isExternal": true,
         "conformances": [
           {
@@ -28624,7 +29265,9 @@
         "objc_name": "NSBundle",
         "declAttributes": [
           "ObjC",
+          "SynthesizedProtocol",
           "NonSendable",
+          "Sendable",
           "Dynamic"
         ],
         "superclassUsr": "c:objc(cs)NSObject",
@@ -28634,6 +29277,13 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -70820,6 +71470,895 @@
       "offset": 2623,
       "length": 5,
       "value": "false"
+    },
+    {
+      "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/Spot-IM.Development-fypgzssesvgtgoczzsqqwwnvaqqe\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SpotImCore\/IntermediateBuildFilesPath\/Spot-IM.Development.build\/ReleaseInternal-iphonesimulator\/SpotImCore.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 736,
+      "length": 14,
+      "value": "\"OpenWeb-logo\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/Spot-IM.Development-fypgzssesvgtgoczzsqqwwnvaqqe\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SpotImCore\/IntermediateBuildFilesPath\/Spot-IM.Development.build\/ReleaseInternal-iphonesimulator\/SpotImCore.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 892,
+      "length": 19,
+      "value": "\"OpenWeb-logo-dark\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/Spot-IM.Development-fypgzssesvgtgoczzsqqwwnvaqqe\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SpotImCore\/IntermediateBuildFilesPath\/Spot-IM.Development.build\/ReleaseInternal-iphonesimulator\/SpotImCore.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 1036,
+      "length": 10,
+      "value": "\"Typing_0\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/Spot-IM.Development-fypgzssesvgtgoczzsqqwwnvaqqe\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SpotImCore\/IntermediateBuildFilesPath\/Spot-IM.Development.build\/ReleaseInternal-iphonesimulator\/SpotImCore.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 1171,
+      "length": 10,
+      "value": "\"Typing_1\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/Spot-IM.Development-fypgzssesvgtgoczzsqqwwnvaqqe\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SpotImCore\/IntermediateBuildFilesPath\/Spot-IM.Development.build\/ReleaseInternal-iphonesimulator\/SpotImCore.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 1308,
+      "length": 11,
+      "value": "\"Typing_10\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/Spot-IM.Development-fypgzssesvgtgoczzsqqwwnvaqqe\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SpotImCore\/IntermediateBuildFilesPath\/Spot-IM.Development.build\/ReleaseInternal-iphonesimulator\/SpotImCore.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 1446,
+      "length": 11,
+      "value": "\"Typing_11\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/Spot-IM.Development-fypgzssesvgtgoczzsqqwwnvaqqe\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SpotImCore\/IntermediateBuildFilesPath\/Spot-IM.Development.build\/ReleaseInternal-iphonesimulator\/SpotImCore.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 1584,
+      "length": 11,
+      "value": "\"Typing_12\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/Spot-IM.Development-fypgzssesvgtgoczzsqqwwnvaqqe\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SpotImCore\/IntermediateBuildFilesPath\/Spot-IM.Development.build\/ReleaseInternal-iphonesimulator\/SpotImCore.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 1722,
+      "length": 11,
+      "value": "\"Typing_13\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/Spot-IM.Development-fypgzssesvgtgoczzsqqwwnvaqqe\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SpotImCore\/IntermediateBuildFilesPath\/Spot-IM.Development.build\/ReleaseInternal-iphonesimulator\/SpotImCore.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 1860,
+      "length": 11,
+      "value": "\"Typing_14\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/Spot-IM.Development-fypgzssesvgtgoczzsqqwwnvaqqe\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SpotImCore\/IntermediateBuildFilesPath\/Spot-IM.Development.build\/ReleaseInternal-iphonesimulator\/SpotImCore.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 1998,
+      "length": 11,
+      "value": "\"Typing_15\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/Spot-IM.Development-fypgzssesvgtgoczzsqqwwnvaqqe\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SpotImCore\/IntermediateBuildFilesPath\/Spot-IM.Development.build\/ReleaseInternal-iphonesimulator\/SpotImCore.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 2136,
+      "length": 11,
+      "value": "\"Typing_16\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/Spot-IM.Development-fypgzssesvgtgoczzsqqwwnvaqqe\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SpotImCore\/IntermediateBuildFilesPath\/Spot-IM.Development.build\/ReleaseInternal-iphonesimulator\/SpotImCore.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 2274,
+      "length": 11,
+      "value": "\"Typing_17\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/Spot-IM.Development-fypgzssesvgtgoczzsqqwwnvaqqe\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SpotImCore\/IntermediateBuildFilesPath\/Spot-IM.Development.build\/ReleaseInternal-iphonesimulator\/SpotImCore.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 2412,
+      "length": 11,
+      "value": "\"Typing_18\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/Spot-IM.Development-fypgzssesvgtgoczzsqqwwnvaqqe\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SpotImCore\/IntermediateBuildFilesPath\/Spot-IM.Development.build\/ReleaseInternal-iphonesimulator\/SpotImCore.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 2550,
+      "length": 11,
+      "value": "\"Typing_19\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/Spot-IM.Development-fypgzssesvgtgoczzsqqwwnvaqqe\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SpotImCore\/IntermediateBuildFilesPath\/Spot-IM.Development.build\/ReleaseInternal-iphonesimulator\/SpotImCore.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 2686,
+      "length": 10,
+      "value": "\"Typing_2\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/Spot-IM.Development-fypgzssesvgtgoczzsqqwwnvaqqe\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SpotImCore\/IntermediateBuildFilesPath\/Spot-IM.Development.build\/ReleaseInternal-iphonesimulator\/SpotImCore.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 2823,
+      "length": 11,
+      "value": "\"Typing_20\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/Spot-IM.Development-fypgzssesvgtgoczzsqqwwnvaqqe\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SpotImCore\/IntermediateBuildFilesPath\/Spot-IM.Development.build\/ReleaseInternal-iphonesimulator\/SpotImCore.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 2961,
+      "length": 11,
+      "value": "\"Typing_21\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/Spot-IM.Development-fypgzssesvgtgoczzsqqwwnvaqqe\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SpotImCore\/IntermediateBuildFilesPath\/Spot-IM.Development.build\/ReleaseInternal-iphonesimulator\/SpotImCore.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 3099,
+      "length": 11,
+      "value": "\"Typing_22\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/Spot-IM.Development-fypgzssesvgtgoczzsqqwwnvaqqe\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SpotImCore\/IntermediateBuildFilesPath\/Spot-IM.Development.build\/ReleaseInternal-iphonesimulator\/SpotImCore.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 3237,
+      "length": 11,
+      "value": "\"Typing_23\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/Spot-IM.Development-fypgzssesvgtgoczzsqqwwnvaqqe\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SpotImCore\/IntermediateBuildFilesPath\/Spot-IM.Development.build\/ReleaseInternal-iphonesimulator\/SpotImCore.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 3375,
+      "length": 11,
+      "value": "\"Typing_24\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/Spot-IM.Development-fypgzssesvgtgoczzsqqwwnvaqqe\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SpotImCore\/IntermediateBuildFilesPath\/Spot-IM.Development.build\/ReleaseInternal-iphonesimulator\/SpotImCore.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 3513,
+      "length": 11,
+      "value": "\"Typing_25\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/Spot-IM.Development-fypgzssesvgtgoczzsqqwwnvaqqe\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SpotImCore\/IntermediateBuildFilesPath\/Spot-IM.Development.build\/ReleaseInternal-iphonesimulator\/SpotImCore.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 3651,
+      "length": 11,
+      "value": "\"Typing_26\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/Spot-IM.Development-fypgzssesvgtgoczzsqqwwnvaqqe\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SpotImCore\/IntermediateBuildFilesPath\/Spot-IM.Development.build\/ReleaseInternal-iphonesimulator\/SpotImCore.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 3789,
+      "length": 11,
+      "value": "\"Typing_27\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/Spot-IM.Development-fypgzssesvgtgoczzsqqwwnvaqqe\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SpotImCore\/IntermediateBuildFilesPath\/Spot-IM.Development.build\/ReleaseInternal-iphonesimulator\/SpotImCore.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 3927,
+      "length": 11,
+      "value": "\"Typing_28\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/Spot-IM.Development-fypgzssesvgtgoczzsqqwwnvaqqe\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SpotImCore\/IntermediateBuildFilesPath\/Spot-IM.Development.build\/ReleaseInternal-iphonesimulator\/SpotImCore.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 4065,
+      "length": 11,
+      "value": "\"Typing_29\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/Spot-IM.Development-fypgzssesvgtgoczzsqqwwnvaqqe\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SpotImCore\/IntermediateBuildFilesPath\/Spot-IM.Development.build\/ReleaseInternal-iphonesimulator\/SpotImCore.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 4201,
+      "length": 10,
+      "value": "\"Typing_3\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/Spot-IM.Development-fypgzssesvgtgoczzsqqwwnvaqqe\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SpotImCore\/IntermediateBuildFilesPath\/Spot-IM.Development.build\/ReleaseInternal-iphonesimulator\/SpotImCore.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 4338,
+      "length": 11,
+      "value": "\"Typing_30\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/Spot-IM.Development-fypgzssesvgtgoczzsqqwwnvaqqe\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SpotImCore\/IntermediateBuildFilesPath\/Spot-IM.Development.build\/ReleaseInternal-iphonesimulator\/SpotImCore.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 4476,
+      "length": 11,
+      "value": "\"Typing_31\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/Spot-IM.Development-fypgzssesvgtgoczzsqqwwnvaqqe\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SpotImCore\/IntermediateBuildFilesPath\/Spot-IM.Development.build\/ReleaseInternal-iphonesimulator\/SpotImCore.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 4614,
+      "length": 11,
+      "value": "\"Typing_32\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/Spot-IM.Development-fypgzssesvgtgoczzsqqwwnvaqqe\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SpotImCore\/IntermediateBuildFilesPath\/Spot-IM.Development.build\/ReleaseInternal-iphonesimulator\/SpotImCore.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 4752,
+      "length": 11,
+      "value": "\"Typing_33\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/Spot-IM.Development-fypgzssesvgtgoczzsqqwwnvaqqe\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SpotImCore\/IntermediateBuildFilesPath\/Spot-IM.Development.build\/ReleaseInternal-iphonesimulator\/SpotImCore.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 4890,
+      "length": 11,
+      "value": "\"Typing_34\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/Spot-IM.Development-fypgzssesvgtgoczzsqqwwnvaqqe\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SpotImCore\/IntermediateBuildFilesPath\/Spot-IM.Development.build\/ReleaseInternal-iphonesimulator\/SpotImCore.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 5028,
+      "length": 11,
+      "value": "\"Typing_35\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/Spot-IM.Development-fypgzssesvgtgoczzsqqwwnvaqqe\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SpotImCore\/IntermediateBuildFilesPath\/Spot-IM.Development.build\/ReleaseInternal-iphonesimulator\/SpotImCore.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 5166,
+      "length": 11,
+      "value": "\"Typing_36\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/Spot-IM.Development-fypgzssesvgtgoczzsqqwwnvaqqe\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SpotImCore\/IntermediateBuildFilesPath\/Spot-IM.Development.build\/ReleaseInternal-iphonesimulator\/SpotImCore.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 5304,
+      "length": 11,
+      "value": "\"Typing_37\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/Spot-IM.Development-fypgzssesvgtgoczzsqqwwnvaqqe\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SpotImCore\/IntermediateBuildFilesPath\/Spot-IM.Development.build\/ReleaseInternal-iphonesimulator\/SpotImCore.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 5442,
+      "length": 11,
+      "value": "\"Typing_38\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/Spot-IM.Development-fypgzssesvgtgoczzsqqwwnvaqqe\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SpotImCore\/IntermediateBuildFilesPath\/Spot-IM.Development.build\/ReleaseInternal-iphonesimulator\/SpotImCore.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 5580,
+      "length": 11,
+      "value": "\"Typing_39\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/Spot-IM.Development-fypgzssesvgtgoczzsqqwwnvaqqe\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SpotImCore\/IntermediateBuildFilesPath\/Spot-IM.Development.build\/ReleaseInternal-iphonesimulator\/SpotImCore.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 5716,
+      "length": 10,
+      "value": "\"Typing_4\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/Spot-IM.Development-fypgzssesvgtgoczzsqqwwnvaqqe\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SpotImCore\/IntermediateBuildFilesPath\/Spot-IM.Development.build\/ReleaseInternal-iphonesimulator\/SpotImCore.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 5853,
+      "length": 11,
+      "value": "\"Typing_40\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/Spot-IM.Development-fypgzssesvgtgoczzsqqwwnvaqqe\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SpotImCore\/IntermediateBuildFilesPath\/Spot-IM.Development.build\/ReleaseInternal-iphonesimulator\/SpotImCore.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 5991,
+      "length": 11,
+      "value": "\"Typing_41\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/Spot-IM.Development-fypgzssesvgtgoczzsqqwwnvaqqe\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SpotImCore\/IntermediateBuildFilesPath\/Spot-IM.Development.build\/ReleaseInternal-iphonesimulator\/SpotImCore.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 6129,
+      "length": 11,
+      "value": "\"Typing_42\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/Spot-IM.Development-fypgzssesvgtgoczzsqqwwnvaqqe\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SpotImCore\/IntermediateBuildFilesPath\/Spot-IM.Development.build\/ReleaseInternal-iphonesimulator\/SpotImCore.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 6267,
+      "length": 11,
+      "value": "\"Typing_43\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/Spot-IM.Development-fypgzssesvgtgoczzsqqwwnvaqqe\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SpotImCore\/IntermediateBuildFilesPath\/Spot-IM.Development.build\/ReleaseInternal-iphonesimulator\/SpotImCore.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 6405,
+      "length": 11,
+      "value": "\"Typing_44\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/Spot-IM.Development-fypgzssesvgtgoczzsqqwwnvaqqe\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SpotImCore\/IntermediateBuildFilesPath\/Spot-IM.Development.build\/ReleaseInternal-iphonesimulator\/SpotImCore.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 6543,
+      "length": 11,
+      "value": "\"Typing_45\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/Spot-IM.Development-fypgzssesvgtgoczzsqqwwnvaqqe\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SpotImCore\/IntermediateBuildFilesPath\/Spot-IM.Development.build\/ReleaseInternal-iphonesimulator\/SpotImCore.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 6681,
+      "length": 11,
+      "value": "\"Typing_46\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/Spot-IM.Development-fypgzssesvgtgoczzsqqwwnvaqqe\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SpotImCore\/IntermediateBuildFilesPath\/Spot-IM.Development.build\/ReleaseInternal-iphonesimulator\/SpotImCore.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 6819,
+      "length": 11,
+      "value": "\"Typing_47\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/Spot-IM.Development-fypgzssesvgtgoczzsqqwwnvaqqe\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SpotImCore\/IntermediateBuildFilesPath\/Spot-IM.Development.build\/ReleaseInternal-iphonesimulator\/SpotImCore.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 6955,
+      "length": 10,
+      "value": "\"Typing_5\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/Spot-IM.Development-fypgzssesvgtgoczzsqqwwnvaqqe\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SpotImCore\/IntermediateBuildFilesPath\/Spot-IM.Development.build\/ReleaseInternal-iphonesimulator\/SpotImCore.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 7090,
+      "length": 10,
+      "value": "\"Typing_6\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/Spot-IM.Development-fypgzssesvgtgoczzsqqwwnvaqqe\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SpotImCore\/IntermediateBuildFilesPath\/Spot-IM.Development.build\/ReleaseInternal-iphonesimulator\/SpotImCore.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 7225,
+      "length": 10,
+      "value": "\"Typing_7\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/Spot-IM.Development-fypgzssesvgtgoczzsqqwwnvaqqe\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SpotImCore\/IntermediateBuildFilesPath\/Spot-IM.Development.build\/ReleaseInternal-iphonesimulator\/SpotImCore.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 7360,
+      "length": 10,
+      "value": "\"Typing_8\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/Spot-IM.Development-fypgzssesvgtgoczzsqqwwnvaqqe\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SpotImCore\/IntermediateBuildFilesPath\/Spot-IM.Development.build\/ReleaseInternal-iphonesimulator\/SpotImCore.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 7495,
+      "length": 10,
+      "value": "\"Typing_9\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/Spot-IM.Development-fypgzssesvgtgoczzsqqwwnvaqqe\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SpotImCore\/IntermediateBuildFilesPath\/Spot-IM.Development.build\/ReleaseInternal-iphonesimulator\/SpotImCore.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 7639,
+      "length": 14,
+      "value": "\"addImageIcon\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/Spot-IM.Development-fypgzssesvgtgoczzsqqwwnvaqqe\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SpotImCore\/IntermediateBuildFilesPath\/Spot-IM.Development.build\/ReleaseInternal-iphonesimulator\/SpotImCore.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 7796,
+      "length": 19,
+      "value": "\"addImageIcon-dark\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/Spot-IM.Development-fypgzssesvgtgoczzsqqwwnvaqqe\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SpotImCore\/IntermediateBuildFilesPath\/Spot-IM.Development.build\/ReleaseInternal-iphonesimulator\/SpotImCore.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 7945,
+      "length": 12,
+      "value": "\"backButton\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/Spot-IM.Development-fypgzssesvgtgoczzsqqwwnvaqqe\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SpotImCore\/IntermediateBuildFilesPath\/Spot-IM.Development.build\/ReleaseInternal-iphonesimulator\/SpotImCore.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 8096,
+      "length": 17,
+      "value": "\"backButton-dark\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/Spot-IM.Development-fypgzssesvgtgoczzsqqwwnvaqqe\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SpotImCore\/IntermediateBuildFilesPath\/Spot-IM.Development.build\/ReleaseInternal-iphonesimulator\/SpotImCore.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 8244,
+      "length": 13,
+      "value": "\"camera-icon\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/Spot-IM.Development-fypgzssesvgtgoczzsqqwwnvaqqe\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SpotImCore\/IntermediateBuildFilesPath\/Spot-IM.Development.build\/ReleaseInternal-iphonesimulator\/SpotImCore.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 8397,
+      "length": 18,
+      "value": "\"camera-icon-dark\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/Spot-IM.Development-fypgzssesvgtgoczzsqqwwnvaqqe\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SpotImCore\/IntermediateBuildFilesPath\/Spot-IM.Development.build\/ReleaseInternal-iphonesimulator\/SpotImCore.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 8547,
+      "length": 13,
+      "value": "\"closeButton\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/Spot-IM.Development-fypgzssesvgtgoczzsqqwwnvaqqe\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SpotImCore\/IntermediateBuildFilesPath\/Spot-IM.Development.build\/ReleaseInternal-iphonesimulator\/SpotImCore.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 8701,
+      "length": 18,
+      "value": "\"closeButton-dark\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/Spot-IM.Development-fypgzssesvgtgoczzsqqwwnvaqqe\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SpotImCore\/IntermediateBuildFilesPath\/Spot-IM.Development.build\/ReleaseInternal-iphonesimulator\/SpotImCore.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 8857,
+      "length": 16,
+      "value": "\"closeCrossIcon\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/Spot-IM.Development-fypgzssesvgtgoczzsqqwwnvaqqe\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SpotImCore\/IntermediateBuildFilesPath\/Spot-IM.Development.build\/ReleaseInternal-iphonesimulator\/SpotImCore.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 9020,
+      "length": 21,
+      "value": "\"closeCrossIcon-dark\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/Spot-IM.Development-fypgzssesvgtgoczzsqqwwnvaqqe\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SpotImCore\/IntermediateBuildFilesPath\/Spot-IM.Development.build\/ReleaseInternal-iphonesimulator\/SpotImCore.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 9185,
+      "length": 19,
+      "value": "\"closeCrossIconNew\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/Spot-IM.Development-fypgzssesvgtgoczzsqqwwnvaqqe\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SpotImCore\/IntermediateBuildFilesPath\/Spot-IM.Development.build\/ReleaseInternal-iphonesimulator\/SpotImCore.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 9357,
+      "length": 24,
+      "value": "\"closeCrossIconNew-dark\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/Spot-IM.Development-fypgzssesvgtgoczzsqqwwnvaqqe\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SpotImCore\/IntermediateBuildFilesPath\/Spot-IM.Development.build\/ReleaseInternal-iphonesimulator\/SpotImCore.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 9509,
+      "length": 11,
+      "value": "\"closeIcon\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/Spot-IM.Development-fypgzssesvgtgoczzsqqwwnvaqqe\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SpotImCore\/IntermediateBuildFilesPath\/Spot-IM.Development.build\/ReleaseInternal-iphonesimulator\/SpotImCore.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 9657,
+      "length": 16,
+      "value": "\"closeIcon-dark\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/Spot-IM.Development-fypgzssesvgtgoczzsqqwwnvaqqe\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SpotImCore\/IntermediateBuildFilesPath\/Spot-IM.Development.build\/ReleaseInternal-iphonesimulator\/SpotImCore.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 9844,
+      "length": 33,
+      "value": "\"closedAndEmptyConversation-icon\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/Spot-IM.Development-fypgzssesvgtgoczzsqqwwnvaqqe\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SpotImCore\/IntermediateBuildFilesPath\/Spot-IM.Development.build\/ReleaseInternal-iphonesimulator\/SpotImCore.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 10057,
+      "length": 38,
+      "value": "\"closedAndEmptyConversation-icon-dark\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/Spot-IM.Development-fypgzssesvgtgoczzsqqwwnvaqqe\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SpotImCore\/IntermediateBuildFilesPath\/Spot-IM.Development.build\/ReleaseInternal-iphonesimulator\/SpotImCore.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 10249,
+      "length": 24,
+      "value": "\"commentingReadOnlyIcon\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/Spot-IM.Development-fypgzssesvgtgoczzsqqwwnvaqqe\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SpotImCore\/IntermediateBuildFilesPath\/Spot-IM.Development.build\/ReleaseInternal-iphonesimulator\/SpotImCore.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 10436,
+      "length": 29,
+      "value": "\"commentingReadOnlyIcon-dark\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/Spot-IM.Development-fypgzssesvgtgoczzsqqwwnvaqqe\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SpotImCore\/IntermediateBuildFilesPath\/Spot-IM.Development.build\/ReleaseInternal-iphonesimulator\/SpotImCore.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 10619,
+      "length": 24,
+      "value": "\"darkModeBackButtonIcon\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/Spot-IM.Development-fypgzssesvgtgoczzsqqwwnvaqqe\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SpotImCore\/IntermediateBuildFilesPath\/Spot-IM.Development.build\/ReleaseInternal-iphonesimulator\/SpotImCore.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 10779,
+      "length": 15,
+      "value": "\"defaultAvatar\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/Spot-IM.Development-fypgzssesvgtgoczzsqqwwnvaqqe\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SpotImCore\/IntermediateBuildFilesPath\/Spot-IM.Development.build\/ReleaseInternal-iphonesimulator\/SpotImCore.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 10939,
+      "length": 20,
+      "value": "\"defaultAvatar-dark\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/Spot-IM.Development-fypgzssesvgtgoczzsqqwwnvaqqe\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SpotImCore\/IntermediateBuildFilesPath\/Spot-IM.Development.build\/ReleaseInternal-iphonesimulator\/SpotImCore.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 11111,
+      "length": 23,
+      "value": "\"defaultBackButtonIcon\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/Spot-IM.Development-fypgzssesvgtgoczzsqqwwnvaqqe\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SpotImCore\/IntermediateBuildFilesPath\/Spot-IM.Development.build\/ReleaseInternal-iphonesimulator\/SpotImCore.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 11279,
+      "length": 20,
+      "value": "\"empty-conversation\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/Spot-IM.Development-fypgzssesvgtgoczzsqqwwnvaqqe\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SpotImCore\/IntermediateBuildFilesPath\/Spot-IM.Development.build\/ReleaseInternal-iphonesimulator\/SpotImCore.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 11453,
+      "length": 25,
+      "value": "\"empty-conversation-dark\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/Spot-IM.Development-fypgzssesvgtgoczzsqqwwnvaqqe\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SpotImCore\/IntermediateBuildFilesPath\/Spot-IM.Development.build\/ReleaseInternal-iphonesimulator\/SpotImCore.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 11622,
+      "length": 19,
+      "value": "\"emptyCommentsIcon\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/Spot-IM.Development-fypgzssesvgtgoczzsqqwwnvaqqe\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SpotImCore\/IntermediateBuildFilesPath\/Spot-IM.Development.build\/ReleaseInternal-iphonesimulator\/SpotImCore.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 11794,
+      "length": 24,
+      "value": "\"emptyCommentsIcon-dark\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/Spot-IM.Development-fypgzssesvgtgoczzsqqwwnvaqqe\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SpotImCore\/IntermediateBuildFilesPath\/Spot-IM.Development.build\/ReleaseInternal-iphonesimulator\/SpotImCore.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 11978,
+      "length": 27,
+      "value": "\"emptyCommentsReadOnlyIcon\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/Spot-IM.Development-fypgzssesvgtgoczzsqqwwnvaqqe\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SpotImCore\/IntermediateBuildFilesPath\/Spot-IM.Development.build\/ReleaseInternal-iphonesimulator\/SpotImCore.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 12174,
+      "length": 32,
+      "value": "\"emptyCommentsReadOnlyIcon-dark\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/Spot-IM.Development-fypgzssesvgtgoczzsqqwwnvaqqe\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SpotImCore\/IntermediateBuildFilesPath\/Spot-IM.Development.build\/ReleaseInternal-iphonesimulator\/SpotImCore.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 12359,
+      "length": 24,
+      "value": "\"emptyConversation-icon\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/Spot-IM.Development-fypgzssesvgtgoczzsqqwwnvaqqe\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SpotImCore\/IntermediateBuildFilesPath\/Spot-IM.Development.build\/ReleaseInternal-iphonesimulator\/SpotImCore.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 12545,
+      "length": 29,
+      "value": "\"emptyConversation-icon-dark\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/Spot-IM.Development-fypgzssesvgtgoczzsqqwwnvaqqe\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SpotImCore\/IntermediateBuildFilesPath\/Spot-IM.Development.build\/ReleaseInternal-iphonesimulator\/SpotImCore.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 12712,
+      "length": 16,
+      "value": "\"guidelinesIcon\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/Spot-IM.Development-fypgzssesvgtgoczzsqqwwnvaqqe\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SpotImCore\/IntermediateBuildFilesPath\/Spot-IM.Development.build\/ReleaseInternal-iphonesimulator\/SpotImCore.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 12880,
+      "length": 23,
+      "value": "\"imageMediaPlaceholder\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/Spot-IM.Development-fypgzssesvgtgoczzsqqwwnvaqqe\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SpotImCore\/IntermediateBuildFilesPath\/Spot-IM.Development.build\/ReleaseInternal-iphonesimulator\/SpotImCore.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 13045,
+      "length": 18,
+      "value": "\"imagePlaceholder\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/Spot-IM.Development-fypgzssesvgtgoczzsqqwwnvaqqe\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SpotImCore\/IntermediateBuildFilesPath\/Spot-IM.Development.build\/ReleaseInternal-iphonesimulator\/SpotImCore.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 13355,
+      "length": 19,
+      "value": "\"leader_badge_icon\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/Spot-IM.Development-fypgzssesvgtgoczzsqqwwnvaqqe\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SpotImCore\/IntermediateBuildFilesPath\/Spot-IM.Development.build\/ReleaseInternal-iphonesimulator\/SpotImCore.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 13501,
+      "length": 11,
+      "value": "\"menu_icon\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/Spot-IM.Development-fypgzssesvgtgoczzsqqwwnvaqqe\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SpotImCore\/IntermediateBuildFilesPath\/Spot-IM.Development.build\/ReleaseInternal-iphonesimulator\/SpotImCore.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 13648,
+      "length": 16,
+      "value": "\"menu_icon-dark\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/Spot-IM.Development-fypgzssesvgtgoczzsqqwwnvaqqe\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SpotImCore\/IntermediateBuildFilesPath\/Spot-IM.Development.build\/ReleaseInternal-iphonesimulator\/SpotImCore.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 13834,
+      "length": 32,
+      "value": "\"messageDisclosureIndicatorIcon\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/Spot-IM.Development-fypgzssesvgtgoczzsqqwwnvaqqe\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SpotImCore\/IntermediateBuildFilesPath\/Spot-IM.Development.build\/ReleaseInternal-iphonesimulator\/SpotImCore.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 14045,
+      "length": 37,
+      "value": "\"messageDisclosureIndicatorIcon-dark\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/Spot-IM.Development-fypgzssesvgtgoczzsqqwwnvaqqe\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SpotImCore\/IntermediateBuildFilesPath\/Spot-IM.Development.build\/ReleaseInternal-iphonesimulator\/SpotImCore.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 14224,
+      "length": 18,
+      "value": "\"newCommentsArrow\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/Spot-IM.Development-fypgzssesvgtgoczzsqqwwnvaqqe\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SpotImCore\/IntermediateBuildFilesPath\/Spot-IM.Development.build\/ReleaseInternal-iphonesimulator\/SpotImCore.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 14393,
+      "length": 23,
+      "value": "\"newCommentsArrow-dark\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/Spot-IM.Development-fypgzssesvgtgoczzsqqwwnvaqqe\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SpotImCore\/IntermediateBuildFilesPath\/Spot-IM.Development.build\/ReleaseInternal-iphonesimulator\/SpotImCore.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 14544,
+      "length": 11,
+      "value": "\"nextArrow\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/Spot-IM.Development-fypgzssesvgtgoczzsqqwwnvaqqe\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SpotImCore\/IntermediateBuildFilesPath\/Spot-IM.Development.build\/ReleaseInternal-iphonesimulator\/SpotImCore.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 14692,
+      "length": 16,
+      "value": "\"nextArrow-dark\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/Spot-IM.Development-fypgzssesvgtgoczzsqqwwnvaqqe\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SpotImCore\/IntermediateBuildFilesPath\/Spot-IM.Development.build\/ReleaseInternal-iphonesimulator\/SpotImCore.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 14846,
+      "length": 16,
+      "value": "\"noInternetIcon\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/Spot-IM.Development-fypgzssesvgtgoczzsqqwwnvaqqe\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SpotImCore\/IntermediateBuildFilesPath\/Spot-IM.Development.build\/ReleaseInternal-iphonesimulator\/SpotImCore.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 15009,
+      "length": 21,
+      "value": "\"noInternetIcon-dark\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/Spot-IM.Development-fypgzssesvgtgoczzsqqwwnvaqqe\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SpotImCore\/IntermediateBuildFilesPath\/Spot-IM.Development.build\/ReleaseInternal-iphonesimulator\/SpotImCore.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 15176,
+      "length": 20,
+      "value": "\"onlineViewingUsers\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/Spot-IM.Development-fypgzssesvgtgoczzsqqwwnvaqqe\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SpotImCore\/IntermediateBuildFilesPath\/Spot-IM.Development.build\/ReleaseInternal-iphonesimulator\/SpotImCore.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 15340,
+      "length": 19,
+      "value": "\"openwebIconSimple\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/Spot-IM.Development-fypgzssesvgtgoczzsqqwwnvaqqe\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SpotImCore\/IntermediateBuildFilesPath\/Spot-IM.Development.build\/ReleaseInternal-iphonesimulator\/SpotImCore.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 15512,
+      "length": 24,
+      "value": "\"openwebIconSimple-dark\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/Spot-IM.Development-fypgzssesvgtgoczzsqqwwnvaqqe\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SpotImCore\/IntermediateBuildFilesPath\/Spot-IM.Development.build\/ReleaseInternal-iphonesimulator\/SpotImCore.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 15668,
+      "length": 13,
+      "value": "\"optionsIcon\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/Spot-IM.Development-fypgzssesvgtgoczzsqqwwnvaqqe\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SpotImCore\/IntermediateBuildFilesPath\/Spot-IM.Development.build\/ReleaseInternal-iphonesimulator\/SpotImCore.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 15822,
+      "length": 18,
+      "value": "\"optionsIcon-dark\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/Spot-IM.Development-fypgzssesvgtgoczzsqqwwnvaqqe\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SpotImCore\/IntermediateBuildFilesPath\/Spot-IM.Development.build\/ReleaseInternal-iphonesimulator\/SpotImCore.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 15972,
+      "length": 13,
+      "value": "\"pendingIcon\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/Spot-IM.Development-fypgzssesvgtgoczzsqqwwnvaqqe\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SpotImCore\/IntermediateBuildFilesPath\/Spot-IM.Development.build\/ReleaseInternal-iphonesimulator\/SpotImCore.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 16123,
+      "length": 17,
+      "value": "\"rank_arrow_down\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/Spot-IM.Development-fypgzssesvgtgoczzsqqwwnvaqqe\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SpotImCore\/IntermediateBuildFilesPath\/Spot-IM.Development.build\/ReleaseInternal-iphonesimulator\/SpotImCore.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 16295,
+      "length": 26,
+      "value": "\"rank_arrow_down_selected\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/Spot-IM.Development-fypgzssesvgtgoczzsqqwwnvaqqe\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SpotImCore\/IntermediateBuildFilesPath\/Spot-IM.Development.build\/ReleaseInternal-iphonesimulator\/SpotImCore.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 16455,
+      "length": 15,
+      "value": "\"rank_arrow_up\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/Spot-IM.Development-fypgzssesvgtgoczzsqqwwnvaqqe\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SpotImCore\/IntermediateBuildFilesPath\/Spot-IM.Development.build\/ReleaseInternal-iphonesimulator\/SpotImCore.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 16621,
+      "length": 24,
+      "value": "\"rank_arrow_up_selected\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/Spot-IM.Development-fypgzssesvgtgoczzsqqwwnvaqqe\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SpotImCore\/IntermediateBuildFilesPath\/Spot-IM.Development.build\/ReleaseInternal-iphonesimulator\/SpotImCore.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 16774,
+      "length": 12,
+      "value": "\"rank_heart\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/Spot-IM.Development-fypgzssesvgtgoczzsqqwwnvaqqe\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SpotImCore\/IntermediateBuildFilesPath\/Spot-IM.Development.build\/ReleaseInternal-iphonesimulator\/SpotImCore.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 16932,
+      "length": 21,
+      "value": "\"rank_heart_selected\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/Spot-IM.Development-fypgzssesvgtgoczzsqqwwnvaqqe\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SpotImCore\/IntermediateBuildFilesPath\/Spot-IM.Development.build\/ReleaseInternal-iphonesimulator\/SpotImCore.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 17089,
+      "length": 16,
+      "value": "\"rank_like_down\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/Spot-IM.Development-fypgzssesvgtgoczzsqqwwnvaqqe\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SpotImCore\/IntermediateBuildFilesPath\/Spot-IM.Development.build\/ReleaseInternal-iphonesimulator\/SpotImCore.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 17258,
+      "length": 25,
+      "value": "\"rank_like_down_selected\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/Spot-IM.Development-fypgzssesvgtgoczzsqqwwnvaqqe\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SpotImCore\/IntermediateBuildFilesPath\/Spot-IM.Development.build\/ReleaseInternal-iphonesimulator\/SpotImCore.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 17415,
+      "length": 14,
+      "value": "\"rank_like_up\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/Spot-IM.Development-fypgzssesvgtgoczzsqqwwnvaqqe\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SpotImCore\/IntermediateBuildFilesPath\/Spot-IM.Development.build\/ReleaseInternal-iphonesimulator\/SpotImCore.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 17578,
+      "length": 23,
+      "value": "\"rank_like_up_selected\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/Spot-IM.Development-fypgzssesvgtgoczzsqqwwnvaqqe\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SpotImCore\/IntermediateBuildFilesPath\/Spot-IM.Development.build\/ReleaseInternal-iphonesimulator\/SpotImCore.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 17728,
+      "length": 11,
+      "value": "\"rank_star\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/Spot-IM.Development-fypgzssesvgtgoczzsqqwwnvaqqe\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SpotImCore\/IntermediateBuildFilesPath\/Spot-IM.Development.build\/ReleaseInternal-iphonesimulator\/SpotImCore.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 17883,
+      "length": 20,
+      "value": "\"rank_star_selected\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/Spot-IM.Development-fypgzssesvgtgoczzsqqwwnvaqqe\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SpotImCore\/IntermediateBuildFilesPath\/Spot-IM.Development.build\/ReleaseInternal-iphonesimulator\/SpotImCore.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 18033,
+      "length": 12,
+      "value": "\"rejectIcon\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/Spot-IM.Development-fypgzssesvgtgoczzsqqwwnvaqqe\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SpotImCore\/IntermediateBuildFilesPath\/Spot-IM.Development.build\/ReleaseInternal-iphonesimulator\/SpotImCore.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 18185,
+      "length": 17,
+      "value": "\"removeImageIcon\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/Spot-IM.Development-fypgzssesvgtgoczzsqqwwnvaqqe\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SpotImCore\/IntermediateBuildFilesPath\/Spot-IM.Development.build\/ReleaseInternal-iphonesimulator\/SpotImCore.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 18320,
+      "length": 6,
+      "value": "\"sort\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/Spot-IM.Development-fypgzssesvgtgoczzsqqwwnvaqqe\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SpotImCore\/IntermediateBuildFilesPath\/Spot-IM.Development.build\/ReleaseInternal-iphonesimulator\/SpotImCore.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 18453,
+      "length": 11,
+      "value": "\"sort-dark\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/Spot-IM.Development-fypgzssesvgtgoczzsqqwwnvaqqe\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SpotImCore\/IntermediateBuildFilesPath\/Spot-IM.Development.build\/ReleaseInternal-iphonesimulator\/SpotImCore.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 18596,
+      "length": 13,
+      "value": "\"sortingIcon\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/Spot-IM.Development-fypgzssesvgtgoczzsqqwwnvaqqe\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SpotImCore\/IntermediateBuildFilesPath\/Spot-IM.Development.build\/ReleaseInternal-iphonesimulator\/SpotImCore.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 18750,
+      "length": 18,
+      "value": "\"sortingIcon-dark\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/Spot-IM.Development-fypgzssesvgtgoczzsqqwwnvaqqe\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SpotImCore\/IntermediateBuildFilesPath\/Spot-IM.Development.build\/ReleaseInternal-iphonesimulator\/SpotImCore.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 18906,
+      "length": 16,
+      "value": "\"spotIconSimple\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/Spot-IM.Development-fypgzssesvgtgoczzsqqwwnvaqqe\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SpotImCore\/IntermediateBuildFilesPath\/Spot-IM.Development.build\/ReleaseInternal-iphonesimulator\/SpotImCore.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 19069,
+      "length": 21,
+      "value": "\"spotIconSimple-dark\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/Spot-IM.Development-fypgzssesvgtgoczzsqqwwnvaqqe\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SpotImCore\/IntermediateBuildFilesPath\/Spot-IM.Development.build\/ReleaseInternal-iphonesimulator\/SpotImCore.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 19208,
+      "length": 6,
+      "value": "\"star\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/Spot-IM.Development-fypgzssesvgtgoczzsqqwwnvaqqe\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SpotImCore\/IntermediateBuildFilesPath\/Spot-IM.Development.build\/ReleaseInternal-iphonesimulator\/SpotImCore.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 19341,
+      "length": 11,
+      "value": "\"time-icon\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/Spot-IM.Development-fypgzssesvgtgoczzsqqwwnvaqqe\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SpotImCore\/IntermediateBuildFilesPath\/Spot-IM.Development.build\/ReleaseInternal-iphonesimulator\/SpotImCore.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 19488,
+      "length": 16,
+      "value": "\"time-icon-dark\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/Spot-IM.Development-fypgzssesvgtgoczzsqqwwnvaqqe\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SpotImCore\/IntermediateBuildFilesPath\/Spot-IM.Development.build\/ReleaseInternal-iphonesimulator\/SpotImCore.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 19630,
+      "length": 10,
+      "value": "\"userIcon\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/Spot-IM.Development-fypgzssesvgtgoczzsqqwwnvaqqe\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SpotImCore\/IntermediateBuildFilesPath\/Spot-IM.Development.build\/ReleaseInternal-iphonesimulator\/SpotImCore.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 19775,
+      "length": 15,
+      "value": "\"userIcon-dark\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/Spot-IM.Development-fypgzssesvgtgoczzsqqwwnvaqqe\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SpotImCore\/IntermediateBuildFilesPath\/Spot-IM.Development.build\/ReleaseInternal-iphonesimulator\/SpotImCore.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 19920,
+      "length": 12,
+      "value": "\"verifyIcon\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/Spot-IM.Development-fypgzssesvgtgoczzsqqwwnvaqqe\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SpotImCore\/IntermediateBuildFilesPath\/Spot-IM.Development.build\/ReleaseInternal-iphonesimulator\/SpotImCore.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 20066,
+      "length": 14,
+      "value": "\"viewingUsers\""
     }
   ]
 }
