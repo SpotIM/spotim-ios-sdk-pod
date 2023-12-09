@@ -1,9 +1,10 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.8.1 (swiftlang-5.8.0.124.5 clang-1403.0.22.11.100)
+// swift-compiler-version: Apple Swift version 5.9.2 (swiftlang-5.9.2.2.56 clang-1500.1.0.2.5)
 // swift-module-flags: -target x86_64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -module-name SpotImCore
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import AVKit
 import AdSupport
+import DeveloperToolsSupport
 import Dispatch
 import Foundation
 import MobileCoreServices
@@ -12,12 +13,14 @@ import RxSwift
 import SafariServices
 @_exported import SpotImCore
 import Swift
+import SwiftUI
 import SystemConfiguration
 import UIKit
 import UniformTypeIdentifiers
 import WebKit
 import _Concurrency
 import _StringProcessing
+import _SwiftConcurrencyShims
 import os.log
 import os
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class OWBaseView : UIKit.UIView {
