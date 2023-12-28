@@ -4,7 +4,7 @@ This library provides an easy integration with Spot.IM into a native iOS app.
 
 ## Requirements
 
-* iOS 10.3 or later.
+* iOS 12 or later.
 * Have a [Spot.IM](https://spot.im) account
 
 ## Getting started
