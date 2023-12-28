@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
   s.license         = { :type => 'CUSTOM', :file => 'LICENSE' }
   s.author          = { 'Alon Haiut' => 'alon.h@openweb.com' }
   s.platform        = :ios
-  s.ios.deployment_target = '11.0'
+  s.ios.deployment_target = '12.0'
   # Setting pod `BUILD_LIBRARY_FOR_DISTRIBUTION` to `YES`
   s.pod_target_xcconfig = { 'BUILD_LIBRARY_FOR_DISTRIBUTION' => 'YES' }
 
