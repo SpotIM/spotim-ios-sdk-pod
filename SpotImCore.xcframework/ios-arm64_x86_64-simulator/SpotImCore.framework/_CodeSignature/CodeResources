@@ -6,11 +6,11 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		gwSa5saa7gplbvr8j8okaQSvODk=
+		7maH6qfKhkLm2y2BSwQOBPMwG+0=
 		</data>
 		<key>Headers/SpotImCore-Swift.h</key>
 		<data>
-		En6QN0wXBEvh4R5QxvZyZCD4rfg=
+		daCdiaVSud8sIvQX/ih47lxT4wI=
 		</data>
 		<key>Headers/SpotImCore.h</key>
 		<data>
@@ -18,51 +18,51 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		hamwGP5IVL+E44e7RdZBNaJfnEo=
+		ojFE2x4+CDQW4wvdww8TYwvc/UU=
 		</data>
 		<key>Modules/SpotImCore.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		jMYnY4U8SUxBodFK4W1fERygc4g=
+		BaRDJBSIdUOdyTJ3at+ruMDj8+k=
 		</data>
 		<key>Modules/SpotImCore.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		7tJQWP51IXSBslOCANkP3vzm3Ic=
+		zGrXmQ7kmPYuKBkx9AnvSwki494=
 		</data>
 		<key>Modules/SpotImCore.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		tqDwt/9BZPq1xb8923rGEmhta+E=
+		puM4/AAHkZMtwBDLiEatq4YFYRc=
 		</data>
 		<key>Modules/SpotImCore.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		7tJQWP51IXSBslOCANkP3vzm3Ic=
+		zGrXmQ7kmPYuKBkx9AnvSwki494=
 		</data>
 		<key>Modules/SpotImCore.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		n4mUO06/wnda/kAERyxlW3/T/cU=
+		l9TC465VQ6ecdd3xbuiYyCJ1hUE=
 		</data>
 		<key>Modules/SpotImCore.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		jMYnY4U8SUxBodFK4W1fERygc4g=
+		BaRDJBSIdUOdyTJ3at+ruMDj8+k=
 		</data>
 		<key>Modules/SpotImCore.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		3PYWrGY4ur8W+0YYqrx1Z6Ws658=
+		mtD3102rU9dQhgrvbk4gov+U0MQ=
 		</data>
 		<key>Modules/SpotImCore.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		KhNpyV9FIIBC0wNUyfn17GVbVEE=
+		1ki4ezoxvtXYT1Yph0hb/2cwKuA=
 		</data>
 		<key>Modules/SpotImCore.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		3PYWrGY4ur8W+0YYqrx1Z6Ws658=
+		mtD3102rU9dQhgrvbk4gov+U0MQ=
 		</data>
 		<key>Modules/SpotImCore.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		3OKZnVypcWxpNFLWgG9jzyDx/JU=
+		E+QeSB7Ov4Xf0XMzp/rpSlaJfjI=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		aU6Sn4PBWpAt0DXmaisNqRIWz4Y=
+		/V0wPGx7GLGWiTwa+HUc+0RqXRQ=
 		</data>
 		<key>OpenSans-Bold.ttf</key>
 		<data>
@@ -84,15 +84,19 @@
 		<data>
 		mhmkWcp7yhXS3oJpuAQR8rSnHM8=
 		</data>
+		<key>OpenSans-SemiBold.ttf</key>
+		<data>
+		lrSeLujU0lmWFGhB6q69u1iU7TM=
+		</data>
 		<key>OpenWebSettings.plist</key>
 		<data>
-		plonarOzyaOkpFq/U4byqCmwK9Q=
+		c/dWMw9xR+lEvdaXGnTYbcUQiiw=
 		</data>
 		<key>ar-001.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ms+S2BJ7C2OZoMCqjxt5B7rb8wY=
+			5EUBboGS5DDOKABS7EcKGX51fwA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -101,7 +105,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			wjQ+eAiP7L7lRUSHcgOvhWHQNg0=
+			hXSnfgKrD4jThhaFGkaB+UAIhFo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -110,7 +114,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			wFzo+h3gvFqDlpZJcpnifcyaBlQ=
+			qixyyseRyqcBzpB6sONYILsUQJA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -119,7 +123,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			v+AW2kcVP5IuRlD/H9EhsLVKU5k=
+			Y5xk73G9CY2q6FP6siBRAi1FFyM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -132,7 +136,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			kjHblYXxV/U7wRcS8yhmOaiqrbc=
+			vPRtUA0q/1YMWxLCa37k0Pof8GQ=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -145,7 +149,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			wiCDVF2zBq5nTtzqBy63YiC8LAQ=
+			9hLvqswMsV/+Tik74JOlnClHRQc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -157,14 +161,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			gxBm9nktS2julBGJm+0rPRrrL15H1/kF8179MorlCpM=
+			Kh6dLjzrq7Bb1akTzxqq2Iq6bx6Lmyt9d1v+Vxkdors=
 			</data>
 		</dict>
 		<key>Headers/SpotImCore-Swift.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			YirOabFkvyClUXV3niZMbTyrjZkSgla7b8pmh+U5sis=
+			RJzr0yTGBcLFID5KeAKDQO2sQ9T3JIjR/es8LzkBSv8=
 			</data>
 		</dict>
 		<key>Headers/SpotImCore.h</key>
@@ -178,77 +182,77 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			tHpWF5mzGhNOG0Zilq4rDN1iCf/UU9h0iyu89u6DjDU=
+			bpulUWtWxHtyAAYT/LURwdpUCh9bTblmMDlyGZY8z5Q=
 			</data>
 		</dict>
 		<key>Modules/SpotImCore.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			AWf8ltGnfAY2NfzD1MPYoMdVpBuMB+0OSw30Xh7rJ/8=
+			6Cb59ITjZqzxsiiCjbyufkO9MidioawVTTfiisY0gYk=
 			</data>
 		</dict>
 		<key>Modules/SpotImCore.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			bgukrdiapC46DEg0BBoEyul1fptjj8mx6BQ9sUV1z9E=
+			60C+ris5EvunFbez2QivPHyH0lPrb5qKaSUBF8cXLJ4=
 			</data>
 		</dict>
 		<key>Modules/SpotImCore.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			AWf8ltGnfAY2NfzD1MPYoMdVpBuMB+0OSw30Xh7rJ/8=
+			6Cb59ITjZqzxsiiCjbyufkO9MidioawVTTfiisY0gYk=
 			</data>
 		</dict>
 		<key>Modules/SpotImCore.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			uARJ7nAeNQs8vc8WDSE17sdARq+iEEbYWEdZJu02zzs=
+			tcTUiedbrDkeQkx0wk9guEC6VjP5klx9xvhrJPdsNbQ=
 			</data>
 		</dict>
 		<key>Modules/SpotImCore.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			tHpWF5mzGhNOG0Zilq4rDN1iCf/UU9h0iyu89u6DjDU=
+			bpulUWtWxHtyAAYT/LURwdpUCh9bTblmMDlyGZY8z5Q=
 			</data>
 		</dict>
 		<key>Modules/SpotImCore.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			j5KDi3LCpWsNzyDl+CjAcHRxYoYG3B5u3oUtMRXzr14=
+			ZVjgvgv+oAKH0G1CgMfsvSMe5zOmylb3cqloLKo7OrA=
 			</data>
 		</dict>
 		<key>Modules/SpotImCore.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			LvP8cKbhR9qJmyz0Bo8TMnC2YRBAGhHoJR6dsF4vkew=
+			kY1Z1QBlT2iFpPQx1zp2/YfkxQmQ26sYfSm0GpZ2gPM=
 			</data>
 		</dict>
 		<key>Modules/SpotImCore.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			j5KDi3LCpWsNzyDl+CjAcHRxYoYG3B5u3oUtMRXzr14=
+			ZVjgvgv+oAKH0G1CgMfsvSMe5zOmylb3cqloLKo7OrA=
 			</data>
 		</dict>
 		<key>Modules/SpotImCore.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			eOA12PU2A1bLe9owszRfNrvLEDuE+jL1r6XT/S5v+ok=
+			38KAXEASGGZH5GS8Yv97ExeRNm9zdjDNTg7Ia8H1YuE=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			nFZiO0yEfzxAqE9skNMpDJ54HL9Jaky7GP9mf25yyIE=
+			bpqZ+8aTw0oMX9Z5j/i/4LPBatQuLrNq+8TalU6EM+E=
 			</data>
 		</dict>
 		<key>OpenSans-Bold.ttf</key>
@@ -286,18 +290,25 @@
 			oHB+EOSMAjY7PGsig7a0+Hwg5v0koMXTOzgUVfW45ps=
 			</data>
 		</dict>
+		<key>OpenSans-SemiBold.ttf</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ByM6ezc2XHMepxs4tEnKWqblt2+v+iP4iA8Z2gcU7Tg=
+			</data>
+		</dict>
 		<key>OpenWebSettings.plist</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			q70Y7qG1AMeI7PVyMot0NMlHO2FqJEk8RcAfBlpfalE=
+			oOpeV4JUoWjA5TOR9RncmvAYAM9mOevMUAoVmZUDDac=
 			</data>
 		</dict>
 		<key>ar-001.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			QIU0VbGC9gPv2Y4uxPdU8wMuy2mX64/zvXeMPT009LM=
+			AivOn770xEhcXxCPvMh1Bex8YmXxHZn9joux8OIcGYw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -306,7 +317,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			K8wymHn72mCib6W4bgrj9hnz4Hzfob5X9Opwe7xx0nY=
+			+H+K/YH0aMhIgq8gVWwxKzLh5OUQa85fl5nf2EeRPNI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -315,7 +326,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			0O8jaI5H0tN0h9n8PqNvsXMjaFigTdNT8abU9Ke8BU8=
+			t0fOnloQiPn8KHyjyoR1TErV0V5uWz7jTFj+RqRNXY8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -324,7 +335,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			R7XVbZFQVLx6fnyrH7mTplm3q2kYTdFekCF529JoGSE=
+			ZepF59OzOY4iWmJ67G++ih69FkokXojbBiAlQawTv0A=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -340,7 +351,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			qzGswD8JmeCbJTqbNxNVyBeyL04Bu0df/dNND9BAOvk=
+			sne+h4hgVrtekSIfrcZ0X74zrXiLYM6+vramazrPCWU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -356,7 +367,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Y+EC80+McFzeHfFSMTWrV9+fotbqsDVmWesB49exIsM=
+			7NJOdEwXYBqLEXDCs7Yy8e4Kb/ASAXvwBK5ptOW8IA8=
 			</data>
 			<key>optional</key>
 			<true/>
