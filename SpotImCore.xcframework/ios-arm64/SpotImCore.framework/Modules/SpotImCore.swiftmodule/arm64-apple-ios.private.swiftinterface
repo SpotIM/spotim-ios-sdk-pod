@@ -74,6 +74,25 @@ public enum OWEmptyStateCustomizableElement {
   case icon(image: UIKit.UIImageView)
   case title(label: UIKit.UILabel)
 }
+public struct OWTheme {
+  public let skeletonColor: SpotImCore.OWColor?
+  public let skeletonShimmeringColor: SpotImCore.OWColor?
+  public let primarySeparatorColor: SpotImCore.OWColor?
+  public let secondarySeparatorColor: SpotImCore.OWColor?
+  public let tertiarySeparatorColor: SpotImCore.OWColor?
+  public let primaryTextColor: SpotImCore.OWColor?
+  public let secondaryTextColor: SpotImCore.OWColor?
+  public let tertiaryTextColor: SpotImCore.OWColor?
+  public let primaryBackgroundColor: SpotImCore.OWColor?
+  public let secondaryBackgroundColor: SpotImCore.OWColor?
+  public let tertiaryBackgroundColor: SpotImCore.OWColor?
+  public let surfaceColor: SpotImCore.OWColor?
+  public let primaryBorderColor: SpotImCore.OWColor?
+  public let secondaryBorderColor: SpotImCore.OWColor?
+  public let loaderColor: SpotImCore.OWColor?
+  public let brandColor: SpotImCore.OWColor?
+  public init(skeletonColor: SpotImCore.OWColor? = nil, skeletonShimmeringColor: SpotImCore.OWColor? = nil, primarySeparatorColor: SpotImCore.OWColor? = nil, secondarySeparatorColor: SpotImCore.OWColor? = nil, tertiarySeparatorColor: SpotImCore.OWColor? = nil, primaryTextColor: SpotImCore.OWColor? = nil, secondaryTextColor: SpotImCore.OWColor? = nil, tertiaryTextColor: SpotImCore.OWColor? = nil, primaryBackgroundColor: SpotImCore.OWColor? = nil, secondaryBackgroundColor: SpotImCore.OWColor? = nil, tertiaryBackgroundColor: SpotImCore.OWColor? = nil, surfaceColor: SpotImCore.OWColor? = nil, primaryBorderColor: SpotImCore.OWColor? = nil, secondaryBorderColor: SpotImCore.OWColor? = nil, loaderColor: SpotImCore.OWColor? = nil, brandColor: SpotImCore.OWColor? = nil)
+}
 public protocol OWUIViews {
   func preConversation(postId: SpotImCore.OWPostId, article: any SpotImCore.OWArticleProtocol, additionalSettings: any SpotImCore.OWAdditionalSettingsProtocol, callbacks: SpotImCore.OWViewActionsCallbacks?, completion: @escaping SpotImCore.OWViewCompletion)
   func conversation(postId: SpotImCore.OWPostId, article: any SpotImCore.OWArticleProtocol, additionalSettings: any SpotImCore.OWAdditionalSettingsProtocol, callbacks: SpotImCore.OWViewActionsCallbacks?, completion: @escaping SpotImCore.OWViewCompletion)
@@ -325,6 +344,11 @@ public enum OWCommunityQuestionStyle : Swift.Codable {
   }
   public init(from decoder: any Swift.Decoder) throws
 }
+public struct OWColor {
+  public var lightColor: UIKit.UIColor
+  public var darkColor: UIKit.UIColor
+  public init(lightColor: UIKit.UIColor, darkColor: UIKit.UIColor)
+}
 public enum OWSortOption : Swift.String {
   case best
   case newest
@@ -512,6 +536,7 @@ public enum OWCustomizableElement {
   case navigation(element: SpotImCore.OWNavigationCustomizableElement)
   case header(element: SpotImCore.OWHeaderCustomizableElement)
   case articleDescription(element: SpotImCore.OWArticleDescriptionCustomizableElement)
+  case loginPrompt(element: SpotImCore.OWLoginPromptCustomizableElement)
   case summary(element: SpotImCore.OWSummaryCustomizableElement)
   case summaryHeader(element: SpotImCore.OWSummaryHeaderCustomizableElement)
   case onlineUsers(element: SpotImCore.OWOnlineUsersCustomizableElement)
@@ -609,6 +634,7 @@ public protocol OWCustomizations {
   var themeEnforcement: SpotImCore.OWThemeStyleEnforcement { get set }
   var statusBarEnforcement: SpotImCore.OWStatusBarEnforcement { get set }
   var navigationBarEnforcement: SpotImCore.OWNavigationBarEnforcement { get set }
+  var customizedTheme: SpotImCore.OWTheme { get set }
   func addElementCallback(_ callback: @escaping SpotImCore.OWCustomizableElementCallback)
 }
 public enum OWSpacerStyle {
@@ -757,6 +783,11 @@ public enum OWParserError : Swift.Error {
   public var hashValue: Swift.Int {
     get
   }
+}
+public enum OWLoginPromptCustomizableElement {
+  case lockIcon(imageView: UIKit.UIImageView)
+  case arrowIcon(imageView: UIKit.UIImageView)
+  case title(label: UIKit.UILabel)
 }
 public enum OWCommentCreationType : Swift.Codable {
   case comment
