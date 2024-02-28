@@ -7,7 +7,7 @@ let package = Package(
         .iOS(.v12)
     ],
     products: [
-        .library(name: "SpotIMCore", targets: ["WrapperSPMTarget"])
+        .library(name: "SpotIMCore", targets: ["SpotImWrapperSPMTarget"])
     ],
     dependencies: [
         // Here we define our package's external dependencies
@@ -23,7 +23,7 @@ let package = Package(
             path: "SpotImCore.xcframework"
         ),
         .target(
-            name: "WrapperSPMTarget",
+            name: "SpotImWrapperSPMTarget",
             dependencies: [
                 .target(name: "SpotImCore", condition: .when(platforms: .some([.iOS]))),
                 "RxSwift",
