@@ -5,10 +5,7 @@
 	<key>NSPrivacyTracking</key>
 	<false/>
 	<key>NSPrivacyTrackingDomains</key>
-	<array>
-		<string>spot.im</string>
-		<string>openweb.com</string>
-	</array>
+	<array/>
 	<key>NSPrivacyAccessedAPITypes</key>
 	<array/>
 	<key>NSPrivacyCollectedDataTypes</key>
