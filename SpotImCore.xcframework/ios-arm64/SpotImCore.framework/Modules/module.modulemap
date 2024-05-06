@@ -1,7 +1,7 @@
 framework module SpotImCore {
   umbrella header "SpotImCore.h"
-  export *
 
+  export *
   module * { export * }
 }
 
