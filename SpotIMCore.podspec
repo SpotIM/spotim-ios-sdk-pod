@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SpotIMCore'
-  s.version          = '1.18.6'
+  s.version          = '2.1.1'
   s.swift_versions = ['5.0']
   s.summary          = 'OpenWeb SDK'
   s.description      = 'This SDK allows you to integrate OpenWeb into your iOS app.'
