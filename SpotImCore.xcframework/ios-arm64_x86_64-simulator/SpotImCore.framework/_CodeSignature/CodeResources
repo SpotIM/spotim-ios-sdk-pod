@@ -6,7 +6,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		CQ/jrlEqnA0rGPJpKo0/pYPNfF8=
+		N0kEW7qj4HU7t07HoEXO1EOPHpg=
 		</data>
 		<key>Headers/SpotImCore-Swift.h</key>
 		<data>
@@ -18,7 +18,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		XYEF3aR/NuhqxWO2bcMLPFhQFdU=
+		umI4YwDJkId3mxkY2WNRITY1yxk=
 		</data>
 		<key>Modules/SpotImCore.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -38,7 +38,7 @@
 		</data>
 		<key>Modules/SpotImCore.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		S8SzgUa3Hw1NmWIVU/BgmeELHs8=
+		SllwLDYAnaST4qdk6X5mWTk90f8=
 		</data>
 		<key>Modules/SpotImCore.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -58,7 +58,7 @@
 		</data>
 		<key>Modules/SpotImCore.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		JSYQ2axLvmKfAy1j2htzS7XaS3E=
+		enjMRnnx2ys0o/NlujGGzcWiZxA=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -86,7 +86,7 @@
 		</data>
 		<key>OpenWebSettings.plist</key>
 		<data>
-		GaDEg2u5dB5TLH73GNST4mCBYFk=
+		MRAXK7fIJKvjgluve4hWiehXcbg=
 		</data>
 		<key>PrivacyInfo.xcprivacy</key>
 		<data>
@@ -161,7 +161,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			0bZXrZwBzxNSlAiyM7butH7HYxvIDXL+6+huspQCyeY=
+			tZ1VGSaTJYbvoYVlSmRZ+qdUfiKyHXpFEMIEkRSstwk=
 			</data>
 		</dict>
 		<key>Headers/SpotImCore-Swift.h</key>
@@ -210,7 +210,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			28FBU96gmPBLE3LAuknxbjNTprxMWNsbCC3VT0sdLOs=
+			TEKaEe2YXbQQ7eJZ/cMlS0Na58iM6G/BnZnvHK8svq8=
 			</data>
 		</dict>
 		<key>Modules/SpotImCore.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
@@ -245,7 +245,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			lWR8LCj/nf8dVzrfyHSAdhVyQcmyUUQ/Y/i5Xb0Zy6E=
+			zuY/gCg5bHJ4JXP6GBYyGdwuQ2lYFJjLd4Uc5d9zf7g=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -294,7 +294,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZFq4Vo+ZBEA4Ftc9ameTicbuKqcqfiI92S34mMoEUY8=
+			ee83jou5Hx6hoSXJJaAnoyVmcsZnEfsMhvJprrErHPk=
 			</data>
 		</dict>
 		<key>PrivacyInfo.xcprivacy</key>
